@@ -1,0 +1,13 @@
+---
+layout: post
+title: "git tips"
+date: 2017-05-16 17:12:50 +0900
+comments: true
+categories: git tips
+---
+
+- 특정 함수의 변경을 확인 : git log -L 
+- merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort
+- 버그가 발견한 commit를 추적 : git bisect
+- commit.template
+
