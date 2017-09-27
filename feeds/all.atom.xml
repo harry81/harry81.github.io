@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2017-09-13T17:44:50+09:00</updated><entry><title>"Elasticbeans talk"</title><link href="/elasticbeans-talk.html" rel="alternate"></link><published>2017-09-13T17:44:50+09:00</published><updated>2017-09-13T17:44:50+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-13:/elasticbeans-talk.html</id><summary type="html">&lt;h4&gt;Elasticbeanstalk health check&lt;/h4&gt;
 &lt;p&gt;EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/elasticbeans-health-check-0913.png" width=700&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"&gt;&lt;/p&gt;
 &lt;p&gt;https://gist.github.com/dryan/8271687&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;EC2_IP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;http://169.254.169.254/latest/meta-data/local-ipv4&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;
     &lt;span class="n"&gt;ALLOWED_HOSTS&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;append&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;EC2_IP …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h4&gt;Elasticbeanstalk health check&lt;/h4&gt;
 &lt;p&gt;EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.&lt;/p&gt;
-&lt;p&gt;&lt;img src="images/elasticbeans-health-check-0913.png" width=700&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"&gt;&lt;/p&gt;
 &lt;p&gt;https://gist.github.com/dryan/8271687&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;try&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     &lt;span class="n"&gt;EC2_IP&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;requests&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;get&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;http://169.254.169.254/latest/meta-data/local-ipv4&amp;#39;&lt;/span&gt;&lt;span class="o"&gt;).&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;
