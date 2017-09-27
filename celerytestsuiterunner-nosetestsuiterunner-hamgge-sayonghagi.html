@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-          <title>Hyunmin blog</title>
+<html>
+    <head>
+        <title>"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기" - Hyunmin blog</title>
         <meta charset="utf-8" />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/theme/static/css/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hyunmin blog Full Atom Feed" />
         <link href="/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="Hyunmin blog Categories Atom Feed" />
+    </head>
 
-
-
-</head>
-
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Hyunmin blog <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
+    <body id="index" class="archive">
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class=""><a href="">Home</a></li>
+                    <li><a href="/archives.html">Archives</a></li>
+                </ul>
+                <h3 class="text-muted"><a href="">Hyunmin blog</a></h3>
+				<h2 class="text-muted"></h2>
+             </div>
+<section id="content" class="article content">
   <header>
     <h2 class="entry-title">
       <a href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark"
          title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h2>
  
   </header>
-  <footer class="post-info">
-    <time class="published" datetime="2017-02-18T15:43:28+09:00">
-      Sat 18 February 2017
-    </time>
-    <address class="vcard author">
-      By           <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-    </address>
-  </footer><!-- /.post-info -->
+  
+     
   <div class="entry-content">
     <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
 테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
@@ -58,12 +56,31 @@
 <p _="%" endcodeblock>{% codeblock "settings.py" [line_number:(false)] %}
 TEST_RUNNER = 'myapp.TestRunnser""</p>
   </div><!-- /.entry-content -->
+   <footer class="post-info text-muted">
+    Posted on <abbr class="published" title="2017-02-18T15:43:28+09:00">
+      Sat 18 February 2017
+    </abbr>
+    <address class="vcard author">
+      by <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+    </address> in <a href="/category/misc.html">misc</a> Tagged   </footer><!-- /.post-info -->
 </section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
-</body>
+            <footer id="contentinfo" class="footer">
+                    <nav class="pull-right bottom-nav">
+                        <a href="/feeds/all.atom.xml">RSS</a>
+                    </nav>
+                    <address id="about" class="vcard body">
+                    &copy; <a href="">Hyunmin blog</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
+                    </address><!-- /#about -->
+            </footer><!-- /#contentinfo -->
+        </div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-91188832-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+    </body>
 </html>

@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-        <title>Hyunmin blog - Articles by hyunmin</title>
+<html>
+    <head>
+        <title> Articles by hyunmin - Hyunmin blog</title>
         <meta charset="utf-8" />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/theme/static/css/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hyunmin blog Full Atom Feed" />
-</head>
+    </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Hyunmin blog <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<section id="content">
+    <body id="index" class="archive">
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class=""><a href="">Home</a></li>
+                    <li class="active"><a href="/archives.html">Archives</a></li>
+                </ul>
+                <h3 class="text-muted"><a href="">Hyunmin blog</a></h3>
+				<h2 class="text-muted"></h2>
+             </div>
+<section id="content" class="content">
 <h2>Articles by hyunmin</h2>
 
-<ol id="post-list">
-        <li><article class="hentry">
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/elasticbeans-talk.html" rel="bookmark" title="Permalink to "Elasticbeans talk"">"Elasticbeans talk"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-09-13T17:44:50+09:00"> Wed 13 September 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <h4>Elasticbeanstalk health check</h4>
 <p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
@@ -31,16 +31,10 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 <p>https://gist.github.com/dryan/8271687</p>
 <div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
     <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
-    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/datagokr.html" rel="bookmark" title="Permalink to "data.go.kr"">"data.go.kr"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-09-03T14:29:11+09:00"> Sun 03 September 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <hr>
 <ul>
 <li>단독/다가구 전월세 지수 변화, 2004~2016 <a href="https://s3.ap-northeast-2.amazonaws.com/hmapps/data/home_loan_201708_900x500.html">link</a></li>
@@ -48,16 +42,10 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 <p>지역코드와 기간을 이용하여 해당기간, 해당지역의 단독다가구 전월세 신고자료를 제공하는 단독다가구 전월세 신고 정보 조회</p>
 <ul>
 <li>이력 소개 <a href="http://bit.ly/2f9Xjdp">link</a></li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+</ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/experience.html" rel="bookmark" title="Permalink to "Experience"">"Experience"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-09-02T15:51:22+09:00"> Sat 02 September 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <hr>
 <ul>
 <li>
@@ -80,16 +68,10 @@ Django admin에 신규 기능 추가후 소개, Truffls</p>
   https://www.lieferheld.de/</li>
 </ul>
 <p><img src="images/company/delivery1.jpg" width="700"></p>
-<p>Tech …</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+<p>Tech …</p> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/aws-cloudtrail-and-config.html" rel="bookmark" title="Permalink to "aws cloudtrail and config"">"aws cloudtrail and config"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-08-01T11:33:23+09:00"> Tue 01 August 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <ul>
 <li>
 <p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
@@ -100,16 +82,10 @@ Django admin에 신규 기능 추가후 소개, Truffls</p>
 <li>
 <p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
 </li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+</ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/rds-parameter-group.html" rel="bookmark" title="Permalink to "rds-parameter-group"">"rds-parameter-group"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-06-22T11:51:34+09:00"> Thu 22 June 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <h3>문제</h3>
 <hr>
 <p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
@@ -117,31 +93,19 @@ Django admin에 신규 기능 추가후 소개, Truffls</p>
 그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
 - postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
 <ul>
-<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/git-tips.html" rel="bookmark" title="Permalink to "git tips"">"git tips"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-05-16T17:12:50+09:00"> Tue 16 May 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <ul>
 <li>특정 함수의 변경을 확인 : git log -L </li>
 <li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
 <li>버그가 발견한 commit를 추적 : git bisect</li>
 <li>commit.template</li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+</ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/geuleul-maeil-sseuneun-bangbeob.html" rel="bookmark" title="Permalink to "글을 매일 쓰는 방법"">"글을 매일 쓰는 방법"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-05-15T17:26:17+09:00"> Mon 15 May 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <ul>
 <li>
 <p><a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e">25 Habits That Will Make You a Writer</a></p>
@@ -154,42 +118,24 @@ Django admin에 신규 기능 추가후 소개, Truffls</p>
 <p>매일 글을 쓴다.
 하루를 보내며 재미있었던 일</p>
 </li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+</ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/awswa-cingu-doegi.html" rel="bookmark" title="Permalink to "AWS와 친구 되기"">"AWS와 친구 되기"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-05-15T17:05:34+09:00"> Mon 15 May 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <h2>아테나 성능 튜닝 팁 - 정도현</h2>
 <p>Amazon Athena is an interactive query service that makes it easy to analyze data stored in Amazon S3 using standard SQL
 - big-data <a href="https://aws.amazon.com/ko/blogs/big-data/">https://aws.amazon.com/ko/blogs/big-data/</a>
-- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/sodameseoyi-sijag.html" rel="bookmark" title="Permalink to "소담에서의 시작"">"소담에서의 시작"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-04-13T10:32:17+09:00"> Thu 13 April 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <h4>소감</h4>
 <p>낯설지만 자유롭다.
 이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.</p>
-<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
+<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/init-sodam.html" rel="bookmark" title="Permalink to "init sodam"">"init sodam"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-04-03T17:22:35+09:00"> Mon 03 April 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
                 <div class="entry-content"> <p>upgrade pip
 pip3 install -U pip </p>
 <p>가상환경
@@ -214,19 +160,32 @@ mkvirtualenv sodam -p /usr/bin/python3 </p>
 <td align="right">$12</td>
 </tr>
 </tbody>
-</table> </div><!-- /.entry-content -->
-        </article></li>
-</ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 4
-        <a href="/author/hyunmin2.html">&raquo;</a>
-</p>
-</section><!-- /#content -->
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
-</body>
+</table> </div><!-- entry-content -->
+        </article>
+<div class="pager">
+      <ul>
+                        <li class="previous disabled"><a>← Previous</a></li>
+						<li class="next"><a href="/author/hyunmin2.html">Next →</a></li>
+      </ul>
+    </div>
+</section><!-- content -->
+            <footer id="contentinfo" class="footer">
+                    <nav class="pull-right bottom-nav">
+                        <a href="/feeds/all.atom.xml">RSS</a>
+                    </nav>
+                    <address id="about" class="vcard body">
+                    &copy; <a href="">Hyunmin blog</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
+                    </address><!-- /#about -->
+            </footer><!-- /#contentinfo -->
+        </div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-91188832-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+    </body>
 </html>
