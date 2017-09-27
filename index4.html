@@ -22,6 +22,21 @@
 <section id="content" class="content">
 
         <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/uhopper-hadoop-docker.html" rel="bookmark" title="Permalink to "uhopper-hadoop-docker"">"uhopper-hadoop-docker"</a></h2> </header>
+                <div class="entry-content"> <h3>docker-compose 를 이용해서</h3>
+<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
+<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
+
+docker network create hadoop
+docker network create kafka
+docker volume create --name=hadoop_datanode1
+docker volume create --name=hadoop_datanode2
+docker volume create --name=hadoop_historyserver
+docker volume create --name=hadoop_namenode
+docker-compose up
+</pre></div> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/spark-docker-seolcihaebogi.html" rel="bookmark" title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h2> </header>
                 <div class="entry-content"> <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
 <p>https://github.com/sequenceiq/docker-spark</p>
@@ -113,25 +128,6 @@ svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row
                 <header> <h2 class="entry-title"><a href="/emacseseo-pailmyeong-byeongyeonghagi.html" rel="bookmark" title="Permalink to "emacs에서 파일명 변경하기"">"emacs에서 파일명 변경하기"</a></h2> </header>
                 <div class="entry-content"> <p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
 <p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/hadoop-docker.html" rel="bookmark" title="Permalink to "hadoop-docker"">"hadoop-docker"</a></h2> </header>
-                <div class="entry-content"> <p>가상머신 3개를 준비하자.</p>
-<div class="highlight"><pre><span></span># Namenode 192.168.99.101
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# Datanode1 192.168.99.102
-docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
-
-# Datanode2 192.168.99.103
-docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
-</pre></div>
-
-
-<div class="highlight"><pre><span></span>...
-namenode 192.168.99.101
-datanode1 192.168.99.102
-datanode2 …</pre></div> </div><!-- entry-content -->
         </article>
 <div class="pager">
       <ul>

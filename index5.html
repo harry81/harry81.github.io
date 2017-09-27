@@ -22,6 +22,25 @@
 <section id="content" class="content">
 
         <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/hadoop-docker.html" rel="bookmark" title="Permalink to "hadoop-docker"">"hadoop-docker"</a></h2> </header>
+                <div class="entry-content"> <p>가상머신 3개를 준비하자.</p>
+<div class="highlight"><pre><span></span># Namenode 192.168.99.101
+docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+
+# Datanode1 192.168.99.102
+docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
+
+# Datanode2 192.168.99.103
+docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>...
+namenode 192.168.99.101
+datanode1 192.168.99.102
+datanode2 …</pre></div> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark" title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h2> </header>
                 <div class="entry-content"> <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
 테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
@@ -79,23 +98,6 @@ git submodule add GIT_URL .themes/THEME_NAME
 rake install\[&#39;THEME_NAME&#39;\]
 rake generate
 </pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="bookmark" title="Permalink to Celery beat를 Elasticbeanstalk에서도 사용하자">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h2> </header>
-                <div class="entry-content"> <ul>
-<li>
-<p _="%" endcodeblock>tip 1
-{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
-from celery.task.control import discard_all
-    discard_all()</p>
-</li>
-<li>
-<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
-{% codeblock lang:python title:"98-celery.config"  %}
-command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
-</li>
-</ul>
-<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p> </div><!-- entry-content -->
         </article>
 <div class="pager">
       <ul>
