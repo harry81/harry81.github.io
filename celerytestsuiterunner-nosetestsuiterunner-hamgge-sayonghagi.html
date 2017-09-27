@@ -1,45 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+          <title>Hyunmin blog</title>
         <meta charset="utf-8" />
-        <title>"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hyunmin blog Full Atom Feed" />
+        <link href="/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="Hyunmin blog Categories Atom Feed" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+
 </head>
 
 <body id="index" class="home">
-<a href="http://github.com/harry81/">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
         <header id="banner" class="body">
-                <h1><a href="/">Hyunmin blog </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="/category/misc.html">misc</a></li>
-                </ul></nav>
+                <h1><a href="/">Hyunmin blog <strong></strong></a></h1>
         </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
 <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark"
-           title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h1>
-    </header>
-
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-02-18T15:43:28+09:00">
-                Published: Sat 18 February 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
-        </address>
-<p>In <a href="/category/misc.html">misc</a>.</p>
-
-</footer><!-- /.post-info -->      <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
+  <header>
+    <h2 class="entry-title">
+      <a href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark"
+         title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2017-02-18T15:43:28+09:00">
+      Sat 18 February 2017
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+    </address>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
 테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
 <p>시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 생성해둔 db를 그대로 이용하는 것도 똑똑한 선택일수 있다. 다행히 nose에서 이런 기능을 도와주는데, 방법은 환경변수 REUSE_DB의 값을 1로 설정하는 것이다.  </p>
 <div class="highlight"><pre><span></span><span class="c1"># settings.py</span>
@@ -64,46 +57,13 @@
 
 <p _="%" endcodeblock>{% codeblock "settings.py" [line_number:(false)] %}
 TEST_RUNNER = 'myapp.TestRunnser""</p>
-    </div><!-- /.entry-content -->
-
-  </article>
+  </div><!-- /.entry-content -->
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-91188832-2', 'auto');
-    ga('send', 'pageview');
-    </script>
 </body>
 </html>
