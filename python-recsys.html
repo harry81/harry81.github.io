@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8" />
+        <title>"python-recsys"</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<a href="http://github.com/harry81/">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+                <h1><a href="/">Hyunmin blog </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/python-recsys.html" rel="bookmark"
+           title="Permalink to "python-recsys"">"python-recsys"</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-02-21T16:53:36+09:00">
+                Published: Tue 21 February 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->      <p>python-recsys 따라하기<br>
+http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
+<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
+<p>```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True</p>
+<p>from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value':2, 'ids': int})</p>
+<p>k = 100
+svd.compute(k=k, min_values=10, pre_normalize=None, mean_center=True, post_normalize=True, savefile='/tmp/movielens')</p>
+<div class="highlight"><pre><span></span>역시나 책대로 되지는 않는다. 위의 7번째 라인이 약 3시간 30분을 잡아먹었는데, 결국은 아래와 같이 `MemoryError&#39; 오류를 뱉어내버리고야 말았다. 아무래도 실행머신이 고급 성능을 가지지 않은 개인용 노트북이라고 결론을 짓기로 한다.
+
+``` bash
+/home/harry/.virt_env/recommends/lib/python2.7/site-packages/divisi2/sparse.pyc in squish(self, cutoff)
+   1005                       for (val, row, col) in entries
+   1006                       if row in rows and col in cols]
+-&gt; 1007         return SparseMatrix.from_named_entries(newentries).squish()
+   1008 
+   1009     # adds compatibility with SciPy-based methods
+
+/home/harry/.virt_env/recommends/lib/python2.7/site-packages/divisi2/sparse.pyc in from_named_entries(tuples)
+    418         If possible, use ``from_named_lists``, because it&#39;s faster.
+    419         &quot;&quot;&quot;
+--&gt; 420         lists = zip(*tuples)
+    421         if not lists: return SparseMatrix((0,0))
+    422         return SparseMatrix.from_named_lists(*lists)
+
+MemoryError: 
+</pre></div>
+
+
+<p><code>python 파일로 저장된 모델을 객체로 읽어들인다
+from recsys.algorithm.factorize import SVD
+svd2 = SVD(filename='/tmp/movielens') # Loading already computed SVD model
+ITEMID1 = 1    # Toy Story (1995)
+ITEMID2 = 2355 # A bug's life (1998)
+svd2.similarity(ITEMID1, ITEMID2)</code></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

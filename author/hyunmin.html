@@ -37,7 +37,7 @@
 </footer><!-- /.post-info --><h4>Elasticbeanstalk health check</h4>
 <p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
-<p><img alt="/images/elasticbeans-health-check-0913.png" src="/images/elasticbeans-health-check-0913.png"></p>
+<p><img alt="images/elasticbeans-health-check-0913.png" src="images/elasticbeans-health-check-0913.png"></p>
 <p>https://gist.github.com/dryan/8271687</p>
 <div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
     <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
@@ -89,7 +89,273 @@ http://mattharris.org/2015/11/30/setting-aws-elasticbeanstalk-environment-wsgi-a
                 <a class="readmore" href="/datagokr.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/experience.html" rel="bookmark"
+                           title="Permalink to "Experience"">"Experience"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-09-02T15:51:22+09:00">
+                Published: Sat 02 September 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <hr>
+<ul>
+<li>
+<p>Backend developer at Modn, 2017.07</p>
+</li>
+<li>
+<p>Backend developer at Modernlab, 2017.04 ~ 2017.07</p>
+</li>
+<li>
+<p>Backend developer at Truffls, 2016.03 ~ 2016.09
+  <a href="https://truffls.de/en/">https://truffls.de/en/</a></p>
+</li>
+</ul>
+<p><img src="images/company/truffls1.jpg" width="700">
+Django admin에 신규 기능 추가후 소개, Truffls</p>
+<p><img src="images/company/truffls2.jpg" width="700"></p>
+<p>직원 기념 사진, Truffls</p>
+<ul>
+<li>QA Engineer at Delivery, 2015.06 ~ 2016.03
+  https://www.lieferheld.de/</li>
+</ul>
+<p><img src="images/company/delivery1.jpg" width="700"></p>
+<p>Tech …</p>
+                <a class="readmore" href="/experience.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/aws-cloudtrail-and-config.html" rel="bookmark"
+                           title="Permalink to "aws cloudtrail and config"">"aws cloudtrail and config"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-08-01T11:33:23+09:00">
+                Published: Tue 01 August 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <ul>
+<li>
+<p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
+</li>
+<li>
+<p>임기성 :: 2015 리인벤트 리캡 게이밍  <a href="https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim">https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim</a></p>
+</li>
+<li>
+<p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
+</li>
+</ul>
+                <a class="readmore" href="/aws-cloudtrail-and-config.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/rds-parameter-group.html" rel="bookmark"
+                           title="Permalink to "rds-parameter-group"">"rds-parameter-group"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-06-22T11:51:34+09:00">
+                Published: Thu 22 June 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <h3>문제</h3>
+<hr>
+<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
+<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
+그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
+- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
+<ul>
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul>
+                <a class="readmore" href="/rds-parameter-group.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/git-tips.html" rel="bookmark"
+                           title="Permalink to "git tips"">"git tips"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-05-16T17:12:50+09:00">
+                Published: Tue 16 May 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <ul>
+<li>특정 함수의 변경을 확인 : git log -L </li>
+<li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
+<li>버그가 발견한 commit를 추적 : git bisect</li>
+<li>commit.template</li>
+</ul>
+                <a class="readmore" href="/git-tips.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/geuleul-maeil-sseuneun-bangbeob.html" rel="bookmark"
+                           title="Permalink to "글을 매일 쓰는 방법"">"글을 매일 쓰는 방법"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-05-15T17:26:17+09:00">
+                Published: Mon 15 May 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <ul>
+<li>
+<p><a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e">25 Habits That Will Make You a Writer</a></p>
+</li>
+<li>
+<p>다문다독다상량(多聞多讀多商量, 많이 듣고 많이 읽고 많이 생각하라)
+다독다작다상량(多讀多作多商量, 많이 읽고 많이 쓰고 많이 생각하라)</p>
+</li>
+<li>
+<p>매일 글을 쓴다.
+하루를 보내며 재미있었던 일</p>
+</li>
+</ul>
+                <a class="readmore" href="/geuleul-maeil-sseuneun-bangbeob.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/awswa-cingu-doegi.html" rel="bookmark"
+                           title="Permalink to "AWS와 친구 되기"">"AWS와 친구 되기"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-05-15T17:05:34+09:00">
+                Published: Mon 15 May 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <h2>아테나 성능 튜닝 팁 - 정도현</h2>
+<p>Amazon Athena is an interactive query service that makes it easy to analyze data stored in Amazon S3 using standard SQL
+- big-data <a href="https://aws.amazon.com/ko/blogs/big-data/">https://aws.amazon.com/ko/blogs/big-data/</a>
+- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p>
+                <a class="readmore" href="/awswa-cingu-doegi.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/sodameseoyi-sijag.html" rel="bookmark"
+                           title="Permalink to "소담에서의 시작"">"소담에서의 시작"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-04-13T10:32:17+09:00">
+                Published: Thu 13 April 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <h4>소감</h4>
+<p>낯설지만 자유롭다.
+이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.</p>
+<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p>
+                <a class="readmore" href="/sodameseoyi-sijag.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/init-sodam.html" rel="bookmark"
+                           title="Permalink to "init sodam"">"init sodam"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-04-03T17:22:35+09:00">
+                Published: Mon 03 April 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <p>upgrade pip
+pip3 install -U pip </p>
+<p>가상환경
+mkvirtualenv sodam -p /usr/bin/python3 </p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+</tbody>
+</table>
+                <a class="readmore" href="/init-sodam.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
                 </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 4
+        <a href="/author/hyunmin2.html">&raquo;</a>
+</p>
                 </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">

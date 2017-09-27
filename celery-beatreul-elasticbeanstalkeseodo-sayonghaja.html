@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8" />
+        <title>"Celery beat를 Elasticbeanstalk에서도 사용하자"</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<a href="http://github.com/harry81/">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+                <h1><a href="/">Hyunmin blog </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="bookmark"
+           title="Permalink to "Celery beat를 Elasticbeanstalk에서도 사용하자"">"Celery beat를 Elasticbeanstalk에서도 사용하자"</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-02-12T17:35:05+09:00">
+                Published: Sun 12 February 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->      <ul>
+<li>
+<p _="%" endcodeblock>tip 1
+{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
+from celery.task.control import discard_all
+    discard_all()</p>
+</li>
+<li>
+<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
+{% codeblock lang:python title:"98-celery.config"  %}
+command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
+</li>
+</ul>
+<p><strong>celery beat</strong>를 실행하면 <strong>celery worker</strong>와 비슷한 task의 로그가 나타날 것으로 기대를 했다. 'Interval'과 'Crontab'으로 시간을 조정하며 결과를 확인해 보았으나 아래와 같은 기본적인 로그만이 나타났다</p>
+<div class="highlight"><pre><span></span>$ python manage.py celery beat -A main -S djcelery.schedulers.DatabaseScheduler --loglevel<span class="o">=</span>DEBUG   
+celery beat v3.1.17 <span class="o">(</span>Cipater<span class="o">)</span> is starting.
+DEBUG <span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,691 base <span class="m">29568</span> <span class="m">139948070696768</span> Configuring Raven <span class="k">for</span> host: &lt;raven.conf.remote.RemoteConfig object at 0x7f481f84af50&gt;
+__    -    ... __   -        _
+Configuration -&gt;
+    . broker -&gt; amqp://guest:**@localhost:5672//
+    . loader -&gt; celery.loaders.app.AppLoader
+    . scheduler -&gt; djcelery.schedulers.DatabaseScheduler
+
+    . logfile -&gt; <span class="o">[</span>stderr<span class="o">]</span>@%DEBUG
+    . maxinterval -&gt; now <span class="o">(</span>0s<span class="o">)</span>
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,880: DEBUG/MainProcess<span class="o">]</span> DatabaseScheduler: intial <span class="nb">read</span>
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,880: INFO/MainProcess<span class="o">]</span> Writing entries...
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,890: DEBUG/MainProcess<span class="o">]</span> DatabaseScheduler: Fetching database schedule
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,902: DEBUG/MainProcess<span class="o">]</span> Current schedule:
+&lt;ModelEntry: celery.backend_cleanup celery.backend_cleanup<span class="o">(</span>*<span class="o">[]</span>, **<span class="o">{})</span> <span class="o">{</span><span class="m">4</span><span class="o">}</span>&gt;
+&lt;ModelEntry: core.tasks.scraper_example core.tasks.scraper_example<span class="o">(</span>*<span class="o">[]</span>, **<span class="o">{})</span> <span class="o">{</span><span class="m">4</span><span class="o">}</span>&gt;
+&lt;ModelEntry: t1 core.tasks.test<span class="o">(</span>*<span class="o">[]</span>, **<span class="o">{})</span> <span class="o">{</span><span class="m">4</span><span class="o">}</span>&gt;
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,931: INFO/MainProcess<span class="o">]</span> DatabaseScheduler: Schedule changed.
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,931: INFO/MainProcess<span class="o">]</span> Writing entries...
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,931: DEBUG/MainProcess<span class="o">]</span> DatabaseScheduler: Fetching database schedule
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,936: DEBUG/MainProcess<span class="o">]</span> Current schedule:
+&lt;ModelEntry: celery.backend_cleanup celery.backend_cleanup<span class="o">(</span>*<span class="o">[]</span>, **<span class="o">{})</span> <span class="o">{</span><span class="m">4</span><span class="o">}</span>&gt;
+&lt;ModelEntry: core.tasks.scraper_example core.tasks.scraper_example<span class="o">(</span>*<span class="o">[]</span>, **<span class="o">{})</span> <span class="o">{</span><span class="m">4</span><span class="o">}</span>&gt;
+&lt;ModelEntry: t1 core.tasks.test<span class="o">(</span>*<span class="o">[]</span>, **<span class="o">{})</span> <span class="o">{</span><span class="m">4</span><span class="o">}</span>&gt;
+<span class="o">[</span><span class="m">2017</span>-02-13 <span class="m">16</span>:19:33,952: INFO/MainProcess<span class="o">]</span> Writing entries...
+</pre></div>
+
+
+<p>여러 시행착오를 거친결과 <strong>beat</strong>는 <strong>worker</strong>에게 정해진 시간만 알려주는 역할만 한다는 것을 알았다. 그리고 실제 작업은 <strong>work</strong>가 책임진다.</p>
+<blockquote>
+<p>작업 확인을 위해서는 <strong>beat</strong>와 <strong>worker</strong> 동시에 실행을 하자.</p>
+</blockquote>
+<div class="highlight"><pre><span></span>python manage.py celery worker -A main --loglevel=DEBUG
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>python manage.py celery beat -A main -S djcelery.schedulers.DatabaseScheduler --loglevel=DEBUG
+</pre></div>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

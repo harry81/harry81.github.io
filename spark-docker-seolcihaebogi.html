@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8" />
+        <title>"spark docker 설치해보기"</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<a href="http://github.com/harry81/">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+                <h1><a href="/">Hyunmin blog </a></h1>
+                <nav><ul>
+                    <li class="active"><a href="/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/spark-docker-seolcihaebogi.html" rel="bookmark"
+           title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2017-02-28T18:34:41+09:00">
+                Published: Tue 28 February 2017
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/hyunmin.html">hyunmin</a>
+        </address>
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->      <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
+<p>https://github.com/sequenceiq/docker-spark</p>
+<h3>create virtualbox</h3>
+<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
+docker-machine create -d virtualbox namenode
+docker-machine create -d virtualbox datanode1
+</pre></div>
+
+
+<h2>name node</h2>
+<p>https://github.com/sequenceiq/hadoop-docker</p>
+<div class="highlight"><pre><span></span># run docker hadoop
+docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+
+# 이미지 다운로드
+docker pull sequenceiq/hadoop-docker:2.7.1
+
+# 실행
+docker run -it -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+</pre></div>
+
+
+<h2>data node</h2>
+<div class="highlight"><pre><span></span># run docker hadoop
+docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
+
+# 이미지 다운로드
+docker pull sequenceiq/hadoop-docker:2.7.1
+
+# 실행
+docker run -it -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+</pre></div>
+
+
+<h2>spark</h2>
+<p>https://github.com/sequenceiq/docker-spark</p>
+<div class="highlight"><pre><span></span># run docker spark
+docker-machine start spark; eval &quot;$(docker-machine env spark)&quot;;
+
+#  bash
+docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -h sandbox sequenceiq/spark:1.6.0 bash
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>port</th>
+<th>components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50070</td>
+<td>HDFS NameNode</td>
+</tr>
+<tr>
+<td>50050</td>
+<td>HDFS DataNode</td>
+</tr>
+<tr>
+<td>50090</td>
+<td>HDFS Secondary NameNode</td>
+</tr>
+<tr>
+<td>8088</td>
+<td>YARN Resource Manager</td>
+</tr>
+<tr>
+<td>4042</td>
+<td>YARN Node Manager</td>
+</tr>
+<tr>
+<td>4040</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
