@@ -1,232 +1,234 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Articles in misc category - Hyunmin blog</title>
-        <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Hyunmin blog Full Atom Feed" />
-        <link href="/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="Hyunmin blog Categories Atom Feed" />
-    </head>
-
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class=""><a href="">Home</a></li>
-                    <li class="active"><a href="/archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href="">Hyunmin blog</a></h3>
-				<h2 class="text-muted"></h2>
-             </div>
-<section id="content" class="content">
-<h2>Articles in the misc category</h2>
-
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/build-a-chat-app-with-django.html" rel="bookmark" title="Permalink to "build a chat app with django"">"build a chat app with django"</a></h2> </header>
-                <div class="entry-content"> <h2>기능 요구사항</h2>
-<ul>
-<li>
-<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
-  http://rocketchat.healworld.co.kr/</p>
-</li>
-<li>
-<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
-링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
-https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
-</li>
-<li>
-<p>대화 …</p></li></ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/index-gs-shop.html" rel="bookmark" title="Permalink to "index gs shop"">"index gs shop"</a></h2> </header>
-                <div class="entry-content"> <h3>도전</h3>
-<ul>
-<li>GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성</li>
-<li>관련 기술
-  <code>Elasticsearch 플러그인</code>, <code>형태소 분석기</code>, <code>Thrift 서버</code>, <code>HAProxy</code></li>
-<li>형태소 분석이 필요한 이유?<br>
-  한국어 분석을 지원하지 않는다. 예를 들어 "아버지가 방에 들어간다"라는 한국어 문장을 인덱스해도 "아버지"로는 검색이 안 되고, 반드시 "아버지가"로 검색해야만 결과에 출력된다.</li>
-<li>형태소 분석기 - 은전 한  잎 …</li></ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/senior-work.html" rel="bookmark" title="Permalink to "senior work"">"senior work"</a></h2> </header>
-                <div class="entry-content"> <h3>참고 사이트</h3>
-<ul>
-<li>구미 노일 일자리 창출센터 http://www.gumisilver.or.kr/job/job_psn.asp</li>
-<li></li>
-</ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/get-title-data-api.html" rel="bookmark" title="Permalink to "get title data api"">"get title data api"</a></h2> </header>
-                <div class="entry-content"> <h3>기본 matplotlib 이용하여 데이타 출력</h3>
-<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-
-<span class="c1"># 한글 폰트 깨짐 방지</span>
-<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
-
-<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/uhopper-hadoop-docker.html" rel="bookmark" title="Permalink to "uhopper-hadoop-docker"">"uhopper-hadoop-docker"</a></h2> </header>
-                <div class="entry-content"> <h3>docker-compose 를 이용해서</h3>
-<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
-<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
-
-docker network create hadoop
-docker network create kafka
-docker volume create --name=hadoop_datanode1
-docker volume create --name=hadoop_datanode2
-docker volume create --name=hadoop_historyserver
-docker volume create --name=hadoop_namenode
-docker-compose up
-</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/spark-docker-seolcihaebogi.html" rel="bookmark" title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h2> </header>
-                <div class="entry-content"> <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
-
-
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# 이미지 다운로드
-docker pull …</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/python-recsys.html" rel="bookmark" title="Permalink to "python-recsys"">"python-recsys"</a></h2> </header>
-                <div class="entry-content"> <p>python-recsys 따라하기<br>
-http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
-<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
-<p>```python 사용자의 입력 모델화 하여 파일로 저장
-import recsys.algorithm
-recsys.algorithm.VERBOSE = True</p>
-<p>from recsys.algorithm.factorize import SVD
-svd = SVD()
-svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/movies.html" rel="bookmark" title="Permalink to "movies"">"movies"</a></h2> </header>
-                <div class="entry-content"> <table>
-<thead>
-<tr>
-<th>날짜</th>
-<th>제목</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2017.2.19</td>
-<td>글래디에이터: 로마 영웅 탄생의 필수 가이드 비밀</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>misc — Hyunmin blog</title>
+	<meta name="description" content="All posts which refer to category misc">
+	<meta name="author" content="hyunmin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="/theme/html5.js"></script>
+		<![endif]-->
+	<link href="/theme/css/ipython.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
+	<link href="/theme/css/local.css" rel="stylesheet">
+	<link href="/theme/css/pygments.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1><a href="/">Hyunmin blog</a>
+			<br>	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+<h1>Category <small>misc</small></h1>
+<table class="table">
+    <tbody>
+        <tr>
+        <td>13 Sep 2017</td>
+        <td><a href='/elasticbeans-talk.html'>"Elasticbeans talk"</a></td>
+        </tr>
+        <tr>
+        <td>03 Sep 2017</td>
+        <td><a href='/datagokr.html'>"data.go.kr"</a></td>
+        </tr>
+        <tr>
+        <td>02 Sep 2017</td>
+        <td><a href='/experience.html'>"Experience"</a></td>
+        </tr>
+        <tr>
+        <td>01 Aug 2017</td>
+        <td><a href='/aws-cloudtrail-and-config.html'>"aws cloudtrail and config"</a></td>
+        </tr>
+        <tr>
+        <td>22 Jun 2017</td>
+        <td><a href='/rds-parameter-group.html'>"rds-parameter-group"</a></td>
+        </tr>
+        <tr>
+        <td>16 May 2017</td>
+        <td><a href='/git-tips.html'>"git tips"</a></td>
+        </tr>
+        <tr>
+        <td>15 May 2017</td>
+        <td><a href='/geuleul-maeil-sseuneun-bangbeob.html'>"글을 매일 쓰는 방법"</a></td>
+        </tr>
+        <tr>
+        <td>15 May 2017</td>
+        <td><a href='/awswa-cingu-doegi.html'>"AWS와 친구 되기"</a></td>
+        </tr>
+        <tr>
+        <td>13 Apr 2017</td>
+        <td><a href='/sodameseoyi-sijag.html'>"소담에서의 시작"</a></td>
+        </tr>
+        <tr>
+        <td>03 Apr 2017</td>
+        <td><a href='/init-sodam.html'>"init sodam"</a></td>
+        </tr>
+        <tr>
+        <td>13 Mar 2017</td>
+        <td><a href='/build-a-chat-app-with-django.html'>"build a chat app with django"</a></td>
+        </tr>
+        <tr>
+        <td>09 Mar 2017</td>
+        <td><a href='/index-gs-shop.html'>"index gs shop"</a></td>
+        </tr>
+        <tr>
+        <td>06 Mar 2017</td>
+        <td><a href='/senior-work.html'>"senior work"</a></td>
+        </tr>
+        <tr>
+        <td>04 Mar 2017</td>
+        <td><a href='/get-title-data-api.html'>"get title data api"</a></td>
+        </tr>
+        <tr>
+        <td>02 Mar 2017</td>
+        <td><a href='/uhopper-hadoop-docker.html'>"uhopper-hadoop-docker"</a></td>
+        </tr>
+        <tr>
+        <td>28 Feb 2017</td>
+        <td><a href='/spark-docker-seolcihaebogi.html'>"spark docker 설치해보기"</a></td>
+        </tr>
+        <tr>
+        <td>21 Feb 2017</td>
+        <td><a href='/python-recsys.html'>"python-recsys"</a></td>
+        </tr>
+        <tr>
+        <td>21 Feb 2017</td>
+        <td><a href='/movies.html'>"movies"</a></td>
+        </tr>
+        <tr>
+        <td>20 Feb 2017</td>
+        <td><a href='/emacseseo-pailmyeong-byeongyeonghagi.html'>"emacs에서 파일명 변경하기"</a></td>
+        </tr>
+        <tr>
+        <td>18 Feb 2017</td>
+        <td><a href='/hadoop-docker.html'>"hadoop-docker"</a></td>
+        </tr>
+        <tr>
+        <td>18 Feb 2017</td>
+        <td><a href='/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html'>"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></td>
+        </tr>
+        <tr>
+        <td>14 Feb 2017</td>
+        <td><a href='/jisig-canggo.html'>"지식 창고"</a></td>
+        </tr>
+        <tr>
+        <td>13 Feb 2017</td>
+        <td><a href='/dockerreul-iyonghan-hadoop.html'>"docker를 이용한 hadoop"</a></td>
+        </tr>
+        <tr>
+        <td>13 Feb 2017</td>
+        <td><a href='/octopress-temareul-byeongyeonghaja.html'>"Octopress 테마를 변경하자"</a></td>
+        </tr>
+        <tr>
+        <td>12 Feb 2017</td>
+        <td><a href='/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html'>"Celery beat를 Elasticbeanstalk에서도 사용하자"</a></td>
+        </tr>
+        <tr>
+        <td>12 Feb 2017</td>
+        <td><a href='/daegu-gaebalja-moim-hadub.html'>"대구 개발자 모임-하둡"</a></td>
+        </tr>
+        <tr>
+        <td>12 Feb 2017</td>
+        <td><a href='/hilweoldeu-gineungjeongri.html'>"힐월드 기능정리"</a></td>
+        </tr>
+        <tr>
+        <td>05 Feb 2017</td>
+        <td><a href='/aidieo-canggo.html'>"아이디어 창고"</a></td>
+        </tr>
+        <tr>
+        <td>21 Jan 2017</td>
+        <td><a href='/healworld-bangmun-geuraepeu.html'>"healworld 방문 그래프"</a></td>
+        </tr>
+        <tr>
+        <td>28 Jun 2015</td>
+        <td><a href='/mp4-mp3.html'>"mp4-mp3"</a></td>
+        </tr>
+        <tr>
+        <td>18 Jan 2015</td>
+        <td><a href='/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html'>"touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기"</a></td>
+        </tr>
+    </tbody>
 </table>
-<hr>
-<h3>예정</h3>
-<table>
-<thead>
-<tr>
-<th>분야</th>
-<th>제목</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>경제</td>
-<td>인사이드잡</td>
-</tr>
-<tr>
-<td>경제</td>
-<td>마진콜</td>
-</tr>
-<tr>
-<td>역사</td>
-<td>인생은 아름다워(La Vita E Bella, Life Is Beautiful 1997)</td>
-</tr>
-<tr>
-<td>역사</td>
-<td>프랑스 혁명</td>
-</tr>
-<tr>
-<td>SF</td>
-<td>스타워즈</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/emacseseo-pailmyeong-byeongyeonghagi.html" rel="bookmark" title="Permalink to "emacs에서 파일명 변경하기"">"emacs에서 파일명 변경하기"</a></h2> </header>
-                <div class="entry-content"> <p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
-<p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/hadoop-docker.html" rel="bookmark" title="Permalink to "hadoop-docker"">"hadoop-docker"</a></h2> </header>
-                <div class="entry-content"> <p>가상머신 3개를 준비하자.</p>
-<div class="highlight"><pre><span></span># Namenode 192.168.99.101
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# Datanode1 192.168.99.102
-docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
-
-# Datanode2 192.168.99.103
-docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
-</pre></div>
-
-
-<div class="highlight"><pre><span></span>...
-namenode 192.168.99.101
-datanode1 192.168.99.102
-datanode2 …</pre></div> </div><!-- entry-content -->
-        </article>
-<div class="pager">
-      <ul>
-						<li class="previous"><a href="/category/misc.html">← Previous</a></li>
-						<li class="next"><a href="/category/misc3.html">Next →</a></li>
-      </ul>
-    </div>
-</section><!-- content -->
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="/feeds/all.atom.xml">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href="">Hyunmin blog</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
+		</div>
+	</div> 	<!-- <hr> -->
+</div> <!-- /container -->
+<footer class="aw-footer bg-danger">
+	<div class="container"> <!-- footer -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>Navigation</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="">Hyunmin blog</a></li>
+							<li><a href="/feeds/all.atom.xml" type="application/atom+xml"><i class="fa fa-rss "></i> atom</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Author</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="#">You can add links in your config file</a></li>
+							<li><a href="#">Another social link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Categories</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="/category/misc.html">misc (31)</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Links</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="http://getpelican.com/">Pelican</a></li>
+							<li><a href="http://python.org/">Python.org</a></li>
+							<li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+							<li><a href="#">You can modify those links in your config file</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center center-block aw-bottom">
+			<p>&copy; hyunmin 2016</p>
+			<p>Powered by Pelican</p>
+		</div>
+	</div>
+</div>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+jQuery(document).ready(function($) {
+	$("div.collapseheader").click(function () {
+		$header = $(this).children("span").first();
+		$codearea = $(this).children(".input_area");
+		$codearea.slideToggle(500, function () {
+			$header.text(function () {
+				return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+			});
+		});
+	});
+});
 </script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-91188832-2");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-    </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91188832-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<a href="http://github.com/harry81/"><img style="position: absolute; top: 40px; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
+</body>
 </html>
