@@ -4,24 +4,25 @@
         <title>물개발자</title>
         <meta charset="utf-8" />
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="./theme/static/css/style.css" rel="stylesheet" />
+        <link href="/theme/static/css/style.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
     </head>
 
     <body id="index" class="archive">
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href=".">Home</a></li>
-                    <li><a href="./archives.html">Archives</a></li>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="/archives.html">Archives</a></li>
                 </ul>
-                <h3 class="text-muted"><a href=".">물개발자</a></h3>
+                <h3 class="text-muted"><a href="">물개발자</a></h3>
 				<h2 class="text-muted"></h2>
              </div>
 <section id="content" class="content">
 
         <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./elasticbeans-talk2.html" rel="bookmark" title="Permalink to Elasticbeans talk2">Elasticbeans talk2</a></h2> </header>
+                <header> <h2 class="entry-title"><a href="/elasticbeans-talk.html" rel="bookmark" title="Permalink to Elasticbeans talk">Elasticbeans talk</a></h2> </header>
                 <div class="entry-content"> <h4>Elasticbeanstalk health check</h4>
 <p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
@@ -32,7 +33,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
     <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div> </div><!-- entry-content -->
         </article>
         <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./datagokr.html" rel="bookmark" title="Permalink to "data.go.kr"">"data.go.kr"</a></h2> </header>
+                <header> <h2 class="entry-title"><a href="/datagokr.html" rel="bookmark" title="Permalink to "data.go.kr"">"data.go.kr"</a></h2> </header>
                 <div class="entry-content"> <hr>
 <ul>
 <li>단독/다가구 전월세 지수 변화, 2004~2016 <a href="https://s3.ap-northeast-2.amazonaws.com/hmapps/data/home_loan_201708_900x500.html">link</a></li>
@@ -43,7 +44,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 </ul> </div><!-- entry-content -->
         </article>
         <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./experience.html" rel="bookmark" title="Permalink to "Experience"">"Experience"</a></h2> </header>
+                <header> <h2 class="entry-title"><a href="/experience.html" rel="bookmark" title="Permalink to "Experience"">"Experience"</a></h2> </header>
                 <div class="entry-content"> <hr>
 <ul>
 <li>
@@ -69,7 +70,7 @@ Django admin에 신규 기능 추가후 소개, Truffls</p>
 <p>Tech …</p> </div><!-- entry-content -->
         </article>
         <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./aws-cloudtrail-and-config.html" rel="bookmark" title="Permalink to "aws cloudtrail and config"">"aws cloudtrail and config"</a></h2> </header>
+                <header> <h2 class="entry-title"><a href="/aws-cloudtrail-and-config.html" rel="bookmark" title="Permalink to "aws cloudtrail and config"">"aws cloudtrail and config"</a></h2> </header>
                 <div class="entry-content"> <ul>
 <li>
 <p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
@@ -83,7 +84,7 @@ Django admin에 신규 기능 추가후 소개, Truffls</p>
 </ul> </div><!-- entry-content -->
         </article>
         <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./rds-parameter-group.html" rel="bookmark" title="Permalink to "rds-parameter-group"">"rds-parameter-group"</a></h2> </header>
+                <header> <h2 class="entry-title"><a href="/rds-parameter-group.html" rel="bookmark" title="Permalink to "rds-parameter-group"">"rds-parameter-group"</a></h2> </header>
                 <div class="entry-content"> <h3>문제</h3>
 <hr>
 <p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
@@ -96,18 +97,27 @@ Django admin에 신규 기능 추가후 소개, Truffls</p>
 <div class="pager">
       <ul>
                         <li class="previous disabled"><a>← Previous</a></li>
-						<li class="next"><a href="./index2.html">Next →</a></li>
+						<li class="next"><a href="/index2.html">Next →</a></li>
       </ul>
     </div>
 </section><!-- content -->
             <footer id="contentinfo" class="footer">
                     <nav class="pull-right bottom-nav">
-                        <a href="https://harry81.github.io/None">RSS</a>
+                        <a href="/feeds/all.atom.xml">RSS</a>
                     </nav>
                     <address id="about" class="vcard body">
-                    &copy; <a href=".">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
+                    &copy; <a href="">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
                     </address><!-- /#about -->
             </footer><!-- /#contentinfo -->
         </div><!-- container -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-91188832-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
     </body>
 </html>
