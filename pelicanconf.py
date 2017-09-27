@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'hyunmin'
-SITENAME = 'Hyunmin blog'
-SITEURL = ''
+SITENAME = '물개발자'
+SITEURL = 'https://harry81.github.io'
 
 PATH = 'content'
 
@@ -35,5 +35,12 @@ DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['images', 'pdfs']
 GOOGLE_ANALYTICS = 'UA-91188832-2'
 
+THEME = "/home/harry/pelican-themes/simple-bootstrap"
+THEME = "/home/harry/pelican-themes/apricot"
+THEME = "/home/harry/pelican-themes/attila"
+THEME = "/home/harry/pelican-themes/bootstrap"
+THEME = "/home/harry/pelican-themes/foundation-default-colours"
+
+
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True

@@ -10,7 +10,7 @@ categories: elasticbeanstalk
 EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.
 
-![images/elasticbeans-health-check-0913.png](images/elasticbeans-health-check-0913.png)
+<img src="images/elasticbeans-health-check-0913.png">
 
 https://gist.github.com/dryan/8271687
 
