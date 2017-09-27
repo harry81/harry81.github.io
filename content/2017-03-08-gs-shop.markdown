@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "index gs shop"
+title: index gs shop
 date: 2017-03-09 16:05:52 +0900
 comments: true
 categories: elasticsearch plugin "형태소 분석기"

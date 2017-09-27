@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Celery beat를 Elasticbeanstalk에서도 사용하자"
+title: Celery beat를 Elasticbeanstalk에서도 사용하자
 date: 2017-02-12 17:35:05 +0900
 comments: true
 categories: celery beat elasticbeanstalk aws

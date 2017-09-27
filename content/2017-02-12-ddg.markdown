@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "대구 개발자 모임-하둡"
+title: 대구 개발자 모임-하둡
 date: 2017-02-12 16:43:48 +0900
 comments: true
 categories: hadoop ddg

@@ -10,7 +10,7 @@ PATH = 'content'
 
 TIMEZONE = 'Asia/Seoul'
 
-DEFAULT_LANG = 'ko'
+DEFAULT_LANG = 'en'
 
 GITHUB_URL = 'http://github.com/harry81/'
 
@@ -31,16 +31,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 STATIC_PATHS = ['images', 'pdfs']
-GOOGLE_ANALYTICS = 'UA-91188832-2'
 
 THEME = "/home/harry/pelican-themes/simple-bootstrap"
-THEME = "/home/harry/pelican-themes/apricot"
-THEME = "/home/harry/pelican-themes/attila"
-THEME = "/home/harry/pelican-themes/bootstrap"
-THEME = "/home/harry/pelican-themes/foundation-default-colours"
-
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

@@ -18,26 +18,25 @@ categories:
 * Backend developer at Truffls, 2016.03 ~ 2016.09
   [https://truffls.de/en/](https://truffls.de/en/)
 
-<img src="images/company/truffls1.jpg">
-
+<img src="images/company/truffls1.jpg" style="max-width:700px">
 Django admin에 신규 기능 추가후 소개, Truffls
 
-<img src="images/company/truffls2.jpg">
+<img src="images/company/truffls2.jpg" style="max-width:700px">
 
 직원 기념 사진, Truffls
 
 * QA Engineer at Delivery, 2015.06 ~ 2016.03
   https://www.lieferheld.de/
 
-<img src="images/company/delivery1.jpg">
+<img src="images/company/delivery1.jpg" style="max-width:700px">
 
 Tech Friday, 매주 금요일 오후에 각 부서의 기술 공유시간, [Delivery Hero](https://www.lieferheld.de/)
 
-  <img src="images/company/delivery2.jpg">
+  <img src="images/company/delivery2.jpg" style="max-width:700px">
 
 날이 너무 좋아서 야외 Sprint meeting, Delivery Hero
 
-  <img src="images/company/delivery3.jpg">
+  <img src="images/company/delivery3.jpg" style="max-width:700px">
 
 유럽 구경 [Leipzig, Germany](https://www.google.co.kr/maps/@51.505779,12.6114361,9z?hl=en)
 
@@ -45,16 +44,16 @@ Tech Friday, 매주 금요일 오후에 각 부서의 기술 공유시간, [Deli
 * Backend python developer at Yogiyo, 2013.03 ~ 2015.06
   https://www.yogiyo.co.kr/mobile/
 
-<img src="images/company/yogiyo1.jpg">
+<img src="images/company/yogiyo1.jpg" style="max-width:700px">
 
 주간 모임, Yogiyo
-<img src="images/company/yogiyo2.jpg">
+<img src="images/company/yogiyo2.jpg" style="max-width:700px">
 개발팀 발표(Den), Yogiyo
 
-<img src="images/company/yogiyo4.jpg">
+<img src="images/company/yogiyo4.jpg" style="max-width:700px">
 Agile 교육 시간, Yogiyo
 
-<img src="images/company/yogiyo5.jpg">
+<img src="images/company/yogiyo5.jpg" style="max-width:700px">
 
 동료들과 봄나들이, Yogiyo
 
