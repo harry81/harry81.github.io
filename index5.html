@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>물개발자</title>
+        <meta charset="utf-8" />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./theme/static/css/style.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    </head>
+
+    <body id="index" class="archive">
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a href=".">Home</a></li>
+                    <li><a href="./archives.html">Archives</a></li>
+                </ul>
+                <h3 class="text-muted"><a href=".">물개발자</a></h3>
+				<h2 class="text-muted"></h2>
+             </div>
+<section id="content" class="content">
+
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="./celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark" title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h2> </header>
+                <div class="entry-content"> <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
+테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
+<p>시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …</p> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="./jisig-canggo.html" rel="bookmark" title="Permalink to "지식 창고"">"지식 창고"</a></h2> </header>
+                <div class="entry-content"> <table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017.2.</td>
+<td>글 쓸 줄 아는 사람이 되라 : 호모 스크리벤스</td>
+</tr>
+<tr>
+<td>2017.2 .28</td>
+<td>(만화) 뉴턴 프린키피아. 27</td>
+</tr>
+<tr>
+<td>2017.2.23</td>
+<td>승려와 수수께끼</td>
+</tr>
+<tr>
+<td>2017.2</td>
+<td>파이썬 머신러닝 :최신 예측 분석 기반으로 깊은 통찰력을 얻는 머신러닝 필수 가이드</td>
+</tr>
+<tr>
+<td>2017.2.22</td>
+<td>나의 고전 읽기 : 우리 시대 최고의 지성10인이 말하는 나의 …</td></tr></tbody></table> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="./dockerreul-iyonghan-hadoop.html" rel="bookmark" title="Permalink to docker를 이용한 hadoop">docker를 이용한 hadoop</a></h2> </header>
+                <div class="entry-content"> <h2>categories: hadoop docker</h2>
+<h3>동기</h3>
+<ul>
+<li>하둡의 병렬처리 특성을 확인하기 위해서는 2대 이상의 물리적인 컴퓨터가 필요하다</li>
+<li>실제로 물리적인 컴퓨터를 마련하기 위해서는 비용이 필요하다</li>
+<li>docker를 이용하면 가상의 운영체제를 가볍게 실행할수 있다는 얘기를 들어왔고, hadoop를 테스트하기에 적당하다고 판단하여 시도함</li>
+</ul>
+<h3>하둡 docker 이미지를 받자</h3>
+<p><a href="https://github.com/sequenceiq/hadoop-docker">Apache Hadoop 2.7.1 Docker image</a></p>
+<h3>하둡 실행하기</h3>
+<p><code>docker run …</code></p> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="./octopress-temareul-byeongyeonghaja.html" rel="bookmark" title="Permalink to "Octopress 테마를 변경하자"">"Octopress 테마를 변경하자"</a></h2> </header>
+                <div class="entry-content"> <p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
+<div class="highlight"><pre><span></span>cd octopress
+git submodule add GIT_URL .themes/THEME_NAME
+rake install\[&#39;THEME_NAME&#39;\]
+rake generate
+</pre></div> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="./celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="bookmark" title="Permalink to Celery beat를 Elasticbeanstalk에서도 사용하자">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h2> </header>
+                <div class="entry-content"> <ul>
+<li>
+<p _="%" endcodeblock>tip 1
+{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
+from celery.task.control import discard_all
+    discard_all()</p>
+</li>
+<li>
+<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
+{% codeblock lang:python title:"98-celery.config"  %}
+command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
+</li>
+</ul>
+<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p> </div><!-- entry-content -->
+        </article>
+<div class="pager">
+      <ul>
+						<li class="previous"><a href="./index4.html">← Previous</a></li>
+						<li class="next"><a href="./index6.html">Next →</a></li>
+      </ul>
+    </div>
+</section><!-- content -->
+            <footer id="contentinfo" class="footer">
+                    <nav class="pull-right bottom-nav">
+                        <a href="https://harry81.github.io/None">RSS</a>
+                    </nav>
+                    <address id="about" class="vcard body">
+                    &copy; <a href=".">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
+                    </address><!-- /#about -->
+            </footer><!-- /#contentinfo -->
+        </div><!-- container -->
+    </body>
+</html>
