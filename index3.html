@@ -22,6 +22,26 @@
 <section id="content" class="content">
 
         <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/rds-parameter-group.html" rel="bookmark" title="Permalink to "rds-parameter-group"">"rds-parameter-group"</a></h2> </header>
+                <div class="entry-content"> <h3>문제</h3>
+<hr>
+<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
+<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
+그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
+- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
+<ul>
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/git-tips.html" rel="bookmark" title="Permalink to "git tips"">"git tips"</a></h2> </header>
+                <div class="entry-content"> <ul>
+<li>특정 함수의 변경을 확인 : git log -L </li>
+<li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
+<li>버그가 발견한 commit를 추적 : git bisect</li>
+<li>commit.template</li>
+</ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/geuleul-maeil-sseuneun-bangbeob.html" rel="bookmark" title="Permalink to "글을 매일 쓰는 방법"">"글을 매일 쓰는 방법"</a></h2> </header>
                 <div class="entry-content"> <ul>
 <li>
@@ -50,50 +70,6 @@
 <p>낯설지만 자유롭다.
 이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.</p>
 <p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/init-sodam.html" rel="bookmark" title="Permalink to "init sodam"">"init sodam"</a></h2> </header>
-                <div class="entry-content"> <p>upgrade pip
-pip3 install -U pip </p>
-<p>가상환경
-mkvirtualenv sodam -p /usr/bin/python3 </p>
-<table>
-<thead>
-<tr>
-<th>Tables</th>
-<th align="center">Are</th>
-<th align="right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td align="center">right-aligned</td>
-<td align="right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td align="center">centered</td>
-<td align="right">$12</td>
-</tr>
-</tbody>
-</table> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/build-a-chat-app-with-django.html" rel="bookmark" title="Permalink to "build a chat app with django"">"build a chat app with django"</a></h2> </header>
-                <div class="entry-content"> <h2>기능 요구사항</h2>
-<ul>
-<li>
-<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
-  http://rocketchat.healworld.co.kr/</p>
-</li>
-<li>
-<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
-링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
-https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
-</li>
-<li>
-<p>대화 …</p></li></ul> </div><!-- entry-content -->
         </article>
 <div class="pager">
       <ul>

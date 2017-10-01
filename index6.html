@@ -22,6 +22,31 @@
 <section id="content" class="content">
 
         <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/hadoop-docker.html" rel="bookmark" title="Permalink to "hadoop-docker"">"hadoop-docker"</a></h2> </header>
+                <div class="entry-content"> <p>가상머신 3개를 준비하자.</p>
+<div class="highlight"><pre><span></span># Namenode 192.168.99.101
+docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+
+# Datanode1 192.168.99.102
+docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
+
+# Datanode2 192.168.99.103
+docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>...
+namenode 192.168.99.101
+datanode1 192.168.99.102
+datanode2 …</pre></div> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark" title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h2> </header>
+                <div class="entry-content"> <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
+테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
+<p>시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …</p> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/jisig-canggo.html" rel="bookmark" title="Permalink to 지식 창고">지식 창고</a></h2> </header>
                 <div class="entry-content"> <h2>예정</h2>
 <table>
@@ -71,14 +96,14 @@
 <td></td>
 </tr>
 <tr>
-<td>2017.2</td>
-<td>마지막 한 걸음은 혼자서 가야 한다 :정진홍의 900킬로미터</td>
-<td></td>
+<td>2017.</td>
+<td>관점 디자이너</td>
+<td>박용후</td>
 <td></td>
 </tr>
 <tr>
-<td>2017.3</td>
-<td>(만화) 비트겐슈타인 …</td></tr></tbody></table> </div><!-- entry-content -->
+<td>2017.2</td>
+<td>마지막 한 걸음은 혼자서 가야 한다 :정진홍의 900킬로미터 …</td></tr></tbody></table> </div><!-- entry-content -->
         </article>
         <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/dockerreul-iyonghan-hadoop.html" rel="bookmark" title="Permalink to docker를 이용한 hadoop">docker를 이용한 hadoop</a></h2> </header>
@@ -102,38 +127,6 @@ git submodule add GIT_URL .themes/THEME_NAME
 rake install\[&#39;THEME_NAME&#39;\]
 rake generate
 </pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="bookmark" title="Permalink to Celery beat를 Elasticbeanstalk에서도 사용하자">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h2> </header>
-                <div class="entry-content"> <ul>
-<li>
-<p _="%" endcodeblock>tip 1
-{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
-from celery.task.control import discard_all
-    discard_all()</p>
-</li>
-<li>
-<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
-{% codeblock lang:python title:"98-celery.config"  %}
-command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
-</li>
-</ul>
-<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/daegu-gaebalja-moim-hadub.html" rel="bookmark" title="Permalink to 대구 개발자 모임-하둡">대구 개발자 모임-하둡</a></h2> </header>
-                <div class="entry-content"> <h2>모임</h2>
-<ul>
-<li>장소 : 아이원 유학스터디룸</li>
-<li>일자 : 2017년 2월 11</li>
-<li>slack : https://daegugroup.slack.com/</li>
-</ul>
-<h2>느낀 점</h2>
-<ul>
-<li>고향 근처에서 개발에 관심있으신 분들과 만날 수 있어 기쁘다.</li>
-<li>하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.</li>
-<li>옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.<br>
-<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525">쉽고 빠르게 배우는 Angular …</a></li></ul> </div><!-- entry-content -->
         </article>
 <div class="pager">
       <ul>

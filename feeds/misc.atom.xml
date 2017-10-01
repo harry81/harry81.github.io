@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - misc</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2017-09-29T11:51:34+09:00</updated><entry><title>면접자로서 면접시에 물어보고 싶은 질문들</title><link href="/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html" rel="alternate"></link><published>2017-09-29T11:51:34+09:00</published><updated>2017-09-29T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-29:/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html</id><summary type="html">&lt;h4&gt;대략적인 질문&lt;/h4&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - misc</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2017-10-01T20:49:00+09:00</updated><entry><title>믿지말라 그리고 질문하라</title><link href="/%EA%B0%81%20%EC%8B%9C%EB%8C%80%EB%B3%84%20%EC%9D%B8%EA%B8%B0%20%EC%A7%81%EC%97%85.html" rel="alternate"></link><published>2017-10-01T20:49:00+09:00</published><updated>2017-10-01T20:49:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-01:/각 시대별 인기 직업.html</id><summary type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x2QMiLa160w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;송길영 다음소프트 부사장&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://news.mk.co.kr/newsRead.php?no=64969&amp;amp;year=2011"&gt;각 시대별 인기 직업&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;무엇을 포기해야 하는가?&lt;/p&gt;
+&lt;p&gt;지식의 유효기간
+관심의 유효기간&lt;/p&gt;
+&lt;p&gt;믿지말라 그리고 질문하라&lt;/p&gt;
+</summary><content type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x2QMiLa160w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;송길영 다음소프트 부사장&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://news.mk.co.kr/newsRead.php?no=64969&amp;amp;year=2011"&gt;각 시대별 인기 직업&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;무엇을 포기해야 하는가?&lt;/p&gt;
+&lt;p&gt;지식의 유효기간
+관심의 유효기간&lt;/p&gt;
+&lt;p&gt;믿지말라 그리고 질문하라&lt;/p&gt;
+</content><category term="sebasi"></category></entry><entry><title>thought</title><link href="/thought.html" rel="alternate"></link><published>2017-10-01T20:37:00+09:00</published><updated>2017-10-01T20:37:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-01:/thought.html</id><summary type="html"></summary><content type="html"></content><category term="daily thought"></category><category term="feature"></category><category term="세바시"></category></entry><entry><title>면접자로서 면접시에 물어보고 싶은 질문들</title><link href="/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html" rel="alternate"></link><published>2017-09-29T11:51:34+09:00</published><updated>2017-09-29T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-29:/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html</id><summary type="html">&lt;h4&gt;대략적인 질문&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;개발 방법론(scrum?)&lt;/li&gt;
 &lt;li&gt;업무 시간, 출퇴근 시간&lt;/li&gt;
@@ -1366,14 +1378,14 @@ TEST_RUNNER = 'myapp.TestRunnser""&lt;/p&gt;</content></entry><entry><title>지�
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2017.2&lt;/td&gt;
-&lt;td&gt;마지막 한 걸음은 혼자서 가야 한다 :정진홍의 900킬로미터&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;2017.&lt;/td&gt;
+&lt;td&gt;관점 디자이너&lt;/td&gt;
+&lt;td&gt;박용후&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;2017.3&lt;/td&gt;
-&lt;td&gt;(만화) 비트겐슈타인 …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;h2&gt;예정&lt;/h2&gt;
+&lt;td&gt;2017.2&lt;/td&gt;
+&lt;td&gt;마지막 한 걸음은 혼자서 가야 한다 :정진홍의 900킬로미터 …&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</summary><content type="html">&lt;h2&gt;예정&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1418,6 +1430,12 @@ TEST_RUNNER = 'myapp.TestRunnser""&lt;/p&gt;</content></entry><entry><title>지�
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788996634218"&gt;경제기사의 바다에 빠져라&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;최진기&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2017.&lt;/td&gt;
+&lt;td&gt;관점 디자이너&lt;/td&gt;
+&lt;td&gt;박용후&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
