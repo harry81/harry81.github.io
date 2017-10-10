@@ -24,6 +24,50 @@
 <h2>Articles in the misc category</h2>
 
         <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/init-sodam.html" rel="bookmark" title="Permalink to "init sodam"">"init sodam"</a></h2> </header>
+                <div class="entry-content"> <p>upgrade pip
+pip3 install -U pip </p>
+<p>가상환경
+mkvirtualenv sodam -p /usr/bin/python3 </p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+</tbody>
+</table> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/build-a-chat-app-with-django.html" rel="bookmark" title="Permalink to "build a chat app with django"">"build a chat app with django"</a></h2> </header>
+                <div class="entry-content"> <h2>기능 요구사항</h2>
+<ul>
+<li>
+<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
+  http://rocketchat.healworld.co.kr/</p>
+</li>
+<li>
+<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
+링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
+https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
+</li>
+<li>
+<p>대화 …</p></li></ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/index-gs-shop.html" rel="bookmark" title="Permalink to index gs shop">index gs shop</a></h2> </header>
                 <div class="entry-content"> <h3>도전</h3>
 <ul>
@@ -59,40 +103,6 @@
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
 
 <span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/uhopper-hadoop-docker.html" rel="bookmark" title="Permalink to "uhopper-hadoop-docker"">"uhopper-hadoop-docker"</a></h2> </header>
-                <div class="entry-content"> <h3>docker-compose 를 이용해서</h3>
-<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
-<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
-
-docker network create hadoop
-docker network create kafka
-docker volume create --name=hadoop_datanode1
-docker volume create --name=hadoop_datanode2
-docker volume create --name=hadoop_historyserver
-docker volume create --name=hadoop_namenode
-docker-compose up
-</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/spark-docker-seolcihaebogi.html" rel="bookmark" title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h2> </header>
-                <div class="entry-content"> <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
-
-
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# 이미지 다운로드
-docker pull …</pre></div> </div><!-- entry-content -->
         </article>
 <div class="pager">
       <ul>

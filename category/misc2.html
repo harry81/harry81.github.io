@@ -24,6 +24,38 @@
 <h2>Articles in the misc category</h2>
 
         <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/rst_sample33.html" rel="bookmark" title="Permalink to rst_sample">rst_sample</a></h2> </header>
+                <div class="entry-content"> <p>#Post goes here234</p>
+<ul class="simple">
+<li>A bullet list item</li>
+<li>Second item<ul>
+<li>A sub item</li>
+</ul>
+</li>
+<li>Spacing between items creates separate lists</li>
+<li>Third item</li>
+</ul>
+<ol class="arabic">
+<li><p class="first">An enumerated list item</p>
+</li>
+<li><p class="first">Second item</p>
+<ol class="loweralpha">
+<li><p class="first">Sub item that goes on at length and thus needs
+to be wrapped. Note the indentation that must
+match the beginning of the text …</p></li></ol></li></ol> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/elasticbeans-talk.html" rel="bookmark" title="Permalink to Elasticbeans talk">Elasticbeans talk</a></h2> </header>
+                <div class="entry-content"> <h4>Elasticbeanstalk health check</h4>
+<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
+Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
+<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
+<p>https://gist.github.com/dryan/8271687</p>
+<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
+    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
+    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/datagokr.html" rel="bookmark" title="Permalink to "data.go.kr"">"data.go.kr"</a></h2> </header>
                 <div class="entry-content"> <hr>
 <ul>
@@ -72,26 +104,6 @@
 <li>
 <p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
 </li>
-</ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/rds-parameter-group.html" rel="bookmark" title="Permalink to "rds-parameter-group"">"rds-parameter-group"</a></h2> </header>
-                <div class="entry-content"> <h3>문제</h3>
-<hr>
-<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
-<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
-그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
-- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
-<ul>
-<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/git-tips.html" rel="bookmark" title="Permalink to "git tips"">"git tips"</a></h2> </header>
-                <div class="entry-content"> <ul>
-<li>특정 함수의 변경을 확인 : git log -L </li>
-<li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
-<li>버그가 발견한 commit를 추적 : git bisect</li>
-<li>commit.template</li>
 </ul> </div><!-- entry-content -->
         </article>
 <div class="pager">
