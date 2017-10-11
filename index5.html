@@ -22,6 +22,33 @@
 <section id="content" class="content">
 
         <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/build-a-chat-app-with-django.html" rel="bookmark" title="Permalink to "build a chat app with django"">"build a chat app with django"</a></h2> </header>
+                <div class="entry-content"> <h2>기능 요구사항</h2>
+<ul>
+<li>
+<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
+  http://rocketchat.healworld.co.kr/</p>
+</li>
+<li>
+<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
+링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
+https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
+</li>
+<li>
+<p>대화 …</p></li></ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
+                <header> <h2 class="entry-title"><a href="/index-gs-shop.html" rel="bookmark" title="Permalink to index gs shop">index gs shop</a></h2> </header>
+                <div class="entry-content"> <h3>도전</h3>
+<ul>
+<li>GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성</li>
+<li>관련 기술
+  <code>Elasticsearch 플러그인</code>, <code>형태소 분석기</code>, <code>Thrift 서버</code>, <code>HAProxy</code></li>
+<li>형태소 분석이 필요한 이유?<br>
+  한국어 분석을 지원하지 않는다. 예를 들어 "아버지가 방에 들어간다"라는 한국어 문장을 인덱스해도 "아버지"로는 검색이 안 되고, 반드시 "아버지가"로 검색해야만 결과에 출력된다.</li>
+<li>형태소 분석기 - 은전 한  잎 …</li></ul> </div><!-- entry-content -->
+        </article>
+        <article class="hentry">
                 <header> <h2 class="entry-title"><a href="/senior-work.html" rel="bookmark" title="Permalink to "senior work"">"senior work"</a></h2> </header>
                 <div class="entry-content"> <h3>참고 사이트</h3>
 <ul>
@@ -61,37 +88,6 @@ docker volume create --name=hadoop_historyserver
 docker volume create --name=hadoop_namenode
 docker-compose up
 </pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/spark-docker-seolcihaebogi.html" rel="bookmark" title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h2> </header>
-                <div class="entry-content"> <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
-
-
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# 이미지 다운로드
-docker pull …</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/python-recsys.html" rel="bookmark" title="Permalink to "python-recsys"">"python-recsys"</a></h2> </header>
-                <div class="entry-content"> <p>python-recsys 따라하기<br>
-http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
-<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
-<p>```python 사용자의 입력 모델화 하여 파일로 저장
-import recsys.algorithm
-recsys.algorithm.VERBOSE = True</p>
-<p>from recsys.algorithm.factorize import SVD
-svd = SVD()
-svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p> </div><!-- entry-content -->
         </article>
 <div class="pager">
       <ul>
