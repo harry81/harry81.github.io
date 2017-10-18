@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - 개발, python-recsys, tutorial</title><link href="/" rel="alternate"></link><link href="/feeds/gaebal-python-recsys-tutorial.atom.xml" rel="self"></link><id>/</id><updated>2017-02-21T16:53:36+09:00</updated><entry><title>"python-recsys"</title><link href="/python-recsys.html" rel="alternate"></link><published>2017-02-21T16:53:36+09:00</published><updated>2017-02-21T16:53:36+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-21:/python-recsys.html</id><summary type="html">&lt;p&gt;python-recsys 따라하기&lt;br&gt;
+http://ocelma.net/software/python-recsys/build/html/quickstart.html&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://grouplens.org/datasets/movielens/"&gt;ratings.csv 다운받는다&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True&lt;/p&gt;
+&lt;p&gt;from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …&lt;/p&gt;</summary><content type="html">&lt;p&gt;python-recsys 따라하기&lt;br&gt;
+http://ocelma.net/software/python-recsys/build/html/quickstart.html&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://grouplens.org/datasets/movielens/"&gt;ratings.csv 다운받는다&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True&lt;/p&gt;
+&lt;p&gt;from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value':2, 'ids': int})&lt;/p&gt;
+&lt;p&gt;k = 100
+svd.compute(k=k, min_values=10, pre_normalize=None, mean_center=True, post_normalize=True, savefile='/tmp/movielens')&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;역시나 책대로 되지는 않는다. 위의 7번째 라인이 약 3시간 30분을 잡아먹었는데, 결국은 아래와 같이 `MemoryError&amp;#39; 오류를 뱉어내버리고야 말았다. 아무래도 실행머신이 고급 성능을 가지지 않은 개인용 노트북이라고 결론을 짓기로 한다.
+
+``` bash
+/home/harry/.virt_env/recommends/lib/python2.7/site-packages/divisi2/sparse.pyc in squish(self, cutoff)
+   1005                       for (val, row, col) in entries
+   1006                       if row in rows and col in cols]
+-&amp;gt; 1007         return SparseMatrix.from_named_entries(newentries).squish()
+   1008 
+   1009     # adds compatibility with SciPy-based methods
+
+/home/harry/.virt_env/recommends/lib/python2.7/site-packages/divisi2/sparse.pyc in from_named_entries(tuples)
+    418         If possible, use ``from_named_lists``, because it&amp;#39;s faster.
+    419         &amp;quot;&amp;quot;&amp;quot;
+--&amp;gt; 420         lists = zip(*tuples)
+    421         if not lists: return SparseMatrix((0,0))
+    422         return SparseMatrix.from_named_lists(*lists)
+
+MemoryError: 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;python 파일로 저장된 모델을 객체로 읽어들인다
+from recsys.algorithm.factorize import SVD
+svd2 = SVD(filename='/tmp/movielens') # Loading already computed SVD model
+ITEMID1 = 1    # Toy Story (1995)
+ITEMID2 = 2355 # A bug's life (1998)
+svd2.similarity(ITEMID1, ITEMID2)&lt;/code&gt;&lt;/p&gt;</content></entry></feed>

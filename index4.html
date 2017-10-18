@@ -1,38 +1,139 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>물개발자</title>
-        <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>물개발자</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="hyunmin">
 
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="">Home</a></li>
-                    <li><a href="/archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href="">물개발자</a></h3>
-				<h2 class="text-muted"></h2>
-             </div>
-<section id="content" class="content">
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.dark.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.dark.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
 
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/git-tips.html" rel="bookmark" title="Permalink to "git tips"">"git tips"</a></h2> </header>
-                <div class="entry-content"> <ul>
-<li>특정 함수의 변경을 확인 : git log -L </li>
-<li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
-<li>버그가 발견한 commit를 추적 : git bisect</li>
-<li>commit.template</li>
-</ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/geuleul-maeil-sseuneun-bangbeob.html" rel="bookmark" title="Permalink to "글을 매일 쓰는 방법"">"글을 매일 쓰는 방법"</a></h2> </header>
-                <div class="entry-content"> <ul>
+    <link href="/theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
+
+    <link href="/" type="application/atom+xml" rel="alternate" title="물개발자 ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">물개발자 </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/data-analysis.html">
+						<i class="icon-folder-open icon-large"></i>data analysis
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal.html">
+						<i class="icon-folder-open icon-large"></i>개발
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal-django-testrunnser.html">
+						<i class="icon-folder-open icon-large"></i>개발, django, testrunnser
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal-python-recsys-tutorial.html">
+						<i class="icon-folder-open icon-large"></i>개발, python-recsys, tutorial
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal-tip-convert.html">
+						<i class="icon-folder-open icon-large"></i>개발, tip, convert
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/munjang.html">
+						<i class="icon-folder-open icon-large"></i>문장
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/sebasi.html">
+						<i class="icon-folder-open icon-large"></i>세바시
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="/geuleul-maeil-sseuneun-bangbeob.html">"글을 매일 쓰는 방법"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-05-15T17:26:17+09:00">
+        <i class="icon-calendar"></i>Mon 15 May 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
 <li>
 <p><a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e">25 Habits That Will Make You a Writer</a></p>
 </li>
@@ -44,25 +145,70 @@
 <p>매일 글을 쓴다.
 하루를 보내며 재미있었던 일</p>
 </li>
-</ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/awswa-cingu-doegi.html" rel="bookmark" title="Permalink to "AWS와 친구 되기"">"AWS와 친구 되기"</a></h2> </header>
-                <div class="entry-content"> <h2>아테나 성능 튜닝 팁 - 정도현</h2>
+</ul>
+                        <a class="btn primary xsmall" href="/geuleul-maeil-sseuneun-bangbeob.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/awswa-cingu-doegi.html">"AWS와 친구 되기"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-05-15T17:05:34+09:00">
+        <i class="icon-calendar"></i>Mon 15 May 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>아테나 성능 튜닝 팁 - 정도현</h2>
 <p>Amazon Athena is an interactive query service that makes it easy to analyze data stored in Amazon S3 using standard SQL
 - big-data <a href="https://aws.amazon.com/ko/blogs/big-data/">https://aws.amazon.com/ko/blogs/big-data/</a>
-- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/sodameseoyi-sijag.html" rel="bookmark" title="Permalink to "소담에서의 시작"">"소담에서의 시작"</a></h2> </header>
-                <div class="entry-content"> <h4>소감</h4>
+- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p>
+                        <a class="btn primary xsmall" href="/awswa-cingu-doegi.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/sodameseoyi-sijag.html">"소담에서의 시작"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-04-13T10:32:17+09:00">
+        <i class="icon-calendar"></i>Thu 13 April 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h4>소감</h4>
 <p>낯설지만 자유롭다.
 이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.</p>
-<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/init-sodam.html" rel="bookmark" title="Permalink to "init sodam"">"init sodam"</a></h2> </header>
-                <div class="entry-content"> <p>upgrade pip
+<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p>
+                        <a class="btn primary xsmall" href="/sodameseoyi-sijag.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/init-sodam.html">"init sodam"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-04-03T17:22:35+09:00">
+        <i class="icon-calendar"></i>Mon 03 April 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>upgrade pip
 pip3 install -U pip </p>
 <p>가상환경
 mkvirtualenv sodam -p /usr/bin/python3 </p>
@@ -86,24 +232,136 @@ mkvirtualenv sodam -p /usr/bin/python3 </p>
 <td align="right">$12</td>
 </tr>
 </tbody>
-</table> </div><!-- entry-content -->
-        </article>
-<div class="pager">
-      <ul>
-						<li class="previous"><a href="/index3.html">← Previous</a></li>
-						<li class="next"><a href="/index5.html">Next →</a></li>
-      </ul>
-    </div>
-</section><!-- content -->
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="/feeds/all.atom.xml">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href="">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
+</table>
+                        <a class="btn primary xsmall" href="/init-sodam.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/build-a-chat-app-with-django.html">"build a chat app with django"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-03-13T14:29:24+09:00">
+        <i class="icon-calendar"></i>Mon 13 March 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>기능 요구사항</h2>
+<ul>
+<li>
+<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
+  http://rocketchat.healworld.co.kr/</p>
+</li>
+<li>
+<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
+링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
+https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
+</li>
+<li>
+<p>대화 …</p></li></ul>
+                        <a class="btn primary xsmall" href="/build-a-chat-app-with-django.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        <div class="pagination">
+        <ul>
+                        <li class="prev"><a href="/index3.html">&larr; Previous</a></li>
+                        <li class=""><a href="/index.html">1</a></li>
+                        <li class=""><a href="/index2.html">2</a></li>
+                        <li class=""><a href="/index3.html">3</a></li>
+                        <li class="active"><a href="/index4.html">4</a></li>
+                        <li class=""><a href="/index5.html">5</a></li>
+                        <li class=""><a href="/index6.html">6</a></li>
+                        <li class=""><a href="/index7.html">7</a></li>
+                        <li class=""><a href="/index8.html">8</a></li>
+                        <li class="next"><a href="/index5.html">Next &rarr;</a></li>
+        </ul>
+        </div>
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
+    <li><a href="#"><i class="icon-external-link"></i>You can modify those links in your config file</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="#"><i class="icon-You can add links in your config file-sign icon-large"></i>You can add links in your config file</a></li>
+    <li><a href="https://github.com/harry81"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/data-analysis.html">
+    <i class="icon-folder-open icon-large"></i>data analysis
+</a>
+</li>
+<li>
+<a href="/category/gaebal.html">
+    <i class="icon-folder-open icon-large"></i>개발
+</a>
+</li>
+<li>
+<a href="/category/gaebal-django-testrunnser.html">
+    <i class="icon-folder-open icon-large"></i>개발, django, testrunnser
+</a>
+</li>
+<li>
+<a href="/category/gaebal-python-recsys-tutorial.html">
+    <i class="icon-folder-open icon-large"></i>개발, python-recsys, tutorial
+</a>
+</li>
+<li>
+<a href="/category/gaebal-tip-convert.html">
+    <i class="icon-folder-open icon-large"></i>개발, tip, convert
+</a>
+</li>
+<li>
+<a href="/category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+<li>
+<a href="/category/munjang.html">
+    <i class="icon-folder-open icon-large"></i>문장
+</a>
+</li>
+<li>
+<a href="/category/sebasi.html">
+    <i class="icon-folder-open icon-large"></i>세바시
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is based on <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -113,5 +371,10 @@ try {
 	var pageTracker = _gat._getTracker("UA-91188832-2");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-    </body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

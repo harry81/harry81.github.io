@@ -1,165 +1,405 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Articles in misc category - 물개발자</title>
-        <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
-        <link href="/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Categories Atom Feed" />
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>물개발자 - misc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="hyunmin">
 
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class=""><a href="">Home</a></li>
-                    <li class="active"><a href="/archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href="">물개발자</a></h3>
-				<h2 class="text-muted"></h2>
-             </div>
-<section id="content" class="content">
-<h2>Articles in the misc category</h2>
+    <!-- Le styles -->
+    <link rel="stylesheet" href="/theme/css/bootstrap.dark.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="/theme/css/bootstrap-responsive.dark.css" rel="stylesheet">
+        <link href="/theme/css/font-awesome.css" rel="stylesheet">
 
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/get-title-data-api.html" rel="bookmark" title="Permalink to "get title data api"">"get title data api"</a></h2> </header>
-                <div class="entry-content"> <h3>기본 matplotlib 이용하여 데이타 출력</h3>
-<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+    <link href="/theme/css/pygments.css" rel="stylesheet">
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<span class="c1"># 한글 폰트 깨짐 방지</span>
-<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/theme/images/apple-touch-icon-114x114.png">
 
-<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/uhopper-hadoop-docker.html" rel="bookmark" title="Permalink to "uhopper-hadoop-docker"">"uhopper-hadoop-docker"</a></h2> </header>
-                <div class="entry-content"> <h3>docker-compose 를 이용해서</h3>
-<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
-<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
+    <link href="/" type="application/atom+xml" rel="alternate" title="물개발자 ATOM Feed" />
 
-docker network create hadoop
-docker network create kafka
-docker volume create --name=hadoop_datanode1
-docker volume create --name=hadoop_datanode2
-docker volume create --name=hadoop_historyserver
-docker volume create --name=hadoop_namenode
-docker-compose up
-</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/spark-docker-seolcihaebogi.html" rel="bookmark" title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h2> </header>
-                <div class="entry-content"> <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/index.html">물개발자 </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="/category/data-analysis.html">
+						<i class="icon-folder-open icon-large"></i>data analysis
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal.html">
+						<i class="icon-folder-open icon-large"></i>개발
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal-django-testrunnser.html">
+						<i class="icon-folder-open icon-large"></i>개발, django, testrunnser
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal-python-recsys-tutorial.html">
+						<i class="icon-folder-open icon-large"></i>개발, python-recsys, tutorial
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/gaebal-tip-convert.html">
+						<i class="icon-folder-open icon-large"></i>개발, tip, convert
+					</a>
+                  </li>
+                  <li class="active">
+                    <a href="/category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/munjang.html">
+						<i class="icon-folder-open icon-large"></i>문장
+					</a>
+                  </li>
+                  <li >
+                    <a href="/category/sebasi.html">
+						<i class="icon-folder-open icon-large"></i>세바시
+					</a>
+                  </li>
+
+                          <ul class="nav pull-right">
+                                <li><a href="/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
+
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="/jisig-canggo.html">지식 창고</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-14T13:38:04+09:00">
+        <i class="icon-calendar"></i>Tue 14 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
 
 
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# 이미지 다운로드
-docker pull …</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/python-recsys.html" rel="bookmark" title="Permalink to "python-recsys"">"python-recsys"</a></h2> </header>
-                <div class="entry-content"> <p>python-recsys 따라하기<br>
-http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
-<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
-<p>```python 사용자의 입력 모델화 하여 파일로 저장
-import recsys.algorithm
-recsys.algorithm.VERBOSE = True</p>
-<p>from recsys.algorithm.factorize import SVD
-svd = SVD()
-svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/movies.html" rel="bookmark" title="Permalink to "movies"">"movies"</a></h2> </header>
-                <div class="entry-content"> <table>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>예정</h2>
+<table>
 <thead>
 <tr>
 <th>날짜</th>
 <th>제목</th>
+<th>지은이</th>
+<th>특이사항</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>2017.2.19</td>
-<td>글래디에이터: 로마 영웅 탄생의 필수 가이드 비밀</td>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788960863651">돈 되는 아파트 돈 안 되는 아파트</a></td>
+<td>채상욱</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791157745562">아기곰 재테크의 불변의 법칙</a></td>
+<td>아기곰</td>
 <td></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3>예정</h3>
-<table>
-<thead>
-<tr>
-<th>분야</th>
-<th>제목</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>경제</td>
-<td>인사이드잡</td>
-</tr>
-<tr>
-<td>경제</td>
-<td>마진콜</td>
-</tr>
-<tr>
-<td>역사</td>
-<td>인생은 아름다워(La Vita E Bella, Life Is Beautiful 1997)</td>
-</tr>
-<tr>
-<td>역사</td>
-<td>프랑스 혁명</td>
-</tr>
-<tr>
-<td>SF</td>
-<td>스타워즈</td>
 </tr>
 <tr>
 <td></td>
+<td><a href="http://book.daum.net/detail/book.do?bookid=KOR9791186615140">뉴스테이시대, 사야할 집 팔아야할 집</a></td>
+<td>채상욱</td>
 <td></td>
 </tr>
-</tbody>
-</table> </div><!-- entry-content -->
-        </article>
-<div class="pager">
-      <ul>
-						<li class="previous"><a href="/category/misc4.html">← Previous</a></li>
-						<li class="next"><a href="/category/misc6.html">Next →</a></li>
-      </ul>
-    </div>
-</section><!-- content -->
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="/feeds/all.atom.xml">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href="">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9788947540759">아파트 제대로 고르는 법</a></td>
+<td>심형석</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788901058030">부자 경제학</a></td>
+<td>박경철</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788996634218">경제기사의 바다에 빠져라</a></td>
+<td>최진기</td>
+<td></td>
+</tr>
+<tr>
+<td>2017.</td>
+<td>관점 디자이너</td>
+<td>박용후</td>
+<td></td>
+</tr>
+<tr>
+<td>2017.2</td>
+<td>마지막 한 걸음은 혼자서 가야 한다 :정진홍의 900킬로미터 …</td></tr></tbody></table>
+                        <a class="btn primary xsmall" href="/jisig-canggo.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/dockerreul-iyonghan-hadoop.html">docker를 이용한 hadoop</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-13T17:12:32+09:00">
+        <i class="icon-calendar"></i>Mon 13 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>categories: hadoop docker</h2>
+<h3>동기</h3>
+<ul>
+<li>하둡의 병렬처리 특성을 확인하기 위해서는 2대 이상의 물리적인 컴퓨터가 필요하다</li>
+<li>실제로 물리적인 컴퓨터를 마련하기 위해서는 비용이 필요하다</li>
+<li>docker를 이용하면 가상의 운영체제를 가볍게 실행할수 있다는 얘기를 들어왔고, hadoop를 테스트하기에 적당하다고 판단하여 시도함</li>
+</ul>
+<h3>하둡 docker 이미지를 받자</h3>
+<p><a href="https://github.com/sequenceiq/hadoop-docker">Apache Hadoop 2.7.1 Docker image</a></p>
+<h3>하둡 실행하기</h3>
+<p><code>docker run …</code></p>
+                        <a class="btn primary xsmall" href="/dockerreul-iyonghan-hadoop.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/octopress-temareul-byeongyeonghaja.html">"Octopress 테마를 변경하자"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-13T16:56:51+09:00">
+        <i class="icon-calendar"></i>Mon 13 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
+<div class="highlight"><pre><span></span>cd octopress
+git submodule add GIT_URL .themes/THEME_NAME
+rake install\[&#39;THEME_NAME&#39;\]
+rake generate
+</pre></div>
+                        <a class="btn primary xsmall" href="/octopress-temareul-byeongyeonghaja.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-12T17:35:05+09:00">
+        <i class="icon-calendar"></i>Sun 12 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>
+<p _="%" endcodeblock>tip 1
+{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
+from celery.task.control import discard_all
+    discard_all()</p>
+</li>
+<li>
+<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
+{% codeblock lang:python title:"98-celery.config"  %}
+command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
+</li>
+</ul>
+<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p>
+                        <a class="btn primary xsmall" href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="/daegu-gaebalja-moim-hadub.html">대구 개발자 모임-하둡</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-12T16:43:48+09:00">
+        <i class="icon-calendar"></i>Sun 12 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="/author/hyunmin.html"><i class="icon-user"></i>hyunmin</a>
+<span class="label">Category</span>
+<a href="/category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>모임</h2>
+<ul>
+<li>장소 : 아이원 유학스터디룸</li>
+<li>일자 : 2017년 2월 11</li>
+<li>slack : https://daegugroup.slack.com/</li>
+</ul>
+<h2>느낀 점</h2>
+<ul>
+<li>고향 근처에서 개발에 관심있으신 분들과 만날 수 있어 기쁘다.</li>
+<li>하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.</li>
+<li>옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.<br>
+<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525">쉽고 빠르게 배우는 Angular …</a></li></ul>
+                        <a class="btn primary xsmall" href="/daegu-gaebalja-moim-hadub.html">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        <div class="pagination">
+        <ul>
+                        <li class="prev"><a href="/category/misc4.html">&larr; Previous</a></li>
+                        <li class=""><a href="/category/misc.html">1</a></li>
+                        <li class=""><a href="/category/misc2.html">2</a></li>
+                        <li class=""><a href="/category/misc3.html">3</a></li>
+                        <li class=""><a href="/category/misc4.html">4</a></li>
+                        <li class="active"><a href="/category/misc5.html">5</a></li>
+                        <li class=""><a href="/category/misc6.html">6</a></li>
+                        <li class="next"><a href="/category/misc6.html">Next &rarr;</a></li>
+        </ul>
+        </div>
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
+    <li><a href="#"><i class="icon-external-link"></i>You can modify those links in your config file</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+<li><a href="/" rel="alternate"><i class="icon-bookmark icon-large"></i>atom feed</a></li>
+    <li><a href="#"><i class="icon-You can add links in your config file-sign icon-large"></i>You can add links in your config file</a></li>
+    <li><a href="https://github.com/harry81"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="/category/data-analysis.html">
+    <i class="icon-folder-open icon-large"></i>data analysis
+</a>
+</li>
+<li>
+<a href="/category/gaebal.html">
+    <i class="icon-folder-open icon-large"></i>개발
+</a>
+</li>
+<li>
+<a href="/category/gaebal-django-testrunnser.html">
+    <i class="icon-folder-open icon-large"></i>개발, django, testrunnser
+</a>
+</li>
+<li>
+<a href="/category/gaebal-python-recsys-tutorial.html">
+    <i class="icon-folder-open icon-large"></i>개발, python-recsys, tutorial
+</a>
+</li>
+<li>
+<a href="/category/gaebal-tip-convert.html">
+    <i class="icon-folder-open icon-large"></i>개발, tip, convert
+</a>
+</li>
+<li>
+<a href="/category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+<li>
+<a href="/category/munjang.html">
+    <i class="icon-folder-open icon-large"></i>문장
+</a>
+</li>
+<li>
+<a href="/category/sebasi.html">
+    <i class="icon-folder-open icon-large"></i>세바시
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is based on <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -169,5 +409,10 @@ try {
 	var pageTracker = _gat._getTracker("UA-91188832-2");
 pageTracker._trackPageview();
 } catch(err) {}</script>
-    </body>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/theme/js/jquery-1.7.2.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+  </body>
 </html>

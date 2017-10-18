@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - 개발</title><link href="/" rel="alternate"></link><link href="/feeds/gaebal.atom.xml" rel="self"></link><id>/</id><updated>2017-09-02T15:51:22+09:00</updated><entry><title>"Experience"</title><link href="/experience.html" rel="alternate"></link><published>2017-09-02T15:51:22+09:00</published><updated>2017-09-02T15:51:22+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-02:/experience.html</id><summary type="html">&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Backend developer at Modn, 2017.07&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Backend developer at Modernlab, 2017.04 ~ 2017.07&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Backend developer at Truffls, 2016.03 ~ 2016.09
+  &lt;a href="https://truffls.de/en/"&gt;https://truffls.de/en/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="images/company/truffls1.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;Django admin에 신규 기능 추가후 소개, Truffls&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/company/truffls2.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;직원 기념 사진, Truffls&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QA Engineer at Delivery, 2015.06 ~ 2016.03
+  https://www.lieferheld.de/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="images/company/delivery1.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;Tech …&lt;/p&gt;</summary><content type="html">&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Backend developer at Modn, 2017.07&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Backend developer at Modernlab, 2017.04 ~ 2017.07&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Backend developer at Truffls, 2016.03 ~ 2016.09
+  &lt;a href="https://truffls.de/en/"&gt;https://truffls.de/en/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="images/company/truffls1.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;Django admin에 신규 기능 추가후 소개, Truffls&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/company/truffls2.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;직원 기념 사진, Truffls&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QA Engineer at Delivery, 2015.06 ~ 2016.03
+  https://www.lieferheld.de/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="images/company/delivery1.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;Tech Friday, 매주 금요일 오후에 각 부서의 기술 공유시간, &lt;a href="https://www.lieferheld.de/"&gt;Delivery Hero&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/company/delivery2.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;날이 너무 좋아서 야외 Sprint meeting, Delivery Hero&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/company/delivery3.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;유럽 구경 &lt;a href="https://www.google.co.kr/maps/@51.505779,12.6114361,9z?hl=en"&gt;Leipzig, Germany&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Backend python developer at Yogiyo, 2013.03 ~ 2015.06
+  https://www.yogiyo.co.kr/mobile/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="images/company/yogiyo1.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;주간 모임, Yogiyo
+&lt;img src="images/company/yogiyo2.jpg" style="max-width:700px"&gt;
+개발팀 발표(Den), Yogiyo&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/company/yogiyo4.jpg" style="max-width:700px"&gt;
+Agile 교육 시간, Yogiyo&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/company/yogiyo5.jpg" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;동료들과 봄나들이, Yogiyo&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Software Engineer at Wind river, 2012.03 ~ 2013.02&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Software Engineer at Posco ICT, 2008.02 ~ 2011.04&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Intern at Ewastecenter, 2006.06 ~ 2007.07&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>"spark docker 설치해보기"</title><link href="/spark-docker-seolcihaebogi.html" rel="alternate"></link><published>2017-02-28T18:34:41+09:00</published><updated>2017-02-28T18:34:41+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-28:/spark-docker-seolcihaebogi.html</id><summary type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Apache_Spark"&gt;Apache Spark is an open-source cluster-computing framework&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://github.com/sequenceiq/docker-spark&lt;/p&gt;
+&lt;h3&gt;create virtualbox&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker-machine create -d virtualbox spark
+docker-machine create -d virtualbox namenode
+docker-machine create -d virtualbox datanode1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;name node&lt;/h2&gt;
+&lt;p&gt;https://github.com/sequenceiq/hadoop-docker&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# run docker hadoop
+docker-machine start namenode; eval &amp;quot;$(docker-machine env namenode)&amp;quot;;
+
+# 이미지 다운로드
+docker pull …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Apache_Spark"&gt;Apache Spark is an open-source cluster-computing framework&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;https://github.com/sequenceiq/docker-spark&lt;/p&gt;
+&lt;h3&gt;create virtualbox&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker-machine create -d virtualbox spark
+docker-machine create -d virtualbox namenode
+docker-machine create -d virtualbox datanode1
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;name node&lt;/h2&gt;
+&lt;p&gt;https://github.com/sequenceiq/hadoop-docker&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# run docker hadoop
+docker-machine start namenode; eval &amp;quot;$(docker-machine env namenode)&amp;quot;;
+
+# 이미지 다운로드
+docker pull sequenceiq/hadoop-docker:2.7.1
+
+# 실행
+docker run -it -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;data node&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# run docker hadoop
+docker-machine start datanode1; eval &amp;quot;$(docker-machine env datanode1)&amp;quot;;
+
+# 이미지 다운로드
+docker pull sequenceiq/hadoop-docker:2.7.1
+
+# 실행
+docker run -it -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker:2.7.1 /etc/bootstrap.sh -bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;spark&lt;/h2&gt;
+&lt;p&gt;https://github.com/sequenceiq/docker-spark&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# run docker spark
+docker-machine start spark; eval &amp;quot;$(docker-machine env spark)&amp;quot;;
+
+#  bash
+docker run -it -p 8088:8088 -p 8042:8042 -p 4040:4040 -h sandbox sequenceiq/spark:1.6.0 bash
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;port&lt;/th&gt;
+&lt;th&gt;components&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;50070&lt;/td&gt;
+&lt;td&gt;HDFS NameNode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;50050&lt;/td&gt;
+&lt;td&gt;HDFS DataNode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;50090&lt;/td&gt;
+&lt;td&gt;HDFS Secondary NameNode&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8088&lt;/td&gt;
+&lt;td&gt;YARN Resource Manager&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4042&lt;/td&gt;
+&lt;td&gt;YARN Node Manager&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4040&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</content></entry></feed>
