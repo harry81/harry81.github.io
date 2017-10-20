@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - dev</title><link href="/" rel="alternate"></link><link href="/feeds/dev.atom.xml" rel="self"></link><id>/</id><updated>2017-10-20T17:37:00+09:00</updated><entry><title>자전거 사용추이</title><link href="/bike_timeline.html" rel="alternate"></link><published>2017-10-20T17:37:00+09:00</published><updated>2017-10-20T17:37:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-20:/bike_timeline.html</id><summary type="html">&lt;dl class="docutils"&gt;
+&lt;dt&gt;서울 따릉이&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html"&gt;서울 따릉이 하루 이용 그림(2mb)&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+</summary><content type="html">&lt;dl class="docutils"&gt;
+&lt;dt&gt;서울 따릉이&lt;/dt&gt;
+&lt;dd&gt;&lt;a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html"&gt;서울 따릉이 하루 이용 그림(2mb)&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+</content><category term="bike"></category></entry><entry><title>따릉이 사용량</title><link href="/my-super-post.html" rel="alternate"></link><published>2017-09-27T10:20:00+09:00</published><updated>2017-09-27T10:20:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-27:/my-super-post.html</id><summary type="html">&lt;p&gt;&lt;img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;파랑 - 실제 주차장에 주차되어있는 수&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"&gt;&lt;/p&gt;
+&lt;p&gt;파랑 - 실제 주차장에 주차되어있는 수&lt;/p&gt;</content><category term="data"></category></entry><entry><title>"python-recsys"</title><link href="/python-recsys.html" rel="alternate"></link><published>2017-02-21T16:53:36+09:00</published><updated>2017-02-21T16:53:36+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-21:/python-recsys.html</id><summary type="html">&lt;p&gt;python-recsys 따라하기&lt;br&gt;
+http://ocelma.net/software/python-recsys/build/html/quickstart.html&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://grouplens.org/datasets/movielens/"&gt;ratings.csv 다운받는다&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True&lt;/p&gt;
+&lt;p&gt;from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …&lt;/p&gt;</summary><content type="html">&lt;p&gt;python-recsys 따라하기&lt;br&gt;
+http://ocelma.net/software/python-recsys/build/html/quickstart.html&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://grouplens.org/datasets/movielens/"&gt;ratings.csv 다운받는다&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True&lt;/p&gt;
+&lt;p&gt;from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value':2, 'ids': int})&lt;/p&gt;
+&lt;p&gt;k = 100
+svd.compute(k=k, min_values=10, pre_normalize=None, mean_center=True, post_normalize=True, savefile='/tmp/movielens')&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;역시나 책대로 되지는 않는다. 위의 7번째 라인이 약 3시간 30분을 잡아먹었는데, 결국은 아래와 같이 `MemoryError&amp;#39; 오류를 뱉어내버리고야 말았다. 아무래도 실행머신이 고급 성능을 가지지 않은 개인용 노트북이라고 결론을 짓기로 한다.
+
+``` bash
+/home/harry/.virt_env/recommends/lib/python2.7/site-packages/divisi2/sparse.pyc in squish(self, cutoff)
+   1005                       for (val, row, col) in entries
+   1006                       if row in rows and col in cols]
+-&amp;gt; 1007         return SparseMatrix.from_named_entries(newentries).squish()
+   1008 
+   1009     # adds compatibility with SciPy-based methods
+
+/home/harry/.virt_env/recommends/lib/python2.7/site-packages/divisi2/sparse.pyc in from_named_entries(tuples)
+    418         If possible, use ``from_named_lists``, because it&amp;#39;s faster.
+    419         &amp;quot;&amp;quot;&amp;quot;
+--&amp;gt; 420         lists = zip(*tuples)
+    421         if not lists: return SparseMatrix((0,0))
+    422         return SparseMatrix.from_named_lists(*lists)
+
+MemoryError: 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;code&gt;python 파일로 저장된 모델을 객체로 읽어들인다
+from recsys.algorithm.factorize import SVD
+svd2 = SVD(filename='/tmp/movielens') # Loading already computed SVD model
+ITEMID1 = 1    # Toy Story (1995)
+ITEMID2 = 2355 # A bug's life (1998)
+svd2.similarity(ITEMID1, ITEMID2)&lt;/code&gt;&lt;/p&gt;</content></entry><entry><title>"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</title><link href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="alternate"></link><published>2017-02-18T15:43:28+09:00</published><updated>2017-02-18T15:43:28+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-18:/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html</id><summary type="html">&lt;p&gt;소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
+테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  &lt;/p&gt;
+&lt;p&gt;시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
+테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  &lt;/p&gt;
+&lt;p&gt;시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 생성해둔 db를 그대로 이용하는 것도 똑똑한 선택일수 있다. 다행히 nose에서 이런 기능을 도와주는데, 방법은 환경변수 REUSE_DB의 값을 1로 설정하는 것이다.  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# settings.py&lt;/span&gt;
+&lt;span class="n"&gt;TEST_RUNNER&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;django_nose.NoseTestSuiteRunner&amp;#39;&lt;/span&gt;
+&lt;span class="c1"&gt;# 실행&lt;/span&gt;
+&lt;span class="n"&gt;REUSE_DB&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="n"&gt;python&lt;/span&gt; &lt;span class="n"&gt;manage&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt; &lt;span class="n"&gt;test&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;settings&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;settings_test&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;v&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;하지만 celery 비동기 task를 테스트 하는중 문제를 발견했다. 비동기 작업을 테스트중 실시간 결과를 확인하는 것이 아니라, Queue에 작업 요청을 한후 그대로 테스트는 종료된다. 이렇게 되면 원했던 기능확인을 할수 없게된다. 다시 검색을 해 본결과 TEST_RUNNER를 &lt;strong&gt;CeleryTestSuiteRunner&lt;/strong&gt;를 사용하라는 내용을 찾았다. 그 지시 그대로 따랐던 결과 &lt;strong&gt;NoseTestSuiteRunner'&lt;/strong&gt;의 장점은 사라졌다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;TEST_RUNNER = 'djcelery.contrib.test_runner.CeleryTestSuiteRunner'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;또 다시 고민하여 검색결과 아래와 같이 두 Test Runner의 기능을 모두 사용할수 있는 코드를 찾게되었다.&lt;br&gt;
+&lt;a href="http://stackoverflow.com/a/34282669/1118583"&gt;Link&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;django_nose&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;NoseTestSuiteRunner&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;djcelery.contrib.test_runner&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;CeleryTestSuiteRunner&lt;/span&gt;
+
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TestRunner&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;CeleryTestSuiteRunner&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;NoseTestSuiteRunner&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;pass&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p _="%" endcodeblock&gt;{% codeblock "settings.py" [line_number:(false)] %}
+TEST_RUNNER = 'myapp.TestRunnser""&lt;/p&gt;</content></entry><entry><title>"mp4-mp3"</title><link href="/mp4-mp3.html" rel="alternate"></link><published>2015-06-28T17:51:24+09:00</published><updated>2015-06-28T17:51:24+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2015-06-28:/mp4-mp3.html</id><summary type="html">&lt;h3&gt;우분투용용의 avconv 이용&lt;/h3&gt;
+&lt;p&gt;``` bash 형식
+avconv  -i [영상파일] -vn  [소리파일]&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;``` bash 예시
+avconv  -i Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp4 -vn Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp3
+&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h3&gt;우분투용용의 avconv 이용&lt;/h3&gt;
+&lt;p&gt;``` bash 형식
+avconv  -i [영상파일] -vn  [소리파일]&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;``` bash 예시
+avconv  -i Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp4 -vn Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp3
+&lt;/pre&gt;&lt;/div&gt;</content></entry></feed>

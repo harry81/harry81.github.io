@@ -126,7 +126,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 &lt;p&gt;지역코드와 기간을 이용하여 해당기간, 해당지역의 단독다가구 전월세 신고자료를 제공하는 단독다가구 전월세 신고 정보 조회&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;이력 소개 &lt;a href="http://bit.ly/2f9Xjdp"&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>"aws cloudtrail and config"</title><link href="/hi%20aws.html" rel="alternate"></link><published>2017-08-01T11:33:23+09:00</published><updated>2017-08-01T11:33:23+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-08-01:/hi aws.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>"aws cloudtrail and config"</title><link href="/aws-cloudtrail-and-config.html" rel="alternate"></link><published>2017-08-01T11:33:23+09:00</published><updated>2017-08-01T11:33:23+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-08-01:/aws-cloudtrail-and-config.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;AWS Config Rules, 서울 리전 출시! &lt;a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config"&gt;https://aws.amazon.com/ko/blogs/korea/category/aws-config&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -146,7 +146,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 &lt;li&gt;
 &lt;p&gt;AWS Summit Seoul 2016  &lt;a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim"&gt;https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="'aws'"></category></entry><entry><title>"rds-parameter-group"</title><link href="/rds-parameter-group.html" rel="alternate"></link><published>2017-06-22T11:51:34+09:00</published><updated>2017-06-22T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-06-22:/rds-parameter-group.html</id><summary type="html">&lt;h3&gt;문제&lt;/h3&gt;
+&lt;/ul&gt;</content><category term="aws"></category></entry><entry><title>"rds-parameter-group"</title><link href="/rds-parameter-group.html" rel="alternate"></link><published>2017-06-22T11:51:34+09:00</published><updated>2017-06-22T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-06-22:/rds-parameter-group.html</id><summary type="html">&lt;h3&gt;문제&lt;/h3&gt;
 &lt;hr&gt;
 &lt;p&gt;postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 &lt;code&gt;order by&lt;/code&gt; 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.&lt;/p&gt;
 &lt;p&gt;정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.

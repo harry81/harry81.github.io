@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2017-10-18T11:11:35-00:00</lastmod>
+<lastmod>2017-10-20T17:49:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2017-10-18T11:11:35-00:00</lastmod>
+<lastmod>2017-10-20T17:49:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2017-10-18T11:11:35-00:00</lastmod>
+<lastmod>2017-10-20T17:49:33-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2017-10-18T11:11:35-00:00</lastmod>
+<lastmod>2017-10-20T17:49:33-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/bike_timeline.html</loc>
+<lastmod>2017-10-20T17:37:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -116,7 +123,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/hi aws.html</loc>
+<loc>/aws-cloudtrail-and-config.html</loc>
 <lastmod>2017-08-01T11:33:23+09:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -312,8 +319,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/category/data-analysis.html</loc>
-<lastmod>2017-09-27T10:20:00+08:28</lastmod>
+<loc>/category/dev.html</loc>
+<lastmod>2017-10-20T17:37:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -321,27 +328,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/category/gaebal.html</loc>
 <lastmod>2017-09-02T15:51:22+08:28</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/category/gaebal-django-testrunnser.html</loc>
-<lastmod>2017-02-18T15:43:28+08:28</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/category/gaebal-python-recsys-tutorial.html</loc>
-<lastmod>2017-02-21T16:53:36+08:28</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/category/gaebal-tip-convert.html</loc>
-<lastmod>2015-06-28T17:51:24+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -368,6 +354,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/tag/bike.html</loc>
+<lastmod>2017-10-20T17:37:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/tag/sebasi.html</loc>
 <lastmod>2017-10-01T21:14:00+08:28</lastmod>
 <changefreq>daily</changefreq>
@@ -389,14 +382,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/thats.html</loc>
-<lastmod>2017-09-27T10:20:00+08:28</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>/tag/awesome.html</loc>
+<loc>/tag/data.html</loc>
 <lastmod>2017-09-27T10:20:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -418,7 +404,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/hyunmin-choi.html</loc>
-<lastmod>2017-10-11T16:25:00+08:28</lastmod>
+<lastmod>2017-10-20T17:37:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
