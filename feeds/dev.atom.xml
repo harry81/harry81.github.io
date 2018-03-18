@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - dev</title><link href="/" rel="alternate"></link><link href="/feeds/dev.atom.xml" rel="self"></link><id>/</id><updated>2017-11-04T13:09:00+09:00</updated><entry><title>microservice</title><link href="/microservice.html" rel="alternate"></link><published>2017-11-04T13:09:00+09:00</published><updated>2017-11-04T13:09:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-11-04:/microservice.html</id><summary type="html">&lt;table&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - dev</title><link href="/" rel="alternate"></link><link href="/feeds/dev.atom.xml" rel="self"></link><id>/</id><updated>2018-03-18T17:04:00+09:00</updated><entry><title>new post</title><link href="/new-post.html" rel="alternate"></link><published>2018-03-18T17:04:00+09:00</published><updated>2018-03-18T17:04:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-18:/new-post.html</id><summary type="html">&lt;p&gt;hello
+hi2&lt;/p&gt;
+&lt;p&gt;그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?
+전체적인 그림을 그리지 못했다.&lt;/p&gt;
+&lt;p&gt;실제 구현에 필요한 일부 기술에 부딪힐 때마다 그 기술을 익여햐 하겠다는 생각에 사로 잡혔다. 그리고 샛길로 빠져서 큰 맥락에서 벗어났다.&lt;/p&gt;</summary><content type="html">&lt;p&gt;hello
+hi2&lt;/p&gt;
+&lt;p&gt;그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?
+전체적인 그림을 그리지 못했다.&lt;/p&gt;
+&lt;p&gt;실제 구현에 필요한 일부 기술에 부딪힐 때마다 그 기술을 익여햐 하겠다는 생각에 사로 잡혔다. 그리고 샛길로 빠져서 큰 맥락에서 벗어났다.&lt;/p&gt;</content></entry><entry><title>microservice</title><link href="/microservice.html" rel="alternate"></link><published>2017-11-04T13:09:00+09:00</published><updated>2017-11-04T13:09:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-11-04:/microservice.html</id><summary type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
