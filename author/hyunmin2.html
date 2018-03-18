@@ -50,82 +50,6 @@
 
 
             <article>
-                <a href="../myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html"><h3 class="article-title">면접자로서 면접시에 물어보고 싶은 질문들</h3></a>
-<h6 class="subheader" title="2017-09-29T11:51:34+09:00">Fri 29 September 2017
-</h6>
-
-
-<h4>대략적인 질문</h4>
-<ul>
-<li>개발 방법론(scrum?)</li>
-<li>업무 시간, 출퇴근 시간</li>
-<li>개발 pc 지급?</li>
-<li>휴가</li>
-<li>비전</li>
-<li>계획</li>
-</ul>
-<h4>업무적인 질문</h4>
-<ul>
-<li>인력 구성</li>
-<li>구체적인 업무</li>
-<li>기대하는 역할</li>
-</ul>
-<h4>기술적인 질문</h4>
-<ul>
-<li>기술적 어려움</li>
-<li>주언어</li>
-<li>작업관리툴(jira)</li>
-<li>코드리뷰</li>
-<li>TDD</li>
-<li>CI</li>
-<li>소통 채널</li>
-<li>배포 주기</li>
-</ul>
-<h4>운용환경</h4>
-<ul>
-<li>AWS
-  -</li>
-</ul>
-<h4>동료상</h4>
-<ul>
-<li>선호</li>
-<li>비선호</li>
-</ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="../my-super-post.html"><h3 class="article-title">따릉이 사용량</h3></a>
-<h6 class="subheader" title="2017-09-27T10:20:00+09:00">Wed 27 September 2017
-</h6>
-
-
-<p><img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"></p>
-<p>파랑 - 실제 주차장에 주차되어있는 수</p><p class="subheader">Category: <a href="../category/dev.html">dev</a>
-
-    Tagged: 
-    <a href="../tag/data.html">data </a>
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../my-super-post.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
                 <a href="../elasticbeans-talk.html"><h3 class="article-title">Elasticbeans talk</h3></a>
 <h6 class="subheader" title="2017-09-13T17:44:50+09:00">Wed 13 September 2017
 </h6>
@@ -212,6 +136,63 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 
 
                 <a class="button radius secondary small right" href="../experience.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="../aws-cloudtrail-and-config.html"><h3 class="article-title">"aws cloudtrail and config"</h3></a>
+<h6 class="subheader" title="2017-08-01T11:33:23+09:00">Tue 01 August 2017
+</h6>
+
+
+<ul>
+<li>
+<p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
+</li>
+<li>
+<p>임기성 :: 2015 리인벤트 리캡 게이밍  <a href="https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim">https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim</a></p>
+</li>
+<li>
+<p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
+</li>
+</ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+    Tagged: 
+    <a href="../tag/aws.html">aws </a>
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../aws-cloudtrail-and-config.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="../rds-parameter-group.html"><h3 class="article-title">"rds-parameter-group"</h3></a>
+<h6 class="subheader" title="2017-06-22T11:51:34+09:00">Thu 22 June 2017
+</h6>
+
+
+<h3>문제</h3>
+<hr>
+<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
+<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
+그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
+- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
+<ul>
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../rds-parameter-group.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
