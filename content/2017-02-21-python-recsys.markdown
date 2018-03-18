@@ -3,7 +3,7 @@ layout: post
 title: "python-recsys"
 date: 2017-02-21 16:53:36 +0900
 comments: true
-categories: python-recsys tutorial
+category: dev
 ---
 python-recsys 따라하기  
 http://ocelma.net/software/python-recsys/build/html/quickstart.html

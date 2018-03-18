@@ -4,6 +4,7 @@ import os
 import shutil
 import sys
 import socketserver
+import datetime
 
 from pelican.server import ComplexHTTPRequestHandler
 
@@ -90,3 +91,21 @@ def gh_pages():
     """Publish to GitHub Pages"""
     rebuild()
     local("ghp-import -b {github_pages_branch} {deploy_path} -p".format(**env))
+
+
+def make_entry(title='default'):
+    today = datetime.datetime.today()
+    slug = title.lower().strip().replace(' ', '-')
+    f_create = "content/{}_{:0>2}_{:0>2}_{}.markdown".format(today.year, today.month, today.day, slug)
+    with open(f_create, 'w') as w:
+        with open('template.txt', 'r') as r:
+            s = r.read().format(title=title,
+                                hashes='#' * len(title),
+                                year=today.year,
+                                month=today.month,
+                                day=today.day,
+                                hour=today.hour,
+                                minute=today.minute,
+                                slug=slug)
+            w.write(s)
+            print("File created -> " + f_create)

@@ -3,7 +3,7 @@ layout: post
 title: "aws cloudtrail and config"
 date: 2017-08-01 11:33:23 +0900
 comments: true
-categories: aws
+tags: aws
 ---
 
 - AWS Config Rules, 서울 리전 출시! <https://aws.amazon.com/ko/blogs/korea/category/aws-config>

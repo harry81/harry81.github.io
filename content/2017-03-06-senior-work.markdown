@@ -3,7 +3,7 @@ layout: post
 title: "senior work"
 date: 2017-03-06 17:57:26 +0900
 comments: true
-categories: senior work
+categories: work
 published: false
 ---
 

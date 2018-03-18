@@ -3,7 +3,7 @@ layout: post
 title: "build a chat app with django"
 date: 2017-03-13 14:29:24 +0900
 comments: true
-categories: 
+categories: dev
 published: true
 ---
 

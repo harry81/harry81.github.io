@@ -3,7 +3,7 @@ layout: post
 title: Elasticbeans talk
 date: 2017-9-13 17:44:50 +0900
 comments: true
-categories: elasticbeanstalk
+categories: 개발
 ---
 
 #### Elasticbeanstalk health check

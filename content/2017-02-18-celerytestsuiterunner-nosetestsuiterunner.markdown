@@ -3,7 +3,7 @@ layout: post
 title: "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"
 date: 2017-02-18 15:43:28 +0900
 comments: true
-categories: django testrunnser
+category: dev
 ---
 
 소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.

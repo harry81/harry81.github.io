@@ -3,7 +3,7 @@ layout: post
 title: "Experience"
 date: 2017-09-02 15:51:22 +0900
 comments: true
-categories: 
+category: 개발
 ---
 
 
@@ -19,6 +19,7 @@ categories:
   [https://truffls.de/en/](https://truffls.de/en/)
 
 <img src="images/company/truffls1.jpg" style="max-width:700px">
+
 Django admin에 신규 기능 추가후 소개, Truffls
 
 <img src="images/company/truffls2.jpg" style="max-width:700px">

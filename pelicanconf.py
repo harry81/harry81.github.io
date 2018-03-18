@@ -7,7 +7,6 @@ SITENAME = '물개발자'
 SITEURL = 'https://harry81.github.io'
 
 PATH = 'content'
-
 TIMEZONE = 'Asia/Seoul'
 
 DEFAULT_LANG = 'en'
@@ -20,6 +19,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+TAG_FEED_ATOM = "feeds/tag_%s.atom.xml"
+
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -29,12 +30,18 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+          ('Github', 'https://github.com/harry81'),)
 
 DEFAULT_PAGINATION = 5
 STATIC_PATHS = ['images', 'pdfs']
 
-THEME = "/home/harry/pelican-themes/simple-bootstrap"
+THEME = "/home/harry/pelican-themes/tuxlite_zf/"
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['assets', 'sitemap', 'gravatar', 'i18n_subsites']
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True

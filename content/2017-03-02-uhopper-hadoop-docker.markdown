@@ -3,7 +3,7 @@ layout: post
 title: "uhopper-hadoop-docker"
 date: 2017-03-02 17:11:16 +0900
 comments: true
-categories: 
+categories: dev
 ---
 
 
