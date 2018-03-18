@@ -50,6 +50,39 @@
 
 
             <article>
+                <a href="../get-title-data-api.html"><h3 class="article-title">"get title data api"</h3></a>
+<h6 class="subheader" title="2017-03-04T17:53:15+09:00">Sat 04 March 2017
+</h6>
+
+
+<h3>기본 matplotlib 이용하여 데이타 출력</h3>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 한글 폰트 깨짐 방지</span>
+<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../get-title-data-api.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="../uhopper-hadoop-docker.html"><h3 class="article-title">"uhopper-hadoop-docker"</h3></a>
 <h6 class="subheader" title="2017-03-02T17:11:16+09:00">Thu 02 March 2017
 </h6>
@@ -209,26 +242,6 @@ svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="../emacseseo-pailmyeong-byeongyeonghagi.html"><h3 class="article-title">"emacs에서 파일명 변경하기"</h3></a>
-<h6 class="subheader" title="2017-02-20T18:03:19+09:00">Mon 20 February 2017
-</h6>
-
-
-<p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
-<p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../emacseseo-pailmyeong-byeongyeonghagi.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
 <h6 class="subheader">Page 5 of 8</h6>
@@ -268,7 +281,6 @@ svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row
         <ul class="side-nav">
             <li><a href="http://getpelican.com/">Pelican</a></li>
             <li><a href="http://python.org/">Python.org</a></li>
-            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
             <li><a href="#">You can modify those links in your config file</a></li>
         </ul>
 		
