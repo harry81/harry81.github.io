@@ -1,62 +1,147 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Articles in misc category - 물개발자</title>
-        <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
-        <link href="/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Categories Atom Feed" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
 
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class=""><a href="">Home</a></li>
-                    <li class="active"><a href="/archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href="">물개발자</a></h3>
-				<h2 class="text-muted"></h2>
-             </div>
-<section id="content" class="content">
-<h2>Articles in the misc category</h2>
+    <title>물개발자 - misc</title>
 
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/spark-docker-seolcihaebogi.html" rel="bookmark" title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h2> </header>
-                <div class="entry-content"> <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
+    <link rel="stylesheet" href="../theme/css/normalize.css" />
+    <link rel="stylesheet" href="../theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="../theme/css/style.css" />
+    <link rel="stylesheet" href="../theme/css/pygments.css" />	
+    <script src="../theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="..">물개발자</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
 
 
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+<!-- Main Page Content and Sidebar -->
+<div class="row">
 
-# 이미지 다운로드
-docker pull …</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/python-recsys.html" rel="bookmark" title="Permalink to "python-recsys"">"python-recsys"</a></h2> </header>
-                <div class="entry-content"> <p>python-recsys 따라하기<br>
-http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
-<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
-<p>```python 사용자의 입력 모델화 하여 파일로 저장
-import recsys.algorithm
-recsys.algorithm.VERBOSE = True</p>
-<p>from recsys.algorithm.factorize import SVD
-svd = SVD()
-svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/movies.html" rel="bookmark" title="Permalink to "movies"">"movies"</a></h2> </header>
-                <div class="entry-content"> <table>
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+
+            <article>
+                <a href="../senior-work.html"><h3 class="article-title">"senior work"</h3></a>
+<h6 class="subheader" title="2017-03-06T17:57:26+09:00">Mon 06 March 2017
+</h6>
+
+
+<h3>참고 사이트</h3>
+<ul>
+<li>구미 노일 일자리 창출센터 http://www.gumisilver.or.kr/job/job_psn.asp</li>
+<li></li>
+</ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../senior-work.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="../get-title-data-api.html"><h3 class="article-title">"get title data api"</h3></a>
+<h6 class="subheader" title="2017-03-04T17:53:15+09:00">Sat 04 March 2017
+</h6>
+
+
+<h3>기본 matplotlib 이용하여 데이타 출력</h3>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 한글 폰트 깨짐 방지</span>
+<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../get-title-data-api.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="../uhopper-hadoop-docker.html"><h3 class="article-title">"uhopper-hadoop-docker"</h3></a>
+<h6 class="subheader" title="2017-03-02T17:11:16+09:00">Thu 02 March 2017
+</h6>
+
+
+<h3>docker-compose 를 이용해서</h3>
+<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
+<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
+
+docker network create hadoop
+docker network create kafka
+docker volume create --name=hadoop_datanode1
+docker volume create --name=hadoop_datanode2
+docker volume create --name=hadoop_historyserver
+docker volume create --name=hadoop_namenode
+docker-compose up
+</pre></div><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../uhopper-hadoop-docker.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="../movies.html"><h3 class="article-title">"movies"</h3></a>
+<h6 class="subheader" title="2017-02-21T14:59:56+09:00">Tue 21 February 2017
+</h6>
+
+
+<table>
 <thead>
 <tr>
 <th>날짜</th>
@@ -109,56 +194,98 @@ svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row
 <td></td>
 </tr>
 </tbody>
-</table> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/emacseseo-pailmyeong-byeongyeonghagi.html" rel="bookmark" title="Permalink to "emacs에서 파일명 변경하기"">"emacs에서 파일명 변경하기"</a></h2> </header>
-                <div class="entry-content"> <p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
-<p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/hadoop-docker.html" rel="bookmark" title="Permalink to "hadoop-docker"">"hadoop-docker"</a></h2> </header>
-                <div class="entry-content"> <p>가상머신 3개를 준비하자.</p>
-<div class="highlight"><pre><span></span># Namenode 192.168.99.101
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+</table><p class="subheader">Category: <a href="../category/misc.html">misc</a>
 
-# Datanode1 192.168.99.102
-docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
-
-# Datanode2 192.168.99.103
-docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
-</pre></div>
+</p>
 
 
-<div class="highlight"><pre><span></span>...
-namenode 192.168.99.101
-datanode1 192.168.99.102
-datanode2 …</pre></div> </div><!-- entry-content -->
-        </article>
-<div class="pager">
-      <ul>
-						<li class="previous"><a href="/category/misc3.html">← Previous</a></li>
-						<li class="next"><a href="/category/misc5.html">Next →</a></li>
-      </ul>
+
+                <a class="button radius secondary small right" href="../movies.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="../emacseseo-pailmyeong-byeongyeonghagi.html"><h3 class="article-title">"emacs에서 파일명 변경하기"</h3></a>
+<h6 class="subheader" title="2017-02-20T18:03:19+09:00">Mon 20 February 2017
+</h6>
+
+
+<p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
+<p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../emacseseo-pailmyeong-byeongyeonghagi.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 4 of 6</h6>
+
+<p>
+            <a href="../category/misc3.html">&laquo; Prev</a>
+
+        <a href="../category/misc5.html">Next &raquo;</a>
+</p>
+</div>
+
     </div>
-</section><!-- content -->
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="/feeds/all.atom.xml">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href="">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-91188832-2");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-    </body>
-</html>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="../archives.html">Archives</a>
+            <li><a href="../tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="../category/dev.html">dev</a></li>
+            <li><a href="../category/gaebal.html">개발</a></li>
+            <li><a href="../category/misc.html">misc</a></li>
+            <li><a href="../category/munjang.html">문장</a></li>
+            <li><a href="../category/sebasi.html">세바시</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="https://github.com/harry81">Github</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>물개발자 by hyunmin</p>
+            </div>
+            </div>
+    </div>
+</footer>

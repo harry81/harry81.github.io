@@ -1,123 +1,290 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>물개발자</title>
-        <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
 
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="">Home</a></li>
-                    <li><a href="/archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href="">물개발자</a></h3>
-				<h2 class="text-muted"></h2>
-             </div>
-<section id="content" class="content">
+    <title>물개발자</title>
 
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/elasticbeans-talk.html" rel="bookmark" title="Permalink to Elasticbeans talk">Elasticbeans talk</a></h2> </header>
-                <div class="entry-content"> <h4>Elasticbeanstalk health check</h4>
-<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
-Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
-<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
-<p>https://gist.github.com/dryan/8271687</p>
-<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
-    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
-    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/datagokr.html" rel="bookmark" title="Permalink to "data.go.kr"">"data.go.kr"</a></h2> </header>
-                <div class="entry-content"> <hr>
-<ul>
-<li>단독/다가구 전월세 지수 변화, 2004~2016 <a href="https://s3.ap-northeast-2.amazonaws.com/hmapps/data/home_loan_201708_900x500.html">link</a></li>
-</ul>
-<p>지역코드와 기간을 이용하여 해당기간, 해당지역의 단독다가구 전월세 신고자료를 제공하는 단독다가구 전월세 신고 정보 조회</p>
-<ul>
-<li>이력 소개 <a href="http://bit.ly/2f9Xjdp">link</a></li>
-</ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/experience.html" rel="bookmark" title="Permalink to "Experience"">"Experience"</a></h2> </header>
-                <div class="entry-content"> <hr>
-<ul>
-<li>
-<p>Backend developer at Modn, 2017.07</p>
-</li>
-<li>
-<p>Backend developer at Modernlab, 2017.04 ~ 2017.07</p>
-</li>
-<li>
-<p>Backend developer at Truffls, 2016.03 ~ 2016.09
-  <a href="https://truffls.de/en/">https://truffls.de/en/</a></p>
-</li>
-</ul>
-<p><img src="images/company/truffls1.jpg" style="max-width:700px">
-Django admin에 신규 기능 추가후 소개, Truffls</p>
-<p><img src="images/company/truffls2.jpg" style="max-width:700px"></p>
-<p>직원 기념 사진, Truffls</p>
-<ul>
-<li>QA Engineer at Delivery, 2015.06 ~ 2016.03
-  https://www.lieferheld.de/</li>
-</ul>
-<p><img src="images/company/delivery1.jpg" style="max-width:700px"></p>
-<p>Tech …</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/aws-cloudtrail-and-config.html" rel="bookmark" title="Permalink to "aws cloudtrail and config"">"aws cloudtrail and config"</a></h2> </header>
-                <div class="entry-content"> <ul>
-<li>
-<p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
-</li>
-<li>
-<p>임기성 :: 2015 리인벤트 리캡 게이밍  <a href="https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim">https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim</a></p>
-</li>
-<li>
-<p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
-</li>
-</ul> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/rds-parameter-group.html" rel="bookmark" title="Permalink to "rds-parameter-group"">"rds-parameter-group"</a></h2> </header>
-                <div class="entry-content"> <h3>문제</h3>
-<hr>
-<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
-<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
-그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
-- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
-<ul>
-<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul> </div><!-- entry-content -->
-        </article>
-<div class="pager">
-      <ul>
-                        <li class="previous disabled"><a>← Previous</a></li>
-						<li class="next"><a href="/index2.html">Next →</a></li>
-      </ul>
+    <link rel="stylesheet" href="./theme/css/normalize.css" />
+    <link rel="stylesheet" href="./theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="./theme/css/style.css" />
+    <link rel="stylesheet" href="./theme/css/pygments.css" />	
+    <script src="./theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href=".">물개발자</a></h1>
     </div>
-</section><!-- content -->
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="/feeds/all.atom.xml">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href="">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-91188832-2");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-    </body>
-</html>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+            <article>
+                <a href="./default.html"><h3 class="article-title">default</h3></a>
+<h6 class="subheader" title="2018-03-18T17:04:00+09:00">Sun 18 March 2018
+</h6>
+
+
+<p class="subheader">Category: <a href="./category/dev.html">dev</a>
+
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
+                <a href="./lets-get-it-done.html"><h3 class="article-title">Let's get it done</h3></a>
+<h6 class="subheader" title="2017-11-18T12:15:00+09:00">Sat 18 November 2017
+</h6>
+
+
+<h5>그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?</h5>
+<ul>
+<li>
+<p>전체적인 그림을 그리지 못했다.</p>
+</li>
+<li>
+<p>실제 구현에 필요한 일부 기술에 부딪힐 때마다 그 기술을 익여햐 하겠다는 생각에 사로 잡혔다. 
+그리고 샛길로 빠져서 큰 맥락에서 벗어났다.</p>
+<ul>
+<li>기술정리를 위한 정적 블로그</li>
+<li>머신러닝</li>
+<li>pandas</li>
+</ul>
+</li>
+<li>
+<p>꾸준하게 개발에 대한 의지와 열정을 유지하지 못 했다.</p>
+</li>
+</ul>
+<h5>그렇다면 작동하는 프로젝트를 완료하기 …</h5><p class="subheader">Category: <a href="./category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./lets-get-it-done.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="./microservice.html"><h3 class="article-title">microservice</h3></a>
+<h6 class="subheader" title="2017-11-04T13:09:00+09:00">Sat 04 November 2017
+</h6>
+
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">Mircoservice</th>
+<th align="right">Monolithics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>테스트</td>
+<td align="center">어려움</td>
+<td align="right">쉬움</td>
+</tr>
+<tr>
+<td>디버깅</td>
+<td align="center">어려움</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>배포</td>
+<td align="center"></td>
+<td align="right">단순</td>
+</tr>
+<tr>
+<td>모니터링</td>
+<td align="center">중요</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>개발</td>
+<td align="center">문제에 집중해 개발 가능</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>유연함</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>언어 자유도</td>
+<td align="center">높음</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>독립성</td>
+<td align="center">높음</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://www.popit.kr/why-microservice/">마이크로서비스 아키텍처의 장단점</a></p><p class="subheader">Category: <a href="./category/dev.html">dev</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./microservice.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="./bike_timeline.html"><h3 class="article-title">자전거 사용추이</h3></a>
+<h6 class="subheader" title="2017-10-20T17:37:00+09:00">Fri 20 October 2017
+</h6>
+
+
+<dl class="docutils">
+<dt>서울 따릉이</dt>
+<dd><a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html">서울 따릉이 하루 이용 그림(2mb)</a></dd>
+</dl>
+<p class="subheader">Category: <a href="./category/dev.html">dev</a>
+
+    Tagged: 
+    <a href="./tag/bike.html">bike </a>
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./bike_timeline.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="./smart-work.html"><h3 class="article-title">스마트 워크</h3></a>
+<h6 class="subheader" title="2017-10-11T16:25:00+09:00">Wed 11 October 2017
+</h6>
+
+
+<ul class="simple">
+<li>과정 -&gt; 성과</li>
+<li>시간 -&gt; 업무</li>
+<li>통일성 -&gt; 다양성</li>
+<li>철저한 계획(모든 상황의 변수를 통제) -&gt; 빠른 적응</li>
+<li>지시, 관리 -&gt; 믿음, 지원</li>
+</ul>
+<p class="subheader">Category: <a href="./category/sebasi.html">세바시</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./smart-work.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 1 of 9</h6>
+
+<p>
+
+        <a href="./index2.html">Next &raquo;</a>
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="./archives.html">Archives</a>
+            <li><a href="./tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="./category/dev.html">dev</a></li>
+            <li><a href="./category/gaebal.html">개발</a></li>
+            <li><a href="./category/misc.html">misc</a></li>
+            <li><a href="./category/munjang.html">문장</a></li>
+            <li><a href="./category/sebasi.html">세바시</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="https://github.com/harry81">Github</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>물개발자 by hyunmin</p>
+            </div>
+            </div>
+    </div>
+</footer>

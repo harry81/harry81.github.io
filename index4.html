@@ -1,162 +1,266 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>물개발자</title>
-        <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
 
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="">Home</a></li>
-                    <li><a href="/archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href="">물개발자</a></h3>
-				<h2 class="text-muted"></h2>
-             </div>
-<section id="content" class="content">
+    <title>물개발자</title>
 
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/spark-docker-seolcihaebogi.html" rel="bookmark" title="Permalink to "spark docker 설치해보기"">"spark docker 설치해보기"</a></h2> </header>
-                <div class="entry-content"> <p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
+    <link rel="stylesheet" href="./theme/css/normalize.css" />
+    <link rel="stylesheet" href="./theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="./theme/css/style.css" />
+    <link rel="stylesheet" href="./theme/css/pygments.css" />	
+    <script src="./theme/js/custom.modernizr.js"></script>
 
+    <!-- So Firefox can bookmark->"abo this site" -->
 
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+</head>
 
-# 이미지 다운로드
-docker pull …</pre></div> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/python-recsys.html" rel="bookmark" title="Permalink to "python-recsys"">"python-recsys"</a></h2> </header>
-                <div class="entry-content"> <p>python-recsys 따라하기<br>
-http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
-<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
-<p>```python 사용자의 입력 모델화 하여 파일로 저장
-import recsys.algorithm
-recsys.algorithm.VERBOSE = True</p>
-<p>from recsys.algorithm.factorize import SVD
-svd = SVD()
-svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/movies.html" rel="bookmark" title="Permalink to "movies"">"movies"</a></h2> </header>
-                <div class="entry-content"> <table>
-<thead>
-<tr>
-<th>날짜</th>
-<th>제목</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2017.2.19</td>
-<td>글래디에이터: 로마 영웅 탄생의 필수 가이드 비밀</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3>예정</h3>
-<table>
-<thead>
-<tr>
-<th>분야</th>
-<th>제목</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>경제</td>
-<td>인사이드잡</td>
-</tr>
-<tr>
-<td>경제</td>
-<td>마진콜</td>
-</tr>
-<tr>
-<td>역사</td>
-<td>인생은 아름다워(La Vita E Bella, Life Is Beautiful 1997)</td>
-</tr>
-<tr>
-<td>역사</td>
-<td>프랑스 혁명</td>
-</tr>
-<tr>
-<td>SF</td>
-<td>스타워즈</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/emacseseo-pailmyeong-byeongyeonghagi.html" rel="bookmark" title="Permalink to "emacs에서 파일명 변경하기"">"emacs에서 파일명 변경하기"</a></h2> </header>
-                <div class="entry-content"> <p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
-<p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="/hadoop-docker.html" rel="bookmark" title="Permalink to "hadoop-docker"">"hadoop-docker"</a></h2> </header>
-                <div class="entry-content"> <p>가상머신 3개를 준비하자.</p>
-<div class="highlight"><pre><span></span># Namenode 192.168.99.101
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+<body>
 
-# Datanode1 192.168.99.102
-docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
-
-# Datanode2 192.168.99.103
-docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
-</pre></div>
-
-
-<div class="highlight"><pre><span></span>...
-namenode 192.168.99.101
-datanode1 192.168.99.102
-datanode2 …</pre></div> </div><!-- entry-content -->
-        </article>
-<div class="pager">
-      <ul>
-						<li class="previous"><a href="/index3.html">← Previous</a></li>
-						<li class="next"><a href="/index5.html">Next →</a></li>
-      </ul>
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href=".">물개발자</a></h1>
     </div>
-</section><!-- content -->
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="/feeds/all.atom.xml">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href="">물개발자</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-	var pageTracker = _gat._getTracker("UA-91188832-2");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-    </body>
-</html>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+
+            <article>
+                <a href="./experience.html"><h3 class="article-title">"Experience"</h3></a>
+<h6 class="subheader" title="2017-09-02T15:51:22+09:00">Sat 02 September 2017
+</h6>
+
+
+<hr>
+<ul>
+<li>
+<p>Backend developer at Modn, 2017.07</p>
+</li>
+<li>
+<p>Backend developer at Modernlab, 2017.04 ~ 2017.07</p>
+</li>
+<li>
+<p>Backend developer at Truffls, 2016.03 ~ 2016.09
+  <a href="https://truffls.de/en/">https://truffls.de/en/</a></p>
+</li>
+</ul>
+<p><img src="images/company/truffls1.jpg" style="max-width:700px"></p>
+<p>Django admin에 신규 기능 추가후 소개, Truffls</p>
+<p><img src="images/company/truffls2.jpg" style="max-width:700px"></p>
+<p>직원 기념 사진, Truffls</p>
+<ul>
+<li>QA Engineer at Delivery, 2015.06 ~ 2016.03
+  https://www.lieferheld.de/</li>
+</ul>
+<p><img src="images/company/delivery1.jpg" style="max-width:700px"></p>
+<p>Tech …</p><p class="subheader">Category: <a href="./category/gaebal.html">개발</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./experience.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="./aws-cloudtrail-and-config.html"><h3 class="article-title">"aws cloudtrail and config"</h3></a>
+<h6 class="subheader" title="2017-08-01T11:33:23+09:00">Tue 01 August 2017
+</h6>
+
+
+<ul>
+<li>
+<p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
+</li>
+<li>
+<p>임기성 :: 2015 리인벤트 리캡 게이밍  <a href="https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim">https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim</a></p>
+</li>
+<li>
+<p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
+</li>
+</ul><p class="subheader">Category: <a href="./category/misc.html">misc</a>
+
+    Tagged: 
+    <a href="./tag/aws.html">aws </a>
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./aws-cloudtrail-and-config.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="./rds-parameter-group.html"><h3 class="article-title">"rds-parameter-group"</h3></a>
+<h6 class="subheader" title="2017-06-22T11:51:34+09:00">Thu 22 June 2017
+</h6>
+
+
+<h3>문제</h3>
+<hr>
+<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
+<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
+그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
+- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
+<ul>
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul><p class="subheader">Category: <a href="./category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./rds-parameter-group.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="./git-tips.html"><h3 class="article-title">"git tips"</h3></a>
+<h6 class="subheader" title="2017-05-16T17:12:50+09:00">Tue 16 May 2017
+</h6>
+
+
+<ul>
+<li>특정 함수의 변경을 확인 : git log -L </li>
+<li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
+<li>버그가 발견한 commit를 추적 : git bisect</li>
+<li>commit.template</li>
+</ul><p class="subheader">Category: <a href="./category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./git-tips.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="./geuleul-maeil-sseuneun-bangbeob.html"><h3 class="article-title">"글을 매일 쓰는 방법"</h3></a>
+<h6 class="subheader" title="2017-05-15T17:26:17+09:00">Mon 15 May 2017
+</h6>
+
+
+<ul>
+<li>
+<p><a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e">25 Habits That Will Make You a Writer</a></p>
+</li>
+<li>
+<p>다문다독다상량(多聞多讀多商量, 많이 듣고 많이 읽고 많이 생각하라)
+다독다작다상량(多讀多作多商量, 많이 읽고 많이 쓰고 많이 생각하라)</p>
+</li>
+<li>
+<p>매일 글을 쓴다.
+하루를 보내며 재미있었던 일</p>
+</li>
+</ul><p class="subheader">Category: <a href="./category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="./geuleul-maeil-sseuneun-bangbeob.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 4 of 9</h6>
+
+<p>
+            <a href="./index3.html">&laquo; Prev</a>
+
+        <a href="./index5.html">Next &raquo;</a>
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="./archives.html">Archives</a>
+            <li><a href="./tags.html">Tags</a>
+
+
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="./category/dev.html">dev</a></li>
+            <li><a href="./category/gaebal.html">개발</a></li>
+            <li><a href="./category/misc.html">misc</a></li>
+            <li><a href="./category/munjang.html">문장</a></li>
+            <li><a href="./category/sebasi.html">세바시</a></li>
+   
+        </ul>
+
+        <h5 class="sidebar-title">Links</h5>
+        <ul class="side-nav">
+            <li><a href="http://getpelican.com/">Pelican</a></li>
+            <li><a href="http://python.org/">Python.org</a></li>
+            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+            <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="#">You can add links in your config file</a></li>
+            <li><a href="https://github.com/harry81">Github</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>물개발자 by hyunmin</p>
+            </div>
+            </div>
+    </div>
+</footer>
