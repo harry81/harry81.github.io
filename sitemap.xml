@@ -5,29 +5,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/</loc>
-<lastmod>2018-03-19T09:38:25-00:00</lastmod>
+<lastmod>2018-03-20T08:38:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/archives.html</loc>
-<lastmod>2018-03-19T09:38:25-00:00</lastmod>
+<lastmod>2018-03-20T08:38:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/tags.html</loc>
-<lastmod>2018-03-19T09:38:25-00:00</lastmod>
+<lastmod>2018-03-20T08:38:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/categories.html</loc>
-<lastmod>2018-03-19T09:38:25-00:00</lastmod>
+<lastmod>2018-03-20T08:38:57-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/markdown-mode-for-emacs.html</loc>
+<lastmod>2018-03-19T17:57:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/how-to-work-smart.html</loc>
+<lastmod>2018-03-19T11:00:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -355,7 +369,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/category/dev.html</loc>
-<lastmod>2018-03-19T09:25:00+08:28</lastmod>
+<lastmod>2018-03-19T17:57:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -432,7 +446,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/author/hyunmin.html</loc>
-<lastmod>2018-03-19T09:25:00+08:28</lastmod>
+<lastmod>2018-03-19T17:57:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

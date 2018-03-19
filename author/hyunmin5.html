@@ -50,6 +50,63 @@
 
 
             <article>
+                <a href="../build-a-chat-app-with-django.html"><h3 class="article-title">"build a chat app with django"</h3></a>
+<h6 class="subheader" title="2017-03-13T14:29:24+09:00">Mon 13 March 2017
+</h6>
+
+
+<h2>기능 요구사항</h2>
+<ul>
+<li>
+<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
+  http://rocketchat.healworld.co.kr/</p>
+</li>
+<li>
+<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
+링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
+https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
+</li>
+<li>
+<p>대화 …</p></li></ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../build-a-chat-app-with-django.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="../index-gs-shop.html"><h3 class="article-title">index gs shop</h3></a>
+<h6 class="subheader" title="2017-03-09T16:05:52+09:00">Thu 09 March 2017
+</h6>
+
+
+<h3>도전</h3>
+<ul>
+<li>GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성</li>
+<li>관련 기술
+  <code>Elasticsearch 플러그인</code>, <code>형태소 분석기</code>, <code>Thrift 서버</code>, <code>HAProxy</code></li>
+<li>형태소 분석이 필요한 이유?<br>
+  한국어 분석을 지원하지 않는다. 예를 들어 "아버지가 방에 들어간다"라는 한국어 문장을 인덱스해도 "아버지"로는 검색이 안 되고, 반드시 "아버지가"로 검색해야만 결과에 출력된다.</li>
+<li>형태소 분석기 - 은전 한  잎 …</li></ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../index-gs-shop.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="../senior-work.html"><h3 class="article-title">"senior work"</h3></a>
 <h6 class="subheader" title="2017-03-06T17:57:26+09:00">Mon 06 March 2017
 </h6>
@@ -132,70 +189,9 @@ docker-compose up
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="../spark-docker-seolcihaebogi.html"><h3 class="article-title">"spark docker 설치해보기"</h3></a>
-<h6 class="subheader" title="2017-02-28T18:34:41+09:00">Tue 28 February 2017
-</h6>
-
-
-<p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
-
-
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# 이미지 다운로드
-docker pull …</pre></div><p class="subheader">Category: <a href="../category/gaebal.html">개발</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../spark-docker-seolcihaebogi.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="../python-recsys.html"><h3 class="article-title">"python-recsys"</h3></a>
-<h6 class="subheader" title="2017-02-21T16:53:36+09:00">Tue 21 February 2017
-</h6>
-
-
-<p>python-recsys 따라하기<br>
-http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
-<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
-<p>```python 사용자의 입력 모델화 하여 파일로 저장
-import recsys.algorithm
-recsys.algorithm.VERBOSE = True</p>
-<p>from recsys.algorithm.factorize import SVD
-svd = SVD()
-svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p><p class="subheader">Category: <a href="../category/dev.html">dev</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../python-recsys.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 5 of 8</h6>
+<h6 class="subheader">Page 5 of 9</h6>
 
 <p>
             <a href="../author/hyunmin4.html">&laquo; Prev</a>
