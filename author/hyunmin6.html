@@ -51,6 +51,40 @@
 
 
             <article>
+                <a href="/spark-docker-seolcihaebogi.html"><h3 class="article-title">"spark docker 설치해보기"</h3></a>
+<h6 class="subheader" title="2017-02-28T18:34:41+09:00">Tue 28 February 2017
+</h6>
+
+
+<p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
+<p>https://github.com/sequenceiq/docker-spark</p>
+<h3>create virtualbox</h3>
+<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
+docker-machine create -d virtualbox namenode
+docker-machine create -d virtualbox datanode1
+</pre></div>
+
+
+<h2>name node</h2>
+<p>https://github.com/sequenceiq/hadoop-docker</p>
+<div class="highlight"><pre><span></span># run docker hadoop
+docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+
+# 이미지 다운로드
+docker pull …</pre></div><p class="subheader">Category: <a href="/category/gaebal.html">개발</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="/spark-docker-seolcihaebogi.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="/python-recsys.html"><h3 class="article-title">"python-recsys"</h3></a>
 <h6 class="subheader" title="2017-02-21T16:53:36+09:00">Tue 21 February 2017
 </h6>
@@ -200,30 +234,9 @@ datanode2 …</pre></div><p class="subheader">Category: <a href="/category/misc.
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html"><h3 class="article-title">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</h3></a>
-<h6 class="subheader" title="2017-02-18T15:43:28+09:00">Sat 18 February 2017
-</h6>
-
-
-<p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
-테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
-<p>시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …</p><p class="subheader">Category: <a href="/category/dev.html">dev</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 6 of 8</h6>
+<h6 class="subheader">Page 6 of 9</h6>
 
 <p>
             <a href="/author/hyunmin5.html">&laquo; Prev</a>
