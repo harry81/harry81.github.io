@@ -25,7 +25,6 @@ TAG_FEED_ATOM = "feeds/tag_%s.atom.xml"
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
@@ -38,7 +37,7 @@ STATIC_PATHS = ['images', 'pdfs']
 THEME = "/home/harry/pelican-themes/tuxlite_zf/"
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['assets', 'sitemap', 'gravatar', 'i18n_subsites']
+PLUGINS = ['assets', 'sitemap', 'gravatar', 'i18n_subsites', 'pelican_comment_system']
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
 }

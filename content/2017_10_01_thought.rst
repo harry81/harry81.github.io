@@ -1,0 +1,6 @@
+:title: thought
+:date: 2017-10-1 20:37
+:author: Hyunmin Choi
+:tags: daily thought, feature, 세바시
+:category:
+:slug: thought

@@ -1,0 +1,21 @@
+---
+layout: post
+title: What does the good blogs have in common?
+date: 2018-3-18 17:55
+comments: true
+category: dev
+published: true
+---
+
+##### 형식
+- 구조가 명확하다.
+- 그림을 포함한다.
+- 링크를 포함한다.
+- 간결하다.
+    예제) [https://www.webpagefx.com/blog/web-design/](https://www.webpagefx.com/blog/web-design/ "https://www.webpagefx.com/blog/web-design/")
+
+##### 내용
+
+- 독창적이다.
+
+##### 블로그를 잘 하려면 따라하고픈 멘토를 찾자
