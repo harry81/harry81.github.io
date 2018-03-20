@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - dev</title><link href="/" rel="alternate"></link><link href="/feeds/dev.atom.xml" rel="self"></link><id>/</id><updated>2018-03-20T10:27:00+09:00</updated><entry><title>Handle a lot of rows in Django model</title><link href="/handle-a-lot-of-rows-in-django-model.html" rel="alternate"></link><published>2018-03-20T10:27:00+09:00</published><updated>2018-03-20T10:27:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-20:/handle-a-lot-of-rows-in-django-model.html</id><summary type="html">&lt;p&gt;아래 함수&lt;strong&gt;batch_qs_via_ids&lt;/strong&gt;의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - dev</title><link href="harry81/" rel="alternate"></link><link href="harry81/feeds/dev.atom.xml" rel="self"></link><id>harry81/</id><updated>2018-03-20T10:27:00+09:00</updated><entry><title>Handle a lot of rows in Django model</title><link href="harry81/handle-a-lot-of-rows-in-django-model.html" rel="alternate"></link><published>2018-03-20T10:27:00+09:00</published><updated>2018-03-20T10:27:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-20:harry81/handle-a-lot-of-rows-in-django-model.html</id><summary type="html">&lt;p&gt;아래 함수&lt;strong&gt;batch_qs_via_ids&lt;/strong&gt;의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;batch_qs_via_ids&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;qs&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;batch_size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="n"&gt;queryset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;_get_queryset&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;qs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="n"&gt;pk_name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;queryset&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;model&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;_meta&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;pk&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;
@@ -19,11 +19,11 @@
 
     &lt;span class="c1"&gt;# Clear out the DB connections queries because it bloats up RAM.&lt;/span&gt;
     &lt;span class="n"&gt;reset_queries&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Markdown mode for Emacs</title><link href="/markdown-mode-for-emacs.html" rel="alternate"></link><published>2018-03-19T17:57:00+09:00</published><updated>2018-03-19T17:57:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-19:/markdown-mode-for-emacs.html</id><summary type="html">&lt;h5&gt;단축키&lt;/h5&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Markdown mode for Emacs</title><link href="harry81/markdown-mode-for-emacs.html" rel="alternate"></link><published>2018-03-19T17:57:00+09:00</published><updated>2018-03-19T17:57:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-19:harry81/markdown-mode-for-emacs.html</id><summary type="html">&lt;h5&gt;단축키&lt;/h5&gt;
 &lt;p&gt;Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
 &lt;a href="https://github.com/defunkt/markdown-mode"&gt;https://github.com/defunkt/markdown-mode&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h5&gt;단축키&lt;/h5&gt;
 &lt;p&gt;Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
-&lt;a href="https://github.com/defunkt/markdown-mode"&gt;https://github.com/defunkt/markdown-mode&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>How to work smart</title><link href="/how-to-work-smart.html" rel="alternate"></link><published>2018-03-19T11:00:00+09:00</published><updated>2018-03-19T11:00:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-19:/how-to-work-smart.html</id><summary type="html">&lt;ul&gt;
+&lt;a href="https://github.com/defunkt/markdown-mode"&gt;https://github.com/defunkt/markdown-mode&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>How to work smart</title><link href="harry81/how-to-work-smart.html" rel="alternate"></link><published>2018-03-19T11:00:00+09:00</published><updated>2018-03-19T11:00:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-19:harry81/how-to-work-smart.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;Do&lt;ul&gt;
 &lt;li&gt;출근 한 시간전에 회사에 도착한다.&lt;/li&gt;
 &lt;li&gt;불가능한 업무는 용감하게 No라고 말한다.&lt;/li&gt;
@@ -75,7 +75,7 @@
 &lt;li&gt;소통에는 비용과 시간이 필요하니, 한 사람에게 업무과 결정권을 모두 맡도록 한다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Why I need to get XPS 15</title><link href="/why-i-need-to-get-xps-15.html" rel="alternate"></link><published>2018-03-19T09:25:00+09:00</published><updated>2018-03-19T09:25:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-19:/why-i-need-to-get-xps-15.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>Why I need to get XPS 15</title><link href="harry81/why-i-need-to-get-xps-15.html" rel="alternate"></link><published>2018-03-19T09:25:00+09:00</published><updated>2018-03-19T09:25:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-19:harry81/why-i-need-to-get-xps-15.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;사야하는 이유&lt;/p&gt;
 &lt;ul&gt;
@@ -107,7 +107,7 @@
 &lt;li&gt;정상적으로 잘 작동하는 labtop가 있다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>What does the good blogs have in common?</title><link href="/what-does-the-good-blogs-have-in-common.html" rel="alternate"></link><published>2018-03-18T17:55:00+09:00</published><updated>2018-03-18T17:55:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-18:/what-does-the-good-blogs-have-in-common.html</id><summary type="html">&lt;h5&gt;형식&lt;/h5&gt;
+&lt;/ul&gt;</content></entry><entry><title>What does the good blogs have in common?</title><link href="harry81/what-does-the-good-blogs-have-in-common.html" rel="alternate"></link><published>2018-03-18T17:55:00+09:00</published><updated>2018-03-18T17:55:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-18:harry81/what-does-the-good-blogs-have-in-common.html</id><summary type="html">&lt;h5&gt;형식&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;구조가 명확하다.&lt;/li&gt;
 &lt;li&gt;그림을 포함한다.&lt;/li&gt;
@@ -131,7 +131,7 @@
 &lt;ul&gt;
 &lt;li&gt;독창적이다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5&gt;블로그를 잘 하려면 따라하고픈 멘토를 찾자&lt;/h5&gt;</content></entry><entry><title>How to run pelican</title><link href="/how-to-run-pelican.html" rel="alternate"></link><published>2018-03-18T17:24:00+09:00</published><updated>2018-03-18T17:24:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-18:/how-to-run-pelican.html</id><summary type="html">&lt;ul&gt;
+&lt;h5&gt;블로그를 잘 하려면 따라하고픈 멘토를 찾자&lt;/h5&gt;</content></entry><entry><title>How to run pelican</title><link href="harry81/how-to-run-pelican.html" rel="alternate"></link><published>2018-03-18T17:24:00+09:00</published><updated>2018-03-18T17:24:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2018-03-18:harry81/how-to-run-pelican.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;local 환경에서 실시간 페이지 보기&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ fab serve
@@ -167,7 +167,7 @@
 &lt;li&gt;github page에 적용하기&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make github or fab gh_pages
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>microservice</title><link href="/microservice.html" rel="alternate"></link><published>2017-11-04T13:09:00+09:00</published><updated>2017-11-04T13:09:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-11-04:/microservice.html</id><summary type="html">&lt;table&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>microservice</title><link href="harry81/microservice.html" rel="alternate"></link><published>2017-11-04T13:09:00+09:00</published><updated>2017-11-04T13:09:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-11-04:harry81/microservice.html</id><summary type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
@@ -269,7 +269,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="http://www.popit.kr/why-microservice/"&gt;마이크로서비스 아키텍처의 장단점&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>자전거 사용추이</title><link href="/bike_timeline.html" rel="alternate"></link><published>2017-10-20T17:37:00+09:00</published><updated>2017-10-20T17:37:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-20:/bike_timeline.html</id><summary type="html">&lt;dl class="docutils"&gt;
+&lt;p&gt;&lt;a href="http://www.popit.kr/why-microservice/"&gt;마이크로서비스 아키텍처의 장단점&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>자전거 사용추이</title><link href="harry81/bike_timeline.html" rel="alternate"></link><published>2017-10-20T17:37:00+09:00</published><updated>2017-10-20T17:37:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-20:harry81/bike_timeline.html</id><summary type="html">&lt;dl class="docutils"&gt;
 &lt;dt&gt;서울 따릉이&lt;/dt&gt;
 &lt;dd&gt;&lt;a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html"&gt;서울 따릉이 하루 이용 그림(2mb)&lt;/a&gt;&lt;/dd&gt;
 &lt;/dl&gt;
@@ -277,9 +277,9 @@
 &lt;dt&gt;서울 따릉이&lt;/dt&gt;
 &lt;dd&gt;&lt;a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html"&gt;서울 따릉이 하루 이용 그림(2mb)&lt;/a&gt;&lt;/dd&gt;
 &lt;/dl&gt;
-</content><category term="bike"></category></entry><entry><title>따릉이 사용량</title><link href="/my-super-post.html" rel="alternate"></link><published>2017-09-27T10:20:00+09:00</published><updated>2017-09-27T10:20:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-27:/my-super-post.html</id><summary type="html">&lt;p&gt;&lt;img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"&gt;&lt;/p&gt;
+</content><category term="bike"></category></entry><entry><title>따릉이 사용량</title><link href="harry81/my-super-post.html" rel="alternate"></link><published>2017-09-27T10:20:00+09:00</published><updated>2017-09-27T10:20:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-27:harry81/my-super-post.html</id><summary type="html">&lt;p&gt;&lt;img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"&gt;&lt;/p&gt;
 &lt;p&gt;파랑 - 실제 주차장에 주차되어있는 수&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"&gt;&lt;/p&gt;
-&lt;p&gt;파랑 - 실제 주차장에 주차되어있는 수&lt;/p&gt;</content><category term="data"></category></entry><entry><title>"python-recsys"</title><link href="/python-recsys.html" rel="alternate"></link><published>2017-02-21T16:53:36+09:00</published><updated>2017-02-21T16:53:36+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-21:/python-recsys.html</id><summary type="html">&lt;p&gt;python-recsys 따라하기&lt;br&gt;
+&lt;p&gt;파랑 - 실제 주차장에 주차되어있는 수&lt;/p&gt;</content><category term="data"></category></entry><entry><title>"python-recsys"</title><link href="harry81/python-recsys.html" rel="alternate"></link><published>2017-02-21T16:53:36+09:00</published><updated>2017-02-21T16:53:36+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-21:harry81/python-recsys.html</id><summary type="html">&lt;p&gt;python-recsys 따라하기&lt;br&gt;
 http://ocelma.net/software/python-recsys/build/html/quickstart.html&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://grouplens.org/datasets/movielens/"&gt;ratings.csv 다운받는다&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;```python 사용자의 입력 모델화 하여 파일로 저장
@@ -324,7 +324,7 @@ from recsys.algorithm.factorize import SVD
 svd2 = SVD(filename='/tmp/movielens') # Loading already computed SVD model
 ITEMID1 = 1    # Toy Story (1995)
 ITEMID2 = 2355 # A bug's life (1998)
-svd2.similarity(ITEMID1, ITEMID2)&lt;/code&gt;&lt;/p&gt;</content></entry><entry><title>"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</title><link href="/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="alternate"></link><published>2017-02-18T15:43:28+09:00</published><updated>2017-02-18T15:43:28+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-18:/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html</id><summary type="html">&lt;p&gt;소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
+svd2.similarity(ITEMID1, ITEMID2)&lt;/code&gt;&lt;/p&gt;</content></entry><entry><title>"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</title><link href="harry81/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="alternate"></link><published>2017-02-18T15:43:28+09:00</published><updated>2017-02-18T15:43:28+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-18:harry81/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html</id><summary type="html">&lt;p&gt;소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
 테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  &lt;/p&gt;
 &lt;p&gt;시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …&lt;/p&gt;</summary><content type="html">&lt;p&gt;소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
 테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  &lt;/p&gt;
@@ -350,7 +350,7 @@ svd2.similarity(ITEMID1, ITEMID2)&lt;/code&gt;&lt;/p&gt;</content></entry><entry
 
 
 &lt;p _="%" endcodeblock&gt;{% codeblock "settings.py" [line_number:(false)] %}
-TEST_RUNNER = 'myapp.TestRunnser""&lt;/p&gt;</content></entry><entry><title>"mp4-mp3"</title><link href="/mp4-mp3.html" rel="alternate"></link><published>2015-06-28T17:51:24+09:00</published><updated>2015-06-28T17:51:24+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2015-06-28:/mp4-mp3.html</id><summary type="html">&lt;h3&gt;우분투용용의 avconv 이용&lt;/h3&gt;
+TEST_RUNNER = 'myapp.TestRunnser""&lt;/p&gt;</content></entry><entry><title>"mp4-mp3"</title><link href="harry81/mp4-mp3.html" rel="alternate"></link><published>2015-06-28T17:51:24+09:00</published><updated>2015-06-28T17:51:24+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2015-06-28:harry81/mp4-mp3.html</id><summary type="html">&lt;h3&gt;우분투용용의 avconv 이용&lt;/h3&gt;
 &lt;p&gt;``` bash 형식
 avconv  -i [영상파일] -vn  [소리파일]&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;``` bash 예시

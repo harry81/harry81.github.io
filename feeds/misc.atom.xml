@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - misc</title><link href="/" rel="alternate"></link><link href="/feeds/misc.atom.xml" rel="self"></link><id>/</id><updated>2017-11-18T12:15:00+09:00</updated><entry><title>Let's get it done</title><link href="/lets-get-it-done.html" rel="alternate"></link><published>2017-11-18T12:15:00+09:00</published><updated>2017-11-18T12:15:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-11-18:/lets-get-it-done.html</id><summary type="html">&lt;h5&gt;그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?&lt;/h5&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>물개발자 - misc</title><link href="harry81/" rel="alternate"></link><link href="harry81/feeds/misc.atom.xml" rel="self"></link><id>harry81/</id><updated>2017-11-18T12:15:00+09:00</updated><entry><title>Let's get it done</title><link href="harry81/lets-get-it-done.html" rel="alternate"></link><published>2017-11-18T12:15:00+09:00</published><updated>2017-11-18T12:15:00+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-11-18:harry81/lets-get-it-done.html</id><summary type="html">&lt;h5&gt;그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;전체적인 그림을 그리지 못했다.&lt;/p&gt;
@@ -57,7 +57,7 @@
 &lt;li&gt;진행상황을 출력해 둔다. &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>믿지말라 그리고 질문하라</title><link href="/%EA%B0%81%20%EC%8B%9C%EB%8C%80%EB%B3%84%20%EC%9D%B8%EA%B8%B0%20%EC%A7%81%EC%97%85.html" rel="alternate"></link><published>2017-10-01T20:49:00+09:00</published><updated>2017-10-01T20:49:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-01:/각 시대별 인기 직업.html</id><summary type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x2QMiLa160w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;송길영 다음소프트 부사장&lt;/p&gt;
+&lt;/ul&gt;</content></entry><entry><title>믿지말라 그리고 질문하라</title><link href="harry81/%EA%B0%81%20%EC%8B%9C%EB%8C%80%EB%B3%84%20%EC%9D%B8%EA%B8%B0%20%EC%A7%81%EC%97%85.html" rel="alternate"></link><published>2017-10-01T20:49:00+09:00</published><updated>2017-10-01T20:49:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-01:harry81/각 시대별 인기 직업.html</id><summary type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x2QMiLa160w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;송길영 다음소프트 부사장&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://news.mk.co.kr/newsRead.php?no=64969&amp;amp;year=2011"&gt;각 시대별 인기 직업&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;무엇을 포기해야 하는가?&lt;/p&gt;
 &lt;p&gt;지식의 유효기간
@@ -69,7 +69,7 @@
 &lt;p&gt;지식의 유효기간
 관심의 유효기간&lt;/p&gt;
 &lt;p&gt;믿지말라 그리고 질문하라&lt;/p&gt;
-</content><category term="세바시"></category></entry><entry><title>thought</title><link href="/thought.html" rel="alternate"></link><published>2017-10-01T20:37:00+09:00</published><updated>2017-10-01T20:37:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-01:/thought.html</id><summary type="html"></summary><content type="html"></content><category term="daily thought"></category><category term="feature"></category><category term="세바시"></category></entry><entry><title>면접자로서 면접시에 물어보고 싶은 질문들</title><link href="/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html" rel="alternate"></link><published>2017-09-29T11:51:34+09:00</published><updated>2017-09-29T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-29:/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html</id><summary type="html">&lt;h4&gt;대략적인 질문&lt;/h4&gt;
+</content><category term="세바시"></category></entry><entry><title>thought</title><link href="harry81/thought.html" rel="alternate"></link><published>2017-10-01T20:37:00+09:00</published><updated>2017-10-01T20:37:00+09:00</updated><author><name>Hyunmin Choi</name></author><id>tag:None,2017-10-01:harry81/thought.html</id><summary type="html"></summary><content type="html"></content><category term="daily thought"></category><category term="feature"></category><category term="세바시"></category></entry><entry><title>면접자로서 면접시에 물어보고 싶은 질문들</title><link href="harry81/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html" rel="alternate"></link><published>2017-09-29T11:51:34+09:00</published><updated>2017-09-29T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-29:harry81/myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html</id><summary type="html">&lt;h4&gt;대략적인 질문&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;개발 방법론(scrum?)&lt;/li&gt;
 &lt;li&gt;업무 시간, 출퇴근 시간&lt;/li&gt;
@@ -139,7 +139,7 @@
 &lt;ul&gt;
 &lt;li&gt;선호&lt;/li&gt;
 &lt;li&gt;비선호&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>Elasticbeans talk</title><link href="/elasticbeans-talk.html" rel="alternate"></link><published>2017-09-13T17:44:50+09:00</published><updated>2017-09-13T17:44:50+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-13:/elasticbeans-talk.html</id><summary type="html">&lt;h4&gt;Elasticbeanstalk health check&lt;/h4&gt;
+&lt;/ul&gt;</content></entry><entry><title>Elasticbeans talk</title><link href="harry81/elasticbeans-talk.html" rel="alternate"></link><published>2017-09-13T17:44:50+09:00</published><updated>2017-09-13T17:44:50+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-13:harry81/elasticbeans-talk.html</id><summary type="html">&lt;h4&gt;Elasticbeanstalk health check&lt;/h4&gt;
 &lt;p&gt;EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.&lt;/p&gt;
 &lt;p&gt;&lt;img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"&gt;&lt;/p&gt;
@@ -170,7 +170,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;http://mattharris.org/2015/11/30/setting-aws-elasticbeanstalk-environment-wsgi-authorization/&lt;/p&gt;</content></entry><entry><title>"data.go.kr"</title><link href="/datagokr.html" rel="alternate"></link><published>2017-09-03T14:29:11+09:00</published><updated>2017-09-03T14:29:11+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-03:/datagokr.html</id><summary type="html">&lt;hr&gt;
+&lt;p&gt;http://mattharris.org/2015/11/30/setting-aws-elasticbeanstalk-environment-wsgi-authorization/&lt;/p&gt;</content></entry><entry><title>"data.go.kr"</title><link href="harry81/datagokr.html" rel="alternate"></link><published>2017-09-03T14:29:11+09:00</published><updated>2017-09-03T14:29:11+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-09-03:harry81/datagokr.html</id><summary type="html">&lt;hr&gt;
 &lt;ul&gt;
 &lt;li&gt;단독/다가구 전월세 지수 변화, 2004~2016 &lt;a href="https://s3.ap-northeast-2.amazonaws.com/hmapps/data/home_loan_201708_900x500.html"&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -184,7 +184,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 &lt;p&gt;지역코드와 기간을 이용하여 해당기간, 해당지역의 단독다가구 전월세 신고자료를 제공하는 단독다가구 전월세 신고 정보 조회&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;이력 소개 &lt;a href="http://bit.ly/2f9Xjdp"&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>"aws cloudtrail and config"</title><link href="/aws-cloudtrail-and-config.html" rel="alternate"></link><published>2017-08-01T11:33:23+09:00</published><updated>2017-08-01T11:33:23+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-08-01:/aws-cloudtrail-and-config.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>"aws cloudtrail and config"</title><link href="harry81/aws-cloudtrail-and-config.html" rel="alternate"></link><published>2017-08-01T11:33:23+09:00</published><updated>2017-08-01T11:33:23+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-08-01:harry81/aws-cloudtrail-and-config.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;AWS Config Rules, 서울 리전 출시! &lt;a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config"&gt;https://aws.amazon.com/ko/blogs/korea/category/aws-config&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -204,7 +204,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 &lt;li&gt;
 &lt;p&gt;AWS Summit Seoul 2016  &lt;a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim"&gt;https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="aws"></category></entry><entry><title>"rds-parameter-group"</title><link href="/rds-parameter-group.html" rel="alternate"></link><published>2017-06-22T11:51:34+09:00</published><updated>2017-06-22T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-06-22:/rds-parameter-group.html</id><summary type="html">&lt;h3&gt;문제&lt;/h3&gt;
+&lt;/ul&gt;</content><category term="aws"></category></entry><entry><title>"rds-parameter-group"</title><link href="harry81/rds-parameter-group.html" rel="alternate"></link><published>2017-06-22T11:51:34+09:00</published><updated>2017-06-22T11:51:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-06-22:harry81/rds-parameter-group.html</id><summary type="html">&lt;h3&gt;문제&lt;/h3&gt;
 &lt;hr&gt;
 &lt;p&gt;postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 &lt;code&gt;order by&lt;/code&gt; 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.&lt;/p&gt;
 &lt;p&gt;정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
@@ -229,7 +229,7 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 https://jupiny.com/2016/12/12/sort-korean-in-postgresql/&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;아래는 rds에서 collate 값을 변경이 필요한 경우
-&lt;img alt="/images/rds-parameter-groups.png" src="/images/rds-parameter-groups.png"&gt;&lt;/p&gt;</content></entry><entry><title>"git tips"</title><link href="/git-tips.html" rel="alternate"></link><published>2017-05-16T17:12:50+09:00</published><updated>2017-05-16T17:12:50+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-05-16:/git-tips.html</id><summary type="html">&lt;ul&gt;
+&lt;img alt="/images/rds-parameter-groups.png" src="/images/rds-parameter-groups.png"&gt;&lt;/p&gt;</content></entry><entry><title>"git tips"</title><link href="harry81/git-tips.html" rel="alternate"></link><published>2017-05-16T17:12:50+09:00</published><updated>2017-05-16T17:12:50+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-05-16:harry81/git-tips.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;특정 함수의 변경을 확인 : git log -L &lt;/li&gt;
 &lt;li&gt;merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort&lt;/li&gt;
 &lt;li&gt;버그가 발견한 commit를 추적 : git bisect&lt;/li&gt;
@@ -239,7 +239,7 @@ https://jupiny.com/2016/12/12/sort-korean-in-postgresql/&lt;/li&gt;
 &lt;li&gt;merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort&lt;/li&gt;
 &lt;li&gt;버그가 발견한 commit를 추적 : git bisect&lt;/li&gt;
 &lt;li&gt;commit.template&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>"글을 매일 쓰는 방법"</title><link href="/geuleul-maeil-sseuneun-bangbeob.html" rel="alternate"></link><published>2017-05-15T17:26:17+09:00</published><updated>2017-05-15T17:26:17+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-05-15:/geuleul-maeil-sseuneun-bangbeob.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>"글을 매일 쓰는 방법"</title><link href="harry81/geuleul-maeil-sseuneun-bangbeob.html" rel="alternate"></link><published>2017-05-15T17:26:17+09:00</published><updated>2017-05-15T17:26:17+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-05-15:harry81/geuleul-maeil-sseuneun-bangbeob.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e"&gt;25 Habits That Will Make You a Writer&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -263,7 +263,7 @@ https://jupiny.com/2016/12/12/sort-korean-in-postgresql/&lt;/li&gt;
 &lt;p&gt;매일 글을 쓴다.
 하루를 보내며 재미있었던 일&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>"AWS와 친구 되기"</title><link href="/awswa-cingu-doegi.html" rel="alternate"></link><published>2017-05-15T17:05:34+09:00</published><updated>2017-05-15T17:05:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-05-15:/awswa-cingu-doegi.html</id><summary type="html">&lt;h2&gt;아테나 성능 튜닝 팁 - 정도현&lt;/h2&gt;
+&lt;/ul&gt;</content></entry><entry><title>"AWS와 친구 되기"</title><link href="harry81/awswa-cingu-doegi.html" rel="alternate"></link><published>2017-05-15T17:05:34+09:00</published><updated>2017-05-15T17:05:34+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-05-15:harry81/awswa-cingu-doegi.html</id><summary type="html">&lt;h2&gt;아테나 성능 튜닝 팁 - 정도현&lt;/h2&gt;
 &lt;p&gt;Amazon Athena is an interactive query service that makes it easy to analyze data stored in Amazon S3 using standard SQL
 - big-data &lt;a href="https://aws.amazon.com/ko/blogs/big-data/"&gt;https://aws.amazon.com/ko/blogs/big-data/&lt;/a&gt;
 - Top 10 Performance Tuning Tips for Amazon Athena &lt;a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/"&gt;https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;h2&gt;아테나 성능 튜닝 팁 - 정도현&lt;/h2&gt;
@@ -284,7 +284,7 @@ https://jupiny.com/2016/12/12/sort-korean-in-postgresql/&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;AWS Korea User Group (AWSKRUG) https://www.meetup.com/awskrug/&lt;/p&gt;
-&lt;/blockquote&gt;</content></entry><entry><title>"소담에서의 시작"</title><link href="/sodameseoyi-sijag.html" rel="alternate"></link><published>2017-04-13T10:32:17+09:00</published><updated>2017-04-13T10:32:17+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-04-13:/sodameseoyi-sijag.html</id><summary type="html">&lt;h4&gt;소감&lt;/h4&gt;
+&lt;/blockquote&gt;</content></entry><entry><title>"소담에서의 시작"</title><link href="harry81/sodameseoyi-sijag.html" rel="alternate"></link><published>2017-04-13T10:32:17+09:00</published><updated>2017-04-13T10:32:17+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-04-13:harry81/sodameseoyi-sijag.html</id><summary type="html">&lt;h4&gt;소감&lt;/h4&gt;
 &lt;p&gt;낯설지만 자유롭다.
 이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.&lt;/p&gt;
 &lt;p&gt;익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …&lt;/p&gt;</summary><content type="html">&lt;h4&gt;소감&lt;/h4&gt;
@@ -302,7 +302,7 @@ https://jupiny.com/2016/12/12/sort-korean-in-postgresql/&lt;/li&gt;
 &lt;ul&gt;
 &lt;li&gt;Backend : Django&lt;/li&gt;
 &lt;li&gt;Frontend : NG2&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>"init sodam"</title><link href="/init-sodam.html" rel="alternate"></link><published>2017-04-03T17:22:35+09:00</published><updated>2017-04-03T17:22:35+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-04-03:/init-sodam.html</id><summary type="html">&lt;p&gt;upgrade pip
+&lt;/ul&gt;</content></entry><entry><title>"init sodam"</title><link href="harry81/init-sodam.html" rel="alternate"></link><published>2017-04-03T17:22:35+09:00</published><updated>2017-04-03T17:22:35+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-04-03:harry81/init-sodam.html</id><summary type="html">&lt;p&gt;upgrade pip
 pip3 install -U pip &lt;/p&gt;
 &lt;p&gt;가상환경
 mkvirtualenv sodam -p /usr/bin/python3 &lt;/p&gt;
@@ -350,7 +350,7 @@ mkvirtualenv sodam -p /usr/bin/python3 &lt;/p&gt;
 &lt;td align="right"&gt;$12&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content></entry><entry><title>"build a chat app with django"</title><link href="/build-a-chat-app-with-django.html" rel="alternate"></link><published>2017-03-13T14:29:24+09:00</published><updated>2017-03-13T14:29:24+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-13:/build-a-chat-app-with-django.html</id><summary type="html">&lt;h2&gt;기능 요구사항&lt;/h2&gt;
+&lt;/table&gt;</content></entry><entry><title>"build a chat app with django"</title><link href="harry81/build-a-chat-app-with-django.html" rel="alternate"></link><published>2017-03-13T14:29:24+09:00</published><updated>2017-03-13T14:29:24+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-13:harry81/build-a-chat-app-with-django.html</id><summary type="html">&lt;h2&gt;기능 요구사항&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
@@ -647,7 +647,7 @@ aws s3 sync dist s3://rocketchat.healworld.co.kr/ --grants read=uri=http://acs.a
 &lt;hr&gt;
 &lt;h2&gt;배포&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;fab deploy
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>index gs shop</title><link href="/index-gs-shop.html" rel="alternate"></link><published>2017-03-09T16:05:52+09:00</published><updated>2017-03-09T16:05:52+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-09:/index-gs-shop.html</id><summary type="html">&lt;h3&gt;도전&lt;/h3&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>index gs shop</title><link href="harry81/index-gs-shop.html" rel="alternate"></link><published>2017-03-09T16:05:52+09:00</published><updated>2017-03-09T16:05:52+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-09:harry81/index-gs-shop.html</id><summary type="html">&lt;h3&gt;도전&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성&lt;/li&gt;
 &lt;li&gt;관련 기술
@@ -866,7 +866,7 @@ $ES/bin/plugin --install analysis-mecab-ko-0.16.1 --url file:///tmp/elasticsearc
 &lt;td&gt;Query DSL&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content></entry><entry><title>"senior work"</title><link href="/senior-work.html" rel="alternate"></link><published>2017-03-06T17:57:26+09:00</published><updated>2017-03-06T17:57:26+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-06:/senior-work.html</id><summary type="html">&lt;h3&gt;참고 사이트&lt;/h3&gt;
+&lt;/table&gt;</content></entry><entry><title>"senior work"</title><link href="harry81/senior-work.html" rel="alternate"></link><published>2017-03-06T17:57:26+09:00</published><updated>2017-03-06T17:57:26+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-06:harry81/senior-work.html</id><summary type="html">&lt;h3&gt;참고 사이트&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;구미 노일 일자리 창출센터 http://www.gumisilver.or.kr/job/job_psn.asp&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
@@ -874,7 +874,7 @@ $ES/bin/plugin --install analysis-mecab-ko-0.16.1 --url file:///tmp/elasticsearc
 &lt;ul&gt;
 &lt;li&gt;구미 노일 일자리 창출센터 http://www.gumisilver.or.kr/job/job_psn.asp&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>"get title data api"</title><link href="/get-title-data-api.html" rel="alternate"></link><published>2017-03-04T17:53:15+09:00</published><updated>2017-03-04T17:53:15+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-04:/get-title-data-api.html</id><summary type="html">&lt;h3&gt;기본 matplotlib 이용하여 데이타 출력&lt;/h3&gt;
+&lt;/ul&gt;</content></entry><entry><title>"get title data api"</title><link href="harry81/get-title-data-api.html" rel="alternate"></link><published>2017-03-04T17:53:15+09:00</published><updated>2017-03-04T17:53:15+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-04:harry81/get-title-data-api.html</id><summary type="html">&lt;h3&gt;기본 matplotlib 이용하여 데이타 출력&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
 &lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;matplotlib&lt;/span&gt; &lt;span class="n"&gt;inline&lt;/span&gt;
 
@@ -940,7 +940,7 @@ $ES/bin/plugin --install analysis-mecab-ko-0.16.1 --url file:///tmp/elasticsearc
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;https://github.com/wesm/pydata-book&lt;/p&gt;</content></entry><entry><title>"uhopper-hadoop-docker"</title><link href="/uhopper-hadoop-docker.html" rel="alternate"></link><published>2017-03-02T17:11:16+09:00</published><updated>2017-03-02T17:11:16+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-02:/uhopper-hadoop-docker.html</id><summary type="html">&lt;h3&gt;docker-compose 를 이용해서&lt;/h3&gt;
+&lt;p&gt;https://github.com/wesm/pydata-book&lt;/p&gt;</content></entry><entry><title>"uhopper-hadoop-docker"</title><link href="harry81/uhopper-hadoop-docker.html" rel="alternate"></link><published>2017-03-02T17:11:16+09:00</published><updated>2017-03-02T17:11:16+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-03-02:harry81/uhopper-hadoop-docker.html</id><summary type="html">&lt;h3&gt;docker-compose 를 이용해서&lt;/h3&gt;
 &lt;p&gt;https://bitbucket.org/uhopper/hadoop-docker/&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone https://bitbucket.org/uhopper/hadoop-docker.git 
 
@@ -962,7 +962,7 @@ docker volume create --name=hadoop_datanode2
 docker volume create --name=hadoop_historyserver
 docker volume create --name=hadoop_namenode
 docker-compose up
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>"movies"</title><link href="/movies.html" rel="alternate"></link><published>2017-02-21T14:59:56+09:00</published><updated>2017-02-21T14:59:56+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-21:/movies.html</id><summary type="html">&lt;table&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>"movies"</title><link href="harry81/movies.html" rel="alternate"></link><published>2017-02-21T14:59:56+09:00</published><updated>2017-02-21T14:59:56+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-21:harry81/movies.html</id><summary type="html">&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;날짜&lt;/th&gt;
@@ -1068,9 +1068,9 @@ docker-compose up
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content></entry><entry><title>"emacs에서 파일명 변경하기"</title><link href="/emacseseo-pailmyeong-byeongyeonghagi.html" rel="alternate"></link><published>2017-02-20T18:03:19+09:00</published><updated>2017-02-20T18:03:19+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-20:/emacseseo-pailmyeong-byeongyeonghagi.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;C-x C-q and(파일명 편집) C-c C-C&lt;/strong&gt;&lt;/p&gt;
+&lt;/table&gt;</content></entry><entry><title>"emacs에서 파일명 변경하기"</title><link href="harry81/emacseseo-pailmyeong-byeongyeonghagi.html" rel="alternate"></link><published>2017-02-20T18:03:19+09:00</published><updated>2017-02-20T18:03:19+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-20:harry81/emacseseo-pailmyeong-byeongyeonghagi.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;C-x C-q and(파일명 편집) C-c C-C&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://pragmaticemacs.com/category/dired/"&gt;dired&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;strong&gt;C-x C-q and(파일명 편집) C-c C-C&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://pragmaticemacs.com/category/dired/"&gt;dired&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>"hadoop-docker"</title><link href="/hadoop-docker.html" rel="alternate"></link><published>2017-02-18T17:13:49+09:00</published><updated>2017-02-18T17:13:49+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-18:/hadoop-docker.html</id><summary type="html">&lt;p&gt;가상머신 3개를 준비하자.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pragmaticemacs.com/category/dired/"&gt;dired&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>"hadoop-docker"</title><link href="harry81/hadoop-docker.html" rel="alternate"></link><published>2017-02-18T17:13:49+09:00</published><updated>2017-02-18T17:13:49+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-18:harry81/hadoop-docker.html</id><summary type="html">&lt;p&gt;가상머신 3개를 준비하자.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# Namenode 192.168.99.101
 docker-machine start namenode; eval &amp;quot;$(docker-machine env namenode)&amp;quot;;
 
@@ -1107,7 +1107,7 @@ datanode2 192.168.99.103
 &lt;p&gt;각각의 가상머신에서 아래 명령어를 실행하여 필요한 hadoop 데몬을 실행하다.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;# run hadoop-docker
 docker run -it  -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker /etc/bootstrap.sh -bash 
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>지식 창고</title><link href="/jisig-canggo.html" rel="alternate"></link><published>2017-02-14T13:38:04+09:00</published><updated>2017-02-14T13:38:04+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-14:/jisig-canggo.html</id><summary type="html">&lt;h2&gt;예정&lt;/h2&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>지식 창고</title><link href="harry81/jisig-canggo.html" rel="alternate"></link><published>2017-02-14T13:38:04+09:00</published><updated>2017-02-14T13:38:04+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-14:harry81/jisig-canggo.html</id><summary type="html">&lt;h2&gt;예정&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1319,7 +1319,7 @@ docker run -it  -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker /etc/bootst
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
-&lt;/table&gt;</content></entry><entry><title>docker를 이용한 hadoop</title><link href="/dockerreul-iyonghan-hadoop.html" rel="alternate"></link><published>2017-02-13T17:12:32+09:00</published><updated>2017-02-13T17:12:32+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-13:/dockerreul-iyonghan-hadoop.html</id><summary type="html">&lt;h2&gt;categories: hadoop docker&lt;/h2&gt;
+&lt;/table&gt;</content></entry><entry><title>docker를 이용한 hadoop</title><link href="harry81/dockerreul-iyonghan-hadoop.html" rel="alternate"></link><published>2017-02-13T17:12:32+09:00</published><updated>2017-02-13T17:12:32+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-13:harry81/dockerreul-iyonghan-hadoop.html</id><summary type="html">&lt;h2&gt;categories: hadoop docker&lt;/h2&gt;
 &lt;h3&gt;동기&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;하둡의 병렬처리 특성을 확인하기 위해서는 2대 이상의 물리적인 컴퓨터가 필요하다&lt;/li&gt;
@@ -1355,7 +1355,7 @@ docker run -it  -p 50070:50070 -p 8088:8088 sequenceiq/hadoop-docker /etc/bootst
 
 &lt;p&gt;&lt;strong&gt;DOCKER_HOST&lt;/strong&gt;가 가진 값이 가상머신의 ip이므로 이 값을 기억하자.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Overview" src="/images/hadoop-overview.png"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://192.168.99.100:50070"&gt;http://192.168.99.100:50070&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>"Octopress 테마를 변경하자"</title><link href="/octopress-temareul-byeongyeonghaja.html" rel="alternate"></link><published>2017-02-13T16:56:51+09:00</published><updated>2017-02-13T16:56:51+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-13:/octopress-temareul-byeongyeonghaja.html</id><summary type="html">&lt;p&gt;https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://192.168.99.100:50070"&gt;http://192.168.99.100:50070&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>"Octopress 테마를 변경하자"</title><link href="harry81/octopress-temareul-byeongyeonghaja.html" rel="alternate"></link><published>2017-02-13T16:56:51+09:00</published><updated>2017-02-13T16:56:51+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-13:harry81/octopress-temareul-byeongyeonghaja.html</id><summary type="html">&lt;p&gt;https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd octopress
 git submodule add GIT_URL .themes/THEME_NAME
 rake install\[&amp;#39;THEME_NAME&amp;#39;\]
@@ -1365,7 +1365,7 @@ rake generate
 git submodule add GIT_URL .themes/THEME_NAME
 rake install\[&amp;#39;THEME_NAME&amp;#39;\]
 rake generate
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Celery beat를 Elasticbeanstalk에서도 사용하자</title><link href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="alternate"></link><published>2017-02-12T17:35:05+09:00</published><updated>2017-02-12T17:35:05+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-12:/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html</id><summary type="html">&lt;ul&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>Celery beat를 Elasticbeanstalk에서도 사용하자</title><link href="harry81/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="alternate"></link><published>2017-02-12T17:35:05+09:00</published><updated>2017-02-12T17:35:05+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-12:harry81/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p _="%" endcodeblock&gt;tip 1
 {% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
@@ -1430,7 +1430,7 @@ Configuration -&amp;gt;
 
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;python manage.py celery beat -A main -S djcelery.schedulers.DatabaseScheduler --loglevel=DEBUG
-&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>대구 개발자 모임-하둡</title><link href="/daegu-gaebalja-moim-hadub.html" rel="alternate"></link><published>2017-02-12T16:43:48+09:00</published><updated>2017-02-12T16:43:48+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-12:/daegu-gaebalja-moim-hadub.html</id><summary type="html">&lt;h2&gt;모임&lt;/h2&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>대구 개발자 모임-하둡</title><link href="harry81/daegu-gaebalja-moim-hadub.html" rel="alternate"></link><published>2017-02-12T16:43:48+09:00</published><updated>2017-02-12T16:43:48+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-12:harry81/daegu-gaebalja-moim-hadub.html</id><summary type="html">&lt;h2&gt;모임&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;장소 : 아이원 유학스터디룸&lt;/li&gt;
 &lt;li&gt;일자 : 2017년 2월 11&lt;/li&gt;
@@ -1453,7 +1453,7 @@ Configuration -&amp;gt;
 &lt;li&gt;하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.&lt;/li&gt;
 &lt;li&gt;옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.&lt;br&gt;
 &lt;a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525"&gt;쉽고 빠르게 배우는 Angular 2 프로그래밍&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry><entry><title>힐월드 기능정리</title><link href="/hilweoldeu-gineungjeongri.html" rel="alternate"></link><published>2017-02-12T16:40:16+09:00</published><updated>2017-02-12T16:40:16+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-12:/hilweoldeu-gineungjeongri.html</id><summary type="html">&lt;ul&gt;
+&lt;/ul&gt;</content></entry><entry><title>힐월드 기능정리</title><link href="harry81/hilweoldeu-gineungjeongri.html" rel="alternate"></link><published>2017-02-12T16:40:16+09:00</published><updated>2017-02-12T16:40:16+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-12:harry81/hilweoldeu-gineungjeongri.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;현재 위치 반경내 검색&lt;/li&gt;
 &lt;li&gt;댓글 작성시에 문자로 전송정리&lt;/li&gt;
 &lt;li&gt;세부 페이지에서 '전화걸기' 버튼으로 등록자에게 전화걸기&lt;/li&gt;
@@ -1467,7 +1467,7 @@ Configuration -&amp;gt;
 &lt;li&gt;물건 등록자와 나와의 위치 간단히 확인하기&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;{% img /images/main_healworld.png %}&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.healworld.co.kr"&gt;https://www.healworld.co.kr&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>"아이디어 창고"</title><link href="/aidieo-canggo.html" rel="alternate"></link><published>2017-02-05T17:41:47+09:00</published><updated>2017-02-05T17:41:47+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-05:/aidieo-canggo.html</id><summary type="html">&lt;hr&gt;
+&lt;p&gt;&lt;a href="https://www.healworld.co.kr"&gt;https://www.healworld.co.kr&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>"아이디어 창고"</title><link href="harry81/aidieo-canggo.html" rel="alternate"></link><published>2017-02-05T17:41:47+09:00</published><updated>2017-02-05T17:41:47+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-02-05:harry81/aidieo-canggo.html</id><summary type="html">&lt;hr&gt;
 &lt;h2&gt;신문요약&lt;/h2&gt;
 &lt;h4&gt;동기&lt;/h4&gt;
 &lt;ul&gt;
@@ -1541,7 +1541,7 @@ Configuration -&amp;gt;
 &lt;/ul&gt;
 &lt;h3&gt;발전계획&lt;/h3&gt;
 &lt;p&gt;제안자 : 호성&lt;/p&gt;
-&lt;hr&gt;</content></entry><entry><title>"healworld 방문 그래프"</title><link href="/healworld-bangmun-geuraepeu.html" rel="alternate"></link><published>2017-01-21T15:20:53+09:00</published><updated>2017-01-21T15:20:53+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-01-21:/healworld-bangmun-geuraepeu.html</id><summary type="html">&lt;p&gt;&lt;img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"&gt;&lt;/p&gt;</content></entry><entry><title>"touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기"</title><link href="/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html" rel="alternate"></link><published>2015-01-18T17:53:38+09:00</published><updated>2015-01-18T17:53:38+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2015-01-18:/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html</id><summary type="html">&lt;p&gt;ubuntu에서 touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기&lt;/p&gt;
+&lt;hr&gt;</content></entry><entry><title>"healworld 방문 그래프"</title><link href="harry81/healworld-bangmun-geuraepeu.html" rel="alternate"></link><published>2017-01-21T15:20:53+09:00</published><updated>2017-01-21T15:20:53+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2017-01-21:harry81/healworld-bangmun-geuraepeu.html</id><summary type="html">&lt;p&gt;&lt;img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"&gt;&lt;/p&gt;</content></entry><entry><title>"touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기"</title><link href="harry81/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html" rel="alternate"></link><published>2015-01-18T17:53:38+09:00</published><updated>2015-01-18T17:53:38+09:00</updated><author><name>hyunmin</name></author><id>tag:None,2015-01-18:harry81/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html</id><summary type="html">&lt;p&gt;ubuntu에서 touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기&lt;/p&gt;
 &lt;p&gt;우분투 설정에서 mouse는 왼손 잡이로 설정
 아래 명령어를 이용하여 마우스 버튼 배치만 변경&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;xinput set-button-map &lt;span class="s1"&gt;&amp;#39;Logitech USB Optical Mouse&amp;#39;&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="m"&gt;2&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
