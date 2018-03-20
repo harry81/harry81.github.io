@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+          <title>물개발자</title>
         <meta charset="utf-8" />
-        <title>Elasticbeans talk</title>
-        <link rel="stylesheet" href="harry81/theme/css/main.css" />
-        <link href="harry81/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Atom Feed" />
+        <link href="harry81/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
+        <link href="harry81/feeds/misc.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Categories Atom Feed" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="harry81/">물개발자 </a></h1>
-                <nav><ul>
-                    <li><a href="harry81/category/dev.html">dev</a></li>
-                    <li><a href="harry81/category/gaebal.html">개발</a></li>
-                    <li class="active"><a href="harry81/category/misc.html">misc</a></li>
-                    <li><a href="harry81/category/munjang.html">문장</a></li>
-                    <li><a href="harry81/category/sebasi.html">세바시</a></li>
-                </ul></nav>
+                <h1><a href="harry81/">물개발자 <strong></strong></a></h1>
         </header><!-- /#banner -->
+        <nav id="menu"><ul>
+        </ul></nav><!-- /#menu -->
 <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="harry81/elasticbeans-talk.html" rel="bookmark"
-           title="Permalink to Elasticbeans talk">Elasticbeans talk</a></h1>
-    </header>
-
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2017-09-13T17:44:50+09:00">
-                Published: Wed 13 September 2017
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-        </address>
-<p>In <a href="harry81/category/misc.html">misc</a>.</p>
-
-</footer><!-- /.post-info -->      <h4>Elasticbeanstalk health check</h4>
+  <header>
+    <h2 class="entry-title">
+      <a href="harry81/elasticbeans-talk.html" rel="bookmark"
+         title="Permalink to Elasticbeans talk">Elasticbeans talk</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <time class="published" datetime="2017-09-13T17:44:50+09:00">
+      Wed 13 September 2017
+    </time>
+    <address class="vcard author">
+      By           <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
+    </address>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <h4>Elasticbeanstalk health check</h4>
 <p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
 Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
 <p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
@@ -66,47 +57,13 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 
 
 <p>http://mattharris.org/2015/11/30/setting-aws-elasticbeanstalk-environment-wsgi-authorization/</p>
-    </div><!-- /.entry-content -->
-
-  </article>
+  </div><!-- /.entry-content -->
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="harry81/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
-
-    <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-91188832-2', 'auto');
-    ga('send', 'pageview');
-    </script>
 </body>
 </html>
