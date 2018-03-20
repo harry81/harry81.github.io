@@ -1,271 +1,315 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
+
 <head>
-        <title>물개발자 - Articles by hyunmin</title>
-        <meta charset="utf-8" />
-        <link href="harry81/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>물개발자 - </title>
+    <meta name="description" content="" />
+    <meta name="Author" content="Ken M. Lai(networktsukkomime.me)" />
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/html5.js"></script>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/respond.min.js"></script>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/excanvas.compiled.js"></script>
+    <![endif]-->
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css" />
+
+
+    <!-- CORE CSS FRAMEWORK -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS TEMPLATE -->
+    <link href="harry81/theme/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="harry81/theme/css/framework.css" rel="stylesheet" type="text/css" />
+    <link href="harry81/theme/css/typography.css" rel="stylesheet" type="text/css" />
+    <link href="harry81/theme/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <link href="harry81/theme/css/blog.css" rel="stylesheet" type="text/css" />
+
+    <!-- ICONS -->
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+    <!-- Morenizr -->
+    <script type="text/javascript" src="harry81/theme/js/modernizr.min.js"></script>
+
+    <!-- google authorship -->
 </head>
+<body>
+    <!-- HOME -->
+    <section id="home" class="full-screen"><!-- full-screen or half-screen (550px height) -->
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="harry81/">물개발자 <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<section id="content">
-<h2>Articles by hyunmin</h2>
+    <div id="slider">
 
-<ol id="post-list">
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/hadoop-docker.html" rel="bookmark" title="Permalink to "hadoop-docker"">"hadoop-docker"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-18T17:13:49+09:00"> Sat 18 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>가상머신 3개를 준비하자.</p>
-<div class="highlight"><pre><span></span># Namenode 192.168.99.101
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+        <ul class="slides-container">
 
-# Datanode1 192.168.99.102
-docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
+        <!-- Item 1 -->
+        <li>
+            <div class="image-caption">
+            <hr /><hr />
+            <div class="inner">
+                <h2 class="bigtext strtoupper nomargin">물개발자</h2>
+            </div>
+            <hr /><hr />
+            </div>
+            <span class="overlay"></span>
+            <div style="background-image: url('');" class="fullscreen-img"></div>
+           
 
-# Datanode2 192.168.99.103
-docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
-</pre></div>
+        </li>
+        </ul>
+
+    </div>
+
+    </section>
+    <!-- /HOME -->
 
 
-<div class="highlight"><pre><span></span>...
-namenode 192.168.99.101
-datanode1 192.168.99.102
-datanode2 …</pre></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark" title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-18T15:43:28+09:00"> Sat 18 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
-테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
-<p>시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/jisig-canggo.html" rel="bookmark" title="Permalink to 지식 창고">지식 창고</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-14T13:38:04+09:00"> Tue 14 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h2>예정</h2>
-<table>
-<thead>
-<tr>
-<th>날짜</th>
-<th>제목</th>
-<th>지은이</th>
-<th>특이사항</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788960863651">돈 되는 아파트 돈 안 되는 아파트</a></td>
-<td>채상욱</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791157745562">아기곰 재테크의 불변의 법칙</a></td>
-<td>아기곰</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><a href="http://book.daum.net/detail/book.do?bookid=KOR9791186615140">뉴스테이시대, 사야할 집 팔아야할 집</a></td>
-<td>채상욱</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9788947540759">아파트 제대로 고르는 법</a></td>
-<td>심형석</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788901058030">부자 경제학</a></td>
-<td>박경철</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788996634218">경제기사의 바다에 빠져라</a></td>
-<td>최진기</td>
-<td></td>
-</tr>
-<tr>
-<td>2017.</td>
-<td>관점 디자이너</td>
-<td>박용후</td>
-<td></td>
-</tr>
-<tr>
-<td>2017.2</td>
-<td>마지막 한 걸음은 혼자서 가야 한다 :정진홍의 900킬로미터 …</td></tr></tbody></table> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/dockerreul-iyonghan-hadoop.html" rel="bookmark" title="Permalink to docker를 이용한 hadoop">docker를 이용한 hadoop</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-13T17:12:32+09:00"> Mon 13 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h2>categories: hadoop docker</h2>
-<h3>동기</h3>
-<ul>
-<li>하둡의 병렬처리 특성을 확인하기 위해서는 2대 이상의 물리적인 컴퓨터가 필요하다</li>
-<li>실제로 물리적인 컴퓨터를 마련하기 위해서는 비용이 필요하다</li>
-<li>docker를 이용하면 가상의 운영체제를 가볍게 실행할수 있다는 얘기를 들어왔고, hadoop를 테스트하기에 적당하다고 판단하여 시도함</li>
+
+    <!-- Main Nav -->
+<!-- Main Nav -->
+<header id="header" style="margin-top:0">
+
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenu" class="fa fa-bars" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand scrollTo" href="#home">
+          <img src="" alt="" width="50" height="50" />
+          <span class="hidden-xs">물개발자</span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Fullscreen Button - Unavailable for IE -->
+        <a href="#" class="btn-fullscreen"><i class="fa fa-external-link"></i></a>
+
+        <ul class="nav navbar-nav navbar-right">
+          <!-- If the user wants to make articles the home page then remove blog link, and make about and work links point to old home page. -->
+            <li><a href="harry81/index.html#home">Home</a></li>
+            <li><a href="harry81/index.html#about">About</a></li>
+            <li><a href="harry81/blog.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
+              <ul class="dropdown-menu" style="background-color:#000">
+                <li style="background-color:#000"><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+                <li style="background-color:#000"><a href="http://python.org/" target="_blank">Python.org</a></li>
+                <li style="background-color:#000"><a href="#" target="_blank">You can modify those links in your config file</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+  </nav>
+</header>
+<!-- /Main Nav -->
+    <!-- /Main Nav -->
+
+    <!-- ABOUT -->
+    <section id="about">
+    <div class="container">
+        <header class="text-center">
+        <h1>ABOUT</h1>
+        </header>
+
+        <div class="divider"><!-- lines divider --></div>
+
+
+
+        <!-- <article>
+        <div class="row text-left"> -->
+
+            <!-- Passion -->
+        <!--  <div class="col-md-4">
+            <h3>Passion</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+            </div> -->
+
+
+            <!-- Precision -->
+            <!-- <div class="col-md-4">
+            <h3>Precision</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+            </div> -->
+
+
+            <!-- Simplicity -->
+            <!-- <div class="col-md-4">
+            <h3>Simplicity</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis.</p>
+            </div> -->
+
+        <!-- </div>
+        </article> -->
+
+    </div>
+    </section>
+    <!-- /ABOUT -->
+
+
+    <!-- BLOG -->
+    <section id="quick-blog" class="alternate">
+    <div class="container">
+
+        <header class="text-center">
+        <h1>BLOG</h1>
+        <p>RECENT ENTRIES</p>
+        </header>
+
+        <div class="divider"><!-- lines divider --></div>
+
+        <article>
+        <div class="row animate_fade_in">
+
+            <div class="col-md-4 quick-hover">
+                <div class="quick-item">
+                    <h4><a class="theme_link" href="harry81/handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h4>
+                <p><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
+    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div></p>
+                <a href="harry81/handle-a-lot-of-rows-in-django-model.html" class="btn btn-xs theme_link"><i class="fa fa-sign-out"></i> READ MORE</a>
+                </div>
+            </div>
+            <div class="col-md-4 quick-hover">
+                <div class="quick-item">
+                    <h4><a class="theme_link" href="harry81/markdown-mode-for-emacs.html">Markdown mode for Emacs</a></h4>
+                <p><h5>단축키</h5>
+<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
+<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p></p>
+                <a href="harry81/markdown-mode-for-emacs.html" class="btn btn-xs theme_link"><i class="fa fa-sign-out"></i> READ MORE</a>
+                </div>
+            </div>
+            <div class="col-md-4 quick-hover">
+                <div class="quick-item">
+                    <h4><a class="theme_link" href="harry81/how-to-work-smart.html">How to work smart</a></h4>
+                <p><ul>
+<li>Do<ul>
+<li>출근 한 시간전에 회사에 도착한다.</li>
+<li>불가능한 업무는 용감하게 No라고 말한다.</li>
 </ul>
-<h3>하둡 docker 이미지를 받자</h3>
-<p><a href="https://github.com/sequenceiq/hadoop-docker">Apache Hadoop 2.7.1 Docker image</a></p>
-<h3>하둡 실행하기</h3>
-<p><code>docker run …</code></p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/octopress-temareul-byeongyeonghaja.html" rel="bookmark" title="Permalink to "Octopress 테마를 변경하자"">"Octopress 테마를 변경하자"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-13T16:56:51+09:00"> Mon 13 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
-<div class="highlight"><pre><span></span>cd octopress
-git submodule add GIT_URL .themes/THEME_NAME
-rake install\[&#39;THEME_NAME&#39;\]
-rake generate
-</pre></div> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="bookmark" title="Permalink to Celery beat를 Elasticbeanstalk에서도 사용하자">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-12T17:35:05+09:00"> Sun 12 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <ul>
-<li>
-<p _="%" endcodeblock>tip 1
-{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
-from celery.task.control import discard_all
-    discard_all()</p>
-</li>
-<li>
-<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
-{% codeblock lang:python title:"98-celery.config"  %}
-command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
 </li>
 </ul>
-<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/daegu-gaebalja-moim-hadub.html" rel="bookmark" title="Permalink to 대구 개발자 모임-하둡">대구 개발자 모임-하둡</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-12T16:43:48+09:00"> Sun 12 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h2>모임</h2>
+<hr>
 <ul>
-<li>장소 : 아이원 유학스터디룸</li>
-<li>일자 : 2017년 2월 11</li>
-<li>slack : https://daegugroup.slack.com/</li>
-</ul>
-<h2>느낀 점</h2>
+<li>
+<p>Don't</p>
 <ul>
-<li>고향 근처에서 개발에 관심있으신 분들과 만날 수 있어 기쁘다.</li>
-<li>하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.</li>
-<li>옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.<br>
-<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525">쉽고 빠르게 배우는 Angular …</a></li></ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/hilweoldeu-gineungjeongri.html" rel="bookmark" title="Permalink to 힐월드 기능정리">힐월드 기능정리</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-12T16:40:16+09:00"> Sun 12 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <ul>
-<li>현재 위치 반경내 검색</li>
-<li>댓글 작성시에 문자로 전송정리</li>
-<li>세부 페이지에서 '전화걸기' 버튼으로 등록자에게 전화걸기</li>
-<li>물건 등록자와 나와의 위치 간단히 확인하기</li>
-</ul>
-<p>{% img /images/main_healworld.png %}</p>
-<p><a href="https://www.healworld.co.kr">https://www.healworld.co.kr</a></p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/aidieo-canggo.html" rel="bookmark" title="Permalink to "아이디어 창고"">"아이디어 창고"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-05T17:41:47+09:00"> Sun 05 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <hr>
-<h2>신문요약</h2>
-<h4>동기</h4>
-<ul>
-<li></li>
-</ul>
-<h4>설명</h4>
-<ul>
-<li>여러 매체의 신문은 내용이 많아 읽는데 시간이 걸린다.</li>
-<li>카테고리별로 각 신문사별로 중요하다고 생각되는 토픽을 찾는다.</li>
-<li>선별된 내용중 사실만 선별해 내어 짥은 문장으로 정리하여 서비스 한다.</li>
-</ul>
-<h4>재미요소</h4>
-<ul>
-<li>신문을 읽을 수 있는 시간 절약</li>
-<li>균현있게 세상 돌아가는 흐름을 볼 수 있다</li>
-</ul>
-<h2>Open toilet</h2>
-<h4>동기</h4>
-<ul>
-<li>낯선 곳에서는 화장실을 찾는 다는 …</li></ul> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/healworld-bangmun-geuraepeu.html" rel="bookmark" title="Permalink to "healworld 방문 그래프"">"healworld 방문 그래프"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-01-21T15:20:53+09:00"> Sat 21 January 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p><img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"></p> </div><!-- /.entry-content -->
-        </article></li>
-</ol><!-- /#posts-list -->
-<p class="paginator">
-        <a href="harry81/author/hyunmin3.html">&laquo;</a>
-    Page 4 / 5
-        <a href="harry81/author/hyunmin5.html">&raquo;</a>
-</p>
-</section><!-- /#content -->
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+<li>한번에 여러가지 일을 처리하자</li>
+<li>조직이 알아야하는 것들을 나 혼자만 알자
+  (공통 이메일 계정, 시스템 전체적으로 영향을 미치는 변경)</li>
+<li>
+<p>업무가 할당이 되면 우선순위에 대한 고민없이 무조건 착수하자</p>
+<blockquote>
+<p>중요한 일이 너무 많아서 일을 못한다.</p>
+</blockquote>
+</li>
+<li>
+<p>야근을 열심히 하자.</p>
+</li>
+<li>옆 동료가 어떤 …</li></ul></li></ul></p>
+                <a href="harry81/how-to-work-smart.html" class="btn btn-xs theme_link"><i class="fa fa-sign-out"></i> READ MORE</a>
+                </div>
+            </div>
+ 
+
+        </div>
+        </article>
+
+        <div class="divider"><!-- lines divider --></div>
+
+        <article class="text-center" data-animation="bounceIn">
+        <a href="blog.html" class="plusNav" title="more from blog">+</a> 
+        </article>
+
+    </div>
+    </section>
+    <!-- /BLOG -->
+
+<!-- FOOTER -->
+<footer>
+
+  <!-- SCROOL TO TOP -->
+  <a href="#toTop" class="fa fa-arrow-up toTop"></a>
+
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6 copyright">
+            물개발자
+            <br />2015 &copy; All Rights Reserved.
+        </div>
+
+        <div class="col-md-6 text-right">
+              <a href="#" class="social fa fa-you can add links in your config file" target="_blank"></a>
+              <a href="#" class="social fa fa-another social link" target="_blank"></a>
+        </div>
+
+    </div>
+
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+
+
+<!-- CORE FILES -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.isotope.js"></script>
+<script type="text/javascript" src="harry81/theme/js/masonry.js"></script>
+
+<!-- PLUGINS -->
+<script type="text/javascript" src="harry81/theme/js/jquery.fitvids.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.appear.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.superslides.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.countTo.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/holder.js"></script>
+<!-- delete on production -->
+
+<!-- js scripts -->
+<script async type="text/javascript" src="harry81/theme/js/scripts.js"></script>
+
+<script type="text/javascript" src="harry81/theme/js/ImageAutoResize.js"></script>
+<script type="text/javascript" src="harry81/theme/js/application.js"></script>
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-91188832-2']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    setTimeout(function() {
+      window.onscroll = function() {
+        window.onscroll = null; // Only track the event once
+        _gaq.push(['_trackEvent', 'scroll', 'read']);
+      }
+    }, 5000);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
 </body>
-</html>

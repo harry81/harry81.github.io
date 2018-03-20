@@ -1,60 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-US">
+
 <head>
-        <title>물개발자</title>
-        <meta charset="utf-8" />
-        <link href="harry81/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Full Atom Feed" />
-        <link href="harry81/feeds/dev.atom.xml" type="application/atom+xml" rel="alternate" title="물개발자 Categories Atom Feed" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>물개발자 - </title>
+    <meta name="description" content="" />
+    <meta name="Author" content="Ken M. Lai(networktsukkomime.me)" />
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/html5.js"></script>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/respond.min.js"></script>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/excanvas.compiled.js"></script>
+    <![endif]-->
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css" />
+
+
+    <!-- CORE CSS FRAMEWORK -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS TEMPLATE -->
+    <link href="harry81/theme/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="harry81/theme/css/framework.css" rel="stylesheet" type="text/css" />
+    <link href="harry81/theme/css/typography.css" rel="stylesheet" type="text/css" />
+    <link href="harry81/theme/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <link href="harry81/theme/css/blog.css" rel="stylesheet" type="text/css" />
+
+    <!-- ICONS -->
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+    <!-- Morenizr -->
+    <script type="text/javascript" src="harry81/theme/js/modernizr.min.js"></script>
+
+    <!-- google authorship -->
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="harry81/">물개발자 <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-        </ul></nav><!-- /#menu -->
-<section id="content">
-<h2>Articles in the dev category</h2>
+<!-- Main Nav -->
+<header id="header" style="margin-top:0">
 
-<ol id="post-list">
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html" rel="bookmark" title="Permalink to "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2017-02-18T15:43:28+09:00"> Sat 18 February 2017 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
-테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
-<p>시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="harry81/mp4-mp3.html" rel="bookmark" title="Permalink to "mp4-mp3"">"mp4-mp3"</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2015-06-28T17:51:24+09:00"> Sun 28 June 2015 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="harry81/author/hyunmin.html">hyunmin</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h3>우분투용용의 avconv 이용</h3>
-<p>``` bash 형식
-avconv  -i [영상파일] -vn  [소리파일]</p>
-<div class="highlight"><pre><span></span>``` bash 예시
-avconv  -i Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp4 -vn Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp3
-</pre></div> </div><!-- /.entry-content -->
-        </article></li>
-</ol><!-- /#posts-list -->
-<p class="paginator">
-        <a href="harry81/category/dev.html">&laquo;</a>
-    Page 2 / 2
-</p>
-</section><!-- /#content -->
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenu" class="fa fa-bars" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand scrollTo" href="#home">
+          <img src="" alt="" width="50" height="50" />
+          <span class="hidden-xs">물개발자</span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Fullscreen Button - Unavailable for IE -->
+        <a href="#" class="btn-fullscreen"><i class="fa fa-external-link"></i></a>
+
+        <ul class="nav navbar-nav navbar-right">
+          <!-- If the user wants to make articles the home page then remove blog link, and make about and work links point to old home page. -->
+            <li><a href="harry81/index.html#home">Home</a></li>
+            <li><a href="harry81/index.html#about">About</a></li>
+            <li><a href="harry81/blog.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
+              <ul class="dropdown-menu" style="background-color:#000">
+                <li style="background-color:#000"><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+                <li style="background-color:#000"><a href="http://python.org/" target="_blank">Python.org</a></li>
+                <li style="background-color:#000"><a href="#" target="_blank">You can modify those links in your config file</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+  </nav>
+</header>
+<!-- /Main Nav -->  <section id="blog">
+    <article class="container">
+
+      <div class="row">
+        <div id="blog_main_area" class="left col-md-9">
+  <div class="item">
+      <div class="item-title">
+        <h2>dev</h2>
+      </div>
+          <p><span class="label label-default light"><a href="harry81/handle-a-lot-of-rows-in-django-model.html">Tue 20 March 2018</span> Handle a lot of rows in Django model</a></p>
+          <p><span class="label label-default light"><a href="harry81/markdown-mode-for-emacs.html">Mon 19 March 2018</span> Markdown mode for Emacs</a></p>
+          <p><span class="label label-default light"><a href="harry81/how-to-work-smart.html">Mon 19 March 2018</span> How to work smart</a></p>
+          <p><span class="label label-default light"><a href="harry81/why-i-need-to-get-xps-15.html">Mon 19 March 2018</span> Why I need to get XPS 15</a></p>
+          <p><span class="label label-default light"><a href="harry81/what-does-the-good-blogs-have-in-common.html">Sun 18 March 2018</span> What does the good blogs have in common?</a></p>
+          <p><span class="label label-default light"><a href="harry81/how-to-run-pelican.html">Sun 18 March 2018</span> How to run pelican</a></p>
+          <p><span class="label label-default light"><a href="harry81/microservice.html">Sat 04 November 2017</span> microservice</a></p>
+          <p><span class="label label-default light"><a href="harry81/bike_timeline.html">Fri 20 October 2017</span> 자전거 사용추이</a></p>
+          <p><span class="label label-default light"><a href="harry81/my-super-post.html">Wed 27 September 2017</span> 따릉이 사용량</a></p>
+          <p><span class="label label-default light"><a href="harry81/python-recsys.html">Tue 21 February 2017</span> "python-recsys"</a></p>
+          <p><span class="label label-default light"><a href="harry81/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html">Sat 18 February 2017</span> "CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></p>
+          <p><span class="label label-default light"><a href="harry81/mp4-mp3.html">Sun 28 June 2015</span> "mp4-mp3"</a></p>
+  </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="right col-md-3">
+          <!-- recent work -->
+          <!-- <div class="widget">
+
+                      <h3>Recent Work</h3>
+
+                      <a class="popup-image thumb" href="assets/images/preview/slider/1.jpg">
+                          <img src="harry81/theme/img/1x1.png" class="img-responsive" data-src="holder.js/85x85/#888:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="popup-video thumb" href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0">
+                          <img src="harry81/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#676767:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="popup-video thumb" href="http://vimeo.com/23630702">
+                          <img src="harry81/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#888:#555555/auto/" alt="img" />
+                      </a>
+
+                      <a class="external ajax-project thumb" href="project-external-1.html">
+                          <img src="harry81/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#676767:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="external ajax-project thumb" href="project-external-2.html">
+                          <img src="harry81/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#888:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="external ajax-project thumb" href="project-external-3.html">
+                          <img src="harry81/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#676767:#555555/auto/" alt="img" />
+                      </a>
+
+                      <div class="clearfix"></div>
+                  </div> -->
+
+          <!-- categories -->
+          <div class="widget">
+
+            <h3>Categories</h3>
+
+            <ul>
+               <li><a class="theme_link" href="harry81/category/dev.html"><i class="fa fa-dot-circle-o"></i> dev</a>
+              </li>
+              <li><a class="theme_link" href="harry81/category/gaebal.html"><i class="fa fa-dot-circle-o"></i> 개발</a>
+              </li>
+              <li><a class="theme_link" href="harry81/category/misc.html"><i class="fa fa-dot-circle-o"></i> misc</a>
+              </li>
+              <li><a class="theme_link" href="harry81/category/munjang.html"><i class="fa fa-dot-circle-o"></i> 문장</a>
+              </li>
+              <li><a class="theme_link" href="harry81/category/sebasi.html"><i class="fa fa-dot-circle-o"></i> 세바시</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Archives -->
+          <div class="widget">
+
+            <h3>Archives</h3>
+
+            <!-- Get all of the articles with their dates -->
+            <div class="hidden">
+                None
+                None
+                None
+                None
+                None
+                None
+                None
+                None
+                None
+                None
+                None
+                None
+            </div>
+
+            <!-- If the user indicates they prefer a list.-->                <ul class="tree">
+                    <li>
+                        <span><i class="fa fa-minus-square-o"></i>2018</span>
+                        <ul>
+                            <li>
+                                <span><i class="fa fa-plus-square-o"></i>2018-03</span>
+                                <ul>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/handle-a-lot-of-rows-in-django-model.html">
+                                            <small>Tue 20 March 2018</small>Handle a lot of rows in Django model</a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/markdown-mode-for-emacs.html">
+                                            <small>Mon 19 March 2018</small>Markdown mode for Emacs</a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/how-to-work-smart.html">
+                                            <small>Mon 19 March 2018</small>How to work smart</a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/why-i-need-to-get-xps-15.html">
+                                            <small>Mon 19 March 2018</small>Why I need to get XPS 15</a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/what-does-the-good-blogs-have-in-common.html">
+                                            <small>Sun 18 March 2018</small>What does the good blogs have in common?</a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/how-to-run-pelican.html">
+                                            <small>Sun 18 March 2018</small>How to run pelican</a>
+                                        </li>
+                                </ul>
+                            </li>
+                        </ul>                        <span><i class="fa fa-minus-square-o"></i>2017</span>
+                        <ul>
+                            <li>
+                                <span><i class="fa fa-plus-square-o"></i>2017-11</span>
+                                <ul>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/microservice.html">
+                                            <small>Sat 04 November 2017</small>microservice</a>
+                                        </li>
+                                </ul>
+                                <span><i class="fa fa-plus-square-o"></i>2017-10</span>
+                                <ul>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/bike_timeline.html">
+                                            <small>Fri 20 October 2017</small>자전거 사용추이</a>
+                                        </li>
+                                </ul>
+                                <span><i class="fa fa-plus-square-o"></i>2017-09</span>
+                                <ul>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/my-super-post.html">
+                                            <small>Wed 27 September 2017</small>따릉이 사용량</a>
+                                        </li>
+                                </ul>
+                                <span><i class="fa fa-plus-square-o"></i>2017-02</span>
+                                <ul>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/python-recsys.html">
+                                            <small>Tue 21 February 2017</small>"python-recsys"</a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/celerytestsuiterunner-nosetestsuiterunner-hamgge-sayonghagi.html">
+                                            <small>Sat 18 February 2017</small>"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a>
+                                        </li>
+                                </ul>
+                            </li>
+                        </ul>                        <span><i class="fa fa-minus-square-o"></i>2015</span>
+                        <ul>
+                            <li>
+                                <span><i class="fa fa-plus-square-o"></i>2015-06</span>
+                                <ul>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="harry81/mp4-mp3.html">
+                                            <small>Sun 28 June 2015</small>"mp4-mp3"</a>
+                                        </li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                </ul></div>
+
+        </div>
+        <!-- /SIDEBAR -->
+
+      </div>
+
+    </article>
+  </section>
+  <!-- /BLOG -->
+
+<!-- FOOTER -->
+<footer>
+
+  <!-- SCROOL TO TOP -->
+  <a href="#toTop" class="fa fa-arrow-up toTop"></a>
+
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6 copyright">
+            물개발자
+            <br />2015 &copy; All Rights Reserved.
+        </div>
+
+        <div class="col-md-6 text-right">
+              <a href="#" class="social fa fa-you can add links in your config file" target="_blank"></a>
+              <a href="#" class="social fa fa-another social link" target="_blank"></a>
+        </div>
+
+    </div>
+
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+
+
+<!-- CORE FILES -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.isotope.js"></script>
+<script type="text/javascript" src="harry81/theme/js/masonry.js"></script>
+
+<!-- PLUGINS -->
+<script type="text/javascript" src="harry81/theme/js/jquery.fitvids.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.appear.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.superslides.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.countTo.js"></script>
+<script type="text/javascript" src="harry81/theme/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="harry81/theme/js/holder.js"></script>
+<!-- delete on production -->
+
+<!-- js scripts -->
+<script async type="text/javascript" src="harry81/theme/js/scripts.js"></script>
+
+<script type="text/javascript" src="harry81/theme/js/ImageAutoResize.js"></script>
+<script type="text/javascript" src="harry81/theme/js/application.js"></script>
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-91188832-2']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+    setTimeout(function() {
+      window.onscroll = function() {
+        window.onscroll = null; // Only track the event once
+        _gaq.push(['_trackEvent', 'scroll', 'read']);
+      }
+    }, 5000);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
 </body>
+
 </html>
