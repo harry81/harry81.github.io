@@ -50,6 +50,42 @@
         
 
             <article>
+                <a href="/handle-a-lot-of-rows-in-django-model.html"><h3 class="article-title">Handle a lot of rows in Django model</h3></a>
+<h6 class="subheader" title="2018-03-20T10:27:00+09:00">Tue 20 March 2018
+</h6>
+
+
+<p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
+    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ids</span><span class="p">))</span>
+    <span class="n">paginator</span> <span class="o">=</span> <span class="n">Paginator</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">page_num</span> <span class="ow">in</span> <span class="n">paginator</span><span class="o">.</span><span class="n">page_range</span><span class="p">:</span>
+        <span class="n">page</span> <span class="o">=</span> <span class="n">paginator</span><span class="o">.</span><span class="n">page</span><span class="p">(</span><span class="n">page_num</span><span class="p">)</span>
+        <span class="n">query</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">__in&#39;</span> <span class="o">%</span> <span class="n">pk_name</span><span class="p">:</span> <span class="n">page</span><span class="o">.</span><span class="n">object_list</span><span class="p">}</span>
+        <span class="n">batch</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">**</span><span class="n">query</span><span class="p">)</span>
+        <span class="k">yield</span> <span class="n">batch</span>
+
+    <span class="c1"># Clear out the DB connections queries because it bloats up RAM.</span>
+    <span class="n">reset_queries</span><span class="p">()</span>
+</pre></div><p class="subheader">Category: <a href="/category/dev.html">dev</a>
+
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
                 <a href="/markdown-mode-for-emacs.html"><h3 class="article-title">Markdown mode for Emacs</h3></a>
 <h6 class="subheader" title="2018-03-19T17:57:00+09:00">Mon 19 March 2018
 </h6>
@@ -63,11 +99,9 @@
 
 
 
-            </article>
-
-
+                <a class="button radius secondary small right" href="/markdown-mode-for-emacs.html">Read More</a>
                 <hr  class="gradient"/>
-
+            </article>
 
         
 
@@ -175,43 +209,6 @@
 
 
                 <a class="button radius secondary small right" href="/what-does-the-good-blogs-have-in-common.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="/how-to-run-pelican.html"><h3 class="article-title">How to run pelican</h3></a>
-<h6 class="subheader" title="2018-03-18T17:24:00+09:00">Sun 18 March 2018
-</h6>
-
-
-<ul>
-<li>local 환경에서 실시간 페이지 보기</li>
-</ul>
-<div class="highlight"><pre><span></span>$ fab serve
-</pre></div>
-
-
-<ul>
-<li>markdown 변경파일을 실시간으로 html 형식으로 변경하기</li>
-</ul>
-<div class="highlight"><pre><span></span>$ fab rebuild 
-</pre></div>
-
-
-<ul>
-<li>github page에 적용하기</li>
-</ul>
-<div class="highlight"><pre><span></span>$ make github or fab gh_pages
-</pre></div><p class="subheader">Category: <a href="/category/dev.html">dev</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="/how-to-run-pelican.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
