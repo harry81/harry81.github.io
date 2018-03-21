@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>물개발자 - dev</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        <title>Water Developer</title>
+        <meta charset="utf-8" />
+
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
+
+        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">물개발자 </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="/category/dev.html">dev</a></li>
-                    <li><a href="/category/gaebal.html">개발</a></li>
-                    <li><a href="/category/misc.html">misc</a></li>
-                    <li><a href="/category/munjang.html">문장</a></li>
-                    <li><a href="/category/sebasi.html">세바시</a></li>
-                </ul>
-                </nav>
-        </header><!-- /#banner -->
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h1>
-<footer class="post-info">
-        <span>Tue 20 March 2018</span>
 
-</footer><!-- /.post-info --><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <h1><a href="/">Water Developer <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="/">Home</a></li>
+
+
+              </ul>
+            </div>
+
+<section id="content">
+<h2>Articles in the dev category</h2>
+
+
+   <div class="row">
+
+
+        <div class="eleven columns">
+                 <ol id="post-list">
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/handle-a-lot-of-rows-in-django-model.html" rel="bookmark" title="Permalink to Handle a lot of rows in Django model">Handle a lot of rows in Django model</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2018-03-20T10:27:00+09:00"> Tue 20 March 2018 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
     <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
     <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ids</span><span class="p">))</span>
-    <span class="n">paginator</span> <span class="o">=</span> <span class="n">Paginator</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">page_num</span> <span class="ow">in</span> <span class="n">paginator</span><span class="o">.</span><span class="n">page_range</span><span class="p">:</span>
-        <span class="n">page</span> <span class="o">=</span> <span class="n">paginator</span><span class="o">.</span><span class="n">page</span><span class="p">(</span><span class="n">page_num</span><span class="p">)</span>
-        <span class="n">query</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">__in&#39;</span> <span class="o">%</span> <span class="n">pk_name</span><span class="p">:</span> <span class="n">page</span><span class="o">.</span><span class="n">object_list</span><span class="p">}</span>
-        <span class="n">batch</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">**</span><span class="n">query</span><span class="p">)</span>
-        <span class="k">yield</span> <span class="n">batch</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div> </div><!-- /.entry-content -->
 
-    <span class="c1"># Clear out the DB connections queries because it bloats up RAM.</span>
-    <span class="n">reset_queries</span><span class="p">()</span>
-</pre></div>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <ol id="posts-list" class="hfeed">
+                                <div class="medium primary btn"><a href="/handle-a-lot-of-rows-in-django-model.html" rel="bookmark" title="Permalink to Handle a lot of rows in Django model">Read more <i class="icon-arrow-right"></i></a></div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/markdown-mode-for-emacs.html" rel="bookmark"
-                           title="Permalink to Markdown mode for Emacs">Markdown mode for Emacs</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Mon 19 March 2018</span>
 
-</footer><!-- /.post-info -->                <h5>단축키</h5>
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/markdown-mode-for-emacs.html" rel="bookmark" title="Permalink to Markdown mode for Emacs">Markdown mode for Emacs</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2018-03-19T17:57:00+09:00"> Mon 19 March 2018 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <h5>단축키</h5>
 <p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
-<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
-                <a class="readmore" href="/markdown-mode-for-emacs.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p> </div><!-- /.entry-content -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/how-to-work-smart.html" rel="bookmark"
-                           title="Permalink to How to work smart">How to work smart</a></h1>
-                </header>
+                                <div class="medium primary btn"><a href="/markdown-mode-for-emacs.html" rel="bookmark" title="Permalink to Markdown mode for Emacs">Read more <i class="icon-arrow-right"></i></a></div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Mon 19 March 2018</span>
 
-</footer><!-- /.post-info -->                <ul>
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/how-to-work-smart.html" rel="bookmark" title="Permalink to How to work smart">How to work smart</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2018-03-19T11:00:00+09:00"> Mon 19 March 2018 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <ul>
 <li>Do<ul>
 <li>출근 한 시간전에 회사에 도착한다.</li>
 <li>불가능한 업무는 용감하게 No라고 말한다.</li>
@@ -101,22 +129,27 @@
 <li>
 <p>야근을 열심히 하자.</p>
 </li>
-<li>옆 동료가 어떤 …</li></ul></li></ul>
-                <a class="readmore" href="/how-to-work-smart.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+<li>옆 동료가 어떤 …</li></ul></li></ul> </div><!-- /.entry-content -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/why-i-need-to-get-xps-15.html" rel="bookmark"
-                           title="Permalink to Why I need to get XPS 15">Why I need to get XPS 15</a></h1>
-                </header>
+                                <div class="medium primary btn"><a href="/how-to-work-smart.html" rel="bookmark" title="Permalink to How to work smart">Read more <i class="icon-arrow-right"></i></a></div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Mon 19 March 2018</span>
 
-</footer><!-- /.post-info -->                <ul>
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/why-i-need-to-get-xps-15.html" rel="bookmark" title="Permalink to Why I need to get XPS 15">Why I need to get XPS 15</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2018-03-19T09:25:00+09:00"> Mon 19 March 2018 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <ul>
 <li>
 <p>사야하는 이유</p>
 <ul>
@@ -132,22 +165,27 @@
 <li>정상적으로 잘 작동하는 labtop가 있다.</li>
 </ul>
 </li>
-</ul>
-                <a class="readmore" href="/why-i-need-to-get-xps-15.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+</ul> </div><!-- /.entry-content -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/what-does-the-good-blogs-have-in-common.html" rel="bookmark"
-                           title="Permalink to What does the good blogs have in common?">What does the good blogs have in common?</a></h1>
-                </header>
+                                <div class="medium primary btn"><a href="/why-i-need-to-get-xps-15.html" rel="bookmark" title="Permalink to Why I need to get XPS 15">Read more <i class="icon-arrow-right"></i></a></div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Sun 18 March 2018</span>
 
-</footer><!-- /.post-info -->                <h5>형식</h5>
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/what-does-the-good-blogs-have-in-common.html" rel="bookmark" title="Permalink to What does the good blogs have in common?">What does the good blogs have in common?</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2018-03-18T17:55:00+09:00"> Sun 18 March 2018 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <h5>형식</h5>
 <ul>
 <li>구조가 명확하다.</li>
 <li>그림을 포함한다.</li>
@@ -159,22 +197,27 @@
 <ul>
 <li>독창적이다.</li>
 </ul>
-<h5>블로그를 잘 하려면 따라하고픈 멘토를 찾자</h5>
-                <a class="readmore" href="/what-does-the-good-blogs-have-in-common.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+<h5>블로그를 잘 하려면 따라하고픈 멘토를 찾자</h5> </div><!-- /.entry-content -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/how-to-run-pelican.html" rel="bookmark"
-                           title="Permalink to How to run pelican">How to run pelican</a></h1>
-                </header>
+                                <div class="medium primary btn"><a href="/what-does-the-good-blogs-have-in-common.html" rel="bookmark" title="Permalink to What does the good blogs have in common?">Read more <i class="icon-arrow-right"></i></a></div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Sun 18 March 2018</span>
 
-</footer><!-- /.post-info -->                <ul>
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/how-to-run-pelican.html" rel="bookmark" title="Permalink to How to run pelican">How to run pelican</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2018-03-18T17:24:00+09:00"> Sun 18 March 2018 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <ul>
 <li>local 환경에서 실시간 페이지 보기</li>
 </ul>
 <div class="highlight"><pre><span></span>$ fab serve
@@ -192,22 +235,27 @@
 <li>github page에 적용하기</li>
 </ul>
 <div class="highlight"><pre><span></span>$ make github or fab gh_pages
-</pre></div>
-                <a class="readmore" href="/how-to-run-pelican.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+</pre></div> </div><!-- /.entry-content -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/microservice.html" rel="bookmark"
-                           title="Permalink to microservice">microservice</a></h1>
-                </header>
+                                <div class="medium primary btn"><a href="/how-to-run-pelican.html" rel="bookmark" title="Permalink to How to run pelican">Read more <i class="icon-arrow-right"></i></a></div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Sat 04 November 2017</span>
 
-</footer><!-- /.post-info -->                <table>
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/microservice.html" rel="bookmark" title="Permalink to microservice">microservice</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2017-11-04T13:09:00+09:00"> Sat 04 November 2017 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <table>
 <thead>
 <tr>
 <th></th>
@@ -258,57 +306,76 @@
 </tr>
 </tbody>
 </table>
-<p><a href="http://www.popit.kr/why-microservice/">마이크로서비스 아키텍처의 장단점</a></p>
-                <a class="readmore" href="/microservice.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+<p><a href="http://www.popit.kr/why-microservice/">마이크로서비스 아키텍처의 장단점</a></p> </div><!-- /.entry-content -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/bike_timeline.html" rel="bookmark"
-                           title="Permalink to 자전거 사용추이">자전거 사용추이</a></h1>
-                </header>
+                                <div class="medium primary btn"><a href="/microservice.html" rel="bookmark" title="Permalink to microservice">Read more <i class="icon-arrow-right"></i></a></div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Fri 20 October 2017</span>
-<span>| tags: <a href="/tag/bike.html">bike</a></span>
-</footer><!-- /.post-info -->                <dl class="docutils">
+
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/bike_timeline.html" rel="bookmark" title="Permalink to 자전거 사용추이">자전거 사용추이</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2017-10-20T17:37:00+09:00"> Fri 20 October 2017 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin-choi.html"> Hyunmin Choi</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <dl class="docutils">
 <dt>서울 따릉이</dt>
 <dd><a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html">서울 따릉이 하루 이용 그림(2mb)</a></dd>
 </dl>
+ </div><!-- /.entry-content -->
 
-                <a class="readmore" href="/bike_timeline.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                                <div class="medium primary btn"><a href="/bike_timeline.html" rel="bookmark" title="Permalink to 자전거 사용추이">Read more <i class="icon-arrow-right"></i></a></div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/my-super-post.html" rel="bookmark"
-                           title="Permalink to 따릉이 사용량">따릉이 사용량</a></h1>
-                </header>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 27 September 2017</span>
-<span>| tags: <a href="/tag/data.html">data</a></span>
-</footer><!-- /.post-info -->                <p><img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"></p>
-<p>파랑 - 실제 주차장에 주차되어있는 수</p>
-                <a class="readmore" href="/my-super-post.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/python-recsys.html" rel="bookmark"
-                           title="Permalink to "python-recsys"">"python-recsys"</a></h1>
-                </header>
+                                <div class="row tag-row">
+                                        <span>Tagged as : </span>
+                                            <a class="danger label" href="/tag/bike.html">bike</a>
+                                </div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Tue 21 February 2017</span>
 
-</footer><!-- /.post-info -->                <p>python-recsys 따라하기<br>
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/my-super-post.html" rel="bookmark" title="Permalink to 따릉이 사용량">따릉이 사용량</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2017-09-27T10:20:00+09:00"> Wed 27 September 2017 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <p><img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"></p>
+<p>파랑 - 실제 주차장에 주차되어있는 수</p> </div><!-- /.entry-content -->
+
+                                <div class="medium primary btn"><a href="/my-super-post.html" rel="bookmark" title="Permalink to 따릉이 사용량">Read more <i class="icon-arrow-right"></i></a></div>
+
+
+
+                                <div class="row tag-row">
+                                        <span>Tagged as : </span>
+                                            <a class="danger label" href="/tag/data.html">data</a>
+                                </div>
+
+
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="/python-recsys.html" rel="bookmark" title="Permalink to "python-recsys"">"python-recsys"</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2017-02-21T16:53:36+09:00"> Tue 21 February 2017 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="/author/hyunmin.html"> Hyunmin</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <p>python-recsys 따라하기<br>
 http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
 <p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
 <p>```python 사용자의 입력 모델화 하여 파일로 저장
@@ -316,39 +383,97 @@ import recsys.algorithm
 recsys.algorithm.VERBOSE = True</p>
 <p>from recsys.algorithm.factorize import SVD
 svd = SVD()
-svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p>
-                <a class="readmore" href="/python-recsys.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p> </div><!-- /.entry-content -->
+
+                                <div class="medium primary btn"><a href="/python-recsys.html" rel="bookmark" title="Permalink to "python-recsys"">Read more <i class="icon-arrow-right"></i></a></div>
+
+
+
+                                <div class="row tag-row">
+                                </div>
+
+
+
+                        </article></li>
+                </ol><!-- /#posts-list -->
+
+        </div><!-- /.eleven.columns -->
+        
+<div class="three columns">
+
+<h4>Pages</h4>
+
+ <ul>
+  </ul>
+
+<h4>Categories</h4>
+<ul class="blank">
+		<li><a href="/category/dev.html">dev</a></li>
+		<li><a href="/category/gaebal.html">개발</a></li>
+		<li><a href="/category/misc.html">misc</a></li>
+		<li><a href="/category/munjang.html">문장</a></li>
+		<li><a href="/category/sebasi.html">세바시</a></li>
+</ul>
+
+
+<h4>Tags</h4>
+	<ul class="blank">
+</ul>
+
+
+<nav class="widget">
+  <h4>Social</h4>
+  <ul class="blank">
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+  </ul>
+</nav>
+
+</div> </div><!-- /.row -->
+
 <p class="paginator">
     Page 1 / 2
-        <a href="/category/dev2.html">&raquo;</a>
+        <a href="/category/dev2.html"><i class="icon-arrow-right"></i></a>
 </p>
-            </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+</section><!-- /#content -->
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+       </div><!-- /.row -->
+    </div><!-- /.container -->
 
-        <footer id="contentinfo" class="body">
-                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
-        </footer><!-- /#contentinfo -->
 
+       <div class="container.nopad bg">
+
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="/theme/js/libs/gumby.min.js"></script>
+  <script src="/theme/js/plugins.js"></script>
 </body>
 </html>
