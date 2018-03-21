@@ -1,70 +1,41 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>물개발자</title>
-  <meta name="author" content="hyunmin">
+        <meta charset="utf-8" />
+        <title>물개발자</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
 
-
-
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <link href="harry81/favicon.png" rel="icon">
-
-  <link href="harry81/theme/css/main.css" media="screen, projection"
-        rel="stylesheet" type="text/css">
-
-  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
-        rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
-        rel="stylesheet" type="text/css">
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 </head>
 
-<body>
-  <header role="banner"><hgroup>
-  <h1><a href="harry81/">물개발자</a></h1>
-</hgroup></header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-</ul>
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">물개발자 </a></h1>
+                <nav><ul>
+                    <li><a href="/category/dev.html">dev</a></li>
+                    <li><a href="/category/gaebal.html">개발</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                    <li><a href="/category/munjang.html">문장</a></li>
+                    <li><a href="/category/sebasi.html">세바시</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
 
+                <section id="content" class="body">
+                    <ol id="posts-list" class="hfeed" start="9">
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/dockerreul-iyonghan-hadoop.html" rel="bookmark"
+                           title="Permalink to docker를 이용한 hadoop">docker를 이용한 hadoop</a></h1>
+                </header>
 
-<ul class="main-navigation">
-      <li >
-        <a href="harry81/category/dev.html">Dev</a>
-      </li>
-      <li >
-        <a href="harry81/category/gaebal.html">개발</a>
-      </li>
-      <li >
-        <a href="harry81/category/misc.html">Misc</a>
-      </li>
-      <li >
-        <a href="harry81/category/munjang.html">문장</a>
-      </li>
-      <li >
-        <a href="harry81/category/sebasi.html">세바시</a>
-      </li>
-</ul></nav>
-  <div id="main">
-    <div id="content">
-<div class="blog-index">
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/dockerreul-iyonghan-hadoop.html">docker를 이용한 hadoop</a>
-      </h1>
-    <p class="meta">
-<time datetime="2017-02-13T17:12:32+09:00" pubdate>Mon 13 February 2017</time>    </p>
-</header>
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Mon 13 February 2017</span>
 
-  <div class="entry-content"><h2>categories: hadoop docker</h2>
+</footer><!-- /.post-info -->                <h2>categories: hadoop docker</h2>
 <h3>동기</h3>
 <ul>
 <li>하둡의 병렬처리 특성을 확인하기 위해서는 2대 이상의 물리적인 컴퓨터가 필요하다</li>
@@ -74,37 +45,42 @@
 <h3>하둡 docker 이미지를 받자</h3>
 <p><a href="https://github.com/sequenceiq/hadoop-docker">Apache Hadoop 2.7.1 Docker image</a></p>
 <h3>하둡 실행하기</h3>
-<p><code>docker run …</code></p></div>
-  <footer>
-    <a rel="full-article" href="harry81/dockerreul-iyonghan-hadoop.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/octopress-temareul-byeongyeonghaja.html">"Octopress 테마를 변경하자"</a>
-      </h1>
-    <p class="meta">
-<time datetime="2017-02-13T16:56:51+09:00" pubdate>Mon 13 February 2017</time>    </p>
-</header>
+<p><code>docker run …</code></p>
+                <a class="readmore" href="/dockerreul-iyonghan-hadoop.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-  <div class="entry-content"><p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/octopress-temareul-byeongyeonghaja.html" rel="bookmark"
+                           title="Permalink to "Octopress 테마를 변경하자"">"Octopress 테마를 변경하자"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Mon 13 February 2017</span>
+
+</footer><!-- /.post-info -->                <p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
 <div class="highlight"><pre><span></span>cd octopress
 git submodule add GIT_URL .themes/THEME_NAME
 rake install\[&#39;THEME_NAME&#39;\]
 rake generate
-</pre></div></div>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">Celery beat를 Elasticbeanstalk에서도 사용하자</a>
-      </h1>
-    <p class="meta">
-<time datetime="2017-02-12T17:35:05+09:00" pubdate>Sun 12 February 2017</time>    </p>
-</header>
+</pre></div>
+                <a class="readmore" href="/octopress-temareul-byeongyeonghaja.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-  <div class="entry-content"><ul>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html" rel="bookmark"
+                           title="Permalink to Celery beat를 Elasticbeanstalk에서도 사용하자">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sun 12 February 2017</span>
+
+</footer><!-- /.post-info -->                <ul>
 <li>
 <p _="%" endcodeblock>tip 1
 {% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
@@ -117,21 +93,22 @@ from celery.task.control import discard_all
 command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
 </li>
 </ul>
-<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p></div>
-  <footer>
-    <a rel="full-article" href="harry81/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/daegu-gaebalja-moim-hadub.html">대구 개발자 모임-하둡</a>
-      </h1>
-    <p class="meta">
-<time datetime="2017-02-12T16:43:48+09:00" pubdate>Sun 12 February 2017</time>    </p>
-</header>
+<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p>
+                <a class="readmore" href="/celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-  <div class="entry-content"><h2>모임</h2>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/daegu-gaebalja-moim-hadub.html" rel="bookmark"
+                           title="Permalink to 대구 개발자 모임-하둡">대구 개발자 모임-하둡</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sun 12 February 2017</span>
+
+</footer><!-- /.post-info -->                <h2>모임</h2>
 <ul>
 <li>장소 : 아이원 유학스터디룸</li>
 <li>일자 : 2017년 2월 11</li>
@@ -142,39 +119,44 @@ command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.Data
 <li>고향 근처에서 개발에 관심있으신 분들과 만날 수 있어 기쁘다.</li>
 <li>하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.</li>
 <li>옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.<br>
-<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525">쉽고 빠르게 배우는 Angular …</a></li></ul></div>
-  <footer>
-    <a rel="full-article" href="harry81/daegu-gaebalja-moim-hadub.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/hilweoldeu-gineungjeongri.html">힐월드 기능정리</a>
-      </h1>
-    <p class="meta">
-<time datetime="2017-02-12T16:40:16+09:00" pubdate>Sun 12 February 2017</time>    </p>
-</header>
+<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525">쉽고 빠르게 배우는 Angular …</a></li></ul>
+                <a class="readmore" href="/daegu-gaebalja-moim-hadub.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-  <div class="entry-content"><ul>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/hilweoldeu-gineungjeongri.html" rel="bookmark"
+                           title="Permalink to 힐월드 기능정리">힐월드 기능정리</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sun 12 February 2017</span>
+
+</footer><!-- /.post-info -->                <ul>
 <li>현재 위치 반경내 검색</li>
 <li>댓글 작성시에 문자로 전송정리</li>
 <li>세부 페이지에서 '전화걸기' 버튼으로 등록자에게 전화걸기</li>
 <li>물건 등록자와 나와의 위치 간단히 확인하기</li>
 </ul>
 <p>{% img /images/main_healworld.png %}</p>
-<p><a href="https://www.healworld.co.kr">https://www.healworld.co.kr</a></p></div>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/aidieo-canggo.html">"아이디어 창고"</a>
-      </h1>
-    <p class="meta">
-<time datetime="2017-02-05T17:41:47+09:00" pubdate>Sun 05 February 2017</time>    </p>
-</header>
+<p><a href="https://www.healworld.co.kr">https://www.healworld.co.kr</a></p>
+                <a class="readmore" href="/hilweoldeu-gineungjeongri.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-  <div class="entry-content"><hr>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/aidieo-canggo.html" rel="bookmark"
+                           title="Permalink to "아이디어 창고"">"아이디어 창고"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sun 05 February 2017</span>
+
+</footer><!-- /.post-info -->                <hr>
 <h2>신문요약</h2>
 <h4>동기</h4>
 <ul>
@@ -194,139 +176,93 @@ command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.Data
 <h2>Open toilet</h2>
 <h4>동기</h4>
 <ul>
-<li>낯선 곳에서는 화장실을 찾는 다는 …</li></ul></div>
-  <footer>
-    <a rel="full-article" href="harry81/aidieo-canggo.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/healworld-bangmun-geuraepeu.html">"healworld 방문 그래프"</a>
-      </h1>
-    <p class="meta">
-<time datetime="2017-01-21T15:20:53+09:00" pubdate>Sat 21 January 2017</time>    </p>
-</header>
+<li>낯선 곳에서는 화장실을 찾는 다는 …</li></ul>
+                <a class="readmore" href="/aidieo-canggo.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-  <div class="entry-content"><p><img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"></p></div>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/mp4-mp3.html">"mp4-mp3"</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-06-28T17:51:24+09:00" pubdate>Sun 28 June 2015</time>    </p>
-</header>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/healworld-bangmun-geuraepeu.html" rel="bookmark"
+                           title="Permalink to "healworld 방문 그래프"">"healworld 방문 그래프"</a></h1>
+                </header>
 
-  <div class="entry-content"><h3>우분투용용의 avconv 이용</h3>
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sat 21 January 2017</span>
+
+</footer><!-- /.post-info -->                <p><img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"></p>
+                <a class="readmore" href="/healworld-bangmun-geuraepeu.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/mp4-mp3.html" rel="bookmark"
+                           title="Permalink to "mp4-mp3"">"mp4-mp3"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sun 28 June 2015</span>
+
+</footer><!-- /.post-info -->                <h3>우분투용용의 avconv 이용</h3>
 <p>``` bash 형식
 avconv  -i [영상파일] -vn  [소리파일]</p>
 <div class="highlight"><pre><span></span>``` bash 예시
 avconv  -i Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp4 -vn Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp3
-</pre></div></div>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="harry81/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html">"touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기"</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-01-18T17:53:38+09:00" pubdate>Sun 18 January 2015</time>    </p>
-</header>
+</pre></div>
+                <a class="readmore" href="/mp4-mp3.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
-  <div class="entry-content"><p>ubuntu에서 touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기</p>
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html" rel="bookmark"
+                           title="Permalink to "touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기"">"touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sun 18 January 2015</span>
+
+</footer><!-- /.post-info -->                <p>ubuntu에서 touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기</p>
 <p>우분투 설정에서 mouse는 왼손 잡이로 설정
 아래 명령어를 이용하여 마우스 버튼 배치만 변경</p>
 <div class="highlight"><pre><span></span>xinput set-button-map <span class="s1">&#39;Logitech USB Optical Mouse&#39;</span> <span class="m">3</span> <span class="m">2</span> <span class="m">1</span>
-</pre></div></div>
-  		</article>
-<div class="pagination">
+</pre></div>
+                <a class="readmore" href="/touchpadneun-oreunson-jabiro-mouseneun-oenson-jabiro-seoljeonghagi.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+            </ol><!-- /#posts-list -->
+<p class="paginator">
+        <a href="/index4.html">&laquo;</a>
+    Page 5 / 5
+</p>
+            </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
 
-    <a class="next" href="harry81/index4.html">Newer &rarr;</a>
-  <br />
-</div></div>
-<aside class="sidebar">
-  <section>
-    <h1>Recent Posts</h1>
-    <ul id="recent_posts">
-      <li class="post">
-          <a href="harry81/handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a>
-      </li>
-      <li class="post">
-          <a href="harry81/markdown-mode-for-emacs.html">Markdown mode for Emacs</a>
-      </li>
-      <li class="post">
-          <a href="harry81/how-to-work-smart.html">How to work smart</a>
-      </li>
-      <li class="post">
-          <a href="harry81/why-i-need-to-get-xps-15.html">Why I need to get XPS 15</a>
-      </li>
-      <li class="post">
-          <a href="harry81/what-does-the-good-blogs-have-in-common.html">What does the good blogs have in common?</a>
-      </li>
-    </ul>
-  </section>
-  <section>
-      
-    <h1>Categories</h1>
-    <ul id="recent_posts">
-        <li><a href="harry81/category/dev.html">dev</a></li>
-        <li><a href="harry81/category/gaebal.html">개발</a></li>
-        <li><a href="harry81/category/misc.html">misc</a></li>
-        <li><a href="harry81/category/munjang.html">문장</a></li>
-        <li><a href="harry81/category/sebasi.html">세바시</a></li>
-    </ul>
-  </section>
- 
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
 
-  <section>
-  <h1>Tags</h1>
-    <a href="harry81/tag/bike.html">bike</a>,    <a href="harry81/tag/sebasi.html">세바시</a>,    <a href="harry81/tag/daily-thought.html">daily thought</a>,    <a href="harry81/tag/feature.html">feature</a>,    <a href="harry81/tag/data.html">data</a>,    <a href="harry81/tag/aws.html">aws</a>  </section>
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
 
-
-    <section>
-        <h1>Social</h1>
-        <ul>
-            <li><a href="#" target="_blank">You can add links in your config file</a></li>
-            <li><a href="#" target="_blank">Another social link</a></li>
-        </ul>
-    </section>
-    <section>
-        <h1>Blogroll</h1>
-        <ul>
-            <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
-            <li><a href="http://python.org/" target="_blank">Python.org</a></li>
-            <li><a href="#" target="_blank">You can modify those links in your config file</a></li>
-        </ul>
-    </section>
-
-</aside>    </div>
-  </div>
-  <footer role="contentinfo"><p>
-    Copyright &copy;  2015&ndash;2018  hyunmin &mdash;
-  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
-</p></footer>
-  <script src="harry81/theme/js/modernizr-2.0.js"></script>
-  <script src="harry81/theme/js/ender.js"></script>
-  <script src="harry81/theme/js/octopress.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-91188832-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-91188832-2');
-    ga('send', 'pageview');
-</script>
 </body>
 </html>
