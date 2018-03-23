@@ -1,201 +1,1741 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Hyunmin" />
-        <meta name="copyright" content="Hyunmin" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Water Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Hyunmin">
 
-        <meta property="og:type" content="article" />
-        <meta name="twitter:card" content="summary">
+    <!-- Le styles -->
+    <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-2 {
+        font-size: 8pt;
+      }
+      .tag-4 {
+        font-size: 6pt;
+     }
+    </style>
+    <link href="./theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="./theme/css/font-awesome.css" rel="stylesheet">
 
-<meta property="og:title" content="Water Developer"/>
-<meta name="twitter:title" content="Water Developer">
-<meta property="og:url" content="." />
-<meta property="og:site_name" content="Water Developer" />
-<meta property="og:article:author" content="Hyunmin" />
-        <title>Water Developer
-</title>
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./theme/css/pygments.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./theme/tipuesearch/tipuesearch.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./theme/css/elegant.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="./theme/css/custom.css" media="screen">
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-91188832-2', 'auto');
-    ga('send', 'pageview');
-</script>
-    </head>
-    <body>
-        <div id="content-sans-footer">
-        <div class="navbar navbar-static-top">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="./"><span class=site-name>Water Developer</span></a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right top-menu">
-                            <li  class="active"><a href=".">Home</a></li>
-                            <li ><a href="./categories.html">Categories</a></li>
-                            <li ><a href="./tags.html">Tags</a></li>
-                            <li ><a href="./archives.html">Archives</a></li>
-                            <li><form class="navbar-search" action="./search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <link href="./theme/css/pygments.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="./theme/images/favicon.ico">
+    <link rel="apple-touch-icon" href="./theme/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./theme/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./theme/images/apple-touch-icon-114x114.png">
+
+    <link href="./" type="application/atom+xml" rel="alternate" title="Water Developer ATOM Feed" />
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
         <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span1"></div>
-                <div class="span10">
-<div class="row-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="./index.html">Water Developer </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+                          <li class="divider-vertical"></li>
+                  <li >
+                    <a href="./category/dev.html">
+						<i class="icon-folder-open icon-large"></i>dev
+					</a>
+                  </li>
+                  <li >
+                    <a href="./category/gaebal.html">
+						<i class="icon-folder-open icon-large"></i>개발
+					</a>
+                  </li>
+                  <li >
+                    <a href="./category/misc.html">
+						<i class="icon-folder-open icon-large"></i>misc
+					</a>
+                  </li>
+                  <li >
+                    <a href="./category/munjang.html">
+						<i class="icon-folder-open icon-large"></i>문장
+					</a>
+                  </li>
+                  <li >
+                    <a href="./category/sebasi.html">
+						<i class="icon-folder-open icon-large"></i>세바시
+					</a>
+                  </li>
 
-    <div class="row-fluid">
+                          <ul class="nav pull-right">
+                                <li><a href="./archives.html"><i class="icon-th-list"></i>Archives</a></li>
+                          </ul>
 
+            </ul>
+            <!--<p class="navbar-text pull-right">Logged in as <a href="#">username</a></p>-->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
     </div>
 
-    <div class="row-fluid">
-        <div class="span8 offset2">
-            <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="./archives.html">all posts</a></h1>
-            </header>
-        <div class="recent-posts">
-            <article>
-                <a href="./handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2018-03-20T10:27:00+09:00">Tue 20 March 2018</time>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="span9" id="content">
+        <div class="article">
+                <h1><a href="./">Handle a lot of rows in Django model</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2018-03-20T10:27:00+09:00">
+        <i class="icon-calendar"></i>Tue 20 March 2018
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
+    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
                 </div>
-                </section>
-            </article>
-            <article>
-                <a href="./markdown-mode-for-emacs.html">Markdown mode for Emacs  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2018-03-19T17:57:00+09:00">Mon 19 March 2018</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./how-to-work-smart.html">How to work smart  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2018-03-19T11:00:00+09:00">Mon 19 March 2018</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./why-i-need-to-get-xps-15.html">Why I need to get XPS 15  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2018-03-19T09:25:00+09:00">Mon 19 March 2018</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./what-does-the-good-blogs-have-in-common.html">What does the good blogs have in common?  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2018-03-18T17:55:00+09:00">Sun 18 March 2018</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./how-to-run-pelican.html">How to run pelican  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2018-03-18T17:24:00+09:00">Sun 18 March 2018</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./lets-get-it-done.html">Let's get it done  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#misc-ref">misc</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2017-11-18T12:15:00+09:00">Sat 18 November 2017</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./microservice.html">microservice  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2017-11-04T13:09:00+09:00">Sat 04 November 2017</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./bike_timeline.html">자전거 사용추이  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#dev-ref">dev</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2017-10-20T17:37:00+09:00">Fri 20 October 2017</time>
-                </div>
-                </section>
-            </article>
-            <article>
-                <a href="./smart-work.html">스마트 워크  </a>
-                <section>
-                    posted in
-                <a href="./categories.html#sebasi-ref">세바시</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2017-10-11T16:25:00+09:00">Wed 11 October 2017</time>
-                </div>
-                </section>
-            </article>
         </div>
-        </div>
-    </div>
-</div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">Markdown mode for Emacs</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2018-03-19T17:57:00+09:00">
+        <i class="icon-calendar"></i>Mon 19 March 2018
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h5>단축키</h5>
+<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
+<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
                 </div>
-                <div class="span1"></div>
-            </div>
         </div>
-        <div id="push"></div>
-    </div>
-<footer>
-<div id="footer">
-    <ul class="footer-content">
-        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
-    </ul>
-</div>
-</footer>        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
-    </body>
-    <!-- Theme: Elegant built for Pelican
-    License : http://oncrashreboot.com/pelican-elegant -->
+        <hr />
+        <div class="article">
+                <h1><a href="./">How to work smart</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2018-03-19T11:00:00+09:00">
+        <i class="icon-calendar"></i>Mon 19 March 2018
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>Do<ul>
+<li>출근 한 시간전에 회사에 도착한다.</li>
+<li>불가능한 업무는 용감하게 No라고 말한다.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Don't</p>
+<ul>
+<li>한번에 여러가지 일을 처리하자</li>
+<li>조직이 알아야하는 것들을 나 혼자만 알자
+  (공통 이메일 계정, 시스템 전체적으로 영향을 미치는 변경)</li>
+<li>
+<p>업무가 할당이 되면 우선순위에 대한 고민없이 무조건 착수하자</p>
+<blockquote>
+<p>중요한 일이 너무 많아서 일을 못한다.</p>
+</blockquote>
+</li>
+<li>
+<p>야근을 열심히 하자.</p>
+</li>
+<li>옆 동료가 어떤 …</li></ul></li></ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">Why I need to get XPS 15</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2018-03-19T09:25:00+09:00">
+        <i class="icon-calendar"></i>Mon 19 March 2018
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>
+<p>사야하는 이유</p>
+<ul>
+<li>dell outlet 에서 저렴하게 팔고 있다.</li>
+<li>가격대비 성능이 우수하다.</li>
+<li>동영상 편집이 가능하다.</li>
+<li>Tensorflow가 지원하는 GPU를 가지고 있다.</li>
+</ul>
+</li>
+<li>
+<p>말아야 하는 이유</p>
+<ul>
+<li>정상적으로 잘 작동하는 labtop가 있다.</li>
+</ul>
+</li>
+</ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">What does the good blogs have in common?</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2018-03-18T17:55:00+09:00">
+        <i class="icon-calendar"></i>Sun 18 March 2018
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h5>형식</h5>
+<ul>
+<li>구조가 명확하다.</li>
+<li>그림을 포함한다.</li>
+<li>링크를 포함한다.</li>
+<li>간결하다.
+    예제) <a href="https://www.webpagefx.com/blog/web-design/" title="https://www.webpagefx.com/blog/web-design/">https://www.webpagefx.com/blog/web-design/</a></li>
+</ul>
+<h5>내용</h5>
+<ul>
+<li>독창적이다.</li>
+</ul>
+<h5>블로그를 잘 하려면 따라하고픈 멘토를 찾자</h5>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">How to run pelican</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2018-03-18T17:24:00+09:00">
+        <i class="icon-calendar"></i>Sun 18 March 2018
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>local 환경에서 실시간 페이지 보기</li>
+</ul>
+<div class="highlight"><pre><span></span>$ fab serve
+</pre></div>
+
+
+<ul>
+<li>markdown 변경파일을 실시간으로 html 형식으로 변경하기</li>
+</ul>
+<div class="highlight"><pre><span></span>$ fab rebuild 
+</pre></div>
+
+
+<ul>
+<li>github page에 적용하기</li>
+</ul>
+<div class="highlight"><pre><span></span>$ make github or fab gh_pages
+</pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">Let's get it done</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-11-18T12:15:00+09:00">
+        <i class="icon-calendar"></i>Sat 18 November 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h5>그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?</h5>
+<ul>
+<li>
+<p>전체적인 그림을 그리지 못했다.</p>
+</li>
+<li>
+<p>실제 구현에 필요한 일부 기술에 부딪힐 때마다 그 기술을 익여햐 하겠다는 생각에 사로 잡혔다. 
+그리고 샛길로 빠져서 큰 맥락에서 벗어났다.</p>
+<ul>
+<li>기술정리를 위한 정적 블로그</li>
+<li>머신러닝</li>
+<li>pandas</li>
+</ul>
+</li>
+<li>
+<p>꾸준하게 개발에 대한 의지와 열정을 유지하지 못 했다.</p>
+</li>
+</ul>
+<h5>그렇다면 작동하는 프로젝트를 완료하기 …</h5>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">microservice</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-11-04T13:09:00+09:00">
+        <i class="icon-calendar"></i>Sat 04 November 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><table>
+<thead>
+<tr>
+<th></th>
+<th align="center">Mircoservice</th>
+<th align="right">Monolithics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>테스트</td>
+<td align="center">어려움</td>
+<td align="right">쉬움</td>
+</tr>
+<tr>
+<td>디버깅</td>
+<td align="center">어려움</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>배포</td>
+<td align="center"></td>
+<td align="right">단순</td>
+</tr>
+<tr>
+<td>모니터링</td>
+<td align="center">중요</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>개발</td>
+<td align="center">문제에 집중해 개발 가능</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>유연함</td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>언어 자유도</td>
+<td align="center">높음</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>독립성</td>
+<td align="center">높음</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://www.popit.kr/why-microservice/">마이크로서비스 아키텍처의 장단점</a></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">자전거 사용추이</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-10-20T17:37:00+09:00">
+        <i class="icon-calendar"></i>Fri 20 October 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin-choi.html"><i class="icon-user"></i>Hyunmin Choi</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/bike.html"><i class="icon-tag"></i>bike</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><dl class="docutils">
+<dt>서울 따릉이</dt>
+<dd><a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html">서울 따릉이 하루 이용 그림(2mb)</a></dd>
+</dl>
+
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">스마트 워크</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-10-11T16:25:00+09:00">
+        <i class="icon-calendar"></i>Wed 11 October 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin-choi.html"><i class="icon-user"></i>Hyunmin Choi</a>
+<span class="label">Category</span>
+<a href="./category/sebasi.html"><i class="icon-folder-open"></i>세바시</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul class="simple">
+<li>과정 -&gt; 성과</li>
+<li>시간 -&gt; 업무</li>
+<li>통일성 -&gt; 다양성</li>
+<li>철저한 계획(모든 상황의 변수를 통제) -&gt; 빠른 적응</li>
+<li>지시, 관리 -&gt; 믿음, 지원</li>
+</ul>
+
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">생각이 바뀌어야 삶이 바뀐다</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-10-10T18:37:00+09:00">
+        <i class="icon-calendar"></i>Tue 10 October 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin-choi.html"><i class="icon-user"></i>Hyunmin Choi</a>
+<span class="label">Category</span>
+<a href="./category/sebasi.html"><i class="icon-folder-open"></i>세바시</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>앎의 연대, 집단 지성,</p>
+<p>발표 체험 - 관객 체험</p>
+<p>약자가 하고 싶은게 있다? 권리가 있다?</p>
+<p>질문을 받으면 생각을 하기 시작한다.</p>
+<p>입체적 사고</p>
+<p>HAPPINESS IS NOW HERE</p>
+<p>생각을 내려놓고 감각에 집중하자.</p>
+<p>도파민 vs 스트레스 호르몬</p>
+<p>행복 순간적인 즐거움이 아니라 지속적인 만족감이다.</p>
+
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">66일 습관의 기적 | 강성태 공신닷컴 대표</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-10-10T11:27:00+09:00">
+        <i class="icon-calendar"></i>Tue 10 October 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin-choi.html"><i class="icon-user"></i>Hyunmin Choi</a>
+<span class="label">Category</span>
+<a href="./category/sebasi.html"><i class="icon-folder-open"></i>세바시</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><iframe width="560" height="315" src="https://www.youtube.com/embed/xiE2wL9hS2w" frameborder="0" allowfullscreen></iframe><p>&quot;공부를 게임처럼 만들자&quot;</p>
+
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">관점 그리고 생각시작</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-10-01T21:14:00+09:00">
+        <i class="icon-calendar"></i>Sun 01 October 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin-choi.html"><i class="icon-user"></i>Hyunmin Choi</a>
+<span class="label">Category</span>
+<a href="./category/sebasi.html"><i class="icon-folder-open"></i>세바시</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/sebasi.html"><i class="icon-tag"></i>세바시</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><iframe width="560" height="315" src="https://www.youtube.com/embed/-65c1iRPsXw" frameborder="0" allowfullscreen></iframe><p>.</p>
+<blockquote>
+<p>&quot;창업자와 직원의 비전은 다를 수 있다&quot;</p>
+<p>&quot;작은 꿈을 이룰 수 있어야 큰 꿈을 이룰수 있지 않을까&quot;</p>
+<p>- 김봉진</p>
+<p>&quot;틀린 질문을 하면 맞는 답이 나오지 않는다&quot;</p>
+</blockquote>
+<p><a class="reference external" href="http://www.yes24.com/24/goods/17701431">The one thing</a></p>
+<p>크리스토프 로담 향수 개발자</p>
+<p>가치는 해석에 의해 결정된다.</p>
+<p>&quot;기술을 팔지말고 기술이 바꿀 미래를 팔아라&quot;</p>
+<p>당신은 언제 행복해질 예정이야?</p>
+<!-- raw: html
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/izjBpD-MPOQ" frameborder="0" allowfullscreen></iframe> -->
+<p>한가지말에서 만가지 생각을 한다</p>
+<p>익숙한것에 …</p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">믿지말라 그리고 질문하라</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-10-01T20:49:00+09:00">
+        <i class="icon-calendar"></i>Sun 01 October 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin-choi.html"><i class="icon-user"></i>Hyunmin Choi</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/sebasi.html"><i class="icon-tag"></i>세바시</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><iframe width="560" height="315" src="https://www.youtube.com/embed/x2QMiLa160w" frameborder="0" allowfullscreen></iframe><p>송길영 다음소프트 부사장</p>
+<p><a class="reference external" href="http://news.mk.co.kr/newsRead.php?no=64969&amp;year=2011">각 시대별 인기 직업</a></p>
+<p>무엇을 포기해야 하는가?</p>
+<p>지식의 유효기간
+관심의 유효기간</p>
+<p>믿지말라 그리고 질문하라</p>
+
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">thought</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-10-01T20:37:00+09:00">
+        <i class="icon-calendar"></i>Sun 01 October 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin-choi.html"><i class="icon-user"></i>Hyunmin Choi</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/daily-thought.html"><i class="icon-tag"></i>daily thought</a>
+	<a href="./tag/feature.html"><i class="icon-tag"></i>feature</a>
+	<a href="./tag/sebasi.html"><i class="icon-tag"></i>세바시</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary">
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">내마음의 구심점</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-09-30T12:21:00+09:00">
+        <i class="icon-calendar"></i>Sat 30 September 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/munjang.html"><i class="icon-folder-open"></i>문장</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><pre class="literal-block">
+가능하면 빨리 실패하라. 실수를 빨리파악하고 인정하는 것이 자신에게 유리하다
+</pre>
+<pre class="literal-block">
+성공에 남다른 비결이 있는 게 아니라 모두 다 아는 지혜를 실천하기에 달린 것이다.
+</pre>
+<pre class="literal-block">
+파도를 아닌 파도를 만드는 바람을 보는 세상의 눈이 필요하다.
+</pre>
+<pre class="literal-block">
+문제를 쫓아 다니면 문제만 쫓아 다닌다. 근본적인 원인을 생각하라.
+</pre>
+<pre class="literal-block">
+승리는 우리를 흥분시킨다.
+하지만 1등을 하지 못했다고 부끄러워할 필요는 절대 …</pre>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">면접자로서 면접시에 물어보고 싶은 질문들</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-09-29T11:51:34+09:00">
+        <i class="icon-calendar"></i>Fri 29 September 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h4>대략적인 질문</h4>
+<ul>
+<li>개발 방법론(scrum?)</li>
+<li>업무 시간, 출퇴근 시간</li>
+<li>개발 pc 지급?</li>
+<li>휴가</li>
+<li>비전</li>
+<li>계획</li>
+</ul>
+<h4>업무적인 질문</h4>
+<ul>
+<li>인력 구성</li>
+<li>구체적인 업무</li>
+<li>기대하는 역할</li>
+</ul>
+<h4>기술적인 질문</h4>
+<ul>
+<li>기술적 어려움</li>
+<li>주언어</li>
+<li>작업관리툴(jira)</li>
+<li>코드리뷰</li>
+<li>TDD</li>
+<li>CI</li>
+<li>소통 채널</li>
+<li>배포 주기</li>
+</ul>
+<h4>운용환경</h4>
+<ul>
+<li>AWS
+  -</li>
+</ul>
+<h4>동료상</h4>
+<ul>
+<li>선호</li>
+<li>비선호</li>
+</ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">따릉이 사용량</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-09-27T10:20:00+09:00">
+        <i class="icon-calendar"></i>Wed 27 September 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/data.html"><i class="icon-tag"></i>data</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"></p>
+<p>파랑 - 실제 주차장에 주차되어있는 수</p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">Elasticbeans talk</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-09-13T17:44:50+09:00">
+        <i class="icon-calendar"></i>Wed 13 September 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h4>Elasticbeanstalk health check</h4>
+<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
+Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
+<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
+<p>https://gist.github.com/dryan/8271687</p>
+<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
+    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
+    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"data.go.kr"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-09-03T14:29:11+09:00">
+        <i class="icon-calendar"></i>Sun 03 September 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><hr>
+<ul>
+<li>단독/다가구 전월세 지수 변화, 2004~2016 <a href="https://s3.ap-northeast-2.amazonaws.com/hmapps/data/home_loan_201708_900x500.html">link</a></li>
+</ul>
+<p>지역코드와 기간을 이용하여 해당기간, 해당지역의 단독다가구 전월세 신고자료를 제공하는 단독다가구 전월세 신고 정보 조회</p>
+<ul>
+<li>이력 소개 <a href="http://bit.ly/2f9Xjdp">link</a></li>
+</ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"Experience"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-09-02T15:51:22+09:00">
+        <i class="icon-calendar"></i>Sat 02 September 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/gaebal.html"><i class="icon-folder-open"></i>개발</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><hr>
+<ul>
+<li>
+<p>Backend developer at Modn, 2017.07</p>
+</li>
+<li>
+<p>Backend developer at Modernlab, 2017.04 ~ 2017.07</p>
+</li>
+<li>
+<p>Backend developer at Truffls, 2016.03 ~ 2016.09
+  <a href="https://truffls.de/en/">https://truffls.de/en/</a></p>
+</li>
+</ul>
+<p><img src="images/company/truffls1.jpg" style="max-width:700px"></p>
+<p>Django admin에 신규 기능 추가후 소개, Truffls</p>
+<p><img src="images/company/truffls2.jpg" style="max-width:700px"></p>
+<p>직원 기념 사진, Truffls</p>
+<ul>
+<li>QA Engineer at Delivery, 2015.06 ~ 2016.03
+  https://www.lieferheld.de/</li>
+</ul>
+<p><img src="images/company/delivery1.jpg" style="max-width:700px"></p>
+<p>Tech …</p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"aws cloudtrail and config"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-08-01T11:33:23+09:00">
+        <i class="icon-calendar"></i>Tue 01 August 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+<span class="label">Tags</span>
+	<a href="./tag/aws.html"><i class="icon-tag"></i>aws</a>
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>
+<p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
+</li>
+<li>
+<p>임기성 :: 2015 리인벤트 리캡 게이밍  <a href="https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim">https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim</a></p>
+</li>
+<li>
+<p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
+</li>
+</ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"rds-parameter-group"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-06-22T11:51:34+09:00">
+        <i class="icon-calendar"></i>Thu 22 June 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h3>문제</h3>
+<hr>
+<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
+<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
+그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
+- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
+<ul>
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"git tips"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-05-16T17:12:50+09:00">
+        <i class="icon-calendar"></i>Tue 16 May 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>특정 함수의 변경을 확인 : git log -L </li>
+<li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
+<li>버그가 발견한 commit를 추적 : git bisect</li>
+<li>commit.template</li>
+</ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"글을 매일 쓰는 방법"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-05-15T17:26:17+09:00">
+        <i class="icon-calendar"></i>Mon 15 May 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>
+<p><a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e">25 Habits That Will Make You a Writer</a></p>
+</li>
+<li>
+<p>다문다독다상량(多聞多讀多商量, 많이 듣고 많이 읽고 많이 생각하라)
+다독다작다상량(多讀多作多商量, 많이 읽고 많이 쓰고 많이 생각하라)</p>
+</li>
+<li>
+<p>매일 글을 쓴다.
+하루를 보내며 재미있었던 일</p>
+</li>
+</ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"AWS와 친구 되기"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-05-15T17:05:34+09:00">
+        <i class="icon-calendar"></i>Mon 15 May 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>아테나 성능 튜닝 팁 - 정도현</h2>
+<p>Amazon Athena is an interactive query service that makes it easy to analyze data stored in Amazon S3 using standard SQL
+- big-data <a href="https://aws.amazon.com/ko/blogs/big-data/">https://aws.amazon.com/ko/blogs/big-data/</a>
+- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"소담에서의 시작"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-04-13T10:32:17+09:00">
+        <i class="icon-calendar"></i>Thu 13 April 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h4>소감</h4>
+<p>낯설지만 자유롭다.
+이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.</p>
+<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"init sodam"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-04-03T17:22:35+09:00">
+        <i class="icon-calendar"></i>Mon 03 April 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>upgrade pip
+pip3 install -U pip </p>
+<p>가상환경
+mkvirtualenv sodam -p /usr/bin/python3 </p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+</tbody>
+</table>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"build a chat app with django"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-03-13T14:29:24+09:00">
+        <i class="icon-calendar"></i>Mon 13 March 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>기능 요구사항</h2>
+<ul>
+<li>
+<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
+  http://rocketchat.healworld.co.kr/</p>
+</li>
+<li>
+<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
+링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
+https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
+</li>
+<li>
+<p>대화 …</p></li></ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">index gs shop</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-03-09T16:05:52+09:00">
+        <i class="icon-calendar"></i>Thu 09 March 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h3>도전</h3>
+<ul>
+<li>GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성</li>
+<li>관련 기술
+  <code>Elasticsearch 플러그인</code>, <code>형태소 분석기</code>, <code>Thrift 서버</code>, <code>HAProxy</code></li>
+<li>형태소 분석이 필요한 이유?<br>
+  한국어 분석을 지원하지 않는다. 예를 들어 "아버지가 방에 들어간다"라는 한국어 문장을 인덱스해도 "아버지"로는 검색이 안 되고, 반드시 "아버지가"로 검색해야만 결과에 출력된다.</li>
+<li>형태소 분석기 - 은전 한  잎 …</li></ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"senior work"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-03-06T17:57:26+09:00">
+        <i class="icon-calendar"></i>Mon 06 March 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h3>참고 사이트</h3>
+<ul>
+<li>구미 노일 일자리 창출센터 http://www.gumisilver.or.kr/job/job_psn.asp</li>
+<li></li>
+</ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"get title data api"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-03-04T17:53:15+09:00">
+        <i class="icon-calendar"></i>Sat 04 March 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h3>기본 matplotlib 이용하여 데이타 출력</h3>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 한글 폰트 깨짐 방지</span>
+<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"uhopper-hadoop-docker"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-03-02T17:11:16+09:00">
+        <i class="icon-calendar"></i>Thu 02 March 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h3>docker-compose 를 이용해서</h3>
+<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
+<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
+
+docker network create hadoop
+docker network create kafka
+docker volume create --name=hadoop_datanode1
+docker volume create --name=hadoop_datanode2
+docker volume create --name=hadoop_historyserver
+docker volume create --name=hadoop_namenode
+docker-compose up
+</pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"spark docker 설치해보기"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-28T18:34:41+09:00">
+        <i class="icon-calendar"></i>Tue 28 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/gaebal.html"><i class="icon-folder-open"></i>개발</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
+<p>https://github.com/sequenceiq/docker-spark</p>
+<h3>create virtualbox</h3>
+<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
+docker-machine create -d virtualbox namenode
+docker-machine create -d virtualbox datanode1
+</pre></div>
+
+
+<h2>name node</h2>
+<p>https://github.com/sequenceiq/hadoop-docker</p>
+<div class="highlight"><pre><span></span># run docker hadoop
+docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+
+# 이미지 다운로드
+docker pull …</pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"python-recsys"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-21T16:53:36+09:00">
+        <i class="icon-calendar"></i>Tue 21 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>python-recsys 따라하기<br>
+http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
+<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
+<p>```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True</p>
+<p>from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"movies"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-21T14:59:56+09:00">
+        <i class="icon-calendar"></i>Tue 21 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017.2.19</td>
+<td>글래디에이터: 로마 영웅 탄생의 필수 가이드 비밀</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>예정</h3>
+<table>
+<thead>
+<tr>
+<th>분야</th>
+<th>제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>경제</td>
+<td>인사이드잡</td>
+</tr>
+<tr>
+<td>경제</td>
+<td>마진콜</td>
+</tr>
+<tr>
+<td>역사</td>
+<td>인생은 아름다워(La Vita E Bella, Life Is Beautiful 1997)</td>
+</tr>
+<tr>
+<td>역사</td>
+<td>프랑스 혁명</td>
+</tr>
+<tr>
+<td>SF</td>
+<td>스타워즈</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"emacs에서 파일명 변경하기"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-20T18:03:19+09:00">
+        <i class="icon-calendar"></i>Mon 20 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
+<p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"hadoop-docker"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-18T17:13:49+09:00">
+        <i class="icon-calendar"></i>Sat 18 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>가상머신 3개를 준비하자.</p>
+<div class="highlight"><pre><span></span># Namenode 192.168.99.101
+docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+
+# Datanode1 192.168.99.102
+docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
+
+# Datanode2 192.168.99.103
+docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>...
+namenode 192.168.99.101
+datanode1 192.168.99.102
+datanode2 …</pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"CeleryTestSuiteRunner NoseTestSuiteRunner 함께 사용하기"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-18T15:43:28+09:00">
+        <i class="icon-calendar"></i>Sat 18 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>소프트웨어 관리에 있어서 테스트는 언제나 필수적인 과정이지만, 번고롭다. 특히 매번 테스트를 실행할 때마다 db 스키마를 생성(CREATE)하고, 기존에 정의해둔 fixture를 입력(INSERT)하는 과정을 거친다.
+테스트 환경을 일관되도록 유지를 시켜준다는 장점이 있지만, 시간이 걸린다는 단점이 있다.  </p>
+<p>시간을 가지고 생각을 해보면, db scheme에 관련된 테스트 목적이 아니라면 때에 따라서 기존에 …</p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">지식 창고</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-14T13:38:04+09:00">
+        <i class="icon-calendar"></i>Tue 14 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>예정</h2>
+<table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>제목</th>
+<th>지은이</th>
+<th>특이사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788960863651">돈 되는 아파트 돈 안 되는 아파트</a></td>
+<td>채상욱</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791157745562">아기곰 재테크의 불변의 법칙</a></td>
+<td>아기곰</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://book.daum.net/detail/book.do?bookid=KOR9791186615140">뉴스테이시대, 사야할 집 팔아야할 집</a></td>
+<td>채상욱</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9788947540759">아파트 제대로 고르는 법</a></td>
+<td>심형석</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788901058030">부자 경제학</a></td>
+<td>박경철</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9788996634218">경제기사의 바다에 빠져라</a></td>
+<td>최진기</td>
+<td></td>
+</tr>
+<tr>
+<td>2017.</td>
+<td>관점 디자이너</td>
+<td>박용후</td>
+<td></td>
+</tr>
+<tr>
+<td>2017.2</td>
+<td>마지막 한 걸음은 혼자서 가야 한다 :정진홍의 900킬로미터 …</td></tr></tbody></table>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">docker를 이용한 hadoop</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-13T17:12:32+09:00">
+        <i class="icon-calendar"></i>Mon 13 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>categories: hadoop docker</h2>
+<h3>동기</h3>
+<ul>
+<li>하둡의 병렬처리 특성을 확인하기 위해서는 2대 이상의 물리적인 컴퓨터가 필요하다</li>
+<li>실제로 물리적인 컴퓨터를 마련하기 위해서는 비용이 필요하다</li>
+<li>docker를 이용하면 가상의 운영체제를 가볍게 실행할수 있다는 얘기를 들어왔고, hadoop를 테스트하기에 적당하다고 판단하여 시도함</li>
+</ul>
+<h3>하둡 docker 이미지를 받자</h3>
+<p><a href="https://github.com/sequenceiq/hadoop-docker">Apache Hadoop 2.7.1 Docker image</a></p>
+<h3>하둡 실행하기</h3>
+<p><code>docker run …</code></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"Octopress 테마를 변경하자"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-13T16:56:51+09:00">
+        <i class="icon-calendar"></i>Mon 13 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
+<div class="highlight"><pre><span></span>cd octopress
+git submodule add GIT_URL .themes/THEME_NAME
+rake install\[&#39;THEME_NAME&#39;\]
+rake generate
+</pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-12T17:35:05+09:00">
+        <i class="icon-calendar"></i>Sun 12 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>
+<p _="%" endcodeblock>tip 1
+{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
+from celery.task.control import discard_all
+    discard_all()</p>
+</li>
+<li>
+<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
+{% codeblock lang:python title:"98-celery.config"  %}
+command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
+</li>
+</ul>
+<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">대구 개발자 모임-하둡</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-12T16:43:48+09:00">
+        <i class="icon-calendar"></i>Sun 12 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h2>모임</h2>
+<ul>
+<li>장소 : 아이원 유학스터디룸</li>
+<li>일자 : 2017년 2월 11</li>
+<li>slack : https://daegugroup.slack.com/</li>
+</ul>
+<h2>느낀 점</h2>
+<ul>
+<li>고향 근처에서 개발에 관심있으신 분들과 만날 수 있어 기쁘다.</li>
+<li>하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.</li>
+<li>옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.<br>
+<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525">쉽고 빠르게 배우는 Angular …</a></li></ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">힐월드 기능정리</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-12T16:40:16+09:00">
+        <i class="icon-calendar"></i>Sun 12 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><ul>
+<li>현재 위치 반경내 검색</li>
+<li>댓글 작성시에 문자로 전송정리</li>
+<li>세부 페이지에서 '전화걸기' 버튼으로 등록자에게 전화걸기</li>
+<li>물건 등록자와 나와의 위치 간단히 확인하기</li>
+</ul>
+<p>{% img /images/main_healworld.png %}</p>
+<p><a href="https://www.healworld.co.kr">https://www.healworld.co.kr</a></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"아이디어 창고"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-02-05T17:41:47+09:00">
+        <i class="icon-calendar"></i>Sun 05 February 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><hr>
+<h2>신문요약</h2>
+<h4>동기</h4>
+<ul>
+<li></li>
+</ul>
+<h4>설명</h4>
+<ul>
+<li>여러 매체의 신문은 내용이 많아 읽는데 시간이 걸린다.</li>
+<li>카테고리별로 각 신문사별로 중요하다고 생각되는 토픽을 찾는다.</li>
+<li>선별된 내용중 사실만 선별해 내어 짥은 문장으로 정리하여 서비스 한다.</li>
+</ul>
+<h4>재미요소</h4>
+<ul>
+<li>신문을 읽을 수 있는 시간 절약</li>
+<li>균현있게 세상 돌아가는 흐름을 볼 수 있다</li>
+</ul>
+<h2>Open toilet</h2>
+<h4>동기</h4>
+<ul>
+<li>낯선 곳에서는 화장실을 찾는 다는 …</li></ul>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"healworld 방문 그래프"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2017-01-21T15:20:53+09:00">
+        <i class="icon-calendar"></i>Sat 21 January 2017
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p><img alt="/images/healworld-ga-201702.png" src="/images/healworld-ga-201702.png"></p>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"mp4-mp3"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2015-06-28T17:51:24+09:00">
+        <i class="icon-calendar"></i>Sun 28 June 2015
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/dev.html"><i class="icon-folder-open"></i>dev</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><h3>우분투용용의 avconv 이용</h3>
+<p>``` bash 형식
+avconv  -i [영상파일] -vn  [소리파일]</p>
+<div class="highlight"><pre><span></span>``` bash 예시
+avconv  -i Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp4 -vn Into.the.Wild.2007.1080p.BluRay.x264.YIFY.mp3
+</pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+        <div class="article">
+                <h1><a href="./">"touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기"</a></h1>
+                <div class="well small"><footer class="post-info">
+<span class="label">Date</span>
+<abbr class="published" title="2015-01-18T17:53:38+09:00">
+        <i class="icon-calendar"></i>Sun 18 January 2015
+</abbr>
+<span class="label">By</span>
+<a href="./author/hyunmin.html"><i class="icon-user"></i>Hyunmin</a>
+<span class="label">Category</span>
+<a href="./category/misc.html"><i class="icon-folder-open"></i>misc</a>.
+
+
+</footer><!-- /.post-info --></div>
+                <div class="summary"><p>ubuntu에서 touchpad는 오른손 잡이로, mouse는 왼손 잡이로 설정하기</p>
+<p>우분투 설정에서 mouse는 왼손 잡이로 설정
+아래 명령어를 이용하여 마우스 버튼 배치만 변경</p>
+<div class="highlight"><pre><span></span>xinput set-button-map <span class="s1">&#39;Logitech USB Optical Mouse&#39;</span> <span class="m">3</span> <span class="m">2</span> <span class="m">1</span>
+</pre></div>
+                        <a class="btn primary xsmall" href="./">more ...</a>
+                </div>
+        </div>
+        <hr />
+
+        </div><!--/span-->
+
+                <div class="span3 well sidebar-nav" id="sidebar">
+<ul class="nav nav-list">
+<li class="nav-header"><h4><i class="icon-external-link"></i>blogroll</h4></li>
+    <li><a href="http://getpelican.com/"><i class="icon-external-link"></i>Pelican</a></li>
+    <li><a href="http://python.org/"><i class="icon-external-link"></i>Python.org</a></li>
+    <li><a href="http://jinja.pocoo.org/"><i class="icon-external-link"></i>Jinja2</a></li>
+    <li><a href="#"><i class="icon-external-link"></i>You can modify those links in your config file</a></li>
+<li class="nav-header"><h4><i class="icon-home icon-large"></i> social</h4></li>
+    <li><a href="https://github.com/kura"><i class="icon-Github-sign icon-large"></i>Github</a></li>
+    <li><a href="https://twitter.com/kuramanga"><i class="icon-Twitter-sign icon-large"></i>Twitter</a></li>
+
+<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categories</h4></li>
+<li>
+<a href="./category/dev.html">
+    <i class="icon-folder-open icon-large"></i>dev
+</a>
+</li>
+<li>
+<a href="./category/gaebal.html">
+    <i class="icon-folder-open icon-large"></i>개발
+</a>
+</li>
+<li>
+<a href="./category/misc.html">
+    <i class="icon-folder-open icon-large"></i>misc
+</a>
+</li>
+<li>
+<a href="./category/munjang.html">
+    <i class="icon-folder-open icon-large"></i>문장
+</a>
+</li>
+<li>
+<a href="./category/sebasi.html">
+    <i class="icon-folder-open icon-large"></i>세바시
+</a>
+</li>
+
+<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
+
+
+</ul>        </div><!--/.well -->
+
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <address id="about">
+                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
+                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
+        </address><!-- /#about -->
+
+        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
+                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-91188832-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+    <!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./theme/js/jquery-1.7.2.min.js"></script>
+    <script src="./theme/js/bootstrap.min.js"></script>
+  </body>
 </html>
