@@ -46,7 +46,6 @@
                     <div class="navbar-inner">
                         <ul class="nav">
                             <li ><a href="../category/dev.html">dev</a></li>
-                            <li ><a href="../category/gaebal.html">개발</a></li>
                             <li ><a href="../category/misc.html">misc</a></li>
                             <li ><a href="../category/munjang.html">문장</a></li>
                             <li ><a href="../category/sebasi.html">세바시</a></li>
@@ -68,8 +67,8 @@
                         <article>
                             <header>
                                 <h1 class="entry-title">
-                                    <a href="../handle-a-lot-of-rows-in-django-model.html" rel="bookmark" title="Permalink to Handle a lot of rows in Django model">
-                                       Handle a lot of rows in Django model
+                                    <a href="../quotes.html" rel="bookmark" title="Permalink to 내마음의 구심점">
+                                       내마음의 구심점
                                     </a>
                                 </h1>
                             </header>
@@ -79,390 +78,37 @@
         by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
     </address>
 
-    in <a href="../category/dev.html">dev</a>
+    in <a href="../category/munjang.html">문장</a>
 
-    on 2018-03-20
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
-    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
-    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
-    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div>
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../handle-a-lot-of-rows-in-django-model.html">Read more...</a>
-                                </p>
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="../markdown-mode-for-emacs.html" rel="bookmark" title="Permalink to Markdown mode for Emacs">
-                                       Markdown mode for Emacs
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
-    </address>
-
-    in <a href="../category/dev.html">dev</a>
-
-    on 2018-03-19
+    on 2017-09-30
 
 
 
 
     
-</footer><!-- /.post-info -->                                <h5>단축키</h5>
-<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
-<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
+</footer><!-- /.post-info -->                                <pre class="literal-block">
+가능하면 빨리 실패하라. 실수를 빨리파악하고 인정하는 것이 자신에게 유리하다
+</pre>
+<pre class="literal-block">
+성공에 남다른 비결이 있는 게 아니라 모두 다 아는 지혜를 실천하기에 달린 것이다.
+</pre>
+<pre class="literal-block">
+파도를 아닌 파도를 만드는 바람을 보는 세상의 눈이 필요하다.
+</pre>
+<pre class="literal-block">
+문제를 쫓아 다니면 문제만 쫓아 다닌다. 근본적인 원인을 생각하라.
+</pre>
+<pre class="literal-block">
+승리는 우리를 흥분시킨다.
+하지만 1등을 하지 못했다고 부끄러워할 필요는 절대 …</pre>
                                 <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../markdown-mode-for-emacs.html">Read more...</a>
-                                </p>
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="../how-to-work-smart.html" rel="bookmark" title="Permalink to How to work smart">
-                                       How to work smart
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
-    </address>
-
-    in <a href="../category/dev.html">dev</a>
-
-    on 2018-03-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <ul>
-<li>Do<ul>
-<li>출근 한 시간전에 회사에 도착한다.</li>
-<li>불가능한 업무는 용감하게 No라고 말한다.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li>
-<p>Don't</p>
-<ul>
-<li>한번에 여러가지 일을 처리하자</li>
-<li>조직이 알아야하는 것들을 나 혼자만 알자
-  (공통 이메일 계정, 시스템 전체적으로 영향을 미치는 변경)</li>
-<li>
-<p>업무가 할당이 되면 우선순위에 대한 고민없이 무조건 착수하자</p>
-<blockquote>
-<p>중요한 일이 너무 많아서 일을 못한다.</p>
-</blockquote>
-</li>
-<li>
-<p>야근을 열심히 하자.</p>
-</li>
-<li>옆 동료가 어떤 …</li></ul></li></ul>
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../how-to-work-smart.html">Read more...</a>
-                                </p>
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="../why-i-need-to-get-xps-15.html" rel="bookmark" title="Permalink to Why I need to get XPS 15">
-                                       Why I need to get XPS 15
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
-    </address>
-
-    in <a href="../category/dev.html">dev</a>
-
-    on 2018-03-19
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <ul>
-<li>
-<p>사야하는 이유</p>
-<ul>
-<li>dell outlet 에서 저렴하게 팔고 있다.</li>
-<li>가격대비 성능이 우수하다.</li>
-<li>동영상 편집이 가능하다.</li>
-<li>Tensorflow가 지원하는 GPU를 가지고 있다.</li>
-</ul>
-</li>
-<li>
-<p>말아야 하는 이유</p>
-<ul>
-<li>정상적으로 잘 작동하는 labtop가 있다.</li>
-</ul>
-</li>
-</ul>
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../why-i-need-to-get-xps-15.html">Read more...</a>
-                                </p>
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="../what-does-the-good-blogs-have-in-common.html" rel="bookmark" title="Permalink to What does the good blogs have in common?">
-                                       What does the good blogs have in common?
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
-    </address>
-
-    in <a href="../category/dev.html">dev</a>
-
-    on 2018-03-18
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <h5>형식</h5>
-<ul>
-<li>구조가 명확하다.</li>
-<li>그림을 포함한다.</li>
-<li>링크를 포함한다.</li>
-<li>간결하다.
-    예제) <a href="https://www.webpagefx.com/blog/web-design/" title="https://www.webpagefx.com/blog/web-design/">https://www.webpagefx.com/blog/web-design/</a></li>
-</ul>
-<h5>내용</h5>
-<ul>
-<li>독창적이다.</li>
-</ul>
-<h5>블로그를 잘 하려면 따라하고픈 멘토를 찾자</h5>
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../what-does-the-good-blogs-have-in-common.html">Read more...</a>
-                                </p>
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="../how-to-run-pelican.html" rel="bookmark" title="Permalink to How to run pelican">
-                                       How to run pelican
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
-    </address>
-
-    in <a href="../category/dev.html">dev</a>
-
-    on 2018-03-18
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <ul>
-<li>local 환경에서 실시간 페이지 보기</li>
-</ul>
-<div class="highlight"><pre><span></span>$ fab serve
-</pre></div>
-
-
-<ul>
-<li>markdown 변경파일을 실시간으로 html 형식으로 변경하기</li>
-</ul>
-<div class="highlight"><pre><span></span>$ fab rebuild 
-</pre></div>
-
-
-<ul>
-<li>github page에 적용하기</li>
-</ul>
-<div class="highlight"><pre><span></span>$ make github or fab gh_pages
-</pre></div>
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../how-to-run-pelican.html">Read more...</a>
-                                </p>
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="../lets-get-it-done.html" rel="bookmark" title="Permalink to Let's get it done">
-                                       Let's get it done
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
-    </address>
-
-    in <a href="../category/misc.html">misc</a>
-
-    on 2017-11-18
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <h5>그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?</h5>
-<ul>
-<li>
-<p>전체적인 그림을 그리지 못했다.</p>
-</li>
-<li>
-<p>실제 구현에 필요한 일부 기술에 부딪힐 때마다 그 기술을 익여햐 하겠다는 생각에 사로 잡혔다. 
-그리고 샛길로 빠져서 큰 맥락에서 벗어났다.</p>
-<ul>
-<li>기술정리를 위한 정적 블로그</li>
-<li>머신러닝</li>
-<li>pandas</li>
-</ul>
-</li>
-<li>
-<p>꾸준하게 개발에 대한 의지와 열정을 유지하지 못 했다.</p>
-</li>
-</ul>
-<h5>그렇다면 작동하는 프로젝트를 완료하기 …</h5>
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../lets-get-it-done.html">Read more...</a>
-                                </p>
-                            </div><!-- /.entry-content -->
-                            <hr/>
-                        </article>
-                    </li>
-                    <li>
-                        <article>
-                            <header>
-                                <h1 class="entry-title">
-                                    <a href="../microservice.html" rel="bookmark" title="Permalink to microservice">
-                                       microservice
-                                    </a>
-                                </h1>
-                            </header>
-                            <div class="entry-content">
-<footer class="post-info">
-    <address class="vcard author">
-        by <a class="url fn" href="../author/hyunmin.html">Hyunmin</a>
-    </address>
-
-    in <a href="../category/dev.html">dev</a>
-
-    on 2017-11-04
-
-
-
-
-    
-</footer><!-- /.post-info -->                                <table>
-<thead>
-<tr>
-<th></th>
-<th align="center">Mircoservice</th>
-<th align="right">Monolithics</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>테스트</td>
-<td align="center">어려움</td>
-<td align="right">쉬움</td>
-</tr>
-<tr>
-<td>디버깅</td>
-<td align="center">어려움</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>배포</td>
-<td align="center"></td>
-<td align="right">단순</td>
-</tr>
-<tr>
-<td>모니터링</td>
-<td align="center">중요</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>개발</td>
-<td align="center">문제에 집중해 개발 가능</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>유연함</td>
-<td align="center"></td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>언어 자유도</td>
-<td align="center">높음</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>독립성</td>
-<td align="center">높음</td>
-<td align="right"></td>
-</tr>
-</tbody>
-</table>
-<p><a href="http://www.popit.kr/why-microservice/">마이크로서비스 아키텍처의 장단점</a></p>
-                                <p class="readmore">
-                                    <a class="btn btn-small btn-info" href="../microservice.html">Read more...</a>
+                                    <a class="btn btn-small btn-info" href="../quotes.html">Read more...</a>
                                 </p>
                             </div><!-- /.entry-content -->
                             <hr/>
                         </article>
                     </li>
                     </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 6
-        <a href="../author/hyunmin2.html">&raquo;</a>
-</p>
                 </section><!-- /#content -->
 </div>
 <div class="span3">
