@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Hyunmin" />
+    <meta name="robots" content="index, follow"/>
+
+    <meta property="og:title" content="index gs shop"/>
+    <meta property="og:url" content="./index-gs-shop.html"/>
+    <meta property="og:site_name" content="Water Developer"/>
+    <meta property="og:type" content="article"/>
+
+    <link rel="canonical" href="./index-gs-shop.html" />
+
+    <title>index gs shop | Water Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="./theme/css/main.css" />
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+</head>
+
+<body id="index">
+<a class="hidden-phone" href="http://github.com/harry81/">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" />
+</a>
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="./">Water Developer </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li ><a href="./category/dev.html">dev</a></li>
+                            <li ><a href="./category/gaebal.html">개발</a></li>
+                            <li class="active"><a href="./category/misc.html">misc</a></li>
+                            <li ><a href="./category/munjang.html">문장</a></li>
+                            <li ><a href="./category/sebasi.html">세바시</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+<div class="span10 offset1">
+  <section>
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="./index-gs-shop.html" rel="bookmark"
+             title="Permalink to index gs shop">index gs shop</a></h1>
+      </header>
+      <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="./author/hyunmin.html">Hyunmin</a>
+    </address>
+
+    in <a href="./category/misc.html">misc</a>
+
+    on 2017-03-09
+
+
+
+
+    
+</footer><!-- /.post-info -->
+
+        <h3>도전</h3>
+<ul>
+<li>GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성</li>
+<li>관련 기술
+  <code>Elasticsearch 플러그인</code>, <code>형태소 분석기</code>, <code>Thrift 서버</code>, <code>HAProxy</code></li>
+<li>형태소 분석이 필요한 이유?<br>
+  한국어 분석을 지원하지 않는다. 예를 들어 "아버지가 방에 들어간다"라는 한국어 문장을 인덱스해도 "아버지"로는 검색이 안 되고, 반드시 "아버지가"로 검색해야만 결과에 출력된다.</li>
+<li>형태소 분석기 - 은전 한  잎(mecab-ko)</li>
+</ul>
+<h3>설치</h3>
+<p>외부에서 접근 가능한 환경을 구현하기 위해서 AWS를 이용하기로 했다.</p>
+<p>Amazon Elasticsearch Service  </p>
+<p><code>search-buzzni-xusbuesxyq6c33zkupvvvmjof4.ap-northeast-2.es.amazonaws.com'</code></p>
+<p>``` python 연결확인
+from datetime import datetime
+from elasticsearch import Elasticsearch
+host = 'search-buzzni-xusbuesxyq6c33zkupvvvmjof4.ap-northeast-2.es.amazonaws.com'
+es = Elasticsearch([{'host': host,'port':80}])
+print es.cluster.health()['status']</p>
+<p>es.indices.create(index='my-index', ignore=400)
+es.index(index="my-index", doc_type="test-type", id=42, body={"any": "data", "timestamp": datetime.now()})</p>
+<p>es.get(index="my-index", doc_type="test-type", id=42)['_source']</p>
+<div class="highlight"><pre><span></span><span class="c1">### 해야 할 일 ###</span>
+  <span class="o">*</span> <span class="err">크롤링</span>
+    <span class="o">*</span> <span class="sb">`http://www.gsshop.com`</span> <span class="err">각</span> <span class="err">아이템의</span> <span class="err">세부</span> <span class="err">페이지</span> <span class="err">구하기</span>
+    <span class="o">*</span> <span class="err">세부</span> <span class="err">페이지에</span> <span class="err">방문해</span> <span class="err">제품에</span> <span class="err">대한</span> <span class="err">구체적인</span> <span class="err">정보</span> <span class="err">얻기</span>
+<span class="sb">``</span><span class="err">`</span> <span class="n">python</span> <span class="err">추후에</span> <span class="n">celery</span> <span class="n">task에서</span> <span class="err">크롤링할</span> <span class="err">때</span> <span class="err">사용될</span> <span class="err">코드</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">etree</span>
+
+<span class="n">home_url</span> <span class="o">=</span> <span class="s1">&#39;http://www.gsshop.com&#39;</span>
+
+<span class="k">def</span> <span class="nf">get_product</span><span class="p">(</span><span class="n">prod_url</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">home_url</span><span class="p">,</span> <span class="n">prod_url</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="s1">&#39;http&#39;</span> <span class="ow">in</span> <span class="n">prod_url</span><span class="p">:</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="n">prod_url</span>
+        <span class="k">return</span>
+
+    <span class="k">print</span> <span class="n">url</span>
+    <span class="n">ele_response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">ele_response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//span[contains(@class,&#39;price-definition-ins&#39;)]/ins/strong&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//p[contains(@class,&#39;product-title&#39;)]/text()&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="c1"># DOTO : 그외에 정보 추후 고려</span>
+
+
+<span class="k">def</span> <span class="nf">get_list_of_product</span><span class="p">():</span>
+    <span class="n">list_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">home_url</span><span class="p">,</span> <span class="s1">&#39;/tv/tvScheduleMain.gs&#39;</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">list_url</span><span class="p">)</span>
+
+    <span class="n">prod_urls</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">ele</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//tr/td/div[contains(@class, &#39;tdWrap&#39;)]/a&quot;</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ele</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()):</span>
+            <span class="n">prod_url</span> <span class="o">=</span> <span class="n">ele</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s1">&#39;@href&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">prod_urls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prod_url</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">prod_urls</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">get_product</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</pre></div>
+
+
+<ul>
+<li>데이타 인덱스 - 위에서 얻어진 정보를 ES에 인덱싱하여 저장</li>
+<li>형태소 분석 - ES에서 한글은 지원하지 않는다고 하므로 별도의 형태소 분석기 필요</li>
+<li>주기적으로 GS SHOP 페이지 정보 얻어오기(Celery)</li>
+</ul>
+<h3>형태서 분석기 설치</h3>
+<p>AWS에서 제공하는 Elasticsearch에 직접 한글 형태소 분석기를 직접 설치 할 수 있는 방법은 찾지 못했다. 따라서 별도의 EC2 인스턴스를 만들어 그 인스턴스와 Elasticsearch가 통신할 수 있으면 같은 효과를 얻을 수 있다고 생각하였다.</p>
+<ul>
+<li>MECAB-KO 형태소 분석기 엔진</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">bitbucket</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">eunjeon</span><span class="o">/</span><span class="n">mecab</span><span class="o">-</span><span class="n">ko</span><span class="o">/</span><span class="n">downloads</span><span class="o">/</span><span class="n">mecab</span><span class="o">-</span><span class="mf">0.996</span><span class="o">-</span><span class="n">ko</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mf">2.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xvzf</span> <span class="n">mecab</span><span class="o">-</span><span class="mf">0.996</span><span class="o">-</span><span class="n">ko</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mf">2.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">cd</span> <span class="n">mecab</span><span class="o">-</span><span class="mf">0.996</span><span class="o">-</span><span class="n">ko</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">2</span>
+<span class="o">./</span><span class="n">configure</span>
+<span class="n">make</span>
+<span class="n">make</span> <span class="n">check</span>
+<span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+</pre></div>
+
+
+<ul>
+<li>MECAB-KO-DIC 사전(DICTIONARY) 파일</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">bitbucket</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">eunjeon</span><span class="o">/</span><span class="n">mecab</span><span class="o">-</span><span class="n">ko</span><span class="o">-</span><span class="n">dic</span><span class="o">/</span><span class="n">downloads</span><span class="o">/</span><span class="n">mecab</span><span class="o">-</span><span class="n">ko</span><span class="o">-</span><span class="n">dic</span><span class="o">-</span><span class="mf">1.6</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="mf">20140814.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xvzf</span> <span class="o">./</span><span class="n">mecab</span><span class="o">-</span><span class="n">ko</span><span class="o">-</span><span class="n">dic</span><span class="o">-</span><span class="mf">1.6</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="mf">20140814.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">cd</span> <span class="n">mecab</span><span class="o">-</span><span class="n">ko</span><span class="o">-</span><span class="n">dic</span><span class="o">-</span><span class="mf">1.6</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="mi">20140814</span>
+<span class="o">./</span><span class="n">autogen</span><span class="o">.</span><span class="n">sh</span>
+<span class="o">./</span><span class="n">configure</span>
+<span class="n">make</span>
+<span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>/usr/local/libexec/mecab/mecab-dict-index: error while loading shared libraries: libmecab.so.2: cannot open shared object file: no such file or directory
+sudo ldconfig
+grep /usr/local/lib
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">configure</span><span class="o">:</span> <span class="n">error</span><span class="o">:</span> <span class="n">Your</span> <span class="n">compiler</span> <span class="k">is</span> <span class="n">not</span> <span class="n">powerful</span> <span class="n">enough</span> <span class="n">to</span> <span class="n">compile</span> <span class="n">MeCab</span><span class="o">.</span>
+<span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">gcc</span><span class="o">-</span><span class="n">c</span><span class="o">++</span>
+</pre></div>
+
+
+<ul>
+<li>MECAB-KO 형태소 분석기와 MECAB-KO-DIC 사전파일 확인</li>
+</ul>
+<div class="highlight"><pre><span></span>mecab -d /usr/local/lib/mecab/dic/mecab-ko-dic
+</pre></div>
+
+
+<ul>
+<li>LIBMECAB.SO, MECAB.JAR 설치</li>
+</ul>
+<div class="highlight"><pre><span></span>cd /tmp/
+wget https://bitbucket.org/eunjeon/mecab-java/downloads/mecab-java-0.996.tar.gz
+tar -xvzf mecab-java-0.996.tar.gz
+cd mecab-java-0.996
+vi Makefile
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>sudo cp libMeCab.so /usr/local/lib
+sudo cp MeCab.jar /usr/local/lib
+
+sudo chown -R $(whoami):$(whoami) /usr/local/lib/libMeCab.so
+sudo chown -R $(whoami):$(whoami) /usr/local/lib/MeCab.jar
+sudo chown -R $(whoami):$(whoami) /usr/local/lib/*mecab*
+
+export JAVA_HOME=/usr/java/jdk1.8.0_60/
+
+sudo ln -s $JAVA_HOME/include/linux/jni_md.h $JAVA_HOME/include/jni_md.h
+sudo ln -s $JAVA_HOME/include/linux/jawt_md.h $JAVA_HOME/include/jawt_md.h
+
+cd /tmp
+wget https://bitbucket.org/eunjeon/mecab-ko-lucene-analyzer/downloads/elasticsearch-analysis-mecab-ko-0.16.1.zip
+
+export ES=/usr/share/elasticsearch/
+
+$ES/bin/plugin --install analysis-mecab-ko-0.16.1 --url file:///tmp/elasticsearch-analysis-mecab-ko-0.16.1.zip
+</pre></div>
+
+
+<h3>결론</h3>
+<ul>
+<li>한글 형태의 text를 ES에 인덱싱하여 텍스트 풀서치를 하는 아주 일반적인 환경을 구축하는 요구사항이었다.</li>
+<li>외부에서 접근 가능한 형태를 위해 AWS ES를 선택했는데, 한글 형태소 분석을 위해서 별도의 모듈을 설치해야만 했다.</li>
+<li>다행히 Python에서 ES를 제어하기 위한 활성화된 패키지(https://github.com/elastic/elasticsearch-py)가 있어 기능 구현을 위해서 큰 어려움이 없을 것 같았다. 하지만 그러한 환경 구축에 경험이 없어서 대부분의 시간을 설치를 하는데 소비하였다. </li>
+<li>결국은 요구한 미션을 마무리하지 못했다. 그 이유는<ul>
+<li>ES에서 plugin을 어떤식으로 제어하고 활용하는 방법에 대한 이해 부족</li>
+<li>전반적인 패키지 구성에 대한 경험이 없어 많은 시간을 소비</li>
+<li>형태소 분석기 설치 문서가 있지만, 조금 시간이 지나서 그런지 지금 버전과 맞지 않아 설치에 애를 먹음</li>
+</ul>
+</li>
+<li>배움<ul>
+<li>AWS ES 설치는 생각보다 어렵지 않았다.</li>
+<li>은전한잎(mecab-ko)의 도움으로 형태소 분석이 가능하며, ES를 활용할 수 있다.</li>
+</ul>
+</li>
+</ul>
+<h3>참고</h3>
+<ul>
+<li>elasticsearch로 로그 검색 시스템 만들기
+  http://d2.naver.com/helloworld/273788 </li>
+<li>ELASTICSEARCH 한글 형태소 분석기(ANALYZER) 비교
+  http://guruble.com/?p=437</li>
+<li>엘라스틱서치(elasticsearch)에 한글 형태소 분석기 은전한잎(eunjeon) 적용하기 - 
+  http://blog.nacyot.com/articles/2015-06-13-eunjeon-with-elasticsearch/</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>관계형 데이터베이스</th>
+<th>elasticsearch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Database</td>
+<td>Index</td>
+</tr>
+<tr>
+<td>Table</td>
+<td>Type</td>
+</tr>
+<tr>
+<td>Row</td>
+<td>Document</td>
+</tr>
+<tr>
+<td>Column</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>Schema</td>
+<td>Mapping</td>
+</tr>
+<tr>
+<td>Index</td>
+<td>Everything is indexed</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Query DSL</td>
+</tr>
+</tbody>
+</table>
+
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </p>
+                    <p>
+                        <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a> is a responsive theme designed by <a href="http://jsliang.com/">jsliang</a> and <a href="https://github.com/jsliang/pelican-fresh/graphs/contributors">contributors</a>.
+                        Special thanks to <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-91188832-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

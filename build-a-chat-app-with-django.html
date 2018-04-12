@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Hyunmin" />
+    <meta name="robots" content="index, follow"/>
+
+    <meta property="og:title" content=""build a chat app with django""/>
+    <meta property="og:url" content="./build-a-chat-app-with-django.html"/>
+    <meta property="og:site_name" content="Water Developer"/>
+    <meta property="og:type" content="article"/>
+
+    <link rel="canonical" href="./build-a-chat-app-with-django.html" />
+
+    <title>"build a chat app with django" | Water Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="./theme/css/main.css" />
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">
+        stLight.options({
+            publisher: "",
+            doNotHash: false,
+            doNotCopy: false,
+            hashAddressBar: false
+        });
+    </script>
+</head>
+
+<body id="index">
+<a class="hidden-phone" href="http://github.com/harry81/">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" />
+</a>
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <header id="banner" >
+                <h1>
+                    <a href="./">Water Developer </a>
+                </h1>
+                <nav class="navbar">
+                    <div class="navbar-inner">
+                        <ul class="nav">
+                            <li ><a href="./category/dev.html">dev</a></li>
+                            <li ><a href="./category/gaebal.html">개발</a></li>
+                            <li class="active"><a href="./category/misc.html">misc</a></li>
+                            <li ><a href="./category/munjang.html">문장</a></li>
+                            <li ><a href="./category/sebasi.html">세바시</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </header><!-- /#banner -->
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span10 offset1">
+            <div class="row-fluid">
+<div class="span10 offset1">
+  <section>
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="./build-a-chat-app-with-django.html" rel="bookmark"
+             title="Permalink to "build a chat app with django"">"build a chat app with django"</a></h1>
+      </header>
+      <div class="entry-content">
+<footer class="post-info">
+    <address class="vcard author">
+        by <a class="url fn" href="./author/hyunmin.html">Hyunmin</a>
+    </address>
+
+    in <a href="./category/misc.html">misc</a>
+
+    on 2017-03-13
+
+
+
+
+    
+</footer><!-- /.post-info -->
+
+        <h2>기능 요구사항</h2>
+<ul>
+<li>
+<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
+  http://rocketchat.healworld.co.kr/</p>
+</li>
+<li>
+<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)<br>
+링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
+https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
+</li>
+<li>
+<p>대화 상대별로 대화방이 나뉘어 있으며, 각 대화방끼리 이동할 수 있어야 합니다.<br>
+<strong>구현 성공</strong></p>
+</li>
+<li>
+<p>메시지를 전송하고 서로 이 내용을 확인할 수 있어야 합니다.<br>
+<strong>구현 성공</strong></p>
+</li>
+<li>
+<p>대화는 서버에 저장되어 언제든 확인할 수 있어야 합니다.<br>
+<strong>구현 성공</strong><br>
+  http://rocketchat-backend.healworld.co.kr/admin/ <br>
+  user:[rocket], password:[chat]</p>
+</li>
+<li>
+<p>Django 또는 Flask로 작성해 주시길 바랍니다.<br>
+<strong>Django==1.10.6</strong></p>
+</li>
+<li>
+<p>Github, Bitbucket 등 접속 가능한 Git Remote Repository로 전달 바랍니다.
+    Backend : https://github.com/harry81/rocketchat<br>
+    Frontend : https://github.com/harry81/rocketchat-web<br>
+    구조도 : https://goo.gl/7k5LUD</p>
+</li>
+</ul>
+<hr>
+<h2>진행</h2>
+<ul>
+<li>
+<p>2017-3-20</p>
+<ul>
+<li>ws4redis에서는 [users, groups, sessions, broadcast] 와 같은 대상으로만 메시지를 보낼 수 있다. 이번 구현의 목적에 맞게 대화방을 바탕으로 사용자가 가입/발행(subscribe/publish) 할 수 있도록 구현</li>
+<li>작업 결과 마무리 및 문서화</li>
+</ul>
+</li>
+<li>
+<p>2017-3-19</p>
+<ul>
+<li>사용자가 대화방을 변경한 경우 그에 해당하는 대화 목록이 노출되도록 변경</li>
+</ul>
+</li>
+<li>
+<p>2017-3-18</p>
+<ul>
+<li>그룹별 메시지 전송하기</li>
+<li>그룹별 메시지 보여주기</li>
+</ul>
+</li>
+<li>
+<p>2017-3-17</p>
+<ul>
+<li>EC2 인스턴스 설정 완료(Nginx + uWsgi)</li>
+<li>Frontend, Backend 구성 완료</li>
+<li>Deploy script 준비 완료</li>
+<li>APIs</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>/api-message/   chat.views.MessageAPIView       api-message-list
+/api-message/&lt;pk&gt;/      chat.views.MessageAPIView       api-message-detail
+/api-room/      chat.views.RoomAPIView  api-room-list
+/api-room/&lt;pk&gt;/ chat.views.RoomAPIView  api-room-detail
+</pre></div>
+
+
+<ul>
+<li>
+<p>2017-3-16 AWS에서 소켓 사용의 어려움2<br>
+AWS 에서 socket server 설정이 생각보다 알아야 할 제품 관련 지식이 많다. 즉 언어와 프레임웍 관련 내용이라기 보다는 AWS에서 제공하는 제품군의 사용과 설정에 대한 내용들이다. 아마존에서 web socket를 지원하나 이 기능을 위해서는 Classic Load Balancer 대신 Amazon Load Balancer으로 설정이 필요하다.
+<code>Amazon Load Balancer ---- Target Group ---- Instance</code><br>
+생각보다 금방 마무리 될 줄 알았던 socket server 설정작업이 파면팔수록 걸리는 문제들이 많았으나, 이 방법밖에는 떠오르지 않아 3일 정도의 시간을 투자했다. 결국은 AWS 생태계를 더 헤아리지 않고서는 어렵다고 판단했다. EB 대신 별도의 인스턴스를 만들어 Nginx와 uWsgi로 설정하기로 결정<br>
+    방향 전환 -&gt; Elasticbeanstalk with Amazon Load Balancer ---&gt; <em>EC2 with Nginx and uWsgi</em></p>
+</li>
+<li>
+<p>2017-3-15 AWS에서 소켓 사용의 어려움</p>
+<ul>
+<li>ELB 대신 ALB 사용 필요 </li>
+<li>이유 - http://stackoverflow.com/a/39491033/1118583</li>
+<li>설치 - https://blog.mangoforbreakfast.com/2017/02/13/django-channels-on-aws-elastic-beanstalk-using-an-alb/</li>
+</ul>
+</li>
+<li>
+<p>2017-3-14 실행 환경 세팅 및 브라우져에서 비동기 테스트</p>
+<ul>
+<li>Elasticbeanstalk, RDS, Route 53, ELB</li>
+<li>shell plus에서 redis queue에 아래와 같은 형식으로 메시지 통신 확인</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>    <span class="kn">from</span> <span class="nn">ws4redis.publisher</span> <span class="kn">import</span> <span class="n">RedisPublisher</span>
+    <span class="kn">from</span> <span class="nn">ws4redis.redis_store</span> <span class="kn">import</span> <span class="n">RedisMessage</span>
+    <span class="o">...</span>
+
+    <span class="n">message</span> <span class="o">=</span> <span class="n">RedisMessage</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+    <span class="n">redis_publisher</span><span class="o">.</span><span class="n">publish_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</pre></div>
+
+
+<ul>
+<li>2017-3-13 django에서 chat을 하기 위한 기술 및 패키지 확인<ul>
+<li>https://github.com/stephenmcd/django-socketio
+  github star 4개라서 기쁜 마음으로 테스트 해 보았으나, 패키지간 버젼 의존성 문제로 일단 다른 패키지 물색</li>
+<li>https://github.com/jrief/django-websocket-redis</li>
+<li>https://channels.readthedocs.io/en/stable/</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>Packages</h2>
+<ul>
+<li>http://django-websocket-redis.readthedocs.io/en/latest/</li>
+<li>https://github.com/stephenmcd/django-socketio</li>
+<li>https://github.com/jrief/django-websocket-redis/tree/master/ws4redis</li>
+<li>
+<p>https://github.com/ottoyiu/django-cors-headers</p>
+</li>
+<li>
+<p>https://github.com/angular/angular</p>
+</li>
+<li>https://github.com/afrad/angular2-websocket</li>
+</ul>
+<hr>
+<h2>오류 및 해결</h2>
+<h3>django-scoketio 설치후</h3>
+<h4>문제</h4>
+<p>```  python [linenos:false]</p>
+<h1>Django==1.10</h1>
+<h1>django-socketio==0.3.9</h1>
+<p>File "/home/harry/.virt_env/rocketpunch/local/lib/python2.7/site-packages/django_socketio/urls.py", line 1, in <module>
+    from django.conf.urls import patterns, url
+ImportError: cannot import name patterns</p>
+<div class="highlight"><pre><span></span>#### 해결 ####
+
+``` python requirements.txt
+-e git+https://github.com/stephenmcd/django-socketio.git#egg=django-socketio
+</pre></div>
+
+
+<h4>문제</h4>
+<p>로컬에서 ws4redis를 이용하여 메시지를 주고 받는 것에는 문제가 없었으나 AWS상에서는 아래와 같은 소켓 통신에 문제가 발생</p>
+<div class="highlight"><pre><span></span>WebSocket connection to &#39;ws://rocketpunch-app.tdirjp8mny.ap-northeast-2.elasticbeanstalk.com/ws/chat?subscribe-broadcast&amp;publish-broadcast&#39; failed:
+Error during WebSocket handshake: Unexpected response code: 404
+...
+app.component.ts:41 Error: undefined
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>angular2-websocket.js:52 WebSocket connection to &#39;ws://rocketpunch-app.tdirjp8mny.ap-northeast-2.elasticbeanstalk.com/ws/chat?subscribe-broadcast&amp;publish-broadcast&#39; failed:
+Error during WebSocket handshake: Unexpected response code: 504
+...
+app.component.ts:41 Error: undefined
+</pre></div>
+
+
+<h4>해결</h4>
+<ul>
+<li>Amazon Load Balance with Elastic Beanstalk
+  https://blog.mangoforbreakfast.com/2017/02/13/django-channels-on-aws-elastic-beanstalk-using-an-alb/</li>
+</ul>
+<h4>문제</h4>
+<div class="highlight"><pre><span></span>you need to build uWSGI with SSL support to use the websocket handshake api function !!!
+Other Exception: unable to complete websocket handshake
+Traceback (most recent call last):
+  File &quot;/home/ubuntu/virtualenvs/app/local/lib/python2.7/site-packages/ws4redis/wsgi_server.py&quot;, line 101, in __call__
+    websocket = self.upgrade_websocket(environ, start_response)
+  File &quot;/home/ubuntu/virtualenvs/app/local/lib/python2.7/site-packages/ws4redis/uwsgi_runserver.py&quot;, line 52, in upgrade_websocket
+    uwsgi.websocket_handshake(environ[&#39;HTTP_SEC_WEBSOCKET_KEY&#39;], environ.get(&#39;HTTP_ORIGIN&#39;, &#39;&#39;))
+IOError: unable to complete websocket handshake
+Starting late response on websocket
+Finish non-websocket response with status code: 500
+</pre></div>
+
+
+<h4>해결</h4>
+<p>Recompile uwsgi with support openssl</p>
+<h4>문제</h4>
+<p>사용자가 request를 서버에 요청했을 때,
+``` text nginx error log
+2017/03/17 03:29:44 [error] 17644#17644: <em>2 upstream prematurely closed connection while reading response header from upstream, client: 172.31.4.186, server: rocketchat.healworld.co.kr, request: "GET / HTTP/1.1", upstream: "uwsgi://unix:///tmp/uwsgi.sock:", host: "rocketchatalb.healworld.co.kr"
+2017/03/17 03:29:45 [error] 17644#17644: </em>2 upstream prematurely closed connection while reading response header from upstream, client: 172.31.4.186, server: rocketchat.healworld.co.kr, request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://unix:///tmp/uwsgi.sock:", host: "rocketchatalb.healworld.co.kr", referrer: "http://rocketchatalb.healworld.co.kr/"</p>
+<div class="highlight"><pre><span></span>#### 문제 ####
+local에서는 문제없이 시작 페이지가 열리나, `ng build` 이후 서버에서는 아래와 같은 오류발생하며 angular가 아무런 내용도 보여주지 않는다.
+</pre></div>
+
+
+<p>Uncaught (in promise): Error: DI Error / Unhandled Promise rejection: No provider for t! ; Zone: angular ; Task: Promise.then</p>
+<div class="highlight"><pre><span></span><span class="err">####</span> <span class="nt">해결</span> <span class="err">####</span>
+
+<span class="nt">https</span><span class="o">://</span><span class="nt">github</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">salemdar</span><span class="o">/</span><span class="nt">angular2-cookie</span><span class="o">/</span><span class="nt">issues</span><span class="o">/</span><span class="nt">37</span>
+
+
+
+
+<span class="err">####</span> <span class="nt">해결</span> <span class="err">####</span>
+<span class="o">&gt;</span> <span class="nt">Installing</span> <span class="nt">the</span> <span class="nt">python</span> <span class="nt">plugin</span> <span class="nt">for</span> <span class="nt">uwsgi</span> <span class="nt">with</span> <span class="nt">apt-get</span> <span class="nt">install</span> <span class="nt">uwsgi-plugin-python</span> <span class="nt">and</span> <span class="nt">adding</span> <span class="nt">plugins</span> <span class="o">=</span> <span class="nt">python</span> <span class="nt">to</span> <span class="nt">the</span> <span class="nt">individual</span> <span class="nt">uwsgi</span> <span class="nt">app</span> <span class="nt">config</span> <span class="nt">solved</span> <span class="nt">this</span> <span class="nt">problem</span> <span class="nt">for</span> <span class="nt">me</span> <span class="nt">on</span> <span class="nt">Ubuntu</span> <span class="nt">11</span><span class="p">.</span><span class="nc">10</span> <span class="nt">when</span> <span class="nt">using</span> <span class="nt">upstart</span><span class="o">.</span>
+
+<span class="nt">http</span><span class="o">://</span><span class="nt">stackoverflow</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">questions</span><span class="o">/</span><span class="nt">10748108</span><span class="o">/</span><span class="nt">nginx-uwsgi-unavailable-modifier-requested-0</span>
+
+<span class="nt">-------------------------------------------------------------------------------</span>
+
+<span class="nt">설정</span>
+<span class="nt">----</span>
+
+<span class="err">```</span><span class="nt">text</span> <span class="o">/</span><span class="nt">etc</span><span class="o">/</span><span class="nt">nginx</span><span class="o">/</span><span class="nt">sites-available</span><span class="o">/</span><span class="nt">rocketchat</span>
+<span class="nt">upstream</span> <span class="nt">django</span> <span class="p">{</span>
+        <span class="err">server</span> <span class="n">unix</span><span class="p">:</span><span class="o">///</span><span class="n">tmp</span><span class="o">/</span><span class="n">uwsgi</span><span class="o">.</span><span class="n">sock</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="nt">upstream</span> <span class="nt">ws</span> <span class="p">{</span>
+        <span class="err">server</span> <span class="n">unix</span><span class="p">:</span><span class="o">///</span><span class="n">tmp</span><span class="o">/</span><span class="n">ws</span><span class="o">.</span><span class="n">sock</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="nt">server</span> <span class="p">{</span>
+        <span class="err">listen</span> <span class="err">80</span><span class="p">;</span>
+
+        <span class="err">server_name</span> <span class="err">rocketchat.healworld.co.kr</span> <span class="err">rocketchatalb.healworld.co.kr</span> <span class="p">;</span>
+        <span class="err">index</span> <span class="err">/</span><span class="p">;</span>
+
+        <span class="err">location</span> <span class="err">/</span> <span class="err">{</span>
+                <span class="err">include</span> <span class="err">uwsgi_params</span><span class="p">;</span>
+                <span class="err">uwsgi_pass</span> <span class="err">django</span><span class="p">;</span>
+
+        <span class="p">}</span>
+
+        <span class="nt">location</span> <span class="o">/</span><span class="nt">ws</span><span class="o">/</span> <span class="p">{</span>
+                <span class="err">proxy_pass</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">unix</span><span class="o">:/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ws</span><span class="o">.</span><span class="n">sock</span><span class="p">;</span>
+                <span class="err">proxy_http_version</span> <span class="err">1.1</span><span class="p">;</span>
+                <span class="err">proxy_set_header</span> <span class="err">Upgrade</span> <span class="err">$http_upgrade</span><span class="p">;</span>
+                <span class="err">proxy_set_header</span> <span class="err">Connection</span> <span class="err">&quot;upgrade&quot;</span><span class="p">;</span>
+        <span class="p">}</span>
+<span class="err">}</span>
+</pre></div>
+
+
+<p><code>sudo service  nginx restart</code></p>
+<p>``` text uwsgi config for django app
+[uwsgi]
+chdir           = /home/ubuntu/app
+module          = main.wsgi
+home            = /home/ubuntu/virtualenvs/app/</p>
+<p>master          = true
+processes       = 2
+socket          = /tmp/uwsgi.sock
+chmod-socket    = 666
+vacuum          = true</p>
+<div class="highlight"><pre><span></span>`uwsgi --ini uwsgi.ini`
+
+``` text uwsgi config for socket
+[uwsgi]
+chdir           = /home/ubuntu/app
+module          = main.wsgi_websocket
+home            = /home/ubuntu/virtualenvs/app/
+
+master          = true
+processes       = 100
+http-socket          = /tmp/ws.sock
+chmod-socket    = 666
+vacuum          = true
+</pre></div>
+
+
+<p><code>uwsgi --ini ws.ini</code></p>
+<h4>static web page</h4>
+<div class="highlight"><pre><span></span># 버킷 생성
+aws s3 mb  s3://rocketchat.healworld.co.kr/  --profile pointer --region ap-northeast-2
+# 버킷을 website 가능하게 변경
+aws s3 website s3://rocketchat.healworld.co.kr/ --index-document index.html --error-document error.html --profile pointer --region ap-northeast-2
+# static files 업로드
+aws s3 sync dist s3://rocketchat.healworld.co.kr/ --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --profile pointer --region ap-northeast-2
+</pre></div>
+
+
+<hr>
+<h2>배포</h2>
+<div class="highlight"><pre><span></span>fab deploy
+</pre></div>
+
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer">
+        <div class="row-fluid">
+            <div class="span10 offset1">
+                <address>
+                    <p>
+                        This blog is proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                    </p>
+                    <p>
+                        <a href="http://github.com/jsliang/pelican-fresh/">Fresh</a> is a responsive theme designed by <a href="http://jsliang.com/">jsliang</a> and <a href="https://github.com/jsliang/pelican-fresh/graphs/contributors">contributors</a>.
+                        Special thanks to <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a> and <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.
+                    </p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-91188832-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
