@@ -86,7 +86,13 @@
 </footer><!-- /.post-info -->
 
         <hr>
+<p>Approach 1</p>
 <div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
+</pre></div>
+
+
+<p>Approach 2</p>
+<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
 </pre></div>
 
       </div><!-- /.entry-content -->
