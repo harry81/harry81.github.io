@@ -86,6 +86,7 @@
 </footer><!-- /.post-info -->
 
         <hr>
+<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
 <p>Approach 1</p>
 <div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
 </pre></div>
