@@ -49,6 +49,452 @@
         
 
             <article>
+                <a href="../sample_of_konlpy.html"><h3 class="article-title">konlpy 테그별 결과</h3></a>
+<h6 class="subheader" title="2018-06-13T14:09:00+09:00">Wed 13 June 2018
+</h6>
+
+
+<h5>한글 형태소 분석하여 명사를 추출하는 기능을 테그별 결과를 확인한다. 에제 데이타는 중고나라의 게시물중 일부를 얻어서 테스트해 보았습니다.</h5>
+<ul>
+<li>참고 문서 <a href="http://konlpy.org/en/v0.4.4/api/konlpy.tag/">http://konlpy.org/en/v0.4.4/api/konlpy.tag/</a></li>
+<li>게시판 제목 추출 <a href="https://github.com/harry81/naver_api">https://github.com/harry81/naver_api</a></li>
+</ul>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">konlpy.utils</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">konlpy.tag</span> <span class="kn">import</span> <span class="n">Kkma</span> <span class="p">,</span><span class="n">Twitter</span> <span class="p">,</span><span class="n">Komoran</span> <span class="p">,</span><span class="n">Hannanum</span> 
+
+<span class="n">komoran</span> <span class="o">=</span> <span class="n">Komoran</span><span class="p">()</span>
+<span class="n">twitter</span> <span class="o">=</span> <span class="n">Twitter</span><span class="p">()</span>
+<span class="n">kkma</span> <span class="o">=</span> <span class="n">Kkma</span><span class="p">()</span>
+<span class="n">hannaum</span> <span class="o">=</span> <span class="n">Hannanum</span><span class="p">()</span>
+
+<span class="n">taggers</span> <span class="o">=</span> <span class="p">[</span><span class="n">kkma</span><span class="p">,</span> <span class="n">twitter</span><span class="p">,</span> <span class="n">komoran</span><span class="p">,</span> <span class="n">hannaum</span><span class="p">]</span>
+
+<span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">ele</span> <span class="ow">in</span> <span class="n">res</span><span class="p">:</span>
+    <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">30</span><span class="p">)</span>
+    <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;**</span><span class="si">%s</span><span class="s2">**</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">ele</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">taggers</span><span class="p">:</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot; - </span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">tag</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">tag</span><span class="o">.</span><span class="n">nouns</span><span class="p">(</span><span class="n">ele</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">))))</span>
+</pre></div>
+
+
+<hr>
+<p><strong>지오다노 5부 반바지</strong></p>
+<ul>
+<li>Kkma ['노', '5', '5부', '부', '반바지']</li>
+<li>Twitter ['지오다노', '부', '반바지']</li>
+<li>Komoran ['지오다노', '부', '반바지']</li>
+<li>Hannanum ['지오다노', '5부', '반바지']</li>
+</ul>
+<hr>
+<p><strong>cgv.메가박스 영화 예매.쥬라기월드2.탐정.독전</strong></p>
+<ul>
+<li>Kkma ['메가', '메가박스', '박스', '영화', '예매', '쥬라기', '쥬라기월드2', '월드', '2', '탐정', '독전']</li>
+<li>Twitter ['메가박스', '영화', '예매', '쥬라기', '월드', '탐정', '독전']</li>
+<li>Komoran ['메가박스', '영화', '예', '쥬라기', '월드', '탐정', '독', '전']</li>
+<li>Hannanum ['메가박스', '영화', '예매', '쥬라기월드2', '탐정', '독전']</li>
+</ul>
+<hr>
+<p><strong>플스팔아요</strong></p>
+<ul>
+<li>Kkma ['플스팔아']</li>
+<li>Twitter ['플스']</li>
+<li>Komoran ['플스']</li>
+<li>Hannanum ['플스팔아요']</li>
+</ul>
+<hr>
+<p><strong>새상품 모데스트무드 제작 데님 판매합니다</strong></p>
+<ul>
+<li>Kkma ['새', '새상품', '상품', '데', '데스트무드', '스트', '무드', '제작', '데님', '판매']</li>
+<li>Twitter ['새', '상품', '모', '데스', '트무드', '제작', '데님', '판매']</li>
+<li>Komoran ['상품', '제작', '데님', '판매']</li>
+<li>Hannanum ['새상품', '모데스트무드', '제작', '데님', '판매']</li>
+</ul>
+<hr>
+<p><strong>레이져 레벨기 대구 </strong></p>
+<ul>
+<li>Kkma ['레이', '레벨', '대구']</li>
+<li>Twitter ['레이져', '레벨', '기', '대구']</li>
+<li>Komoran ['레이져', '레벨', '대구']</li>
+<li>Hannanum ['레이져', '레벨기', '대구']</li>
+</ul>
+<hr>
+<p><strong>6/17(일) 잠실 기아타이거즈 응원석 2연석</strong></p>
+<ul>
+<li>Kkma ['6', '17', '일', '잠', '잠실', '실', '기아', '기아타이거즈', '타이', '거즈', '응원석', '2', '2연석', '연석']</li>
+<li>Twitter ['일', '잠실', '기아', '타이거즈', '응원', '석', '연석']</li>
+<li>Komoran ['일', '잠실', '기아타이거즈', '응원', '석', '연석']</li>
+<li>Hannanum ['(일)', '잠실', '기아타이거즈', '응원석', '2연석']</li>
+</ul>
+<hr>
+<p><strong>샘소나이트 몬도 MONDO 김수현 백팩 브라운 5만원에 팝니다~~</strong></p>
+<ul>
+<li>Kkma ['샘', '샘소나이트', '소', '나이트', '김', '현', '백', '백팩', '팩', '브라운', '5', '5만원', '만', '원', '팝']</li>
+<li>Twitter ['샘소나이트', '몬', '김수현', '백팩', '브라운', '만원']</li>
+<li>Komoran ['샘소나이트', '몬', '김수현', '팩', '브라운', '원']</li>
+<li>Hannanum ['샘소나이트', '몬', '김수현', '백팩', '브라운', '5만원', '팝니다']</li>
+</ul>
+<hr>
+<p><strong>빌트인 3구 가스레인지 하츠 GC-3603SDS 팔아요~~</strong></p>
+<ul>
+<li>Kkma ['빌트인', '3', '3구', '구', '가스', '가스레인지', '레인지', '하츠']</li>
+<li>Twitter ['빌트', '구', '가스레인지', '하츠']</li>
+<li>Komoran ['빌트', '3구', '가스레인지']</li>
+<li>Hannanum ['빌트', '3구', '가스레인지', '하츠', 'GC-3603SDS']</li>
+</ul>
+<hr>
+<p><strong>[중나VIP] 마크로스 프론티어 작별의날개 쉐릴/란카(C상/D상), 비치퀸 센토 이스즈, 고전대물 빅스케일 DX 수송기 (다이쥬피터) 팝니다.</strong></p>
+<ul>
+<li>Kkma ['중', '나', '마크', '마크로스', '로스', '프', '프론', '론', '작별', '날개', '쉐릴', '카', '상', '비치', '비치퀸', '퀸', '토', '스즈', '고전', '고전대물', '대물', '빅', '빅스케일', '스케일', '수송기', '다이', '다이쥬피터', '쥬', '피터']</li>
+<li>Twitter ['중', '마크로스', '프론티어', '작별', '날개', '쉐릴', '란카', '상', '상', '비치', '퀸', '센토', '이스', '즈', '고전', '대물', '빅스', '케일', '수송기', '쥬', '피터']</li>
+<li>Komoran ['중', '마크로스 프론티어', '작별', '날개', '쉐리', '란', '카', '상', '상', '비치', '퀸', '센토', '전대물', '빅', '스케일', '수송기', '다이', '쥬', '피터']</li>
+<li>Hannanum ['[중나VIP]', '마크로스', '프론티어', '작별의날개', '),', '비치퀸', '센토', '이스즈,', '고전대물', '빅스케', '수송기', '(다이쥬피터)']</li>
+</ul>
+<hr>
+<p><strong>[공유] GP스카이 갤럭시온7 2016 카드 케이스 G610</strong></p>
+<ul>
+<li>Kkma ['공유', '스카이', '럭', '럭시온7', '시온', '7', '2016', '카드', '케이스', '610']</li>
+<li>Twitter ['공유', '스카이', '갤럭시', '온', '카드', '케이스']</li>
+<li>Komoran ['공유', '스카이', '갤럭시', '카드', '케이스']</li>
+<li>Hannanum ['공유', '스카이', '갤럭시온7', '2016', '카드', '케이스', 'G610']</li>
+</ul>
+<hr>
+<p><strong>영화 전단지  팸플릿  팜플렛  포스터  판매합니다</strong></p>
+<ul>
+<li>Kkma ['영화', '전단지', '팸플릿', '팜플렛', '포스터', '판매']</li>
+<li>Twitter ['영화', '전단지', '팸플릿', '팜플렛', '포스터', '판매']</li>
+<li>Komoran ['영화', '전단지', '팸플릿', '팜플렛', '포스터', '판매']</li>
+<li>Hannanum ['영화', '지', '팸플릿', '팜플렛', '포스터', '판매']</li>
+</ul>
+<hr>
+<p><strong>short board 긴팔 상의 블랙 S 사이즈 팝니다</strong></p>
+<ul>
+<li>Kkma ['긴팔', '상의', '블랙', '사이즈']</li>
+<li>Twitter ['팔', '상의', '블랙', '사이즈']</li>
+<li>Komoran ['긴팔', '상', '블랙', '사이즈']</li>
+<li>Hannanum ['긴팔', '상', '블랙', '사이즈', '팝니다']</li>
+</ul>
+<hr>
+<p><strong>[공식앱] 미니 사각 퍼프</strong></p>
+<ul>
+<li>Kkma ['공식', '공식앱', '앱', '미니', '사각', '퍼프']</li>
+<li>Twitter ['공식', '앱', '미니', '사각', '퍼프']</li>
+<li>Komoran ['공식', '앱', '미니', '사각', '퍼프']</li>
+<li>Hannanum ['[공식앱]', '사각', '퍼프']</li>
+</ul>
+<hr>
+<p><strong>조던1 미드 메탈릭실버 260</strong></p>
+<ul>
+<li>Kkma ['조', '1', '미드', '메탈', '메탈릭실버', '릭', '실버', '260']</li>
+<li>Twitter ['조던', '미드', '메탈', '릭', '실버']</li>
+<li>Komoran ['조던', '미드', '메탈릭', '실버']</li>
+<li>Hannanum ['조던1', '미드', '메탈릭실버', '260']</li>
+</ul>
+<hr>
+<p><strong>[대전] LG터치폴더 TN-K280N 그레이 가개통 팝니다</strong></p>
+<ul>
+<li>Kkma ['대전', '터치', '터치폴더', '폴더', '그레이', '가개통', '개통']</li>
+<li>Twitter ['대전', '터치', '폴더', '그레이', '개통']</li>
+<li>Komoran ['대전', '터치', '폴더', '그레이', '개통']</li>
+<li>Hannanum ['대전', 'LG터치폴더', 'TN-K280N', '그레이', '가개통', '팝니다']</li>
+</ul>
+<hr>
+<p><strong>돌체앤가바나 / 컬렉션 메인 캐시미어 보카시 니트 / 48</strong></p>
+<ul>
+<li>Kkma ['돌체', '돌체앤가바', '앤', '바', '컬렉션', '메인', '캐시미어', '보', '보카시', '카시', '니트', '48']</li>
+<li>Twitter ['돌체앤가바나', '컬렉션', '메인', '캐시미어', '보', '카시', '니트']</li>
+<li>Komoran ['돌체앤가바나', '컬렉션', '메인', '캐시미어', '보', '카시', '니트']</li>
+<li>Hannanum ['돌체앤가바나', '컬렉션', '메', '캐시미', '보카시', '니트', '48']</li>
+</ul>
+<hr>
+<p><strong>아기 여름 옷 정리합니다</strong></p>
+<ul>
+<li>Kkma ['아기', '여름', '옷', '정리']</li>
+<li>Twitter ['아기', '여름', '옷']</li>
+<li>Komoran ['아기', '여름', '옷', '정리']</li>
+<li>Hannanum ['아기', '여름', '옷', '정리']</li>
+</ul>
+<hr>
+<p><strong>명품가죽백.부르노마리</strong></p>
+<ul>
+<li>Kkma ['명품', '명품가죽백', '가죽', '백', '부', '부르노마리', '르노', '마리']</li>
+<li>Twitter ['명품', '가죽', '마리']</li>
+<li>Komoran ['명품', '가죽', '백', '부', '르노', '마리']</li>
+<li>Hannanum ['명품가죽백', '부르노마']</li>
+</ul>
+<hr>
+<p><strong>아이폰 6플러스 슈피겐 케이스 (범퍼)</strong></p>
+<ul>
+<li>Kkma ['아이', '아이폰', '폰', '6', '6플러스', '플러스', '슈', '슈피겐', '피', '겐', '케이스', '범퍼']</li>
+<li>Twitter ['아이폰', '플러스', '슈피겐', '케이스', '범퍼']</li>
+<li>Komoran ['아이폰', '플러스', '케이스']</li>
+<li>Hannanum ['아이폰', '6플러스', '슈피겐', '케이스', '범퍼']</li>
+</ul>
+<hr>
+<p><strong>카이저 모바일쿠폰 150000원짜리 팝니다 g7용</strong></p>
+<ul>
+<li>Kkma ['카이저', '모바일', '모바일쿠폰', '쿠폰', '150000', '150000원', '원', '7', '7용', '용']</li>
+<li>Twitter ['카이저', '모바일', '쿠폰', '원', '용']</li>
+<li>Komoran ['카이저', '모바일', '쿠폰', '원']</li>
+<li>Hannanum ['카이저', '모바일쿠폰', '150000원', 'g7용']</li>
+</ul>
+<hr>
+<p><strong>[미개봉] 시게이트 4TB 아이언울프 하드 팝니다. ST4000VN008</strong></p>
+<ul>
+<li>Kkma ['미', '미개봉', '개봉', '시', '시게이트', '게이트', '4', '아이언', '프', '하드', '4000', '008']</li>
+<li>Twitter ['미개', '봉', '시게이트', '아이언', '울프', '하드']</li>
+<li>Komoran ['미', '개봉', '시게이트', '아이언', '울프', '하드']</li>
+<li>Hannanum ['미개봉', '시게이트', '4TB', '아이언울프', '하드', 'ST4000VN008']</li>
+</ul>
+<hr>
+<p><strong> 까르띠에 여자반지 - 플래티넘 다이아몬드~#47</strong></p>
+<ul>
+<li>Kkma ['르', '르띠', '띠', '여자', '여자반지', '반지', '플래', '플래티넘', '티', '넘', '다이', '다이아몬드', '아몬드', '47']</li>
+<li>Twitter ['까르띠', '여자', '반지', '플래티넘', '다이아몬드']</li>
+<li>Komoran ['까르띠에', '여자', '반지', '플래티넘', '다이아몬드']</li>
+<li>Hannanum ['까르띠', '여자반지', '플래티넘', '다이아몬드~#47']</li>
+</ul>
+<hr>
+<p><strong>제일 타카 F422,판매합니다.</strong></p>
+<ul>
+<li>Kkma ['제일', '422', '판매']</li>
+<li>Twitter ['제일', '타카', '판매']</li>
+<li>Komoran ['제일', '타카', '판매']</li>
+<li>Hannanum ['카', 'F422,판매합니']</li>
+</ul>
+<hr>
+<p><strong>스투시 x 컨버스 콜라보 260 보라색 팝니다</strong></p>
+<ul>
+<li>Kkma ['스투', '스투시', '시', '버스', '콜라', '260', '색']</li>
+<li>Twitter ['스', '투시', '컨', '버스', '콜라보', '보라색']</li>
+<li>Komoran ['컨버스', '콜라보', '보라색']</li>
+<li>Hannanum ['스투시', '컨버스', '콜라보', '260', '보라색', '팝니다']</li>
+</ul>
+<hr>
+<p><strong>[공식앱] 시원한 여름 원피스 </strong></p>
+<ul>
+<li>Kkma ['공식', '공식앱', '앱', '여름', '원피스']</li>
+<li>Twitter ['공식', '앱', '여름', '원피스']</li>
+<li>Komoran ['공식', '앱', '여름', '원피스']</li>
+<li>Hannanum ['[공식앱]', '시원', '여름', '원피스']</li>
+</ul>
+<hr>
+<p><strong>[모바일#]상태좋은 G5 최저가 판매!!!평택중고폰은 역시 모바일#!!!</strong></p>
+<ul>
+<li>Kkma ['모바일', '상태', '5', '최저가', '판매', '평', '평택중고폰', '택', '중고', '폰']</li>
+<li>Twitter ['모바일', '상태', '최저', '판매', '평택', '폰', '역시', '모바일']</li>
+<li>Komoran ['모바일', '상태', 'G5', '최저', '판매', '평택중', '폰', '모바일']</li>
+<li>Hannanum ['[모바일#]상태좋', 'G5', '최저', '판매', '평택중고폰', '모바일#']</li>
+</ul>
+<hr>
+<p><strong>ipTIME A1004ns 공유기 팝니다</strong></p>
+<ul>
+<li>Kkma ['1004', '공', '공유기', '유기']</li>
+<li>Twitter ['공유기']</li>
+<li>Komoran ['공유기']</li>
+<li>Hannanum ['A1004ns', '공유', '팝니다']</li>
+</ul>
+<hr>
+<p><strong>샌디라이온 스티커</strong></p>
+<ul>
+<li>Kkma ['디', '디라이온', '라이온', '스티커']</li>
+<li>Twitter ['샌디', '라이온', '스티커']</li>
+<li>Komoran ['샌디', '라이온', '스티커']</li>
+<li>Hannanum ['샌디라이온', '스티커']</li>
+</ul>
+<hr>
+<p><strong> [급처]50종 명품 가방 지갑   새상품   정품   선물용으로도 추천 </strong></p>
+<ul>
+<li>Kkma ['급', '급처', '처', '50', '50종', '종', '명품', '가방', '지갑', '새', '새상품', '상품', '정품', '선물', '추천']</li>
+<li>Twitter ['급처', '종', '명품', '가방', '지갑', '새', '상품', '정품', '선물', '용', '추천']</li>
+<li>Komoran ['급', '처', '종', '명품', '가방', '지갑', '상품', '정품', '선물', '추천']</li>
+<li>Hannanum ['[급처]50종', '명품', '가방', '지갑', '새상품', '정품', '선물용', '추천']</li>
+</ul>
+<hr>
+<p><strong>아이폰 ::업계최고단가 아이폰X 256 103만::로 삽니다!</strong></p>
+<ul>
+<li>Kkma ['아이', '아이폰', '폰', '업계', '업계최고단가', '최고', '단가', '256', '103', '103만', '만']</li>
+<li>Twitter ['아이폰', '업계', '최고', '단가', '아이폰', '만', '로']</li>
+<li>Komoran ['아이폰', '업계', '최고', '단가', '아이폰']</li>
+<li>Hannanum ['아이폰', '업계최고단', '아이폰X', '256', '103만::']</li>
+</ul>
+<hr>
+<p><strong>전기바이크 전기스쿠터 전기오토바이</strong></p>
+<ul>
+<li>Kkma ['전기', '전기바이크', '바이크', '전기스쿠터', '스쿠터', '전기오토바이', '오토바이']</li>
+<li>Twitter ['전기', '바이크', '전기', '스쿠터', '전기', '오토바이']</li>
+<li>Komoran ['전기', '바이크', '전기', '스쿠터', '전기', '오토바이']</li>
+<li>Hannanum ['전기바이크', '전기스쿠터', '전기오토바이']</li>
+</ul>
+<hr>
+<p><strong>주물팬 불판 케이크틀19000택포</strong></p>
+<ul>
+<li>Kkma ['주물', '주물팬', '팬', '판', '케이크', '케이크틀19000택', '틀', '19000', '택', '포']</li>
+<li>Twitter ['주물', '팬', '불판', '케이크', '틀', '택포']</li>
+<li>Komoran ['주물', '팬', '판', '케이크', '틀', '택', '포']</li>
+<li>Hannanum ['주물팬', '판', '케이크틀19000택포']</li>
+</ul>
+<hr>
+<p><strong>베이코드 팝니다</strong></p>
+<ul>
+<li>Kkma ['베이', '베이코드', '코드']</li>
+<li>Twitter ['베이', '코드']</li>
+<li>Komoran ['베이', '코드']</li>
+<li>Hannanum ['베이코드', '팝니다']</li>
+</ul>
+<hr>
+<p><strong>휴고 무지개 썬캡 (키즈)</strong></p>
+<ul>
+<li>Kkma ['무', '무지개', '지개', '캡', '키즈']</li>
+<li>Twitter ['휴고', '무지개', '썬캡', '키즈']</li>
+<li>Komoran ['휴고', '무지개', '썬', '캡', '키즈']</li>
+<li>Hannanum ['휴', '무지개', '썬캡', '(키즈']</li>
+</ul>
+<hr>
+<p><strong>갤럭시 탭A6 10.1 T585블랙 미개봉팝니다</strong></p>
+<ul>
+<li>Kkma ['럭', '럭시', '시', '탭', '6', '10.1', '585', '585블랙', '블랙', '미', '미개봉', '개봉']</li>
+<li>Twitter ['갤럭시', '탭', '블랙', '개봉']</li>
+<li>Komoran ['갤럭시 탭', 'A6', '블랙', '미', '개봉']</li>
+<li>Hannanum ['갤럭시', '탭A6', '10.1', 'T585블랙', '미개봉팝니']</li>
+</ul>
+<hr>
+<p><strong>&lt;&lt;정품&gt;&gt;프라다 에스플러네이드 팝니다 !!! ((가방상태 최상급,급처분))</strong></p>
+<ul>
+<li>Kkma ['정품', '프라다', '스플', '스플러', '러', '이드', '팝', '가방', '가방상태', '상태', '최상급', '급', '급처분', '처분']</li>
+<li>Twitter ['정품', '프라다', '에스', '러', '이드', '가방', '상태', '최상급', '급', '처분']</li>
+<li>Komoran ['정품', '프라다', '에', '스프', '이', '드', '가방', '상태', '상급', '급', '처분']</li>
+<li>Hannanum ['정품', '프라', '에스플러네이드', '가방상태', '최상급,급처분']</li>
+</ul>
+<hr>
+<p><strong>소독연무기800w </strong></p>
+<ul>
+<li>Kkma ['소독', '소독연무기800', '연', '무기', '800']</li>
+<li>Twitter ['소독', '연', '무기']</li>
+<li>Komoran ['소독', '연', '무기']</li>
+<li>Hannanum ['소독연무기800w']</li>
+</ul>
+<hr>
+<p><strong> 워모 남성 점퍼,스컬리즘 바람막이100</strong></p>
+<ul>
+<li>Kkma ['워', '워모', '모', '남성', '점퍼', '스컬', '스컬리즘', '리', '즘', '바람', '바람막이', '바람막이100', '막이', '100']</li>
+<li>Twitter ['워모', '남성', '점퍼', '스컬', '리즘', '바람막이']</li>
+<li>Komoran ['남성', '점퍼', '스컬', '리', '즘', '바람막이']</li>
+<li>Hannanum ['워모', '남성', '점퍼,스컬리즘', '바람막이100']</li>
+</ul>
+<hr>
+<p><strong>◎◎◎◎◎◎◎ 각종 아이폰 삼성폰 전문적으로 매입합니다 삽니다◎◎◎◎◎◎ 서울 경기 수원 인천 아이폰6 6플러스 6 플러스 다 삽니다. 게신곳에서 매입합니다</strong></p>
+<ul>
+<li>Kkma ['각종', '아이', '아이폰', '폰', '삼성', '삼성폰', '전문적', '매입', '서울', '경기', '수원', '인천', '아이폰6', '6', '6플러스', '플러스', '곳']</li>
+<li>Twitter ['각종', '아이폰', '삼성', '폰', '전문', '매입', '서울', '경기', '수원', '인천', '아이폰', '플러스', '플러스', '게신곳', '매입']</li>
+<li>Komoran ['각종', '아이폰', '삼성', '폰', '전문', '매입', '서울', '경기', '수원', '인천', '아이폰', '플러스', '플러스', '게', '신', '곳', '매입']</li>
+<li>Hannanum ['◎◎◎◎◎', '◎◎', '각종', '아이폰', '삼성폰', '전문적', '매입', '삽니다◎◎◎◎◎', '◎', '서울', '경기', '수원', '인천', '아이폰6', '6플러스', '6', '플러스', '게신곳', '매입']</li>
+</ul>
+<hr>
+<p><strong>상태 좋은 코멧650r 2009년식 프라막 도색 판매합니다.</strong></p>
+<ul>
+<li>Kkma ['상태', '코', '코멧650', '멧', '650', '2009', '2009년식', '년', '식', '프', '도색', '판매']</li>
+<li>Twitter ['상태', '코멧', '년', '프라', '막', '도색', '판매']</li>
+<li>Komoran ['상태', '년', '식', '도색', '판매']</li>
+<li>Hannanum ['상태', '코멧650r', '2009년식', '프라막', '도색', '판매']</li>
+</ul>
+<hr>
+<p><strong> CO2 용접기 500A&lt;현대HD AUTO500/새제품&gt;140만원 </strong></p>
+<ul>
+<li>Kkma ['co2', '용접기', '500', '현대', '새', '새제품', '제품', '140', '140만원', '만원']</li>
+<li>Twitter ['용', '접기', '현대', '새', '제품', '만원']</li>
+<li>Komoran ['CO2', '용접', '현대', '새', '제품', '원']</li>
+<li>Hannanum ['CO2', '용접기', '500A&lt;현대HD', 'AUTO500', '새제품', '140만원']</li>
+</ul>
+<hr>
+<p><strong>[공식앱] 쿠팡 / 넥슨 / 옥션 / 지마켓 / 위메프 / 문상 80% 구매합니다●항시거래가능●</strong></p>
+<ul>
+<li>Kkma ['공식', '공식앱', '앱', '쿠팡', '넥', '옥', '옥션', '션', '지', '지마켓', '마켓', '위', '위메프', '메', '프', '문', '문상', '상', '80', '구매', '거래', '거래가능', '가능']</li>
+<li>Twitter ['공식', '앱', '쿠팡', '넥슨', '옥션', '지마켓', '위메프', '문상', '구매', '항시', '거래', '가능']</li>
+<li>Komoran ['공식', '앱', '쿠팡', '넥슨', '옥션', '지마켓', '위메프', '문상', '구매', '항시', '거래', '가능']</li>
+<li>Hannanum ['[공식앱]', '쿠팡', '넥슨', '옥션', '지마켓', '위메프', '문상', '80', '구매합니다●항시거래가능●']</li>
+</ul>
+<hr>
+<p><strong>질스튜어트 2018 신상품 플라워프린트 랩원피스</strong></p>
+<ul>
+<li>Kkma ['질', '질스튜어트', '스튜', '어트', '2018', '신상품', '플라워', '플라워프린트', '프린트', '랩', '랩원피스', '원피스']</li>
+<li>Twitter ['질', '스튜어트', '신', '상품', '플라워', '프린트', '랩', '원피스']</li>
+<li>Komoran ['질스튜어트', '신상품', '플라워', '프린트', '랩', '원피스']</li>
+<li>Hannanum ['질스튜어트', '2018', '신상품', '플라워프린트', '랩원피스']</li>
+</ul>
+<hr>
+<p><strong>구찌 스네이크 반지갑 팝니다 정품 풀구성</strong></p>
+<ul>
+<li>Kkma ['구찌', '스네이크', '반지', '반지갑', '갑', '정품', '풀', '풀구성', '구성']</li>
+<li>Twitter ['구찌', '스네이크', '반', '지갑', '정품', '풀', '구성']</li>
+<li>Komoran ['구찌', '지갑', '정품', '풀', '구성']</li>
+<li>Hannanum ['구찌', '스네이크', '반지갑', '정품', '풀구성']</li>
+</ul>
+<hr>
+<p><strong>GTX260, 삼성 RAM 2GB 4GB 팝니다</strong></p>
+<ul>
+<li>Kkma ['260', '삼성', '2', '4']</li>
+<li>Twitter ['삼성']</li>
+<li>Komoran ['삼성']</li>
+<li>Hannanum ['GTX260,', '삼성', '2GB', '4GB', '팝니다']</li>
+</ul>
+<hr>
+<p><strong>인도네시아 커피루왁(Luwak)</strong></p>
+<ul>
+<li>Kkma ['인도네시아', '커피', '왁']</li>
+<li>Twitter ['인도네시아', '커피', '루왁']</li>
+<li>Komoran ['인도네시아', '커피', '루왁']</li>
+<li>Hannanum ['인도네시', '커피루왁']</li>
+</ul>
+<hr>
+<p><strong>갤럭시s8 s급 풀구성 </strong></p>
+<ul>
+<li>Kkma ['럭', '럭시', '시', '8', '급', '풀', '풀구성', '구성']</li>
+<li>Twitter ['갤럭시', '급', '풀', '구성']</li>
+<li>Komoran ['갤럭시', '급', '풀', '구성']</li>
+<li>Hannanum ['갤럭시s8', '급', '풀구성']</li>
+</ul>
+<hr>
+<p><strong>클리오 플리즘 에어 16코랄</strong></p>
+<ul>
+<li>Kkma ['리', '리오', '오', '플', '플리즘', '리', '즘', '에어', '16', '16코랄', '코', '랄']</li>
+<li>Twitter ['클리오', '리즘', '에어', '코랄']</li>
+<li>Komoran ['클리오', '플리', '즘', '에어', '코랄']</li>
+<li>Hannanum ['리', '플리즘', '16코랄']</li>
+</ul>
+<hr>
+<p><strong>대명 삼척쏠비치 (호텔) 슈페리어 트윈 바다전망 (6월 16일 체크인 1박) 양도 (오션뷰 확정)</strong></p>
+<ul>
+<li>Kkma ['대명', '삼척', '비치', '호텔', '슈', '슈페리', '페리', '트윈', '바다', '바다전망', '전망', '6', '6월', '월', '16', '16일', '일', '체크인', '1', '1박', '박', '양도', '오션', '오션뷰', '뷰', '확정']</li>
+<li>Twitter ['대명', '삼척', '쏠', '비치', '호텔', '슈', '페리', '어', '트윈', '바다', '전망', '월', '일', '체크', '박', '양도', '오션', '뷰', '확정']</li>
+<li>Komoran ['대명', '삼척', '비치', '호텔', '바다', '전망', '6월 16일', '체크인', '박', '양도', '오션', '뷰', '확정']</li>
+<li>Hannanum ['대명', '삼척쏠비치', '호텔', '슈페리어', '트윈', '바다전망', '6월', '16일', '체크인', '1박', '양', '(오션뷰', '확정']</li>
+</ul>
+<hr>
+<p><strong>아디다스 져지</strong></p>
+<ul>
+<li>Kkma ['아디다스']</li>
+<li>Twitter ['아디다스', '져지']</li>
+<li>Komoran ['아디다스', '져지']</li>
+<li>Hannanum ['아디다스', '져']</li>
+</ul><p class="subheader">Category: <a href="../category/dev.html">dev</a>
+
+    Tagged: 
+    <a href="../tag/konlpy.html">konlpy </a>
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
                 <a href="../handle-a-lot-of-rows-in-django-model.html"><h3 class="article-title">Handle a lot of rows in Django model</h3></a>
 <h6 class="subheader" title="2018-03-20T10:27:00+09:00">Tue 20 March 2018
 </h6>
@@ -59,27 +505,15 @@
     <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
     <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
     <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ids</span><span class="p">))</span>
-    <span class="n">paginator</span> <span class="o">=</span> <span class="n">Paginator</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">page_num</span> <span class="ow">in</span> <span class="n">paginator</span><span class="o">.</span><span class="n">page_range</span><span class="p">:</span>
-        <span class="n">page</span> <span class="o">=</span> <span class="n">paginator</span><span class="o">.</span><span class="n">page</span><span class="p">(</span><span class="n">page_num</span><span class="p">)</span>
-        <span class="n">query</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">__in&#39;</span> <span class="o">%</span> <span class="n">pk_name</span><span class="p">:</span> <span class="n">page</span><span class="o">.</span><span class="n">object_list</span><span class="p">}</span>
-        <span class="n">batch</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">**</span><span class="n">query</span><span class="p">)</span>
-        <span class="k">yield</span> <span class="n">batch</span>
-
-    <span class="c1"># Clear out the DB connections queries because it bloats up RAM.</span>
-    <span class="n">reset_queries</span><span class="p">()</span>
-</pre></div><p class="subheader">Category: <a href="../category/dev.html">dev</a>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div><p class="subheader">Category: <a href="../category/dev.html">dev</a>
 
 </p>
 
 
 
-            </article>
-
-
+                <a class="button radius secondary small right" href="../handle-a-lot-of-rows-in-django-model.html">Read More</a>
                 <hr  class="gradient"/>
-
+            </article>
 
         
 
@@ -315,31 +749,6 @@
 
 
                 <a class="button radius secondary small right" href="../microservice.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="../bike_timeline.html"><h3 class="article-title">자전거 사용추이</h3></a>
-<h6 class="subheader" title="2017-10-20T17:37:00+09:00">Fri 20 October 2017
-</h6>
-
-
-<dl class="docutils">
-<dt>서울 따릉이</dt>
-<dd><a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html">서울 따릉이 하루 이용 그림(2mb)</a></dd>
-</dl>
-<p class="subheader">Category: <a href="../category/dev.html">dev</a>
-
-    Tagged: 
-    <a href="../tag/bike.html">bike </a>
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../bike_timeline.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

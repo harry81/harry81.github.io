@@ -5,29 +5,43 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/</loc>
-<lastmod>2018-06-01T15:04:58-00:00</lastmod>
+<lastmod>2018-06-13T14:50:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/archives.html</loc>
-<lastmod>2018-06-01T15:04:58-00:00</lastmod>
+<lastmod>2018-06-13T14:50:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/tags.html</loc>
-<lastmod>2018-06-01T15:04:58-00:00</lastmod>
+<lastmod>2018-06-13T14:50:05-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/categories.html</loc>
-<lastmod>2018-06-01T15:04:58-00:00</lastmod>
+<lastmod>2018-06-13T14:50:05-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/sample_of_konlpy.html</loc>
+<lastmod>2018-06-13T14:09:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/build-slack-bot.html</loc>
+<lastmod>2018-06-01T16:37:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -390,14 +404,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/category/dev.html</loc>
-<lastmod>2018-03-20T10:27:00+08:28</lastmod>
+<lastmod>2018-06-13T14:09:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/category/gaebal.html</loc>
-<lastmod>2017-09-02T15:51:22+08:28</lastmod>
+<lastmod>2018-06-01T16:37:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -419,6 +433,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://harry81.github.io/blog/category/sebasi.html</loc>
 <lastmod>2017-10-11T16:25:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/konlpy.html</loc>
+<lastmod>2018-06-13T14:09:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -467,7 +488,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/author/hyunmin.html</loc>
-<lastmod>2018-04-19T16:52:00+08:28</lastmod>
+<lastmod>2018-06-13T14:09:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
