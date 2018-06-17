@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>Water Developer</title>
+    <title>Your account is compromised</title>
 
     <link rel="stylesheet" href="./theme/css/normalize.css" />
     <link rel="stylesheet" href="./theme/css/foundation.min.css" />
@@ -45,16 +45,17 @@
 
     <!-- Main Blog Content -->
     <div class="large-9 columns">
-        
-        
+<article>
+    <header>
+        <h3 class="article-title"><a href="./your-account-is-compromised.html" rel="bookmark"
+        title="Permalink to Your account is compromised">Your account is compromised</a></h3>
+    </header>
 
-            <article>
-                <a href="./your-account-is-compromised.html"><h3 class="article-title">Your account is compromised</h3></a>
 <h6 class="subheader" title="2018-06-17T12:13:00+09:00">Sun 17 June 2018
 </h6>
 
 
-<hr>
+    <hr>
 <h3>Your AWS account XXXXXXXXXX is compromised</h3>
 <h5>이상한 이메일</h5>
 <p>6월 어느날, 개인 프로젝트에 사용하는 AWS 계정을 통해서 위와 같은 제목의 이메일이 날라왔다. 영어로 가득찬 내용이라 대수롭지 않게 여기고 점심을 먹으러 다녀옴. 그리고는 한 다섯 시간정도 지난뒤 새로운 메일이 도착했다.</p>
@@ -90,7 +91,8 @@
 <li>가능한 한 IAM account 가 작업할 수 있는 지역을 한정하자.</li>
 <li>aws_access_key_id, aws_secret_access_key 가 git repo에 딸려 올라가지 않는지 항상 주의하자.</li>
 <li>"Termination Protection" 을 CLI로 작업할 수 있는지 확인</li>
-</ul><p class="subheader">Category: <a href="./category/dev.html">dev</a>
+</ul>
+<p class="subheader">Category: <a href="./category/dev.html">dev</a>
 
     Tagged: 
     <a href="./tag/aws.html">AWS </a>
@@ -99,188 +101,8 @@
 
 
 
-            </article>
 
-
-                <hr  class="gradient"/>
-
-
-        
-
-
-            <article>
-                <a href="./sample_of_konlpy.html"><h3 class="article-title">konlpy 테그별 명사 추출 결과</h3></a>
-<h6 class="subheader" title="2018-06-13T14:09:00+09:00">Wed 13 June 2018
-</h6>
-
-
-<p class="subheader">Category: <a href="./category/dev.html">dev</a>
-
-    Tagged: 
-    <a href="./tag/konlpy.html">konlpy </a>
-</p>
-
-
-
-                <a class="button radius secondary small right" href="./sample_of_konlpy.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="./build-slack-bot.html"><h3 class="article-title">Build-slack-bot</h3></a>
-<h6 class="subheader" title="2018-06-01T16:37:00+09:00">Fri 01 June 2018
-</h6>
-
-
-<p class="subheader">Category: <a href="./category/gaebal.html">개발</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="./build-slack-bot.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="./playground-jupyter-with-django.html"><h3 class="article-title">Playground jupyter with django</h3></a>
-<h6 class="subheader" title="2018-04-19T16:52:00+09:00">Thu 19 April 2018
-</h6>
-
-
-<p class="subheader">Category: <a href="./category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="./playground-jupyter-with-django.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="./how-to-use-group-by-in-the-django.html"><h3 class="article-title">How to use group by in the django</h3></a>
-<h6 class="subheader" title="2018-04-13T17:02:00+09:00">Fri 13 April 2018
-</h6>
-
-
-<p class="subheader">Category: <a href="./category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="./how-to-use-group-by-in-the-django.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="./handle-a-lot-of-rows-in-django-model.html"><h3 class="article-title">Handle a lot of rows in Django model</h3></a>
-<h6 class="subheader" title="2018-03-20T10:27:00+09:00">Tue 20 March 2018
-</h6>
-
-
-<p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
-    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
-    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
-    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div><p class="subheader">Category: <a href="./category/dev.html">dev</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="./handle-a-lot-of-rows-in-django-model.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="./markdown-mode-for-emacs.html"><h3 class="article-title">Markdown mode for Emacs</h3></a>
-<h6 class="subheader" title="2018-03-19T17:57:00+09:00">Mon 19 March 2018
-</h6>
-
-
-<h5>단축키</h5>
-<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
-<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p><p class="subheader">Category: <a href="./category/dev.html">dev</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="./markdown-mode-for-emacs.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="./how-to-work-smart.html"><h3 class="article-title">How to work smart</h3></a>
-<h6 class="subheader" title="2018-03-19T11:00:00+09:00">Mon 19 March 2018
-</h6>
-
-
-<ul>
-<li>Do<ul>
-<li>출근 한 시간전에 회사에 도착한다.</li>
-<li>불가능한 업무는 용감하게 No라고 말한다.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li>
-<p>Don't</p>
-<ul>
-<li>한번에 여러가지 일을 처리하자</li>
-<li>조직이 알아야하는 것들을 나 혼자만 알자
-  (공통 이메일 계정, 시스템 전체적으로 영향을 미치는 변경)</li>
-<li>
-<p>업무가 할당이 되면 우선순위에 대한 고민없이 무조건 착수하자</p>
-<blockquote>
-<p>중요한 일이 너무 많아서 일을 못한다.</p>
-</blockquote>
-</li>
-<li>
-<p>야근을 열심히 하자.</p>
-</li>
-<li>옆 동료가 어떤 …</li></ul></li></ul><p class="subheader">Category: <a href="./category/dev.html">dev</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="./how-to-work-smart.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-            <!-- /#posts-list -->
-<div class="pagination-centered">
-<h6 class="subheader">Page 1 of 7</h6>
-
-<p>
-
-        <a href="./index2.html">Next &raquo;</a>
-</p>
-</div>
-
+</article>
     </div>
     <!-- End Main Content -->
 

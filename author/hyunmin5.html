@@ -50,6 +50,33 @@
 
 
             <article>
+                <a href="../python-recsys.html"><h3 class="article-title">"python-recsys"</h3></a>
+<h6 class="subheader" title="2017-02-21T16:53:36+09:00">Tue 21 February 2017
+</h6>
+
+
+<p>python-recsys 따라하기<br>
+http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
+<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
+<p>```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True</p>
+<p>from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p><p class="subheader">Category: <a href="../category/dev.html">dev</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../python-recsys.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="../movies.html"><h3 class="article-title">"movies"</h3></a>
 <h6 class="subheader" title="2017-02-21T14:59:56+09:00">Tue 21 February 2017
 </h6>
@@ -317,38 +344,6 @@ rake generate
 
 
                 <a class="button radius secondary small right" href="../octopress-temareul-byeongyeonghaja.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="../celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html"><h3 class="article-title">Celery beat를 Elasticbeanstalk에서도 사용하자</h3></a>
-<h6 class="subheader" title="2017-02-12T17:35:05+09:00">Sun 12 February 2017
-</h6>
-
-
-<ul>
-<li>
-<p _="%" endcodeblock>tip 1
-{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
-from celery.task.control import discard_all
-    discard_all()</p>
-</li>
-<li>
-<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
-{% codeblock lang:python title:"98-celery.config"  %}
-command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
-</li>
-</ul>
-<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

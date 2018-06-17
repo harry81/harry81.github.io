@@ -4,7 +4,7 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
 
-    <title>Water Developer - aws</title>
+    <title>Water Developer - AWS</title>
 
     <link rel="stylesheet" href="../theme/css/normalize.css" />
     <link rel="stylesheet" href="../theme/css/foundation.min.css" />
@@ -49,6 +49,66 @@
         
 
             <article>
+                <a href="../your-account-is-compromised.html"><h3 class="article-title">Your account is compromised</h3></a>
+<h6 class="subheader" title="2018-06-17T12:13:00+09:00">Sun 17 June 2018
+</h6>
+
+
+<hr>
+<h3>Your AWS account XXXXXXXXXX is compromised</h3>
+<h5>이상한 이메일</h5>
+<p>6월 어느날, 개인 프로젝트에 사용하는 AWS 계정을 통해서 위와 같은 제목의 이메일이 날라왔다. 영어로 가득찬 내용이라 대수롭지 않게 여기고 점심을 먹으러 다녀옴. 그리고는 한 다섯 시간정도 지난뒤 새로운 메일이 도착했다.</p>
+<p>"Amazon EC2 Instance scheduled for retirement"</p>
+<p>이거는 좀 이상하다는 생각이 들었다. 내가 사용하는 계정에서 운용중인 인스턴스는 지난달에 모두 정리했기 때문이다. 귀찮은 생각이 들었지만 AWS Console에 방문해서 어떤 인스턴스인지 확인하고 싶었다. 가벼운 마음으로 로그인을 하고 주로 사용하는 "EC2 Dashboard" 를 선택했다. 짦은 시간을 기다리며 우측 상단의 리전을 보았다. "N. California" 였다. 주로 "Seoul" 리전에서 작업을 하는데, 가끔씩 다른 리전에 방문이 되곤한다. 화면이 전부 로딩이 되면 다시 "Seoul"로 바꿔야지 생각했다. 그리고 나타나는 화면에 땀이 등줄기를 타고 내렸다.</p>
+<h5>내 것이 아닌 인스턴스</h5>
+<p>20개의 인스턴스가 초록색을 띄며 열심히 Running하고 있다. 그리고 각각의 인스턴스는 AWS document에서 몇 번 보았지만 너무나 내것이 아닐 것만 같았던 type이다. 대부분이 아래와 같았다.</p>
+<ul>
+<li>c3.8xlarge</li>
+<li>d2.8xlarge</li>
+<li>c5.18xlarge</li>
+<li>m4.16xlarge</li>
+<li>i3.16xlarge</li>
+<li>d2.8xlarge</li>
+</ul>
+<p>그리고는 다시 'Seoul' 리전으로 이동해 보았다. 비슷한 화면이 보인다. 침착한 마음으로 내가 선택가능한 모든 지역의 인스턴스를 확인해 보았다.</p>
+<p><img alt="image" src="/images/regions.png" title="hi"></p>
+<p>각 지역별 EC2 현황을 보고위해 크롬 부라우저에서 모두 탭들로 열어보았다. 이전에 열어 두었던 탭들과 지역별 EC2 탭들 덕분에 크롬이 무거워지는 것은 느낀다. 그리고 각 리전에서 모두 20개씩 인스턴스가 돌고 있는 것을 보니 내 마음도 무거워 진다. 지역(대략 12개) * 인스턴스(20개) 는 240개, 그리고 각 인스턴스가 꽤나 묵직하다는 것을 생각하니 엄청난 비용이 나오겠다고 암산을 해본다.</p>
+<p>원인 분석은 추후에 하기로 하고 일딴 코앞에 불을 끄기로 생각했다. 우선 서울리전으로 향했다. Running 상태의 모든 인스턴스를 한 번에 선택해서 Terminate 하면 금방 해결될 일이다. 그런데 이게 왠걸. "Termination Protection" 가 활성화 되어 있다. 바로 진행할 수 없다. 그렇다고 "Termination Protection" 비활성화 작업은 인스턴스를 모두 선택해 한번에 할 수 없고, 일일이 바꿔주어야 한다. (혹시 CLI 가능한 방법이 있는지 알아봐야겠다.) 입에서 조용히 욕이 나온다. 여기까지는 상황 인식이 모두 끝났다.</p>
+<h5>상황 정리</h5>
+<p>문제 해결을 위해서 할 작업은 명확하다.
+- 각 인스턴스의 "Termination Protection" 을 비활성화 시킨다.
+- 비활성화된 인스턴스를 "Terminate" 한다.
+- 이 작업을 각 리전을 돌며 반복한다.</p>
+<p>생각보다 시간이 많이 걸렸다. 뭔가 CLI라 가능하지 않을까 생각이 들었다. 하지만 너무 당황한 나머지 머리는 회전하지 않고, 손만 바빠진다. 이와 동시에 AWS에 CASE를 만들어 상황을 공유하고 도움을 받았다. 
+- 기존에 만들어진 root account keys 모두 제거
+- IAM account에서 관리하는 모든 keys 제거</p>
+<p>상황이 정리되고 하루가 채 가기전에 다시 이런 문제를 되풀이 하지 말자는 생각에 글을 남겨본다. 여전히 위 사건으로 발생한 큰 비용을 어떻게 처리할수 있을지 걱정이다.</p>
+<h5>내 것인 비용</h5>
+<p><img alt="billings" src="/images/billings-20180616.png"></p>
+<h5>회고</h5>
+<ul>
+<li>가능한 한 IAM account 가 작업할 수 있는 지역을 한정하자.</li>
+<li>aws_access_key_id, aws_secret_access_key 가 git repo에 딸려 올라가지 않는지 항상 주의하자.</li>
+<li>"Termination Protection" 을 CLI로 작업할 수 있는지 확인</li>
+</ul><p class="subheader">Category: <a href="../category/dev.html">dev</a>
+
+    Tagged: 
+    <a href="../tag/aws.html">AWS </a>
+    <a href="../tag/compromised.html">compromised </a>
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
                 <a href="../aws-cloudtrail-and-config.html"><h3 class="article-title">"aws cloudtrail and config"</h3></a>
 <h6 class="subheader" title="2017-08-01T11:33:23+09:00">Tue 01 August 2017
 </h6>
@@ -72,8 +132,11 @@
 
 
 
+                <a class="button radius secondary small right" href="../aws-cloudtrail-and-config.html">Read More</a>
+                <hr  class="gradient"/>
             </article>
 
+            <!-- /#posts-list -->
 <div class="pagination-centered">
 <h6 class="subheader">Page 1 of 1</h6>
 
@@ -81,10 +144,6 @@
 
 </p>
 </div>
-
-
-
-            <!-- /#posts-list -->
 
     </div>
     <!-- End Main Content -->

@@ -50,6 +50,32 @@
 
 
             <article>
+                <a href="../elasticbeans-talk.html"><h3 class="article-title">Elasticbeans talk</h3></a>
+<h6 class="subheader" title="2017-09-13T17:44:50+09:00">Wed 13 September 2017
+</h6>
+
+
+<h4>Elasticbeanstalk health check</h4>
+<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
+Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
+<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
+<p>https://gist.github.com/dryan/8271687</p>
+<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
+    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
+    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div><p class="subheader">Category: <a href="../category/misc.html">misc</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="../elasticbeans-talk.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="../datagokr.html"><h3 class="article-title">"data.go.kr"</h3></a>
 <h6 class="subheader" title="2017-09-03T14:29:11+09:00">Sun 03 September 2017
 </h6>
@@ -244,28 +270,6 @@
 
 
                 <a class="button radius secondary small right" href="../awswa-cingu-doegi.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="../sodameseoyi-sijag.html"><h3 class="article-title">"소담에서의 시작"</h3></a>
-<h6 class="subheader" title="2017-04-13T10:32:17+09:00">Thu 13 April 2017
-</h6>
-
-
-<h4>소감</h4>
-<p>낯설지만 자유롭다.
-이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.</p>
-<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../sodameseoyi-sijag.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
