@@ -72,7 +72,7 @@
 </ul>
 <p>그리고는 다시 'Seoul' 리전으로 이동해 보았다. 비슷한 화면이 보인다. 침착한 마음으로 내가 선택가능한 모든 지역의 인스턴스를 확인해 보았다.</p>
 <p><img alt="image" src="/images/regions.png" title="hi"></p>
-<p>각 지역별 EC2 현황을 보고위해 크롬 부라우저에서 모두 탭들로 열어보았다. 이전에 열어 두었던 탭들과 지역별 EC2 탭들 덕분에 크롬이 무거워지는 것은 느낀다. 그리고 각 리전에서 모두 20개씩 인스턴스가 돌고 있는 것을 보니 내 마음도 무거워 진다. 지역(대략 12개) * 인스턴스(20개) 는 240개, 그리고 각 인스턴스가 꽤나 묵직하다는 것을 생각하니 엄청난 비용이 나오겠다고 암산을 해본다.</p>
+<p>각 지역별 EC2 현황을 보기 위해 크롬 부라우저에서 모두 탭들로 열어보았다. 이전에 열어 두었던 탭들과 지역별 EC2 탭들 덕분에 크롬이 무거워지는 것은 느낀다. 그리고 각 리전에서 모두 20개씩 인스턴스가 돌고 있는 것을 보니 내 마음도 무거워 진다. 지역(대략 12개) * 인스턴스(20개) 는 240개, 그리고 각 인스턴스가 꽤나 묵직하다는 것을 생각하니 엄청난 비용이 나오겠다고 암산을 해본다.</p>
 <p>원인 분석은 추후에 하기로 하고 일딴 코앞에 불을 끄기로 생각했다. 우선 서울리전으로 향했다. Running 상태의 모든 인스턴스를 한 번에 선택해서 Terminate 하면 금방 해결될 일이다. 그런데 이게 왠걸. "Termination Protection" 가 활성화 되어 있다. 바로 진행할 수 없다. 그렇다고 "Termination Protection" 비활성화 작업은 인스턴스를 모두 선택해 한번에 할 수 없고, 일일이 바꿔주어야 한다. (혹시 CLI 가능한 방법이 있는지 알아봐야겠다.) 입에서 조용히 욕이 나온다. 여기까지는 상황 인식이 모두 끝났다.</p>
 <h5>상황 정리</h5>
 <p>문제 해결을 위해서 할 작업은 명확하다.
@@ -87,9 +87,10 @@
 <p><img alt="billings" src="/images/billings-20180616.png"></p>
 <h5>회고</h5>
 <ul>
-<li>가능한 한 IAM account 가 작업할 수 있는 지역을 한정하자.</li>
+<li>한 IAM account 가 작업할 수 있는 지역을 한정하자.</li>
 <li>aws_access_key_id, aws_secret_access_key 가 git repo에 딸려 올라가지 않는지 항상 주의하자.</li>
 <li>"Termination Protection" 을 CLI로 작업할 수 있는지 확인</li>
+<li>AWS meetup 운영자님들과 평소에 친하게 지내자.</li>
 </ul><p class="subheader">Category: <a href="../category/dev.html">dev</a>
 
     Tagged: 
@@ -135,7 +136,7 @@
 </h6>
 
 
-<p class="subheader">Category: <a href="../category/gaebal.html">개발</a>
+<p class="subheader">Category: <a href="../category/dev.html">dev</a>
 
 </p>
 
@@ -298,7 +299,6 @@
         <h5 class="sidebar-title">Categories</h5>
         <ul class="side-nav">
             <li><a href="../category/dev.html">dev</a></li>
-            <li><a href="../category/gaebal.html">개발</a></li>
             <li><a href="../category/misc.html">misc</a></li>
             <li><a href="../category/munjang.html">문장</a></li>
             <li><a href="../category/sebasi.html">세바시</a></li>
@@ -308,9 +308,6 @@
         <h5 class="sidebar-title">Links</h5>
         <ul class="side-nav">
             <li><a href="http://getpelican.com/">Pelican</a></li>
-            <li><a href="http://python.org/">Python.org</a></li>
-            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-            <li><a href="#">You can modify those links in your config file</a></li>
         </ul>
 		
         <h5 class="sidebar-title">Social</h5>

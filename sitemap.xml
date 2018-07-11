@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/</loc>
-<lastmod>2018-06-17T13:05:28-00:00</lastmod>
+<lastmod>2018-07-11T15:04:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/archives.html</loc>
-<lastmod>2018-06-17T13:05:28-00:00</lastmod>
+<lastmod>2018-07-11T15:04:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/tags.html</loc>
-<lastmod>2018-06-17T13:05:28-00:00</lastmod>
+<lastmod>2018-07-11T15:04:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/categories.html</loc>
-<lastmod>2018-06-17T13:05:28-00:00</lastmod>
+<lastmod>2018-07-11T15:04:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -412,13 +412,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://harry81.github.io/blog/category/dev.html</loc>
 <lastmod>2018-06-17T12:13:00+08:28</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://harry81.github.io/blog/category/gaebal.html</loc>
-<lastmod>2018-06-01T16:37:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
