@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/</loc>
-<lastmod>2018-07-23T16:38:59-00:00</lastmod>
+<lastmod>2018-07-23T17:34:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/archives.html</loc>
-<lastmod>2018-07-23T16:38:59-00:00</lastmod>
+<lastmod>2018-07-23T17:34:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/categories.html</loc>
-<lastmod>2018-07-23T16:38:59-00:00</lastmod>
+<lastmod>2018-07-23T17:34:51-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/_include/search.html</loc>
-<lastmod>2018-07-23T16:38:59-00:00</lastmod>
+<lastmod>2018-07-23T17:34:51-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/demo-of-tmuxifier.html</loc>
+<lastmod>2018-07-23T17:23:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -418,7 +425,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/category/misc.html</loc>
-<lastmod>2018-04-19T16:52:00+08:28</lastmod>
+<lastmod>2018-07-23T17:23:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -433,6 +440,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://harry81.github.io/blog/category/sebasi.html</loc>
 <lastmod>2017-10-11T16:25:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/tmux.html</loc>
+<lastmod>2018-07-23T17:23:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/tmuxifier.html</loc>
+<lastmod>2018-07-23T17:23:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -523,7 +544,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/author/hyunmin.html</loc>
-<lastmod>2018-06-17T12:13:00+08:28</lastmod>
+<lastmod>2018-07-23T17:23:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

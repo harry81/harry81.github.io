@@ -83,6 +83,27 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../get-title-data-api.html">"get title data api"</a></h2>
+                <div class="summary"><h3>기본 matplotlib 이용하여 데이타 출력</h3>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 한글 폰트 깨짐 방지</span>
+<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../get-title-data-api.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../uhopper-hadoop-docker.html">"uhopper-hadoop-docker"</a></h2>
                 <div class="summary"><h3>docker-compose 를 이용해서</h3>
 <p>https://bitbucket.org/uhopper/hadoop-docker/</p>
@@ -312,18 +333,6 @@ datanode2 …</pre></div>
 <h3>하둡 실행하기</h3>
 <p><code>docker run …</code></p>
                     <a class="btn btn-default btn-xs" href="../dockerreul-iyonghan-hadoop.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../octopress-temareul-byeongyeonghaja.html">"Octopress 테마를 변경하자"</a></h2>
-                <div class="summary"><p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
-<div class="highlight"><pre><span></span>cd octopress
-git submodule add GIT_URL .themes/THEME_NAME
-rake install\[&#39;THEME_NAME&#39;\]
-rake generate
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="../octopress-temareul-byeongyeonghaja.html">more ...</a>
                 </div>
             </article>
             <hr/>
