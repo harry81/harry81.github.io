@@ -84,22 +84,38 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="../demo-of-tmuxifier.html">Demo of tmuxifier</a></h2>
-                <div class="summary">
-                    <a class="btn btn-default btn-xs" href="../demo-of-tmuxifier.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
                 <h2><a href="../playground-jupyter-with-django.html">Playground jupyter with django</a></h2>
-                <div class="summary">
+                <div class="summary"><hr>
+<h3>Get ready for bokeh</h3>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">show</span>
+<span class="kn">from</span> <span class="nn">bokeh.layouts</span> <span class="kn">import</span> <span class="n">column</span>
+<span class="n">output_notebook</span><span class="p">()</span>
+</pre></div>
+
+
+<h3>Necessary python packages</h3>
+<div class="highlight"><pre><span></span>✗ pip install notebook pandas matplotlib bokeh
+</pre></div>
                     <a class="btn btn-default btn-xs" href="../playground-jupyter-with-django.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
                 <h2><a href="../how-to-use-group-by-in-the-django.html">How to use group by in the django</a></h2>
-                <div class="summary">
+                <div class="summary"><hr>
+<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
+<p>Approach 1</p>
+<div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
+</pre></div>
+
+
+<p>Approach 2</p>
+<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
+</pre></div>
                     <a class="btn btn-default btn-xs" href="../how-to-use-group-by-in-the-django.html">more ...</a>
                 </div>
             </article>
@@ -233,6 +249,20 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 </li>
 </ul>
                     <a class="btn btn-default btn-xs" href="../aws-cloudtrail-and-config.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../rds-parameter-group.html">"rds-parameter-group"</a></h2>
+                <div class="summary"><h3>문제</h3>
+<hr>
+<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
+<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
+그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
+- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
+<ul>
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul>
+                    <a class="btn btn-default btn-xs" href="../rds-parameter-group.html">more ...</a>
                 </div>
             </article>
             <hr/>
