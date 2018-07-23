@@ -1,142 +1,103 @@
 <!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <meta charset="utf-8" />
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width" />
+    <title>misc - Water Developer</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Water Developer - misc</title>
 
-    <link rel="stylesheet" href="../theme/css/normalize.css" />
-    <link rel="stylesheet" href="../theme/css/foundation.min.css" />
-    <link rel="stylesheet" href="../theme/css/style.css" />
-    <link rel="stylesheet" href="../theme/css/pygments.css" />	
-    <script src="../theme/js/custom.modernizr.js"></script>
 
-    <!-- So Firefox can bookmark->"abo this site" -->
+
+    <meta name="author" content="Hyunmin" />
+    <meta name="keywords" content="misc" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Water Developer" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Water Developer"/>
+        <meta property="og:url" content=".."/>
+        <meta property="og:description" content="Water Developer"/>
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/native.css" rel="stylesheet">
+    <link href="../theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+
+
+
 
 </head>
-
 <body>
 
-<!-- Nav Bar -->
-<nav>
-<div class="top-bar">
-<div class="row">
-    <div class="large-9 large-centered columns">
-	    <h1><a href="..">Water Developer</a></h1>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+Water Developer            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="../category/dev.html">Dev</a>
+                        </li>
+                        <li class="active">
+                            <a href="../category/misc.html">Misc</a>
+                        </li>
+                        <li >
+                            <a href="../category/munjang.html">문장</a>
+                        </li>
+                        <li >
+                            <a href="../category/sebasi.html">세바시</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-</div>
-</div>
+</div> <!-- /.navbar -->
 
-<!-- Show menu items and pages -->
-<div class="row">
-<div class="large-9 columns">
-    <ul class="button-group navigation">
+<!-- Banner -->
+<!-- End Banner -->
 
-    </ul>
-</div>
-</div>
-</nav>
-<!-- End Nav -->
-
-
-<!-- Main Page Content and Sidebar -->
-<div class="row">
-
-    <!-- Main Blog Content -->
-    <div class="large-9 columns">
-        
-        
-
-
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
             <article>
-                <a href="../aws-cloudtrail-and-config.html"><h3 class="article-title">"aws cloudtrail and config"</h3></a>
-<h6 class="subheader" title="2017-08-01T11:33:23+09:00">Tue 01 August 2017
-</h6>
-
-
-<ul>
-<li>
-<p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
-</li>
-<li>
-<p>임기성 :: 2015 리인벤트 리캡 게이밍  <a href="https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim">https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim</a></p>
-</li>
-<li>
-<p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
-</li>
-</ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-    Tagged: 
-    <a href="../tag/aws.html">aws </a>
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../aws-cloudtrail-and-config.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="../rds-parameter-group.html"><h3 class="article-title">"rds-parameter-group"</h3></a>
-<h6 class="subheader" title="2017-06-22T11:51:34+09:00">Thu 22 June 2017
-</h6>
-
-
-<h3>문제</h3>
-<hr>
-<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
-<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
-그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
-- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
-<ul>
-<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../rds-parameter-group.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="../git-tips.html"><h3 class="article-title">"git tips"</h3></a>
-<h6 class="subheader" title="2017-05-16T17:12:50+09:00">Tue 16 May 2017
-</h6>
-
-
-<ul>
+                <h2><a href="../git-tips.html">"git tips"</a></h2>
+                <div class="summary"><ul>
 <li>특정 함수의 변경을 확인 : git log -L </li>
 <li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
 <li>버그가 발견한 commit를 추적 : git bisect</li>
 <li>commit.template</li>
-</ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../git-tips.html">Read More</a>
-                <hr  class="gradient"/>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../git-tips.html">more ...</a>
+                </div>
             </article>
-
-        
-
-
+            <hr/>
             <article>
-                <a href="../geuleul-maeil-sseuneun-bangbeob.html"><h3 class="article-title">"글을 매일 쓰는 방법"</h3></a>
-<h6 class="subheader" title="2017-05-15T17:26:17+09:00">Mon 15 May 2017
-</h6>
-
-
-<ul>
+                <h2><a href="../geuleul-maeil-sseuneun-bangbeob.html">"글을 매일 쓰는 방법"</a></h2>
+                <div class="summary"><ul>
 <li>
 <p><a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e">25 Habits That Will Make You a Writer</a></p>
 </li>
@@ -148,70 +109,34 @@
 <p>매일 글을 쓴다.
 하루를 보내며 재미있었던 일</p>
 </li>
-</ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../geuleul-maeil-sseuneun-bangbeob.html">Read More</a>
-                <hr  class="gradient"/>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../geuleul-maeil-sseuneun-bangbeob.html">more ...</a>
+                </div>
             </article>
-
-        
-
-
+            <hr/>
             <article>
-                <a href="../awswa-cingu-doegi.html"><h3 class="article-title">"AWS와 친구 되기"</h3></a>
-<h6 class="subheader" title="2017-05-15T17:05:34+09:00">Mon 15 May 2017
-</h6>
-
-
-<h2>아테나 성능 튜닝 팁 - 정도현</h2>
+                <h2><a href="../awswa-cingu-doegi.html">"AWS와 친구 되기"</a></h2>
+                <div class="summary"><h2>아테나 성능 튜닝 팁 - 정도현</h2>
 <p>Amazon Athena is an interactive query service that makes it easy to analyze data stored in Amazon S3 using standard SQL
 - big-data <a href="https://aws.amazon.com/ko/blogs/big-data/">https://aws.amazon.com/ko/blogs/big-data/</a>
-- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../awswa-cingu-doegi.html">Read More</a>
-                <hr  class="gradient"/>
+- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p>
+                    <a class="btn btn-default btn-xs" href="../awswa-cingu-doegi.html">more ...</a>
+                </div>
             </article>
-
-        
-
-
+            <hr/>
             <article>
-                <a href="../sodameseoyi-sijag.html"><h3 class="article-title">"소담에서의 시작"</h3></a>
-<h6 class="subheader" title="2017-04-13T10:32:17+09:00">Thu 13 April 2017
-</h6>
-
-
-<h4>소감</h4>
+                <h2><a href="../sodameseoyi-sijag.html">"소담에서의 시작"</a></h2>
+                <div class="summary"><h4>소감</h4>
 <p>낯설지만 자유롭다.
 이변이 없는한 같은 사무실 같은 자리에서 출근과 동시에 퇴근할 때까지 같은 곳에 머무르던 기존 직장과 달리, 여기 소담은 매일 같은 장소에서 일하기는 어렵다. 커피숍 자리를 이용하기 때문에 누군가 어제 내가 머물렀던 자리를 먼저 점령했다면 다를 의자를 알아봐야 한다.</p>
-<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../sodameseoyi-sijag.html">Read More</a>
-                <hr  class="gradient"/>
+<p>익숙함을 거부하고 새로움을 쫓아 다녔던 나지만, 막상 갑작스럽고 엄청난 …</p>
+                    <a class="btn btn-default btn-xs" href="../sodameseoyi-sijag.html">more ...</a>
+                </div>
             </article>
-
-        
-
-
+            <hr/>
             <article>
-                <a href="../init-sodam.html"><h3 class="article-title">"init sodam"</h3></a>
-<h6 class="subheader" title="2017-04-03T17:22:35+09:00">Mon 03 April 2017
-</h6>
-
-
-<p>upgrade pip
+                <h2><a href="../init-sodam.html">"init sodam"</a></h2>
+                <div class="summary"><p>upgrade pip
 pip3 install -U pip </p>
 <p>가상환경
 mkvirtualenv sodam -p /usr/bin/python3 </p>
@@ -235,26 +160,14 @@ mkvirtualenv sodam -p /usr/bin/python3 </p>
 <td align="right">$12</td>
 </tr>
 </tbody>
-</table><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../init-sodam.html">Read More</a>
-                <hr  class="gradient"/>
+</table>
+                    <a class="btn btn-default btn-xs" href="../init-sodam.html">more ...</a>
+                </div>
             </article>
-
-        
-
-
+            <hr/>
             <article>
-                <a href="../build-a-chat-app-with-django.html"><h3 class="article-title">"build a chat app with django"</h3></a>
-<h6 class="subheader" title="2017-03-13T14:29:24+09:00">Mon 13 March 2017
-</h6>
-
-
-<h2>기능 요구사항</h2>
+                <h2><a href="../build-a-chat-app-with-django.html">"build a chat app with django"</a></h2>
+                <div class="summary"><h2>기능 요구사항</h2>
 <ul>
 <li>
 <p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
@@ -266,84 +179,164 @@ mkvirtualenv sodam -p /usr/bin/python3 </p>
 https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
 </li>
 <li>
-<p>대화 …</p></li></ul><p class="subheader">Category: <a href="../category/misc.html">misc</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="../build-a-chat-app-with-django.html">Read More</a>
-                <hr  class="gradient"/>
+<p>대화 …</p></li></ul>
+                    <a class="btn btn-default btn-xs" href="../build-a-chat-app-with-django.html">more ...</a>
+                </div>
             </article>
+            <hr/>
+            <article>
+                <h2><a href="../index-gs-shop.html">index gs shop</a></h2>
+                <div class="summary"><h3>도전</h3>
+<ul>
+<li>GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성</li>
+<li>관련 기술
+  <code>Elasticsearch 플러그인</code>, <code>형태소 분석기</code>, <code>Thrift 서버</code>, <code>HAProxy</code></li>
+<li>형태소 분석이 필요한 이유?<br>
+  한국어 분석을 지원하지 않는다. 예를 들어 "아버지가 방에 들어간다"라는 한국어 문장을 인덱스해도 "아버지"로는 검색이 안 되고, 반드시 "아버지가"로 검색해야만 결과에 출력된다.</li>
+<li>형태소 분석기 - 은전 한  잎 …</li></ul>
+                    <a class="btn btn-default btn-xs" href="../index-gs-shop.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../senior-work.html">"senior work"</a></h2>
+                <div class="summary"><h3>참고 사이트</h3>
+<ul>
+<li>구미 노일 일자리 창출센터 http://www.gumisilver.or.kr/job/job_psn.asp</li>
+<li></li>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../senior-work.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../get-title-data-api.html">"get title data api"</a></h2>
+                <div class="summary"><h3>기본 matplotlib 이용하여 데이타 출력</h3>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 
-            <!-- /#posts-list -->
-<div class="pagination-centered">
-<h6 class="subheader">Page 2 of 4</h6>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
-<p>
-            <a href="../category/misc.html">&laquo; Prev</a>
+<span class="c1"># 한글 폰트 깨짐 방지</span>
+<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
 
-        <a href="../category/misc3.html">Next &raquo;</a>
-</p>
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../get-title-data-api.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../uhopper-hadoop-docker.html">"uhopper-hadoop-docker"</a></h2>
+                <div class="summary"><h3>docker-compose 를 이용해서</h3>
+<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
+<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
+
+docker network create hadoop
+docker network create kafka
+docker volume create --name=hadoop_datanode1
+docker volume create --name=hadoop_datanode2
+docker volume create --name=hadoop_historyserver
+docker volume create --name=hadoop_namenode
+docker-compose up
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../uhopper-hadoop-docker.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        <ul class="pagination">
+                <li class="prev"><a href="../category/misc.html">&laquo;</a>
+                </li>
+                    <li class=""><a
+                            href="../category/misc.html">1</a></li>
+                    <li class="active"><a
+                            href="../category/misc2.html">2</a></li>
+                    <li class=""><a
+                            href="../category/misc3.html">3</a></li>
+                    <li class=""><a
+                            href="../category/misc4.html">4</a></li>
+                <li class="next"><a
+                        href="../category/misc3.html">&raquo;</a></li>
+        </ul>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/kura"><i class="fa fa-github-square fa-lg"></i> Github</a></li>
+    <li class="list-group-item"><a href="https://twitter.com/kuramanga"><i class="fa fa-twitter-square fa-lg"></i> Twitter</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://getpelican.com/" target="_blank">Pelican</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
 </div>
+<!-- End Content Container -->
 
-    </div>
-    <!-- End Main Content -->
-
-    <!-- Sidebar -->
-    <aside class="large-3 columns">
-        <h5 class="sidebar-title">Site</h5>
-        <ul class="side-nav">
-            <li><a href="../archives.html">Archives</a>
-            <li><a href="../tags.html">Tags</a>
-
-
-        </ul>
-
-		
-        <h5 class="sidebar-title">Categories</h5>
-        <ul class="side-nav">
-            <li><a href="../category/dev.html">dev</a></li>
-            <li><a href="../category/misc.html">misc</a></li>
-            <li><a href="../category/munjang.html">문장</a></li>
-            <li><a href="../category/sebasi.html">세바시</a></li>
-   
-        </ul>
-
-        <h5 class="sidebar-title">Links</h5>
-        <ul class="side-nav">
-            <li><a href="http://getpelican.com/">Pelican</a></li>
-        </ul>
-		
-        <h5 class="sidebar-title">Social</h5>
-        <ul class="side-nav">
-            <li><a href="https://github.com/kura">Github</a></li>
-            <li><a href="https://twitter.com/kuramanga">Twitter</a></li>
-        </ul>
-
-    </aside> <!-- End Sidebar -->
-
-</div> <!-- End Main Content and Sidebar -->
-
-
-<!-- Footer -->
-<footer class="row">
-    <div class="large-12 columns">
-        <hr />
-        <div class="row">
-            <div class="large-6 columns">
-                <p>Water Developer by Hyunmin</p>
-            </div>
-            </div>
-    </div>
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-91188832-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-    </script>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2018 Hyunmin
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
 </footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-91188832-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
+
+
+</body>
+</html>
