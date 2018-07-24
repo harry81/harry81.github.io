@@ -83,6 +83,35 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../working-in-a-standing-position.html">Working in a standing position</a></h2>
+                <div class="summary"><h4>장점</h4>
+<ul>
+<li>소화가 잘 되는 느낌</li>
+<li>허리 근육에 힘이 생겨, 허리를 펴고 식사를 할 수 있다.</li>
+<li>일하는 동료들을 내려다 볼 수 있다.</li>
+<li>소통하기에 유리하다.</li>
+</ul>
+<h4>단점</h4>
+<ul>
+<li>무릎 관절에 체중이 실린다.</li>
+<li>집중에서 깨어나기 쉽다.</li>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../working-in-a-standing-position.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../generate-random-password.html">Generate random password</a></h2>
+                <div class="summary"><div class="highlight"><pre><span></span>date | md5sum | base64 | head -c 32; echo
+</pre></div>
+
+
+<p>참고 : <a href="https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/">https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/</a></p>
+                    <a class="btn btn-default btn-xs" href="../generate-random-password.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../delete-merged-branches.html">Delete merged branches</a></h2>
                 <div class="summary"><h4>master branch</h4>
 <div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
@@ -189,27 +218,6 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h2>
-                <div class="summary"><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
-    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
-    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
-    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="../handle-a-lot-of-rows-in-django-model.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../markdown-mode-for-emacs.html">Markdown mode for Emacs</a></h2>
-                <div class="summary"><h5>단축키</h5>
-<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
-<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
-                    <a class="btn btn-default btn-xs" href="../markdown-mode-for-emacs.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev disabled"><a href="#">&laquo;</a></li>
@@ -223,6 +231,8 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
                             href="../author/hyunmin4.html">4</a></li>
                     <li class=""><a
                             href="../author/hyunmin5.html">5</a></li>
+                    <li class=""><a
+                            href="../author/hyunmin6.html">6</a></li>
                 <li class="next"><a
                         href="../author/hyunmin2.html">&raquo;</a></li>
         </ul>

@@ -83,6 +83,27 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h2>
+                <div class="summary"><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
+    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
+    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../handle-a-lot-of-rows-in-django-model.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../markdown-mode-for-emacs.html">Markdown mode for Emacs</a></h2>
+                <div class="summary"><h5>단축키</h5>
+<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
+<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
+                    <a class="btn btn-default btn-xs" href="../markdown-mode-for-emacs.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../how-to-work-smart.html">How to work smart</a></h2>
                 <div class="summary"><ul>
 <li>Do<ul>
@@ -326,28 +347,6 @@ Water Developer            </a>
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../my-super-post.html">따릉이 사용량</a></h2>
-                <div class="summary"><p><img src="images/number-of-bikes-using-in-seoul-0925.png" style="max-width:700px"></p>
-<p>파랑 - 실제 주차장에 주차되어있는 수</p>
-                    <a class="btn btn-default btn-xs" href="../my-super-post.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../elasticbeans-talk.html">Elasticbeans talk</a></h2>
-                <div class="summary"><h4>Elasticbeanstalk health check</h4>
-<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
-Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
-<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
-<p>https://gist.github.com/dryan/8271687</p>
-<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
-    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
-    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="../elasticbeans-talk.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="../author/hyunmin.html">&laquo;</a>
@@ -362,6 +361,8 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
                             href="../author/hyunmin4.html">4</a></li>
                     <li class=""><a
                             href="../author/hyunmin5.html">5</a></li>
+                    <li class=""><a
+                            href="../author/hyunmin6.html">6</a></li>
                 <li class="next"><a
                         href="../author/hyunmin3.html">&raquo;</a></li>
         </ul>
