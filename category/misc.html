@@ -84,6 +84,29 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../delete-merged-branches.html">Delete merged branches</a></h2>
+                <div class="summary"><h4>master branch</h4>
+<div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
+git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | sed &#39;s/origin\///&#39;`
+</pre></div>
+
+
+<h4>develop branch</h4>
+<div class="highlight"><pre><span></span>git branch --merged origin/develop | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch …</pre></div>
+                    <a class="btn btn-default btn-xs" href="../delete-merged-branches.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../youtube동영상-mp3로-저장하기.html">Youtube동영상 mp3로 저장하기</a></h2>
+                <div class="summary"><p>집에는 인터넷이 되지 않는다. 어떻게 하면 youtube 내용을 집에서 들을수 있을까?</p>
+<div class="highlight"><pre><span></span>youtube-dl -x --audio-format mp3 ACn9IaIYVyU &amp;
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../youtube동영상-mp3로-저장하기.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../playground-jupyter-with-django.html">Playground jupyter with django</a></h2>
                 <div class="summary"><hr>
 <h3>Get ready for bokeh</h3>
@@ -232,37 +255,6 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 <li>이력 소개 <a href="http://bit.ly/2f9Xjdp">link</a></li>
 </ul>
                     <a class="btn btn-default btn-xs" href="../datagokr.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../aws-cloudtrail-and-config.html">"aws cloudtrail and config"</a></h2>
-                <div class="summary"><ul>
-<li>
-<p>AWS Config Rules, 서울 리전 출시! <a href="https://aws.amazon.com/ko/blogs/korea/category/aws-config">https://aws.amazon.com/ko/blogs/korea/category/aws-config</a></p>
-</li>
-<li>
-<p>임기성 :: 2015 리인벤트 리캡 게이밍  <a href="https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim">https://www.slideshare.net/awskorea/20151118-reinvent-recap-for-gaming-3-security-on-aws-waf-aws-inspector-config-rules-gisung-lim</a></p>
-</li>
-<li>
-<p>AWS Summit Seoul 2016  <a href="https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim">https://www.slideshare.net/awskorea/agile-security-operational-strategy-leveraging-advanced-security-services-of-aws-gisung-lim</a></p>
-</li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="../aws-cloudtrail-and-config.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../rds-parameter-group.html">"rds-parameter-group"</a></h2>
-                <div class="summary"><h3>문제</h3>
-<hr>
-<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
-<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
-그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
-- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
-<ul>
-<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul>
-                    <a class="btn btn-default btn-xs" href="../rds-parameter-group.html">more ...</a>
                 </div>
             </article>
             <hr/>

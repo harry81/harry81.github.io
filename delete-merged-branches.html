@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Authors - Water Developer</title>
+    <title>Delete merged branches - Water Developer</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -9,15 +9,19 @@
 
 
 
+<link rel="canonical" href="./delete-merged-branches.html">
 
         <meta name="author" content="Hyunmin" />
+        <meta name="description" content="master branch git branch --merged origin/master | egrep -v &#34;(^\*|master|develop)&#34; | xargs -n 1 git branch -d git push --delete origin `git branch -r --merged origin/master | egrep -v &#34;(^\*|master|develop)&#34; | sed &#39;s/origin\///&#39;` develop branch git branch --merged origin/develop | egrep -v &#34;(^\*|master|develop)&#34; | xargs -n 1 git branch …" />
 
-    <!-- Open Graph tags -->
         <meta property="og:site_name" content="Water Developer" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Water Developer"/>
-        <meta property="og:url" content="."/>
-        <meta property="og:description" content="Water Developer"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Delete merged branches"/>
+        <meta property="og:url" content="./delete-merged-branches.html"/>
+        <meta property="og:description" content="master branch git branch --merged origin/master | egrep -v &#34;(^\*|master|develop)&#34; | xargs -n 1 git branch -d git push --delete origin `git branch -r --merged origin/master | egrep -v &#34;(^\*|master|develop)&#34; | sed &#39;s/origin\///&#39;` develop branch git branch --merged origin/develop | egrep -v &#34;(^\*|master|develop)&#34; | xargs -n 1 git branch …"/>
+        <meta property="article:published_time" content="2018-07-24" />
+            <meta property="article:section" content="misc" />
+            <meta property="article:author" content="Hyunmin" />
 
 
 
@@ -53,7 +57,7 @@ Water Developer            </a>
                         <li >
                             <a href="./category/dev.html">Dev</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="./category/misc.html">Misc</a>
                         </li>
                         <li >
@@ -82,9 +86,48 @@ Water Developer            </a>
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-  <h1>Authors on Water Developer</h1>
-        <li><a href="./author/hyunmin.html">Hyunmin</a> (50)</li>
-        <li><a href="./author/hyunmin-choi.html">Hyunmin Choi</a> (7)</li>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./delete-merged-branches.html"
+                       rel="bookmark"
+                       title="Permalink to Delete merged branches">
+                        Delete merged branches
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2018-07-24T09:24:00+09:00"> Tue 24 July 2018</time>
+    </span>
+
+
+
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h4>master branch</h4>
+<div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
+git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | sed &#39;s/origin\///&#39;`
+</pre></div>
+
+
+<h4>develop branch</h4>
+<div class="highlight"><pre><span></span>git branch --merged origin/develop | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
+git push --delete origin `git branch -r --merged origin/develop | egrep -v &quot;(^\*|master|develop)&quot; | sed &#39;s/origin\///&#39;`
+</pre></div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
