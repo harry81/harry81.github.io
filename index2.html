@@ -83,6 +83,22 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./how-to-use-group-by-in-the-django.html">How to use group by in the django</a></h2>
+                <div class="summary"><hr>
+<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
+<p>Approach 1</p>
+<div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
+</pre></div>
+
+
+<p>Approach 2</p>
+<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="./how-to-use-group-by-in-the-django.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h2>
                 <div class="summary"><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
@@ -292,20 +308,6 @@ Water Developer            </a>
 </dl>
 
                     <a class="btn btn-default btn-xs" href="./bike_timeline.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./smart-work.html">스마트 워크</a></h2>
-                <div class="summary"><ul class="simple">
-<li>과정 -&gt; 성과</li>
-<li>시간 -&gt; 업무</li>
-<li>통일성 -&gt; 다양성</li>
-<li>철저한 계획(모든 상황의 변수를 통제) -&gt; 빠른 적응</li>
-<li>지시, 관리 -&gt; 믿음, 지원</li>
-</ul>
-
-                    <a class="btn btn-default btn-xs" href="./smart-work.html">more ...</a>
                 </div>
             </article>
             <hr/>

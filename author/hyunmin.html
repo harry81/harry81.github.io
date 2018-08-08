@@ -83,6 +83,18 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../sprint-meeting.html">Sprint meeting</a></h2>
+                <div class="summary"><h4>필요성</h4>
+<h4>완료 작업</h4>
+<h4>예정 작업</h4>
+<h4>회고</h4>
+<div class="highlight"><pre><span></span>- 목적
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../sprint-meeting.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../working-in-a-standing-position.html">Working in a standing position</a></h2>
                 <div class="summary"><h4>장점</h4>
 <ul>
@@ -199,22 +211,6 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
 <div class="highlight"><pre><span></span>✗ pip install notebook pandas matplotlib bokeh
 </pre></div>
                     <a class="btn btn-default btn-xs" href="../playground-jupyter-with-django.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../how-to-use-group-by-in-the-django.html">How to use group by in the django</a></h2>
-                <div class="summary"><hr>
-<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
-<p>Approach 1</p>
-<div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
-</pre></div>
-
-
-<p>Approach 2</p>
-<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="../how-to-use-group-by-in-the-django.html">more ...</a>
                 </div>
             </article>
             <hr/>

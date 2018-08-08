@@ -83,6 +83,22 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../how-to-use-group-by-in-the-django.html">How to use group by in the django</a></h2>
+                <div class="summary"><hr>
+<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
+<p>Approach 1</p>
+<div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
+</pre></div>
+
+
+<p>Approach 2</p>
+<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../how-to-use-group-by-in-the-django.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h2>
                 <div class="summary"><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
@@ -302,48 +318,6 @@ Water Developer            </a>
 승리는 우리를 흥분시킨다.
 하지만 1등을 하지 못했다고 부끄러워할 필요는 절대 …</pre>
                     <a class="btn btn-default btn-xs" href="../quotes.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html">면접자로서 면접시에 물어보고 싶은 질문들</a></h2>
-                <div class="summary"><h4>대략적인 질문</h4>
-<ul>
-<li>개발 방법론(scrum?)</li>
-<li>업무 시간, 출퇴근 시간</li>
-<li>개발 pc 지급?</li>
-<li>휴가</li>
-<li>비전</li>
-<li>계획</li>
-</ul>
-<h4>업무적인 질문</h4>
-<ul>
-<li>인력 구성</li>
-<li>구체적인 업무</li>
-<li>기대하는 역할</li>
-</ul>
-<h4>기술적인 질문</h4>
-<ul>
-<li>기술적 어려움</li>
-<li>주언어</li>
-<li>작업관리툴(jira)</li>
-<li>코드리뷰</li>
-<li>TDD</li>
-<li>CI</li>
-<li>소통 채널</li>
-<li>배포 주기</li>
-</ul>
-<h4>운용환경</h4>
-<ul>
-<li>AWS
-  -</li>
-</ul>
-<h4>동료상</h4>
-<ul>
-<li>선호</li>
-<li>비선호</li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="../myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html">more ...</a>
                 </div>
             </article>
             <hr/>
