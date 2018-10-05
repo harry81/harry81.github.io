@@ -83,6 +83,18 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../git-tips.html">git tips</a></h2>
+                <div class="summary"><ul>
+<li>특정 함수의 변경을 확인 : git log -L </li>
+<li>merge시 conflict가 발생하면, merge 시도 이전으로 되돌릴 수 있다. : git merge --abort</li>
+<li>버그가 발견한 commit를 추적 : git bisect</li>
+<li>commit.template</li>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../git-tips.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../geuleul-maeil-sseuneun-bangbeob.html">글을 매일 쓰는 방법</a></h2>
                 <div class="summary"><ul>
 <li>
@@ -211,28 +223,6 @@ docker volume create --name=hadoop_namenode
 docker-compose up
 </pre></div>
                     <a class="btn btn-default btn-xs" href="../uhopper-hadoop-docker.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../spark-docker-seolcihaebogi.html">spark docker 설치해보기</a></h2>
-                <div class="summary"><p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
-<p>https://github.com/sequenceiq/docker-spark</p>
-<h3>create virtualbox</h3>
-<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
-docker-machine create -d virtualbox namenode
-docker-machine create -d virtualbox datanode1
-</pre></div>
-
-
-<h2>name node</h2>
-<p>https://github.com/sequenceiq/hadoop-docker</p>
-<div class="highlight"><pre><span></span># run docker hadoop
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# 이미지 다운로드
-docker pull …</pre></div>
-                    <a class="btn btn-default btn-xs" href="../spark-docker-seolcihaebogi.html">more ...</a>
                 </div>
             </article>
             <hr/>
