@@ -84,6 +84,47 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../how-to-use-group-by-in-the-django.html">How to use group by in the django</a></h2>
+                <div class="summary"><hr>
+<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
+<p>Approach 1</p>
+<div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
+</pre></div>
+
+
+<p>Approach 2</p>
+<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../how-to-use-group-by-in-the-django.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../lets-get-it-done.html">Let's get it done</a></h2>
+                <div class="summary"><h5>그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?</h5>
+<ul>
+<li>
+<p>전체적인 그림을 그리지 못했다.</p>
+</li>
+<li>
+<p>실제 구현에 필요한 일부 기술에 부딪힐 때마다 그 기술을 익여햐 하겠다는 생각에 사로 잡혔다. 
+그리고 샛길로 빠져서 큰 맥락에서 벗어났다.</p>
+<ul>
+<li>기술정리를 위한 정적 블로그</li>
+<li>머신러닝</li>
+<li>pandas</li>
+</ul>
+</li>
+<li>
+<p>꾸준하게 개발에 대한 의지와 열정을 유지하지 못 했다.</p>
+</li>
+</ul>
+<h5>그렇다면 작동하는 프로젝트를 완료하기 …</h5>
+                    <a class="btn btn-default btn-xs" href="../lets-get-it-done.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../각 시대별 인기 직업.html">믿지말라 그리고 질문하라</a></h2>
                 <div class="summary"><iframe width="560" height="315" src="https://www.youtube.com/embed/x2QMiLa160w" frameborder="0" allowfullscreen></iframe><p>송길영 다음소프트 부사장</p>
 <p><a class="reference external" href="http://news.mk.co.kr/newsRead.php?no=64969&amp;year=2011">각 시대별 인기 직업</a></p>
@@ -216,35 +257,6 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../geuleul-maeil-sseuneun-bangbeob.html">글을 매일 쓰는 방법</a></h2>
-                <div class="summary"><ul>
-<li>
-<p><a href="https://medium.com/startup-grind/25-habits-that-will-make-you-a-writer-c9f81b58978e">25 Habits That Will Make You a Writer</a></p>
-</li>
-<li>
-<p>다문다독다상량(多聞多讀多商量, 많이 듣고 많이 읽고 많이 생각하라)
-다독다작다상량(多讀多作多商量, 많이 읽고 많이 쓰고 많이 생각하라)</p>
-</li>
-<li>
-<p>매일 글을 쓴다.
-하루를 보내며 재미있었던 일</p>
-</li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="../geuleul-maeil-sseuneun-bangbeob.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../awswa-cingu-doegi.html">AWS와 친구 되기</a></h2>
-                <div class="summary"><h2>아테나 성능 튜닝 팁 - 정도현</h2>
-<p>Amazon Athena is an interactive query service that makes it easy to analyze data stored in Amazon S3 using standard SQL
-- big-data <a href="https://aws.amazon.com/ko/blogs/big-data/">https://aws.amazon.com/ko/blogs/big-data/</a>
-- Top 10 Performance Tuning Tips for Amazon Athena <a href="https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena/">https://aws.amazon.com/ko/blogs/big-data/top-10-performance-tuning-tips-for-amazon-athena …</a></p>
-                    <a class="btn btn-default btn-xs" href="../awswa-cingu-doegi.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="../category/misc.html">&laquo;</a>
@@ -257,6 +269,8 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
                             href="../category/misc3.html">3</a></li>
                     <li class=""><a
                             href="../category/misc4.html">4</a></li>
+                    <li class=""><a
+                            href="../category/misc5.html">5</a></li>
                 <li class="next"><a
                         href="../category/misc3.html">&raquo;</a></li>
         </ul>

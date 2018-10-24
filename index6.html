@@ -83,6 +83,103 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./spark-docker-seolcihaebogi.html">spark docker 설치해보기</a></h2>
+                <div class="summary"><p><a href="https://en.wikipedia.org/wiki/Apache_Spark">Apache Spark is an open-source cluster-computing framework</a></p>
+<p>https://github.com/sequenceiq/docker-spark</p>
+<h3>create virtualbox</h3>
+<div class="highlight"><pre><span></span>docker-machine create -d virtualbox spark
+docker-machine create -d virtualbox namenode
+docker-machine create -d virtualbox datanode1
+</pre></div>
+
+
+<h2>name node</h2>
+<p>https://github.com/sequenceiq/hadoop-docker</p>
+<div class="highlight"><pre><span></span># run docker hadoop
+docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
+
+# 이미지 다운로드
+docker pull …</pre></div>
+                    <a class="btn btn-default btn-xs" href="./spark-docker-seolcihaebogi.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="./python-recsys.html">python-recsys</a></h2>
+                <div class="summary"><p>python-recsys 따라하기<br>
+http://ocelma.net/software/python-recsys/build/html/quickstart.html</p>
+<p><a href="https://grouplens.org/datasets/movielens/">ratings.csv 다운받는다</a></p>
+<p>```python 사용자의 입력 모델화 하여 파일로 저장
+import recsys.algorithm
+recsys.algorithm.VERBOSE = True</p>
+<p>from recsys.algorithm.factorize import SVD
+svd = SVD()
+svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row':1, 'value' …</p>
+                    <a class="btn btn-default btn-xs" href="./python-recsys.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="./movies.html">movies</a></h2>
+                <div class="summary"><table>
+<thead>
+<tr>
+<th>날짜</th>
+<th>제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2017.2.19</td>
+<td>글래디에이터: 로마 영웅 탄생의 필수 가이드 비밀</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>예정</h3>
+<table>
+<thead>
+<tr>
+<th>분야</th>
+<th>제목</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>경제</td>
+<td>인사이드잡</td>
+</tr>
+<tr>
+<td>경제</td>
+<td>마진콜</td>
+</tr>
+<tr>
+<td>역사</td>
+<td>인생은 아름다워(La Vita E Bella, Life Is Beautiful 1997)</td>
+</tr>
+<tr>
+<td>역사</td>
+<td>프랑스 혁명</td>
+</tr>
+<tr>
+<td>SF</td>
+<td>스타워즈</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+                    <a class="btn btn-default btn-xs" href="./movies.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./emacseseo-pailmyeong-byeongyeonghagi.html">emacs에서 파일명 변경하기</a></h2>
                 <div class="summary"><p><strong>C-x C-q and(파일명 편집) C-c C-C</strong></p>
 <p><a href="http://pragmaticemacs.com/category/dired/">dired</a></p>
@@ -229,65 +326,6 @@ command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.Data
 </ul>
 <p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p>
                     <a class="btn btn-default btn-xs" href="./celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./daegu-gaebalja-moim-hadub.html">대구 개발자 모임-하둡</a></h2>
-                <div class="summary"><h2>모임</h2>
-<ul>
-<li>장소 : 아이원 유학스터디룸</li>
-<li>일자 : 2017년 2월 11</li>
-<li>slack : https://daegugroup.slack.com/</li>
-</ul>
-<h2>느낀 점</h2>
-<ul>
-<li>고향 근처에서 개발에 관심있으신 분들과 만날 수 있어 기쁘다.</li>
-<li>하둡 분야의 전무가가 없었지만, 함께 고민하고 답을 찾는 과정들이 의미있게 느껴졌다.</li>
-<li>옆에 계셨던 분이 아래 책의 저자라는 사실을 집에 오며 알게 되었다.<br>
-<a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791158390525">쉽고 빠르게 배우는 Angular …</a></li></ul>
-                    <a class="btn btn-default btn-xs" href="./daegu-gaebalja-moim-hadub.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./hilweoldeu-gineungjeongri.html">힐월드 기능정리</a></h2>
-                <div class="summary"><ul>
-<li>현재 위치 반경내 검색</li>
-<li>댓글 작성시에 문자로 전송정리</li>
-<li>세부 페이지에서 '전화걸기' 버튼으로 등록자에게 전화걸기</li>
-<li>물건 등록자와 나와의 위치 간단히 확인하기</li>
-</ul>
-<p>{% img /images/main_healworld.png %}</p>
-<p><a href="https://www.healworld.co.kr">https://www.healworld.co.kr</a></p>
-                    <a class="btn btn-default btn-xs" href="./hilweoldeu-gineungjeongri.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./aidieo-canggo.html">아이디어 창고</a></h2>
-                <div class="summary"><hr>
-<h2>신문요약</h2>
-<h4>동기</h4>
-<ul>
-<li></li>
-</ul>
-<h4>설명</h4>
-<ul>
-<li>여러 매체의 신문은 내용이 많아 읽는데 시간이 걸린다.</li>
-<li>카테고리별로 각 신문사별로 중요하다고 생각되는 토픽을 찾는다.</li>
-<li>선별된 내용중 사실만 선별해 내어 짥은 문장으로 정리하여 서비스 한다.</li>
-</ul>
-<h4>재미요소</h4>
-<ul>
-<li>신문을 읽을 수 있는 시간 절약</li>
-<li>균현있게 세상 돌아가는 흐름을 볼 수 있다</li>
-</ul>
-<h2>Open toilet</h2>
-<h4>동기</h4>
-<ul>
-<li>낯선 곳에서는 화장실을 찾는 다는 …</li></ul>
-                    <a class="btn btn-default btn-xs" href="./aidieo-canggo.html">more ...</a>
                 </div>
             </article>
             <hr/>

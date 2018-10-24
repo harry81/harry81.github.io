@@ -5,29 +5,50 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/</loc>
-<lastmod>2018-10-15T11:26:13-00:00</lastmod>
+<lastmod>2018-10-24T14:26:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/archives.html</loc>
-<lastmod>2018-10-15T11:26:13-00:00</lastmod>
+<lastmod>2018-10-24T14:26:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/categories.html</loc>
-<lastmod>2018-10-15T11:26:13-00:00</lastmod>
+<lastmod>2018-10-24T14:26:56-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/_include/search.html</loc>
-<lastmod>2018-10-15T11:26:13-00:00</lastmod>
+<lastmod>2018-10-24T14:26:56-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/만만한-소통.html</loc>
+<lastmod>2018-10-24T14:12:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/마우스는-키보드보다-빠르다.html</loc>
+<lastmod>2018-10-23T12:51:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/3D-출력.html</loc>
+<lastmod>2018-10-15T17:52:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -481,14 +502,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/category/misc.html</loc>
-<lastmod>2018-09-11T15:01:00+08:28</lastmod>
+<lastmod>2018-10-23T12:51:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/category/munjang.html</loc>
-<lastmod>2017-09-30T12:21:00+08:28</lastmod>
+<lastmod>2018-10-24T14:12:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -649,7 +670,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/author/hyunmin.html</loc>
-<lastmod>2018-09-11T15:01:00+08:28</lastmod>
+<lastmod>2018-10-24T14:12:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

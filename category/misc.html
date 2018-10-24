@@ -84,6 +84,40 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../마우스는-키보드보다-빠르다.html">마우스는 키보드보다 빠르다</a></h2>
+                <div class="summary"><h3>동기</h3>
+<h3>이유</h3>
+<p>칼퇴근
+ 어깨 통증
+ 시간을 아끼기 위해</p>
+<h3>배경지식</h3>
+<p>image:key board
+image:learning keyboard</p>
+<h3>예시</h3>
+<h4>gmail</h4>
+<h5>youtube</h5>
+<h5>jira</h5>
+<h5>slack</h5>
+                    <a class="btn btn-default btn-xs" href="../마우스는-키보드보다-빠르다.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../3D-출력.html">3D 출력</a></h2>
+                <div class="summary"><h3>Tools</h3>
+<ul>
+<li><a href="https://www.blender.org/">https://www.blender.org/</a></li>
+<li><a href="https://ultimaker.com/">https://ultimaker.com/</a></li>
+</ul>
+<h3>Refs</h3>
+<ul>
+<li><a href="https://www.thingiverse.com">https://www.thingiverse.com</a></li>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../3D-출력.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../apn-labday-(amazon-emr-빅데이터-처리).html">Apn labday (amazon emr 빅데이터 처리)</a></h2>
                 <div class="summary"><p>날짜 : 2018년 9월 11일(화) 09:30 - 13:30</p>
 <p>위치 : 서울 강남구 논현로 508 GS Tower 12층 101호 <a href="https://goo.gl/maps/9QPsbfp3dRA2">https://goo.gl/maps/9QPsbfp3dRA2</a></p>
@@ -212,47 +246,6 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../how-to-use-group-by-in-the-django.html">How to use group by in the django</a></h2>
-                <div class="summary"><hr>
-<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
-<p>Approach 1</p>
-<div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
-</pre></div>
-
-
-<p>Approach 2</p>
-<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="../how-to-use-group-by-in-the-django.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../lets-get-it-done.html">Let's get it done</a></h2>
-                <div class="summary"><h5>그 동안 작동하는 프로젝트를 만들어 내지 못한 이유는?</h5>
-<ul>
-<li>
-<p>전체적인 그림을 그리지 못했다.</p>
-</li>
-<li>
-<p>실제 구현에 필요한 일부 기술에 부딪힐 때마다 그 기술을 익여햐 하겠다는 생각에 사로 잡혔다. 
-그리고 샛길로 빠져서 큰 맥락에서 벗어났다.</p>
-<ul>
-<li>기술정리를 위한 정적 블로그</li>
-<li>머신러닝</li>
-<li>pandas</li>
-</ul>
-</li>
-<li>
-<p>꾸준하게 개발에 대한 의지와 열정을 유지하지 못 했다.</p>
-</li>
-</ul>
-<h5>그렇다면 작동하는 프로젝트를 완료하기 …</h5>
-                    <a class="btn btn-default btn-xs" href="../lets-get-it-done.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev disabled"><a href="#">&laquo;</a></li>
@@ -264,6 +257,8 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
                             href="../category/misc3.html">3</a></li>
                     <li class=""><a
                             href="../category/misc4.html">4</a></li>
+                    <li class=""><a
+                            href="../category/misc5.html">5</a></li>
                 <li class="next"><a
                         href="../category/misc2.html">&raquo;</a></li>
         </ul>
