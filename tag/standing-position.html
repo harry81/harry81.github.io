@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>django - Water Developer</title>
+    <title>standing position - Water Developer</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 
     <meta name="author" content="Hyunmin" />
-    <meta name="keywords" content="django" />
+    <meta name="keywords" content="standing position" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Water Developer" />
@@ -84,50 +84,20 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="../build-slack-bot.html">Build-slack-bot</a></h2>
-                <div class="summary"><h4>참고</h4>
+                <h2><a href="../working-in-a-standing-position.html">Working in a standing position</a></h2>
+                <div class="summary"><h4>장점</h4>
 <ul>
-<li>현상 : slack의 메시지를 받은 후, 지정된 시간내에 바로 200 응답을 주지 않은면 slack에서 같은 메시지가 반복이 되어 전송이 된다.</li>
-<li>대응 : 비동기적으로 메시지 처리를 위한 방법 마련(celery)</li>
+<li>소화가 잘 되는 느낌</li>
+<li>허리 근육에 힘이 생겨, 허리를 펴고 식사를 할 수 있다.</li>
+<li>일하는 동료들을 내려다 볼 수 있다.</li>
+<li>소통하기에 유리하다.</li>
 </ul>
-                    <a class="btn btn-default btn-xs" href="../build-slack-bot.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../playground-jupyter-with-django.html">Playground jupyter with django</a></h2>
-                <div class="summary"><hr>
-<h3>Get ready for bokeh</h3>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-
-<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">show</span>
-<span class="kn">from</span> <span class="nn">bokeh.layouts</span> <span class="kn">import</span> <span class="n">column</span>
-<span class="n">output_notebook</span><span class="p">()</span>
-</pre></div>
-
-
-<h3>Necessary python packages</h3>
-<div class="highlight"><pre><span></span>✗ pip install notebook pandas matplotlib bokeh
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="../playground-jupyter-with-django.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../how-to-use-group-by-in-the-django.html">How to use group by in the django</a></h2>
-                <div class="summary"><hr>
-<p>python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자.</p>
-<p>Approach 1</p>
-<div class="highlight"><pre><span></span>Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;)
-</pre></div>
-
-
-<p>Approach 2</p>
-<div class="highlight"><pre><span></span>User.objects.all().extra({&quot;day&quot;: &quot;date(created_datetime)&quot;}).values(&quot;day&quot;).annotate(count=Count(&quot;id&quot;)).order_by(&#39;day&#39;)
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="../how-to-use-group-by-in-the-django.html">more ...</a>
+<h4>단점</h4>
+<ul>
+<li>무릎 관절에 체중이 실린다.</li>
+<li>집중에서 깨어나기 쉽다.</li>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../working-in-a-standing-position.html">more ...</a>
                 </div>
             </article>
             <hr/>

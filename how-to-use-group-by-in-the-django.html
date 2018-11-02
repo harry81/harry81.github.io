@@ -12,6 +12,7 @@
 <link rel="canonical" href="./how-to-use-group-by-in-the-django.html">
 
         <meta name="author" content="Hyunmin" />
+        <meta name="keywords" content="django,model,group" />
         <meta name="description" content="python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자. Approach 1 Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;) Approach 2 User.objects.all().extra({&#34;day&#34;: &#34;date(created_datetime)&#34;}).values(&#34;day&#34;).annotate(count=Count(&#34;id&#34;)).order_by(&#39;day&#39;)" />
 
         <meta property="og:site_name" content="Water Developer" />
@@ -21,6 +22,9 @@
         <meta property="og:description" content="python의 datetime을 field로 가지는 데이타들을 날짜순(YYYY-MM-DD)으로 정렬하자. Approach 1 Room.objects.using(&#39;op-replica&#39;).values(&#39;step__code&#39;).annotate(cnt=Count(&#39;id&#39;)).order_by(&#39;step__code&#39;) Approach 2 User.objects.all().extra({&#34;day&#34;: &#34;date(created_datetime)&#34;}).values(&#34;day&#34;).annotate(count=Count(&#34;id&#34;)).order_by(&#39;day&#39;)"/>
         <meta property="article:published_time" content="2018-04-13" />
             <meta property="article:section" content="misc" />
+            <meta property="article:tag" content="django" />
+            <meta property="article:tag" content="model" />
+            <meta property="article:tag" content="group" />
             <meta property="article:author" content="Hyunmin" />
 
 
@@ -110,6 +114,12 @@ Water Developer            </a>
 
 
 
+<span class="label label-default">Tags</span>
+	<a href="./tag/django.html">django</a>
+        /
+	<a href="./tag/model.html">model</a>
+        /
+	<a href="./tag/group.html">group</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
