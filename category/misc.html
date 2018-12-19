@@ -84,6 +84,24 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../favorite-tips.html">자주 사용하는 명령어</a></h2>
+                <div class="summary"><h3>Create django superuser</h3>
+<div class="highlight"><pre><span></span>$ python manage.py createsuperuser
+
+<span class="c1">## 이메일과 사용자 이름을 옵션으로 줄 수 있다.</span>
+$ python manage.py createsuperuser --email superman@water.com --user superman
+</pre></div>
+
+
+<h3>Delete merged branches</h3>
+<div class="highlight"><pre><span></span><span class="c1"># develop branch</span>
+git branch --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch -d
+git push --delete origin <span class="sb">`</span>git branch …</pre></div>
+                    <a class="btn btn-default btn-xs" href="../favorite-tips.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../마우스는-키보드보다-빠르다.html">마우스는 키보드보다 빠르다</a></h2>
                 <div class="summary"><h3>동기</h3>
 <h3>이유</h3>
@@ -108,6 +126,7 @@ image:learning keyboard</p>
 <ul>
 <li><a href="https://www.blender.org/">https://www.blender.org/</a></li>
 <li><a href="https://ultimaker.com/">https://ultimaker.com/</a></li>
+<li><a href="https://creatablelabs.com/">https://creatablelabs.com/</a></li>
 </ul>
 <h3>Refs</h3>
 <ul>
@@ -223,27 +242,6 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
 <div class="highlight"><pre><span></span>youtube-dl --add-metadata -i -x --audio-format mp3 -- []
 </pre></div>
                     <a class="btn btn-default btn-xs" href="../youtube동영상-mp3로-저장하기.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../playground-jupyter-with-django.html">Playground jupyter with django</a></h2>
-                <div class="summary"><hr>
-<h3>Get ready for bokeh</h3>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-
-<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">show</span>
-<span class="kn">from</span> <span class="nn">bokeh.layouts</span> <span class="kn">import</span> <span class="n">column</span>
-<span class="n">output_notebook</span><span class="p">()</span>
-</pre></div>
-
-
-<h3>Necessary python packages</h3>
-<div class="highlight"><pre><span></span>✗ pip install notebook pandas matplotlib bokeh
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="../playground-jupyter-with-django.html">more ...</a>
                 </div>
             </article>
             <hr/>

@@ -83,6 +83,24 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../favorite-tips.html">자주 사용하는 명령어</a></h2>
+                <div class="summary"><h3>Create django superuser</h3>
+<div class="highlight"><pre><span></span>$ python manage.py createsuperuser
+
+<span class="c1">## 이메일과 사용자 이름을 옵션으로 줄 수 있다.</span>
+$ python manage.py createsuperuser --email superman@water.com --user superman
+</pre></div>
+
+
+<h3>Delete merged branches</h3>
+<div class="highlight"><pre><span></span><span class="c1"># develop branch</span>
+git branch --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch -d
+git push --delete origin <span class="sb">`</span>git branch …</pre></div>
+                    <a class="btn btn-default btn-xs" href="../favorite-tips.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../만만한-소통.html">만만한 소통</a></h2>
                 <div class="summary"><h3>누구나 소통에 긍정적이고 그것이 필요하다고 말을 한다.</h3>
 <h3>사실은 대꾸없이 내 말을 들어줄 만만한 상대가 필요할 뿐이다.</h3>
@@ -115,6 +133,7 @@ image:learning keyboard</p>
 <ul>
 <li><a href="https://www.blender.org/">https://www.blender.org/</a></li>
 <li><a href="https://ultimaker.com/">https://ultimaker.com/</a></li>
+<li><a href="https://creatablelabs.com/">https://creatablelabs.com/</a></li>
 </ul>
 <h3>Refs</h3>
 <ul>
@@ -232,20 +251,6 @@ Topic Modeling &amp; Word Embedding 그리고 화장품 - 이홍주 / lee_hongjo
 
 <p>참고 : <a href="https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/">https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/</a></p>
                     <a class="btn btn-default btn-xs" href="../generate-random-password.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../delete-merged-branches.html">Delete merged branches</a></h2>
-                <div class="summary"><h4>master branch</h4>
-<div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
-git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | sed &#39;s/origin\///&#39;`
-</pre></div>
-
-
-<h4>develop branch</h4>
-<div class="highlight"><pre><span></span>git branch --merged origin/develop | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch …</pre></div>
-                    <a class="btn btn-default btn-xs" href="../delete-merged-branches.html">more ...</a>
                 </div>
             </article>
             <hr/>

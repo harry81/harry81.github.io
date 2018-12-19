@@ -83,6 +83,20 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./delete-merged-branches.html">Delete merged branches</a></h2>
+                <div class="summary"><h4>master branch</h4>
+<div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
+git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | sed &#39;s/origin\///&#39;`
+</pre></div>
+
+
+<h4>develop branch</h4>
+<div class="highlight"><pre><span></span>git branch --merged origin/develop | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch …</pre></div>
+                    <a class="btn btn-default btn-xs" href="./delete-merged-branches.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./youtube동영상-mp3로-저장하기.html">Youtube동영상 mp3로 저장하기</a></h2>
                 <div class="summary"><p>집에는 인터넷이 되지 않는다. 어떻게 하면 youtube 내용을 집에서 들을수 있을까?</p>
 <p>mp3 파일로 저장</p>
@@ -135,6 +149,17 @@ Water Developer            </a>
 <li>현상 : slack의 메시지를 받은 후, 지정된 시간내에 바로 200 응답을 주지 않은면 slack에서 같은 메시지가 반복이 되어 전송이 된다.</li>
 <li>대응 : 비동기적으로 메시지 처리를 위한 방법 마련(celery)</li>
 </ul>
+<h4>Button in Attachments</h4>
+<ul>
+<li><img alt="imagetext" src="image"></li>
+<li>목적 : attachments내에 button을 표현하려고 한다.</li>
+<li>문제 : 형식에 맞춰</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="s2">&quot;actions&quot;</span><span class="err">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nt">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;primary&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;button&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.google …</span></pre></div>
                     <a class="btn btn-default btn-xs" href="./build-slack-bot.html">more ...</a>
                 </div>
             </article>
@@ -194,37 +219,6 @@ Water Developer            </a>
 <p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
 <a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
                     <a class="btn btn-default btn-xs" href="./markdown-mode-for-emacs.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./how-to-work-smart.html">How to work smart</a></h2>
-                <div class="summary"><ul>
-<li>Do<ul>
-<li>출근 한 시간전에 회사에 도착한다.</li>
-<li>불가능한 업무는 용감하게 No라고 말한다.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li>
-<p>Don't</p>
-<ul>
-<li>한번에 여러가지 일을 처리하자</li>
-<li>조직이 알아야하는 것들을 나 혼자만 알자
-  (공통 이메일 계정, 시스템 전체적으로 영향을 미치는 변경)</li>
-<li>
-<p>업무가 할당이 되면 우선순위에 대한 고민없이 무조건 착수하자</p>
-<blockquote>
-<p>중요한 일이 너무 많아서 일을 못한다.</p>
-</blockquote>
-</li>
-<li>
-<p>야근을 열심히 하자.</p>
-</li>
-<li>옆 동료가 어떤 …</li></ul></li></ul>
-                    <a class="btn btn-default btn-xs" href="./how-to-work-smart.html">more ...</a>
                 </div>
             </article>
             <hr/>

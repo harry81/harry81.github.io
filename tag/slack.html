@@ -90,6 +90,17 @@ Water Developer            </a>
 <li>현상 : slack의 메시지를 받은 후, 지정된 시간내에 바로 200 응답을 주지 않은면 slack에서 같은 메시지가 반복이 되어 전송이 된다.</li>
 <li>대응 : 비동기적으로 메시지 처리를 위한 방법 마련(celery)</li>
 </ul>
+<h4>Button in Attachments</h4>
+<ul>
+<li><img alt="imagetext" src="image"></li>
+<li>목적 : attachments내에 button을 표현하려고 한다.</li>
+<li>문제 : 형식에 맞춰</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="s2">&quot;actions&quot;</span><span class="err">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nt">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;primary&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;button&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.google …</span></pre></div>
                     <a class="btn btn-default btn-xs" href="../build-slack-bot.html">more ...</a>
                 </div>
             </article>

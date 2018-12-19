@@ -83,6 +83,20 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./rds-parameter-group.html">rds-parameter-group</a></h2>
+                <div class="summary"><h3>문제</h3>
+<hr>
+<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
+<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
+그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
+- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
+<ul>
+<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul>
+                    <a class="btn btn-default btn-xs" href="./rds-parameter-group.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./git-tips.html">git tips</a></h2>
                 <div class="summary"><ul>
 <li>특정 함수의 변경을 확인 : git log -L </li>
@@ -205,24 +219,6 @@ https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
 
 <span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div>
                     <a class="btn btn-default btn-xs" href="./get-title-data-api.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./uhopper-hadoop-docker.html">uhopper-hadoop-docker</a></h2>
-                <div class="summary"><h3>docker-compose 를 이용해서</h3>
-<p>https://bitbucket.org/uhopper/hadoop-docker/</p>
-<div class="highlight"><pre><span></span>git clone https://bitbucket.org/uhopper/hadoop-docker.git 
-
-docker network create hadoop
-docker network create kafka
-docker volume create --name=hadoop_datanode1
-docker volume create --name=hadoop_datanode2
-docker volume create --name=hadoop_historyserver
-docker volume create --name=hadoop_namenode
-docker-compose up
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="./uhopper-hadoop-docker.html">more ...</a>
                 </div>
             </article>
             <hr/>

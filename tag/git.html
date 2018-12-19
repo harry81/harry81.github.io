@@ -84,6 +84,24 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../favorite-tips.html">자주 사용하는 명령어</a></h2>
+                <div class="summary"><h3>Create django superuser</h3>
+<div class="highlight"><pre><span></span>$ python manage.py createsuperuser
+
+<span class="c1">## 이메일과 사용자 이름을 옵션으로 줄 수 있다.</span>
+$ python manage.py createsuperuser --email superman@water.com --user superman
+</pre></div>
+
+
+<h3>Delete merged branches</h3>
+<div class="highlight"><pre><span></span><span class="c1"># develop branch</span>
+git branch --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch -d
+git push --delete origin <span class="sb">`</span>git branch …</pre></div>
+                    <a class="btn btn-default btn-xs" href="../favorite-tips.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../delete-merged-branches.html">Delete merged branches</a></h2>
                 <div class="summary"><h4>master branch</h4>
 <div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
