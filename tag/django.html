@@ -85,7 +85,13 @@ Water Developer            </a>
         <div class="col-sm-9">
             <article>
                 <h2><a href="../favorite-tips.html">자주 사용하는 명령어</a></h2>
-                <div class="summary"><h3>Create django superuser</h3>
+                <div class="summary"><h3>Download youtube</h3>
+<p>Youtube 영상을 파일로 저장을 할 수 있다. 집에 인터넷이 안 된다면 회사에서 다운로드 받도록 하자.</p>
+<div class="highlight"><pre><span></span>youtube-dl --add-metadata -i -x --audio-format flac -- <span class="o">[</span>youtube id<span class="o">]</span>
+</pre></div>
+
+
+<h3>Create django superuser</h3>
 <div class="highlight"><pre><span></span>$ python manage.py createsuperuser
 
 <span class="c1">## 이메일과 사용자 이름을 옵션으로 줄 수 있다.</span>
@@ -93,10 +99,7 @@ $ python manage.py createsuperuser --email superman@water.com --user superman
 </pre></div>
 
 
-<h3>Delete merged branches</h3>
-<div class="highlight"><pre><span></span><span class="c1"># develop branch</span>
-git branch --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch -d
-git push --delete origin <span class="sb">`</span>git branch …</pre></div>
+<h3>Delete …</h3>
                     <a class="btn btn-default btn-xs" href="../favorite-tips.html">more ...</a>
                 </div>
             </article>
@@ -216,23 +219,6 @@ git push --delete origin <span class="sb">`</span>git branch …</pre></div>
 <script src="../theme/js/respond.min.js"></script>
 
 
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-91188832-2']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-    <!-- End Google Analytics Code -->
 
 
 </body>
