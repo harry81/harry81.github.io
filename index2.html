@@ -83,6 +83,17 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./generate-random-password.html">Generate random password</a></h2>
+                <div class="summary"><div class="highlight"><pre><span></span>date | md5sum | base64 | head -c 32; echo
+</pre></div>
+
+
+<p>참고 : <a href="https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/">https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/</a></p>
+                    <a class="btn btn-default btn-xs" href="./generate-random-password.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./delete-merged-branches.html">Delete merged branches</a></h2>
                 <div class="summary"><h4>master branch</h4>
 <div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
@@ -213,15 +224,6 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="./markdown-mode-for-emacs.html">Markdown mode for Emacs</a></h2>
-                <div class="summary"><h5>단축키</h5>
-<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
-<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
-                    <a class="btn btn-default btn-xs" href="./markdown-mode-for-emacs.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="./index.html">&laquo;</a>
@@ -298,6 +300,23 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
 <script src="./theme/js/respond.min.js"></script>
 
 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-91188832-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
 
 
 </body>

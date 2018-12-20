@@ -83,6 +83,15 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../markdown-mode-for-emacs.html">Markdown mode for Emacs</a></h2>
+                <div class="summary"><h5>단축키</h5>
+<p>Emacs에서 Md 파일을 작성하기 위한 단축키는 아래의 경로에서 자세한 설명을 확인할 수 있다.
+<a href="https://github.com/defunkt/markdown-mode">https://github.com/defunkt/markdown-mode</a></p>
+                    <a class="btn btn-default btn-xs" href="../markdown-mode-for-emacs.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../how-to-work-smart.html">How to work smart</a></h2>
                 <div class="summary"><ul>
 <li>Do<ul>
@@ -334,20 +343,6 @@ Water Developer            </a>
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../elasticbeans-talk.html">Elasticbeans talk</a></h2>
-                <div class="summary"><h4>Elasticbeanstalk health check</h4>
-<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
-Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
-<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
-<p>https://gist.github.com/dryan/8271687</p>
-<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
-    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
-    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="../elasticbeans-talk.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="../author/hyunmin2.html">&laquo;</a>
@@ -364,6 +359,8 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
                             href="../author/hyunmin5.html">5</a></li>
                     <li class=""><a
                             href="../author/hyunmin6.html">6</a></li>
+                    <li class=""><a
+                            href="../author/hyunmin7.html">7</a></li>
                 <li class="next"><a
                         href="../author/hyunmin4.html">&raquo;</a></li>
         </ul>
@@ -422,6 +419,23 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 <script src="../theme/js/respond.min.js"></script>
 
 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-91188832-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
 
 
 </body>

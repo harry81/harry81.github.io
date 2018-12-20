@@ -84,6 +84,16 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../youtube동영상-mp3로-저장하기.html">Youtube동영상 mp3로 저장하기</a></h2>
+                <div class="summary"><p>집에는 인터넷이 되지 않는다. 어떻게 하면 youtube 내용을 집에서 들을수 있을까?</p>
+<p>mp3 파일로 저장</p>
+<div class="highlight"><pre><span></span>youtube-dl --add-metadata -i -x --audio-format mp3 -- []
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../youtube동영상-mp3로-저장하기.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../playground-jupyter-with-django.html">Playground jupyter with django</a></h2>
                 <div class="summary"><hr>
 <h3>Get ready for bokeh</h3>
@@ -252,20 +262,6 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../rds-parameter-group.html">rds-parameter-group</a></h2>
-                <div class="summary"><h3>문제</h3>
-<hr>
-<p>postgres에 SELECT 문장을 요청할 경우 발생, 일반적인 요청은 문제가 없으나 <code>order by</code> 이후에 들어오는 컬럼이 한글값을 가진 경우가 문제.</p>
-<p>정렬이 되는 듯하나 유심히 순서를 확인해보면 맞지가 않다.
-그래서 구글링해보니 같은 문제를 겪은 사람들이 있었다.
-- postgresql 에서 한글 정렬 문제 해결하기 <a href="https://ansuchan.com/postgresql-korean-order/">https://ansuchan.com/postgresql-korean-order/</a></p>
-<ul>
-<li>PostgreSQL 한글 정렬 <a href="http://tech.jinto.pe.kr/165">http://tech …</a></li></ul>
-                    <a class="btn btn-default btn-xs" href="../rds-parameter-group.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="../category/misc.html">&laquo;</a>
@@ -338,6 +334,23 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
 <script src="../theme/js/respond.min.js"></script>
 
 
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-91188832-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics Code -->
 
 
 </body>
