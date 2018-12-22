@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/</loc>
-<lastmod>2018-12-21T18:12:35-00:00</lastmod>
+<lastmod>2018-12-22T12:49:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/archives.html</loc>
-<lastmod>2018-12-21T18:12:35-00:00</lastmod>
+<lastmod>2018-12-22T12:49:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/categories.html</loc>
-<lastmod>2018-12-21T18:12:35-00:00</lastmod>
+<lastmod>2018-12-22T12:49:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/_include/search.html</loc>
-<lastmod>2018-12-21T18:12:35-00:00</lastmod>
+<lastmod>2018-12-22T12:49:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -536,7 +536,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://harry81.github.io/blog/tag/good-reader.html</loc>
+<loc>https://harry81.github.io/blog/tag/good.html</loc>
+<lastmod>2018-12-20T17:01:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/reader.html</loc>
+<lastmod>2018-12-20T17:01:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/startup.html</loc>
 <lastmod>2018-12-20T17:01:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -564,6 +578,27 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://harry81.github.io/blog/tag/cli.html</loc>
+<lastmod>2018-12-19T09:51:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/ubuntu.html</loc>
+<lastmod>2018-12-19T09:51:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/shell.html</loc>
+<lastmod>2018-12-19T09:51:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://harry81.github.io/blog/tag/sotong.html</loc>
 <lastmod>2018-10-24T14:12:00+08:28</lastmod>
 <changefreq>daily</changefreq>
@@ -579,6 +614,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/tag/kibodeu.html</loc>
+<lastmod>2018-10-23T12:51:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/shortcut.html</loc>
+<lastmod>2018-10-23T12:51:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/keyboard.html</loc>
 <lastmod>2018-10-23T12:51:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -867,13 +916,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://harry81.github.io/blog/tag/smart.html</loc>
 <lastmod>2018-03-19T11:00:00+08:28</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://harry81.github.io/blog/tag/good.html</loc>
-<lastmod>2018-03-18T17:55:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
