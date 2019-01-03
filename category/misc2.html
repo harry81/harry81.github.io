@@ -84,6 +84,17 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../generate-random-password.html">Generate random password</a></h2>
+                <div class="summary"><div class="highlight"><pre><span></span>date | md5sum | base64 | head -c 32; echo
+</pre></div>
+
+
+<p>참고 : <a href="https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/">https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/</a></p>
+                    <a class="btn btn-default btn-xs" href="../generate-random-password.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../delete-merged-branches.html">Delete merged branches</a></h2>
                 <div class="summary"><h4>master branch</h4>
 <div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
@@ -108,9 +119,9 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
             </article>
             <hr/>
             <article>
-                <h2><a href="../playground-jupyter-with-django.html">Playground jupyter with django</a></h2>
+                <h2><a href="../playground-jupyter.html">Playground jupyter</a></h2>
                 <div class="summary"><hr>
-<h3>Get ready for bokeh</h3>
+<h3>Import</h3>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
@@ -121,10 +132,16 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
 </pre></div>
 
 
-<h3>Necessary python packages</h3>
-<div class="highlight"><pre><span></span>✗ pip install notebook pandas matplotlib bokeh
+<h3></h3>
+<div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/actstream.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
-                    <a class="btn btn-default btn-xs" href="../playground-jupyter-with-django.html">more ...</a>
+
+
+<h3>Get ready for bokeh</h3>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../playground-jupyter.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -242,20 +259,6 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
     <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
     <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div>
                     <a class="btn btn-default btn-xs" href="../elasticbeans-talk.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../datagokr.html">data.go.kr</a></h2>
-                <div class="summary"><hr>
-<ul>
-<li>단독/다가구 전월세 지수 변화, 2004~2016 <a href="https://s3.ap-northeast-2.amazonaws.com/hmapps/data/home_loan_201708_900x500.html">link</a></li>
-</ul>
-<p>지역코드와 기간을 이용하여 해당기간, 해당지역의 단독다가구 전월세 신고자료를 제공하는 단독다가구 전월세 신고 정보 조회</p>
-<ul>
-<li>이력 소개 <a href="http://bit.ly/2f9Xjdp">link</a></li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="../datagokr.html">more ...</a>
                 </div>
             </article>
             <hr/>
