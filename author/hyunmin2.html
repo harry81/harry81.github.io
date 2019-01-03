@@ -83,6 +83,24 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../working-in-a-standing-position.html">Working in a standing position</a></h2>
+                <div class="summary"><h4>장점</h4>
+<ul>
+<li>소화가 잘 되는 느낌</li>
+<li>허리 근육에 힘이 생겨, 허리를 펴고 식사를 할 수 있다.</li>
+<li>일하는 동료들을 내려다 볼 수 있다.</li>
+<li>소통하기에 유리하다.</li>
+</ul>
+<h4>단점</h4>
+<ul>
+<li>무릎 관절에 체중이 실린다.</li>
+<li>집중에서 깨어나기 쉽다.</li>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../working-in-a-standing-position.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../generate-random-password.html">Generate random password</a></h2>
                 <div class="summary"><div class="highlight"><pre><span></span>date | md5sum | base64 | head -c 32; echo
 </pre></div>
@@ -212,18 +230,6 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h2>
-                <div class="summary"><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
-    <span class="n">queryset</span> <span class="o">=</span> <span class="n">_get_queryset</span><span class="p">(</span><span class="n">qs</span><span class="p">)</span>
-    <span class="n">pk_name</span> <span class="o">=</span> <span class="n">queryset</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">_meta</span><span class="o">.</span><span class="n">pk</span><span class="o">.</span><span class="n">name</span>
-    <span class="n">ids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="o">.</span><span class="n">values_list</span><span class="p">(</span><span class="n">pk_name</span><span class="p">,</span> <span class="n">flat</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">())</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Snapshot of </span><span class="si">%s</span><span class="s1"> ids we will iterate over.&#39;</span><span class="p">,</span> <span class="nb">len …</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="../handle-a-lot-of-rows-in-django-model.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="../author/hyunmin.html">&laquo;</a>
@@ -283,7 +289,7 @@ git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2018 Hyunmin
+         <div class="col-xs-10">&copy; 2019 Hyunmin
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>

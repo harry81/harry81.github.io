@@ -83,6 +83,16 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../init-sodam.html">init sodam</a></h2>
+                <div class="summary"><p>upgrade pip
+pip3 install -U pip </p>
+<p>가상환경
+mkvirtualenv sodam -p /usr/bin/python3 </p>
+                    <a class="btn btn-default btn-xs" href="../init-sodam.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../build-a-chat-app-with-django.html">build a chat app with django</a></h2>
                 <div class="summary"><h2>기능 요구사항</h2>
 <ul>
@@ -270,28 +280,6 @@ svd.load_data(filename='data/ml-20m/ratings.csv', sep=',', format={'col':0, 'row
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../hadoop-docker.html">hadoop-docker</a></h2>
-                <div class="summary"><p>가상머신 3개를 준비하자.</p>
-<div class="highlight"><pre><span></span># Namenode 192.168.99.101
-docker-machine start namenode; eval &quot;$(docker-machine env namenode)&quot;;
-
-# Datanode1 192.168.99.102
-docker-machine start datanode1; eval &quot;$(docker-machine env datanode1)&quot;;
-
-# Datanode2 192.168.99.103
-docker-machine start datanode2; eval &quot;$(docker-machine env datanode2)&quot;;
-</pre></div>
-
-
-<div class="highlight"><pre><span></span>...
-namenode 192.168.99.101
-datanode1 192.168.99.102
-datanode2 …</pre></div>
-                    <a class="btn btn-default btn-xs" href="../hadoop-docker.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="../author/hyunmin4.html">&laquo;</a>
@@ -351,7 +339,7 @@ datanode2 …</pre></div>
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2018 Hyunmin
+         <div class="col-xs-10">&copy; 2019 Hyunmin
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>

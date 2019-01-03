@@ -84,6 +84,27 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../get-title-data-api.html">get title data api</a></h2>
+                <div class="summary"><h3>기본 matplotlib 이용하여 데이타 출력</h3>
+<div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">pandas</span>  <span class="kn">import</span> <span class="n">Series</span><span class="p">,</span> <span class="n">DataFrame</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="c1"># 한글 폰트 깨짐 방지</span>
+<span class="n">krfont</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;family&#39;</span><span class="p">:</span> <span class="s1">&#39;nanumgothic&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">}</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">rc</span><span class="p">(</span><span class="s1">&#39;font&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">krfont</span><span class="p">)</span>
+
+<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;open-api.csv&#39;</span><span class="p">,</span> <span class="n">sep …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../get-title-data-api.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../uhopper-hadoop-docker.html">uhopper-hadoop-docker</a></h2>
                 <div class="summary"><h3>docker-compose 를 이용해서</h3>
 <p>https://bitbucket.org/uhopper/hadoop-docker/</p>
@@ -320,20 +341,6 @@ command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.Data
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../hilweoldeu-gineungjeongri.html">힐월드 기능정리</a></h2>
-                <div class="summary"><ul>
-<li>현재 위치 반경내 검색</li>
-<li>댓글 작성시에 문자로 전송정리</li>
-<li>세부 페이지에서 '전화걸기' 버튼으로 등록자에게 전화걸기</li>
-<li>물건 등록자와 나와의 위치 간단히 확인하기</li>
-</ul>
-<p>{% img /images/main_healworld.png %}</p>
-<p><a href="https://www.healworld.co.kr">https://www.healworld.co.kr</a></p>
-                    <a class="btn btn-default btn-xs" href="../hilweoldeu-gineungjeongri.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="../category/misc3.html">&laquo;</a>
@@ -389,7 +396,7 @@ command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.Data
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2018 Hyunmin
+         <div class="col-xs-10">&copy; 2019 Hyunmin
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
