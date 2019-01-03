@@ -84,6 +84,18 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../interview-questions-as-a-python-developer.html">Interview questions as a python developer</a></h2>
+                <div class="summary"><h3>GIL</h3>
+<p>Why wasn’t it removed in Python 3?</p>
+<blockquote>
+<p>Python 3 did have a chance to start a lot of features from scratch and in the process, broke some of the existing C extensions which then required changes to be updated and ported to work with Python 3</p>
+</blockquote>
+<p><a href="https://realpython.com/python-gil/">https://realpython …</a></p>
+                    <a class="btn btn-default btn-xs" href="../interview-questions-as-a-python-developer.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../pycon-2018-방문.html">Pycon 2018 방문</a></h2>
                 <div class="summary"><p>일정표 <a href="https://www.pycon.kr/2018/program/schedule/">https://www.pycon.kr/2018/program/schedule/</a></p>
 <h3>스케치</h3>
@@ -168,6 +180,30 @@ Topic Modeling &amp; Word Embedding 그리고 화장품 - 이홍주 / lee_hongjo
             </article>
             <hr/>
             <article>
+                <h2><a href="../playground-jupyter.html">Playground jupyter</a></h2>
+                <div class="summary"><hr>
+<h3>Import</h3>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">show</span>
+<span class="kn">from</span> <span class="nn">bokeh.layouts</span> <span class="kn">import</span> <span class="n">column</span>
+<span class="n">output_notebook</span><span class="p">()</span>
+</pre></div>
+
+
+<h3>Filter</h3>
+<div class="highlight"><pre><span></span><span class="c1"># read csf file</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/actstream.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="c1"># 특정 열의 값 필터링하기</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">actor</span> <span class="o">!=</span> <span class="s1">&#39;konolabs …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../playground-jupyter.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../handle-a-lot-of-rows-in-django-model.html">Handle a lot of rows in Django model</a></h2>
                 <div class="summary"><p>아래 함수<strong>batch_qs_via_ids</strong>의 첫번째 인자로 queryset 준다. 정해진 batch_size에 해당하는 길이만큼 나누어져 데이타를 처리할 수 있다.</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">batch_qs_via_ids</span><span class="p">(</span><span class="n">qs</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
@@ -219,48 +255,6 @@ Topic Modeling &amp; Word Embedding 그리고 화장품 - 이홍주 / lee_hongjo
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="../why-i-need-to-get-xps-15.html">Why I need to get XPS 15</a></h2>
-                <div class="summary"><ul>
-<li>
-<p>사야하는 이유</p>
-<ul>
-<li>dell outlet 에서 저렴하게 팔고 있다.</li>
-<li>가격대비 성능이 우수하다.</li>
-<li>동영상 편집이 가능하다.</li>
-<li>Tensorflow가 지원하는 GPU를 가지고 있다.</li>
-</ul>
-</li>
-<li>
-<p>말아야 하는 이유</p>
-<ul>
-<li>정상적으로 잘 작동하는 labtop가 있다.</li>
-</ul>
-</li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="../why-i-need-to-get-xps-15.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../what-does-the-good-blogs-have-in-common.html">What does the good blogs have in common?</a></h2>
-                <div class="summary"><h5>형식</h5>
-<ul>
-<li>구조가 명확하다.</li>
-<li>그림을 포함한다.</li>
-<li>링크를 포함한다.</li>
-<li>간결하다.
-    예제) <a href="https://www.webpagefx.com/blog/web-design/" title="https://www.webpagefx.com/blog/web-design/">https://www.webpagefx.com/blog/web-design/</a></li>
-</ul>
-<h5>내용</h5>
-<ul>
-<li>독창적이다.</li>
-</ul>
-<h5>블로그를 잘 하려면 따라하고픈 멘토를 찾자</h5>
-                    <a class="btn btn-default btn-xs" href="../what-does-the-good-blogs-have-in-common.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev disabled"><a href="#">&laquo;</a></li>
@@ -268,6 +262,8 @@ Topic Modeling &amp; Word Embedding 그리고 화장품 - 이홍주 / lee_hongjo
                             href="../category/dev.html">1</a></li>
                     <li class=""><a
                             href="../category/dev2.html">2</a></li>
+                    <li class=""><a
+                            href="../category/dev3.html">3</a></li>
                 <li class="next"><a
                         href="../category/dev2.html">&raquo;</a></li>
         </ul>
@@ -309,7 +305,7 @@ Topic Modeling &amp; Word Embedding 그리고 화장품 - 이홍주 / lee_hongjo
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2018 Hyunmin
+         <div class="col-xs-10">&copy; 2019 Hyunmin
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
