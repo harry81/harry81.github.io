@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>git - Water Developer</title>
+    <title>develop - Water Developer</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 
     <meta name="author" content="Hyunmin" />
-    <meta name="keywords" content="git" />
+    <meta name="keywords" content="develop" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Water Developer" />
@@ -84,36 +84,20 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
-                <h2><a href="../favorite-tips.html">자주 사용하는 명령어</a></h2>
-                <div class="summary"><h3>Git 이 관리하는 모든 파일 조회</h3>
-<div class="highlight"><pre><span></span>git ls-tree -r master --name-only
-</pre></div>
-
-
-<p>출처 : <a href="https://superuser.com/questions/429693/git-list-all-files-currently-under-source-control">https://superuser.com/questions/429693/git-list-all-files-currently-under-source-control</a></p>
-<h3>Download youtube</h3>
-<p>Youtube 영상을 파일로 저장을 할 수 있다. 집에 인터넷이 안 된다면 회사에서 다운로드 받도록 하자.</p>
-<div class="highlight"><pre><span></span>youtube-dl --add-metadata -i -x --audio-format flac -- <span class="o">[</span>youtube id<span class="o">]</span>
-</pre></div>
-
-
-<h3>Create django superuser</h3>
-<div class="highlight"><pre><span></span>$ python manage.py createsuperuser …</pre></div>
-                    <a class="btn btn-default btn-xs" href="../favorite-tips.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../delete-merged-branches.html">Delete merged branches</a></h2>
-                <div class="summary"><h4>master branch</h4>
-<div class="highlight"><pre><span></span>git branch --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch -d
-git push --delete origin <span class="sb">`</span>git branch -r --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> sed <span class="s1">&#39;s/origin\///&#39;</span><span class="sb">`</span>
-</pre></div>
-
-
-<h4>develop branch</h4>
-<div class="highlight"><pre><span></span>git branch --merged origin/develop <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch …</pre></div>
-                    <a class="btn btn-default btn-xs" href="../delete-merged-branches.html">more ...</a>
+                <h2><a href="../my-favorite-tools-on-ubuntu.html">My favorite tools on ubuntu</a></h2>
+                <div class="summary"><h3>AWS shell</h3>
+<p>An integrated shell for working with the AWS CLI.</p>
+<p><a href="https://github.com/awslabs/aws-shell">https://github.com/awslabs/aws-shell</a></p>
+<h3>Oh my zsh</h3>
+<p><a href="https://github.com/robbyrussell/oh-my-zsh">https://github.com/robbyrussell/oh-my-zsh</a></p>
+<h3>Tmuxinator</h3>
+<p>다수의 tmux sessions 관리를 도와주는 툴</p>
+<p>이 툴을 사용전에는 매일 아침마다 반복적으로 화면분할, workon을 실행해야 했다.
+<img alt="image" src="https://s3.ap-northeast-2.amazonaws.com/hmapps-static/screenshot-tmuxnator.gif"></p>
+<p><a href="https://github.com/tmuxinator/tmuxinator">https://github.com/tmuxinator/tmuxinator</a></p>
+<h3>shutter</h3>
+<p>데스크탑 환경에서 Screenshot …</p>
+                    <a class="btn btn-default btn-xs" href="../my-favorite-tools-on-ubuntu.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -156,7 +140,7 @@ git push --delete origin <span class="sb">`</span>git branch -r --merged origin/
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2018 Hyunmin
+         <div class="col-xs-10">&copy; 2019 Hyunmin
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>

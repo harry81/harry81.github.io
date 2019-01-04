@@ -86,13 +86,13 @@ Water Developer            </a>
             <article>
                 <h2><a href="../delete-merged-branches.html">Delete merged branches</a></h2>
                 <div class="summary"><h4>master branch</h4>
-<div class="highlight"><pre><span></span>git branch --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch -d
-git push --delete origin `git branch -r --merged origin/master | egrep -v &quot;(^\*|master|develop)&quot; | sed &#39;s/origin\///&#39;`
+<div class="highlight"><pre><span></span>git branch --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch -d
+git push --delete origin <span class="sb">`</span>git branch -r --merged origin/master <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> sed <span class="s1">&#39;s/origin\///&#39;</span><span class="sb">`</span>
 </pre></div>
 
 
 <h4>develop branch</h4>
-<div class="highlight"><pre><span></span>git branch --merged origin/develop | egrep -v &quot;(^\*|master|develop)&quot; | xargs -n 1 git branch …</pre></div>
+<div class="highlight"><pre><span></span>git branch --merged origin/develop <span class="p">|</span> egrep -v <span class="s2">&quot;(^\*|master|develop)&quot;</span> <span class="p">|</span> xargs -n <span class="m">1</span> git branch …</pre></div>
                     <a class="btn btn-default btn-xs" href="../delete-merged-branches.html">more ...</a>
                 </div>
             </article>
