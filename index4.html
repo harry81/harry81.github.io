@@ -83,6 +83,17 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./bike_timeline.html">자전거 사용추이</a></h2>
+                <div class="summary"><dl class="docutils">
+<dt>서울 따릉이</dt>
+<dd><a class="reference external" href="https://s3.ap-northeast-2.amazonaws.com/hmapps/html/bike_timeline_2017-10-03.html">서울 따릉이 하루 이용 그림(2mb)</a></dd>
+</dl>
+
+                    <a class="btn btn-default btn-xs" href="./bike_timeline.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./smart-work.html">스마트 워크</a></h2>
                 <div class="summary"><ul class="simple">
 <li>과정 -&gt; 성과</li>
@@ -234,20 +245,6 @@ Water Developer            </a>
                 </div>
             </article>
             <hr/>
-            <article>
-                <h2><a href="./elasticbeans-talk.html">Elasticbeans talk</a></h2>
-                <div class="summary"><h4>Elasticbeanstalk health check</h4>
-<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
-Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
-<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
-<p>https://gist.github.com/dryan/8271687</p>
-<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
-    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
-    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="./elasticbeans-talk.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
 
         <ul class="pagination">
                 <li class="prev"><a href="./index3.html">&laquo;</a>
@@ -266,6 +263,8 @@ Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오�
                             href="./index6.html">6</a></li>
                     <li class=""><a
                             href="./index7.html">7</a></li>
+                    <li class=""><a
+                            href="./index8.html">8</a></li>
                 <li class="next"><a
                         href="./index5.html">&raquo;</a></li>
         </ul>

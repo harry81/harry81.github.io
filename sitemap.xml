@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/</loc>
-<lastmod>2019-01-04T16:54:24-00:00</lastmod>
+<lastmod>2019-01-08T17:50:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/archives.html</loc>
-<lastmod>2019-01-04T16:54:24-00:00</lastmod>
+<lastmod>2019-01-08T17:50:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/categories.html</loc>
-<lastmod>2019-01-04T16:54:24-00:00</lastmod>
+<lastmod>2019-01-08T17:50:15-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/_include/search.html</loc>
-<lastmod>2019-01-04T16:54:24-00:00</lastmod>
+<lastmod>2019-01-08T17:50:15-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/okr-of-2019-for-hm.html</loc>
+<lastmod>2019-01-07T17:42:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -530,7 +537,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/category/misc.html</loc>
-<lastmod>2019-01-02T13:43:00+08:28</lastmod>
+<lastmod>2019-01-07T17:42:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1041,7 +1048,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/author/hyunmin.html</loc>
-<lastmod>2019-01-03T15:55:00+08:28</lastmod>
+<lastmod>2019-01-07T17:42:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
