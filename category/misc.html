@@ -85,7 +85,8 @@ Water Developer            </a>
         <div class="col-sm-9">
             <article>
                 <h2><a href="../serve-tensorflow-iris-models.html">Serve tensorflow iris models</a></h2>
-                <div class="summary"><div class="highlight"><pre><span></span>    <span class="c1"># Feature columns describe how to use the input.</span>
+                <div class="summary"><h3>Export a model</h3>
+<div class="highlight"><pre><span></span>    <span class="c1"># Feature columns describe how to use the input.</span>
     <span class="n">my_feature_columns</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">train_x</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
         <span class="n">my_feature_columns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">feature_column</span><span class="o">.</span><span class="n">numeric_column</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">))</span>
@@ -96,11 +97,12 @@ Water Developer            </a>
 </pre></div>
 
 
+<p>or </p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">serving_input_receiver_fn</span><span class="p">():</span>
   <span class="n">max_seq_length</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="o">.</span><span class="n">max_seq_length</span>
   <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">1</span>
   <span class="n">feature_spec</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">&quot;unique_ids&quot;</span><span class="p">:</span> <span class="n">tf</span><span class="o">.</span><span class="n">FixedLenFeature</span><span class="p">([],</span> <span class="n">tf</span><span class="o">.</span><span class="n">int64 …</span></pre></div>
+  <span class="s2">&quot;unique_ids …</span></pre></div>
                     <a class="btn btn-default btn-xs" href="../serve-tensorflow-iris-models.html">more ...</a>
                 </div>
             </article>
