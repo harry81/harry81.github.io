@@ -84,8 +84,33 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../serve-tensorflow-iris-models.html">Serve tensorflow iris models</a></h2>
+                <div class="summary"><div class="highlight"><pre><span></span>    <span class="c1"># Feature columns describe how to use the input.</span>
+    <span class="n">my_feature_columns</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">train_x</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">my_feature_columns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">feature_column</span><span class="o">.</span><span class="n">numeric_column</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">))</span>
+
+    <span class="n">feature_spec</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">feature_column</span><span class="o">.</span><span class="n">make_parse_example_spec</span><span class="p">(</span><span class="n">my_feature_columns</span><span class="p">)</span>
+    <span class="n">serving_input_receiver_fn</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">export</span><span class="o">.</span><span class="n">build_parsing_serving_input_receiver_fn</span><span class="p">(</span><span class="n">feature_spec</span><span class="p">)</span>
+    <span class="n">export_dir</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">export_savedmodel</span><span class="p">(</span><span class="s1">&#39;export&#39;</span><span class="p">,</span> <span class="n">serving_input_receiver_fn</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">serving_input_receiver_fn</span><span class="p">():</span>
+  <span class="n">max_seq_length</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="o">.</span><span class="n">max_seq_length</span>
+  <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="n">feature_spec</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;unique_ids&quot;</span><span class="p">:</span> <span class="n">tf</span><span class="o">.</span><span class="n">FixedLenFeature</span><span class="p">([],</span> <span class="n">tf</span><span class="o">.</span><span class="n">int64 …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../serve-tensorflow-iris-models.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../코딩없이-카카오-챗봇-만들기.html">코딩없이 카카오 챗봇 만들기</a></h2>
-                <div class="summary">
+                <div class="summary"><h2>카카오톡</h2>
+<p>챗봇이 어느 덧 우리 주변에 너무 흔해졌다. 단순 FAQ구성의 내용을 사용자의 대화 형식으로 유도하여 마치 사람과 채팅을 하듯 정보를 전달한다. 
+이런 내용이 이전에는 다가가기 힘든 기술이었지만, 지금은 얘기가 다르다.</p>
+<p>카카오톡에서 openbuilder를 제공하면서 전문적인 코딩 능력이 없이도 복잡하지 않은 FAQ 형식의 챗봇은 구현할 수 있게 되었다. 그리도 다행히도 챗봇 서비스를 …</p>
                     <a class="btn btn-default btn-xs" href="../코딩없이-카카오-챗봇-만들기.html">more ...</a>
                 </div>
             </article>
@@ -234,24 +259,6 @@ image:learning keyboard</p>
 <div class="highlight"><pre><span></span>- 목적
 </pre></div>
                     <a class="btn btn-default btn-xs" href="../sprint-meeting.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../working-in-a-standing-position.html">Working in a standing position</a></h2>
-                <div class="summary"><h4>장점</h4>
-<ul>
-<li>소화가 잘 되는 느낌</li>
-<li>허리 근육에 힘이 생겨, 허리를 펴고 식사를 할 수 있다.</li>
-<li>일하는 동료들을 내려다 볼 수 있다.</li>
-<li>소통하기에 유리하다.</li>
-</ul>
-<h4>단점</h4>
-<ul>
-<li>무릎 관절에 체중이 실린다.</li>
-<li>집중에서 깨어나기 쉽다.</li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="../working-in-a-standing-position.html">more ...</a>
                 </div>
             </article>
             <hr/>

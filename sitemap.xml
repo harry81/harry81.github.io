@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/</loc>
-<lastmod>2019-09-08T14:30:27-00:00</lastmod>
+<lastmod>2019-09-09T16:21:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/archives.html</loc>
-<lastmod>2019-09-08T14:30:27-00:00</lastmod>
+<lastmod>2019-09-09T16:21:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/categories.html</loc>
-<lastmod>2019-09-08T14:30:27-00:00</lastmod>
+<lastmod>2019-09-09T16:21:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://harry81.github.io/blog/_include/search.html</loc>
-<lastmod>2019-09-08T14:30:27-00:00</lastmod>
+<lastmod>2019-09-09T16:21:36-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/serve-tensorflow-iris-models.html</loc>
+<lastmod>2019-09-09T14:49:00+09:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -537,7 +544,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/category/misc.html</loc>
-<lastmod>2019-09-08T14:20:00+08:28</lastmod>
+<lastmod>2019-09-09T14:49:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -552,6 +559,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://harry81.github.io/blog/category/sebasi.html</loc>
 <lastmod>2017-10-11T16:25:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/signaturedef.html</loc>
+<lastmod>2019-09-09T14:49:00+08:28</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://harry81.github.io/blog/tag/iris.html</loc>
+<lastmod>2019-09-09T14:49:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -1069,7 +1090,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://harry81.github.io/blog/author/hyunmin.html</loc>
-<lastmod>2019-09-08T14:20:00+08:28</lastmod>
+<lastmod>2019-09-09T14:49:00+08:28</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

@@ -83,8 +83,33 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./serve-tensorflow-iris-models.html">Serve tensorflow iris models</a></h2>
+                <div class="summary"><div class="highlight"><pre><span></span>    <span class="c1"># Feature columns describe how to use the input.</span>
+    <span class="n">my_feature_columns</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">train_x</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">my_feature_columns</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">feature_column</span><span class="o">.</span><span class="n">numeric_column</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="n">key</span><span class="p">))</span>
+
+    <span class="n">feature_spec</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">feature_column</span><span class="o">.</span><span class="n">make_parse_example_spec</span><span class="p">(</span><span class="n">my_feature_columns</span><span class="p">)</span>
+    <span class="n">serving_input_receiver_fn</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">estimator</span><span class="o">.</span><span class="n">export</span><span class="o">.</span><span class="n">build_parsing_serving_input_receiver_fn</span><span class="p">(</span><span class="n">feature_spec</span><span class="p">)</span>
+    <span class="n">export_dir</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">export_savedmodel</span><span class="p">(</span><span class="s1">&#39;export&#39;</span><span class="p">,</span> <span class="n">serving_input_receiver_fn</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">serving_input_receiver_fn</span><span class="p">():</span>
+  <span class="n">max_seq_length</span> <span class="o">=</span> <span class="n">FLAGS</span><span class="o">.</span><span class="n">max_seq_length</span>
+  <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="n">feature_spec</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s2">&quot;unique_ids&quot;</span><span class="p">:</span> <span class="n">tf</span><span class="o">.</span><span class="n">FixedLenFeature</span><span class="p">([],</span> <span class="n">tf</span><span class="o">.</span><span class="n">int64 …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="./serve-tensorflow-iris-models.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./코딩없이-카카오-챗봇-만들기.html">코딩없이 카카오 챗봇 만들기</a></h2>
-                <div class="summary">
+                <div class="summary"><h2>카카오톡</h2>
+<p>챗봇이 어느 덧 우리 주변에 너무 흔해졌다. 단순 FAQ구성의 내용을 사용자의 대화 형식으로 유도하여 마치 사람과 채팅을 하듯 정보를 전달한다. 
+이런 내용이 이전에는 다가가기 힘든 기술이었지만, 지금은 얘기가 다르다.</p>
+<p>카카오톡에서 openbuilder를 제공하면서 전문적인 코딩 능력이 없이도 복잡하지 않은 FAQ 형식의 챗봇은 구현할 수 있게 되었다. 그리도 다행히도 챗봇 서비스를 …</p>
                     <a class="btn btn-default btn-xs" href="./코딩없이-카카오-챗봇-만들기.html">more ...</a>
                 </div>
             </article>
@@ -217,32 +242,6 @@ image:learning keyboard</p>
 <img alt="aws-data-lake-services" src="https://s3.amazonaws.com/static.hoodpub.com/apn-2018-09-11/Selection_111.png" title="data lake"></li>
 </ul>
                     <a class="btn btn-default btn-xs" href="./apn-labday-(amazon-emr-빅데이터-처리).html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./pycon-2018-방문.html">Pycon 2018 방문</a></h2>
-                <div class="summary"><p>일정표 <a href="https://www.pycon.kr/2018/program/schedule/">https://www.pycon.kr/2018/program/schedule/</a></p>
-<h3>스케치</h3>
-<p><img alt="view3" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/view3.jpg" title="전경">
-전면</p>
-<p><img alt="intro1" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/intro1.jpg">
-Keynote</p>
-<p><img alt="view1" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/view1.jpg">
-전경1</p>
-<p><img alt="view2" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/view2.jpg">
-전경2</p>
-<p><img alt="kyeboard" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/kyeboard.jpg">
-Speech To text</p>
-<p><img alt="session_log_based_ai" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/session_log_based_ai.jpg">
-딥러닝을 이용한 로그 기반의 게임 AI 개발 -  김선태 / suntae_kim</p>
-<p><img alt="session_rcp" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/session_rcp.jpg">
-Callosum: An RPC Tranport Library - 김준기 / joongi</p>
-<p><img alt="session_scattertext" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/session_scattertext.jpg">
-Topic Modeling &amp; Word Embedding 그리고 화장품 - 이홍주 / lee_hongjoo</p>
-<p><img alt="session_switch" src="https://s3.amazonaws.com/static.hoodpub.com/pycon2018/session_switch.jpg">
-파이썬에 switch문 넣기 : 새 구문을 만들면서 배우는 파이썬 내부 - 성우경 …</p>
-                    <a class="btn btn-default btn-xs" href="./pycon-2018-방문.html">more ...</a>
                 </div>
             </article>
             <hr/>

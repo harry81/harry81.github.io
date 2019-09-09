@@ -83,6 +83,28 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../build-slack-bot.html">Build-slack-bot</a></h2>
+                <div class="summary"><h4>참고</h4>
+<ul>
+<li>현상 : slack의 메시지를 받은 후, 지정된 시간내에 바로 200 응답을 주지 않은면 slack에서 같은 메시지가 반복이 되어 전송이 된다.</li>
+<li>대응 : 비동기적으로 메시지 처리를 위한 방법 마련(celery)</li>
+</ul>
+<h4>Button in Attachments</h4>
+<ul>
+<li><img alt="imagetext" src="image"></li>
+<li>목적 : attachments내에 button을 표현하려고 한다.</li>
+<li>문제 : 형식에 맞춰</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="s2">&quot;actions&quot;</span><span class="err">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nt">&quot;style&quot;</span><span class="p">:</span> <span class="s2">&quot;primary&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Google&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;button&quot;</span><span class="p">,</span>
+     <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://www.google …</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="../build-slack-bot.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../playground-jupyter.html">Playground jupyter</a></h2>
                 <div class="summary"><hr>
 <h3>Import</h3>
@@ -204,14 +226,19 @@ Water Developer            </a>
 <li>구조가 명확하다.</li>
 <li>그림을 포함한다.</li>
 <li>링크를 포함한다.</li>
-<li>간결하다.
-    예제) <a href="https://www.webpagefx.com/blog/web-design/" title="https://www.webpagefx.com/blog/web-design/">https://www.webpagefx.com/blog/web-design/</a></li>
+<li>
+<p>간결하다.</p>
+<p>예제) <a href="https://www.webpagefx.com/blog/web-design/" title="https://www.webpagefx.com/blog/web-design/">https://www.webpagefx.com/blog/web-design/</a></p>
+</li>
 </ul>
 <h5>내용</h5>
 <ul>
 <li>독창적이다.</li>
 </ul>
 <h5>블로그를 잘 하려면 따라하고픈 멘토를 찾자</h5>
+<hr>
+<h4>초안</h4>
+<h4>내용</h4>
                     <a class="btn btn-default btn-xs" href="../what-does-the-good-blogs-have-in-common.html">more ...</a>
                 </div>
             </article>
@@ -263,64 +290,6 @@ Water Developer            </a>
 </ul>
 <h5>그렇다면 작동하는 프로젝트를 완료하기 …</h5>
                     <a class="btn btn-default btn-xs" href="../lets-get-it-done.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../microservice.html">microservice</a></h2>
-                <div class="summary"><table>
-<thead>
-<tr>
-<th></th>
-<th align="center">Mircoservice</th>
-<th align="right">Monolithics</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>테스트</td>
-<td align="center">어려움</td>
-<td align="right">쉬움</td>
-</tr>
-<tr>
-<td>디버깅</td>
-<td align="center">어려움</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>배포</td>
-<td align="center"></td>
-<td align="right">단순</td>
-</tr>
-<tr>
-<td>모니터링</td>
-<td align="center">중요</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>개발</td>
-<td align="center">문제에 집중해 개발 가능</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>유연함</td>
-<td align="center"></td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>언어 자유도</td>
-<td align="center">높음</td>
-<td align="right"></td>
-</tr>
-<tr>
-<td>독립성</td>
-<td align="center">높음</td>
-<td align="right"></td>
-</tr>
-</tbody>
-</table>
-<p><a href="http://www.popit.kr/why-microservice/">마이크로서비스 아키텍처의 장단점</a></p>
-                    <a class="btn btn-default btn-xs" href="../microservice.html">more ...</a>
                 </div>
             </article>
             <hr/>
