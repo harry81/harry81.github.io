@@ -84,6 +84,42 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../kakao-chatbot.html">Kakao chatbot</a></h2>
+                <div class="summary"><ul>
+<li>언어별 질문에 대한 대답</li>
+</ul>
+<h4>장점</h4>
+<ul>
+<li>각 질문의 언어에 해당하는 답을 제공</li>
+<li>정해진 질문에 한해서는 사람의 손을 거치지 않고 실시간 응답 가능</li>
+<li>kakao talk 뿐 아니라 다른 chat app 에 통합 가능</li>
+</ul>
+<h4>남은작업</h4>
+<ul>
+<li>대화의 재미를 위해 가능한 질의/응답 개수를 늘린다.</li>
+</ul>
+<h4>데모</h4>
+<p><img alt="chatbot-demo" src="images/chatbot-sample-1.gif" title></p>
+<h4>이 기능이 필요한 예상 사용자</h4>
+<ul>
+<li>여러 외국어로 정보를 제공해야하지만 …</li></ul>
+                    <a class="btn btn-default btn-xs" href="../kakao-chatbot.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../sprint-meeting.html">Sprint meeting</a></h2>
+                <div class="summary"><h4>필요성</h4>
+<h4>완료 작업</h4>
+<h4>예정 작업</h4>
+<h4>회고</h4>
+<div class="highlight"><pre><span></span>- 목적
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../sprint-meeting.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../working-in-a-standing-position.html">Working in a standing position</a></h2>
                 <div class="summary"><h4>장점</h4>
 <ul>
@@ -194,62 +230,6 @@ git push --delete origin <span class="sb">`</span>git branch -r --merged origin/
                 <h2><a href="../thought.html">thought</a></h2>
                 <div class="summary">
                     <a class="btn btn-default btn-xs" href="../thought.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html">면접자로서 면접시에 물어보고 싶은 질문들</a></h2>
-                <div class="summary"><h4>대략적인 질문</h4>
-<ul>
-<li>개발 방법론(scrum?)</li>
-<li>업무 시간, 출퇴근 시간</li>
-<li>개발 pc 지급?</li>
-<li>휴가</li>
-<li>비전</li>
-<li>계획</li>
-</ul>
-<h4>업무적인 질문</h4>
-<ul>
-<li>인력 구성</li>
-<li>구체적인 업무</li>
-<li>기대하는 역할</li>
-</ul>
-<h4>기술적인 질문</h4>
-<ul>
-<li>기술적 어려움</li>
-<li>주언어</li>
-<li>작업관리툴(jira)</li>
-<li>코드리뷰</li>
-<li>TDD</li>
-<li>CI</li>
-<li>소통 채널</li>
-<li>배포 주기</li>
-</ul>
-<h4>운용환경</h4>
-<ul>
-<li>AWS
-  -</li>
-</ul>
-<h4>동료상</h4>
-<ul>
-<li>선호</li>
-<li>비선호</li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="../myeonjeobjaroseo-myeonjeobsie-muleobogo-sipeun-jilmundeul.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../elasticbeans-talk.html">Elasticbeans talk</a></h2>
-                <div class="summary"><h4>Elasticbeanstalk health check</h4>
-<p>EB에서는 Health check 하는 기능을 기본적으로 포함하고 있다. 이것을 위해서는 Django에서 health check 요청을 허락하는 설정이 필요하다.
-Route53에서 설정된 Domain으로 요청은 한다고 잘못생각해서 오랫동안 고민했다.</p>
-<p><img src="images/elasticbeans-health-check-0913.png" style="max-width:700px"></p>
-<p>https://gist.github.com/dryan/8271687</p>
-<div class="highlight"><pre><span></span><span class="k">try</span><span class="o">:</span>
-    <span class="n">EC2_IP</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span><span class="o">).</span><span class="n">text</span>
-    <span class="n">ALLOWED_HOSTS</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">EC2_IP …</span></pre></div>
-                    <a class="btn btn-default btn-xs" href="../elasticbeans-talk.html">more ...</a>
                 </div>
             </article>
             <hr/>

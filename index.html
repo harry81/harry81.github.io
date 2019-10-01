@@ -83,6 +83,30 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="./sagemaker-frequently-used-commands.html">Sagemaker frequently used commands</a></h2>
+                <div class="summary"><h2>list</h2>
+<div class="highlight"><pre><span></span>aws sagemaker list-models
+aws sagemaker list-endpoint-configs
+aws sagemaker list-endpoints
+</pre></div>
+
+
+<h2>delete</h2>
+<div class="highlight"><pre><span></span>for x in $(aws sagemaker list-models | jq &quot;.[][].ModelName&quot; | xargs -isrc echo src); do; aws sagemaker delete-model --model-name  $x ; done;
+for x in $(aws sagemaker list-endpoint-configs | jq &quot;.[][].EndpointConfigName&quot; | xargs -isrc echo src); do; aws sagemaker delete-endpoint-config --endpoint-config-name  $x ; done;
+for …</pre></div>
+                    <a class="btn btn-default btn-xs" href="./sagemaker-frequently-used-commands.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="./국립중앙도서관-식단표.html">국립중앙도서관 식단표</a></h2>
+                <div class="summary">
+                    <a class="btn btn-default btn-xs" href="./국립중앙도서관-식단표.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="./serve-tensorflow-iris-models.html">Serve tensorflow iris models</a></h2>
                 <div class="summary"><h3>Export a model</h3>
 <div class="highlight"><pre><span></span>    <span class="c1"># Feature columns describe how to use the input.</span>
@@ -208,42 +232,6 @@ image:learning keyboard</p>
 <h5>jira</h5>
 <h5>slack</h5>
                     <a class="btn btn-default btn-xs" href="./마우스는-키보드보다-빠르다.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./3D-출력.html">3D 출력</a></h2>
-                <div class="summary"><h3>Tools</h3>
-<ul>
-<li><a href="https://www.blender.org/">https://www.blender.org/</a></li>
-<li><a href="https://ultimaker.com/">https://ultimaker.com/</a></li>
-<li><a href="https://creatablelabs.com/">https://creatablelabs.com/</a></li>
-</ul>
-<h3>Refs</h3>
-<ul>
-<li><a href="https://www.thingiverse.com">https://www.thingiverse.com</a></li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="./3D-출력.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="./apn-labday-(amazon-emr-빅데이터-처리).html">Apn labday (amazon emr 빅데이터 처리)</a></h2>
-                <div class="summary"><p>날짜 : 2018년 9월 11일(화) 09:30 - 13:30</p>
-<p>위치 : 서울 강남구 논현로 508 GS Tower 12층 101호 <a href="https://goo.gl/maps/9QPsbfp3dRA2">https://goo.gl/maps/9QPsbfp3dRA2</a></p>
-<h3>스케치</h3>
-<p><img alt="창밖" src="https://s3.amazonaws.com/static.hoodpub.com/apn-2018-09-11/resized_IMG_20180911_093157.jpg" title="창밖"></p>
-<p><img alt="수업" src="https://s3.amazonaws.com/static.hoodpub.com/apn-2018-09-11/resized_IMG_20180911_100947.jpg" title="수업"></p>
-<hr>
-<h3>세션 구성</h3>
-<ul>
-<li>Data lake
-<img alt="aws-data-lake-services" src="https://s3.amazonaws.com/static.hoodpub.com/apn-2018-09-11/aws-data-lake-services.png" title="data lake"></li>
-<li>EMR 이론</li>
-<li>EMR hands on
-<img alt="aws-data-lake-services" src="https://s3.amazonaws.com/static.hoodpub.com/apn-2018-09-11/Selection_111.png" title="data lake"></li>
-</ul>
-                    <a class="btn btn-default btn-xs" href="./apn-labday-(amazon-emr-빅데이터-처리).html">more ...</a>
                 </div>
             </article>
             <hr/>

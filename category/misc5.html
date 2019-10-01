@@ -84,6 +84,38 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../octopress-temareul-byeongyeonghaja.html">Octopress 테마를 변경하자</a></h2>
+                <div class="summary"><p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
+<div class="highlight"><pre><span></span>cd octopress
+git submodule add GIT_URL .themes/THEME_NAME
+rake install\[&#39;THEME_NAME&#39;\]
+rake generate
+</pre></div>
+                    <a class="btn btn-default btn-xs" href="../octopress-temareul-byeongyeonghaja.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h2>
+                <div class="summary"><ul>
+<li>
+<p _="%" endcodeblock>tip 1
+{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
+from celery.task.control import discard_all
+    discard_all()</p>
+</li>
+<li>
+<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
+{% codeblock lang:python title:"98-celery.config"  %}
+command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
+</li>
+</ul>
+<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p>
+                    <a class="btn btn-default btn-xs" href="../celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../daegu-gaebalja-moim-hadub.html">대구 개발자 모임-하둡</a></h2>
                 <div class="summary"><h2>모임</h2>
 <ul>

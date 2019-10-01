@@ -84,6 +84,39 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../build-a-chat-app-with-django.html">build a chat app with django</a></h2>
+                <div class="summary"><h2>기능 요구사항</h2>
+<ul>
+<li>
+<p>1:1 대화를 주고 받는 웹 어플리케이션을 작성해주시길 바랍니다.
+  http://rocketchat.healworld.co.kr/</p>
+</li>
+<li>
+<p>화면은 이미지를 참고로 하여 작성해주시길 바랍니다. (화면의 모든 기능이 꼭 존재할 필요는 없습니다.)
+링크는 깨짐(404) 대략적인 위치는 기억하여 진행함(좌측 대화방, 오른쪽 대화 목록)
+https://dl.dropboxusercontent.com/u/4338652/mini_project.png</p>
+</li>
+<li>
+<p>대화 …</p></li></ul>
+                    <a class="btn btn-default btn-xs" href="../build-a-chat-app-with-django.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../index-gs-shop.html">index gs shop</a></h2>
+                <div class="summary"><h3>도전</h3>
+<ul>
+<li>GS SHOP의 방송편성표를 보여주는 웹 페이지를 작성</li>
+<li>관련 기술
+  <code>Elasticsearch 플러그인</code>, <code>형태소 분석기</code>, <code>Thrift 서버</code>, <code>HAProxy</code></li>
+<li>형태소 분석이 필요한 이유?<br>
+  한국어 분석을 지원하지 않는다. 예를 들어 "아버지가 방에 들어간다"라는 한국어 문장을 인덱스해도 "아버지"로는 검색이 안 되고, 반드시 "아버지가"로 검색해야만 결과에 출력된다.</li>
+<li>형태소 분석기 - 은전 한  잎 …</li></ul>
+                    <a class="btn btn-default btn-xs" href="../index-gs-shop.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../senior-work.html">senior work</a></h2>
                 <div class="summary"><h3>참고 사이트</h3>
 <ul>
@@ -299,38 +332,6 @@ datanode2 …</pre></div>
 <h3>하둡 실행하기</h3>
 <p><code>docker run …</code></p>
                     <a class="btn btn-default btn-xs" href="../dockerreul-iyonghan-hadoop.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../octopress-temareul-byeongyeonghaja.html">Octopress 테마를 변경하자</a></h2>
-                <div class="summary"><p>https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes</p>
-<div class="highlight"><pre><span></span>cd octopress
-git submodule add GIT_URL .themes/THEME_NAME
-rake install\[&#39;THEME_NAME&#39;\]
-rake generate
-</pre></div>
-                    <a class="btn btn-default btn-xs" href="../octopress-temareul-byeongyeonghaja.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">Celery beat를 Elasticbeanstalk에서도 사용하자</a></h2>
-                <div class="summary"><ul>
-<li>
-<p _="%" endcodeblock>tip 1
-{% codeblock lang:python title:"타스크를 모두 비우자" mark:3 %}
-from celery.task.control import discard_all
-    discard_all()</p>
-</li>
-<li>
-<p _="%" endcodeblock>Elasticbeanstalk 에서 실행을 위한 명령어
-{% codeblock lang:python title:"98-celery.config"  %}
-command=/opt/python/run/venv/bin/celery beat -A main -S djcelery.schedulers.DatabaseScheduler --pidfile=</p>
-</li>
-</ul>
-<p><strong>celery beat</strong>를 실행하면 <strong>celery worker …</strong></p>
-                    <a class="btn btn-default btn-xs" href="../celery-beatreul-elasticbeanstalkeseodo-sayonghaja.html">more ...</a>
                 </div>
             </article>
             <hr/>
