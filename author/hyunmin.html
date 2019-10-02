@@ -92,9 +92,8 @@ aws sagemaker list-endpoints
 
 
 <h2>delete</h2>
-<div class="highlight"><pre><span></span>for x in $(aws sagemaker list-models | jq &quot;.[][].ModelName&quot; | xargs -isrc echo src); do; aws sagemaker delete-model --model-name  $x ; done;
-for x in $(aws sagemaker list-endpoint-configs | jq &quot;.[][].EndpointConfigName&quot; | xargs -isrc echo src); do; aws sagemaker delete-endpoint-config --endpoint-config-name  $x ; done;
-for …</pre></div>
+<div class="highlight"><pre><span></span>for x in $(aws sagemaker list-models | jq &quot;.[][].ModelName&quot; | xargs -isrc echo src); do; aws sagemaker delete-model --model-name  $x ; echo $x; done;
+for x in $(aws sagemaker list-endpoint-configs | jq &quot;.[][].EndpointConfigName&quot; | xargs -isrc echo src); do; aws sagemaker delete-endpoint-config --endpoint-config-name  $x …</pre></div>
                     <a class="btn btn-default btn-xs" href="../sagemaker-frequently-used-commands.html">more ...</a>
                 </div>
             </article>
