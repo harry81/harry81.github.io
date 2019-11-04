@@ -84,6 +84,29 @@ Water Developer            </a>
     <div class="row">
         <div class="col-sm-9">
             <article>
+                <h2><a href="../elastic-kubernetes-container.html">Elastic kubernetes container</a></h2>
+                <div class="summary"><h2>configure cluster</h2>
+<div class="highlight"><pre><span></span>ecs-cli configure --cluster ec2-tutorial --default-launch-type EC2 --config-name ec2-tutorial --region ap-northeast
+</pre></div>
+
+
+<h2>configure profile</h2>
+<div class="highlight"><pre><span></span>ecs-cli configure profile --profile-name ec2-tutorial-profile --access-key save_the_world --secret-key love_your_self
+</pre></div>
+
+
+<h2>Up cluster</h2>
+<div class="highlight"><pre><span></span>ecs-cli up --keypair tree_rsa --capability-iam --size 1 --instance-type t2.micro --cluster-config ec2-tutorial --ecs-profile ec2-tutorial-profile
+</pre></div>
+
+
+<h2>Up docker compose</h2>
+<div class="highlight"><pre><span></span>ecs-cli compose up --create-log-groups --cluster-config ec2-tutorial --ecs-profile ec2-tutorial-profile …</pre></div>
+                    <a class="btn btn-default btn-xs" href="../elastic-kubernetes-container.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
                 <h2><a href="../sagemaker-frequently-used-commands.html">Sagemaker frequently used commands</a></h2>
                 <div class="summary"><h2>list</h2>
 <div class="highlight"><pre><span></span>aws sagemaker list-models
@@ -96,13 +119,6 @@ aws sagemaker list-endpoints
 <div class="highlight"><pre><span></span>for x in $(aws sagemaker list-models | jq &quot;.[][].ModelName&quot; | xargs -isrc echo src); do; aws sagemaker delete-model --model-name  $x ; echo $x; done;
 for x in $(aws sagemaker list-endpoint-configs | jq &quot;.[][].EndpointConfigName&quot; | xargs -isrc echo src); do; aws sagemaker delete-endpoint-config --endpoint-config-name  $x …</pre></div>
                     <a class="btn btn-default btn-xs" href="../sagemaker-frequently-used-commands.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../국립중앙도서관-식단표.html">국립중앙도서관 식단표</a></h2>
-                <div class="summary">
-                    <a class="btn btn-default btn-xs" href="../국립중앙도서관-식단표.html">more ...</a>
                 </div>
             </article>
             <hr/>

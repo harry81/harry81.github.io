@@ -136,7 +136,7 @@ aws sagemaker list-endpoints
 <h2>delete</h2>
 <div class="highlight"><pre><span></span>for x in $(aws sagemaker list-models | jq &quot;.[][].ModelName&quot; | xargs -isrc echo src); do; aws sagemaker delete-model --model-name  $x ; echo $x; done;
 for x in $(aws sagemaker list-endpoint-configs | jq &quot;.[][].EndpointConfigName&quot; | xargs -isrc echo src); do; aws sagemaker delete-endpoint-config --endpoint-config-name  $x ; echo $x; done;
-for x in $(aws sagemaker list-endpoints --status-equals &quot;Failed&quot; | jq &quot;.[][].EndpointName&quot; | xargs -isrc echo src); do; aws sagemaker delete-endpoint --endpoint-name  $x ; echo $x; done;
+for x in $(aws sagemaker list-endpoints | jq &quot;.[][].EndpointName&quot; | xargs -isrc echo src); do; aws sagemaker delete-endpoint --endpoint-name  $x ; echo $x; done;
 </pre></div>
             </div>
             <!-- /.entry-content -->
